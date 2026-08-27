@@ -1,0 +1,452 @@
+[
+  {
+    "id": "pkg-L1-01",
+    "domain": "packaged",
+    "level": 1,
+    "topic": "what-a-mutual-fund-does",
+    "module": "M14",
+    "stem": "An investor puts $1,000 into a mutual fund. Which of the following BEST describes what happens to that money?",
+    "options": [
+      "It is deposited in a bank account that pays the fund's advertised yield and is insured by the FDIC",
+      "It is pooled with other investors' money and invested by a professional manager in a portfolio of securities, and the investor owns a proportional share of that portfolio",
+      "It is lent to the fund company, which repays it with interest on a fixed future date",
+      "It buys shares of the fund management company itself, so the investor profits when the firm earns more fees"
+    ],
+    "answer": 1,
+    "explanation": "An investment company pools money from many investors and invests it in securities under a stated objective; each shareholder owns a pro-rata slice of the portfolio, not a bank deposit or a loan to the sponsor. See 07-packaged-retirement-tax.md §3.1.",
+    "calc": false,
+    "source": "07-packaged-retirement-tax.md §3.1"
+  },
+  {
+    "id": "pkg-L1-02",
+    "domain": "packaged",
+    "level": 1,
+    "topic": "401k-employer-match",
+    "module": "M31",
+    "stem": "An employer matches 100% of an employee's 401(k) contributions up to 4% of salary. An employee earning $50,000 contributes exactly 4% of salary this year. Before any investment gains, how much goes into the employee's account for the year?",
+    "options": [
+      "$2,000, because the employer match is paid only when the employee retires",
+      "$2,080, because the employer adds 4% of the employee's $2,000 contribution",
+      "$4,000, the employee's $2,000 plus a $2,000 employer match",
+      "$6,000, because the employer contributes 4% of salary plus a matching $2,000"
+    ],
+    "answer": 2,
+    "explanation": "4% of $50,000 = $2,000 from the employee; a 100% match up to 4% adds another $2,000, for $4,000 total. The match is an immediate 100% return on the contributed dollars, which is why it matters. See §3.7 (401(k)).",
+    "calc": true,
+    "source": "07-packaged-retirement-tax.md §3.7"
+  },
+  {
+    "id": "pkg-L1-03",
+    "domain": "packaged",
+    "level": 1,
+    "topic": "tax-deferred-meaning",
+    "module": "M14",
+    "stem": "A retirement account is described as \"tax-deferred.\" This means that the earnings inside the account:",
+    "options": [
+      "are never taxed",
+      "are taxed each year, but at a reduced rate",
+      "are taxed twice, once when earned and again when withdrawn",
+      "are not taxed until the money is withdrawn from the account"
+    ],
+    "answer": 3,
+    "explanation": "Deferred means pay later: growth compounds untaxed and is taxed as ordinary income on withdrawal, as opposed to tax-exempt (Roth, muni interest), which is never taxed. See §2 (prerequisite 5).",
+    "calc": false,
+    "source": "07-packaged-retirement-tax.md §2"
+  },
+  {
+    "id": "pkg-L1-04",
+    "domain": "packaged",
+    "level": 1,
+    "topic": "annuity-lifetime-income",
+    "module": "M30",
+    "stem": "A 65-year-old retiree is worried about running out of money if she lives to 95. Which product is specifically designed to address that concern by paying her an income for as long as she lives?",
+    "options": [
+      "A life annuity purchased from an insurance company",
+      "A 30-year corporate bond",
+      "A money market fund with check-writing privileges",
+      "A term life insurance policy"
+    ],
+    "answer": 0,
+    "explanation": "An annuity is an insurance contract that can be annuitized to pay income for the annuitant's lifetime; a bond stops at maturity, a money market fund can be exhausted, and term life pays only at death. See §3.5.",
+    "calc": false,
+    "source": "07-packaged-retirement-tax.md §3.5"
+  },
+  {
+    "id": "pkg-L1-05",
+    "domain": "packaged",
+    "level": 1,
+    "topic": "index-fund-low-cost",
+    "module": "M14",
+    "stem": "Compared with an actively managed stock mutual fund, an index fund that simply tracks the S&P 500 would generally be expected to have:",
+    "options": [
+      "higher annual expenses, because it must buy all 500 stocks",
+      "a guaranteed return equal to the index",
+      "no risk of loss, because it is diversified",
+      "lower annual expenses, because no manager is being paid to pick stocks"
+    ],
+    "answer": 3,
+    "explanation": "Index funds are passive, with low turnover and the lowest expense ratios; they still carry full market risk and only approximate the index after costs. See §3.2 (fund types; expense ratio).",
+    "calc": false,
+    "source": "07-packaged-retirement-tax.md §3.2"
+  },
+  {
+    "id": "pkg-L2-01",
+    "domain": "packaged",
+    "level": 2,
+    "topic": "closed-end-fund-discount",
+    "module": "M14",
+    "stem": "A customer notices that shares of an investment company are quoted at $18.40 while the fund reports a net asset value of $20.00 per share. This fund is MOST likely:",
+    "options": [
+      "a closed-end fund whose shares trade on an exchange at a discount to NAV",
+      "an open-end fund selling below NAV to attract new investors",
+      "a no-load open-end fund",
+      "a money market fund that has broken the buck"
+    ],
+    "answer": 0,
+    "explanation": "Open-end shares are always sold at POP (NAV plus any load) and redeemed at NAV, never below it; only a closed-end fund's market price is set by supply and demand and can sit at a premium or discount to NAV. See §3.3.",
+    "calc": false,
+    "source": "07-packaged-retirement-tax.md §3.3"
+  },
+  {
+    "id": "pkg-L2-02",
+    "domain": "packaged",
+    "level": 2,
+    "topic": "variable-annuity-investment-risk",
+    "module": "M30",
+    "stem": "During the accumulation period of a variable annuity, the investment risk is borne by:",
+    "options": [
+      "the insurance company, which guarantees a minimum rate of return",
+      "the contract owner, whose premiums are invested in a separate account",
+      "the broker-dealer that sold the contract",
+      "the state insurance guaranty fund"
+    ],
+    "answer": 1,
+    "explanation": "Variable annuity premiums go into a separate account whose value fluctuates, so the owner bears investment risk; in a fixed annuity the insurer's general account bears it and the owner bears purchasing-power risk. See §3.5.",
+    "calc": false,
+    "source": "07-packaged-retirement-tax.md §3.5"
+  },
+  {
+    "id": "pkg-L2-03",
+    "domain": "packaged",
+    "level": 2,
+    "topic": "uit-structure",
+    "module": "M29",
+    "stem": "All of the following are characteristics of a unit investment trust EXCEPT:",
+    "options": [
+      "it has no board of directors",
+      "its portfolio is fixed rather than actively traded",
+      "units are redeemable through the sponsor",
+      "it employs an investment adviser who manages the portfolio for an ongoing fee"
+    ],
+    "answer": 3,
+    "explanation": "A UIT is organized under a trust indenture with a fixed, unmanaged portfolio, redeemable units, and no board of directors or investment adviser (hence no management fee). See §3.1.",
+    "calc": false,
+    "source": "07-packaged-retirement-tax.md §3.1"
+  },
+  {
+    "id": "pkg-L2-04",
+    "domain": "packaged",
+    "level": 2,
+    "topic": "gp-vs-lp-liability",
+    "module": "M32",
+    "stem": "A limited partner invests $25,000 in a real estate limited partnership. The partnership later defaults on $2 million it borrowed. The limited partner's maximum possible loss is:",
+    "options": [
+      "$25,000 plus a proportional share of the $2 million",
+      "unlimited, the same as the general partner",
+      "zero, because the general partner's fiduciary duty requires it to absorb losses",
+      "$25,000, unless she personally signed for any of the partnership's debt"
+    ],
+    "answer": 3,
+    "explanation": "A limited partner's liability is limited to the amount invested plus any recourse debt she personally signed for; the general partner has unlimited personal liability. See §3.8 (Roles).",
+    "calc": false,
+    "source": "07-packaged-retirement-tax.md §3.8"
+  },
+  {
+    "id": "pkg-L2-05",
+    "domain": "packaged",
+    "level": 2,
+    "topic": "roth-ira-no-rmd",
+    "module": "M31",
+    "stem": "Which of the following accounts does NOT require the original owner to take required minimum distributions during his or her lifetime?",
+    "options": [
+      "Traditional IRA",
+      "SEP IRA",
+      "Roth IRA",
+      "403(b) plan"
+    ],
+    "answer": 2,
+    "explanation": "Roth IRA owners have no lifetime RMDs (beneficiaries do); traditional, SEP, and 403(b) accounts require RMDs beginning at age 73 (75 for those born 1960 or later). See §3.7 (Roth IRA).",
+    "calc": false,
+    "source": "07-packaged-retirement-tax.md §3.7"
+  },
+  {
+    "id": "pkg-L3-01",
+    "domain": "packaged",
+    "level": 3,
+    "topic": "pop-from-nav-and-load",
+    "module": "M29",
+    "stem": "An open-end fund has a net asset value of $20.00 per share and a sales charge of 5%. The public offering price is:",
+    "options": [
+      "$19.00",
+      "$21.00",
+      "$21.50",
+      "$21.05"
+    ],
+    "answer": 3,
+    "explanation": "The sales charge is a percentage of POP, so POP = NAV / (1 - 0.05) = $20.00 / 0.95 = $21.05. The planted error $20.00 x 1.05 = $21.00 treats the charge as a percentage of NAV. See §3.2.",
+    "calc": true,
+    "source": "07-packaged-retirement-tax.md §3.2"
+  },
+  {
+    "id": "pkg-L3-02",
+    "domain": "packaged",
+    "level": 3,
+    "topic": "sales-charge-percent-of-pop",
+    "module": "M29",
+    "stem": "A mutual fund's public offering price is $12.50 and its net asset value is $11.75. The sales charge percentage is:",
+    "options": [
+      "6.0%",
+      "6.4%",
+      "7.5%",
+      "5.6%"
+    ],
+    "answer": 0,
+    "explanation": "Sales charge % = (POP - NAV) / POP = ($12.50 - $11.75) / $12.50 = $0.75 / $12.50 = 6.0%. Dividing by NAV instead ($0.75 / $11.75 = 6.4%) is the classic error. See §3.2.",
+    "calc": true,
+    "source": "07-packaged-retirement-tax.md §3.2"
+  },
+  {
+    "id": "pkg-L3-03",
+    "domain": "packaged",
+    "level": 3,
+    "topic": "fund-redemption-7-days",
+    "module": "M29",
+    "stem": "Under the Investment Company Act of 1940, an open-end fund that receives a redemption request must pay the shareholder within:",
+    "options": [
+      "3 business days",
+      "7 calendar days",
+      "7 business days",
+      "30 days"
+    ],
+    "answer": 1,
+    "explanation": "ICA §22(e) requires payment within 7 calendar days at the next-computed NAV; 7 business days is the Rule 2330 principal-review window for variable annuities, a different rule. See §3.1 (§22) and §3.2 (Redemption).",
+    "calc": false,
+    "source": "07-packaged-retirement-tax.md §3.2"
+  },
+  {
+    "id": "pkg-L3-04",
+    "domain": "packaged",
+    "level": 3,
+    "topic": "letter-of-intent-terms",
+    "module": "M29",
+    "stem": "A customer signs a letter of intent to qualify for a fund's $50,000 breakpoint. Which of the following statements about the letter of intent is TRUE?",
+    "options": [
+      "The customer has 13 months to complete the purchases, and the letter may be backdated up to 90 days to include a prior purchase",
+      "The customer has 12 months to complete the purchases, and appreciation on the shares counts toward the total",
+      "The letter is a binding contract, and failing to complete it results in a fine",
+      "The customer must complete all purchases within 90 days of signing"
+    ],
+    "answer": 0,
+    "explanation": "An LOI is a non-binding pledge to reach the breakpoint within 13 months; it may be backdated up to 90 days (the 13 months run from the backdated date), only new money counts, and shares are held in escrow to cover the higher charge if it is not completed. See §3.2 (Letter of intent).",
+    "calc": false,
+    "source": "07-packaged-retirement-tax.md §3.2"
+  },
+  {
+    "id": "pkg-L3-05",
+    "domain": "packaged",
+    "level": 3,
+    "topic": "subchapter-m-90-percent",
+    "module": "M29",
+    "stem": "To qualify as a regulated investment company under Subchapter M and avoid paying tax on income it distributes, a mutual fund must distribute at least what percentage of its net investment income to shareholders?",
+    "options": [
+      "50%",
+      "75%",
+      "90%",
+      "100%"
+    ],
+    "answer": 2,
+    "explanation": "Under the conduit (pipeline) theory, a fund distributing at least 90% of net investment income is taxed only on what it retains; 75% is the REIT asset/income test, a different threshold. See §3.2 (Taxation of mutual funds).",
+    "calc": false,
+    "source": "07-packaged-retirement-tax.md §3.2"
+  },
+  {
+    "id": "pkg-L4-01",
+    "domain": "packaged",
+    "level": 4,
+    "topic": "breakpoint-with-rights-of-accumulation",
+    "module": "M29",
+    "stem": "A customer owns Class A shares of the XYZ Growth Fund currently worth $40,000 (original cost $32,000). The fund's breakpoint schedule is: under $50,000, 5.75%; $50,000 to $99,999, 4.50%; $100,000 and above, 3.50%. The customer invests an additional $15,000 under rights of accumulation. The sales charge on the new purchase is:",
+    "options": [
+      "$862.50",
+      "$675.00",
+      "$2,475.00",
+      "$525.00"
+    ],
+    "answer": 1,
+    "explanation": "ROA values existing holdings at the higher of cost or current value ($40,000); $40,000 + $15,000 = $55,000 crosses the $50,000 tier, so the new $15,000 pays 4.50%: $15,000 x 0.045 = $675. No retroactive refund applies to the old shares ($2,475 wrongly charges 4.50% on all $55,000; $862.50 ignores ROA). See §3.2 (Rights of accumulation).",
+    "calc": true,
+    "source": "07-packaged-retirement-tax.md §3.2"
+  },
+  {
+    "id": "pkg-L4-02",
+    "domain": "packaged",
+    "level": 4,
+    "topic": "dollar-cost-averaging-average-cost",
+    "module": "M29",
+    "stem": "An investor buys $600 of a mutual fund on the first of each month for four months at prices of $12, $10, $8, and $10 per share. The investor's average cost per share is closest to:",
+    "options": [
+      "$9.80",
+      "$10.00",
+      "$9.50",
+      "$10.20"
+    ],
+    "answer": 0,
+    "explanation": "Shares bought: 600/12 = 50, 600/10 = 60, 600/8 = 75, 600/10 = 60, total 245 shares for $2,400; average cost = $2,400 / 245 = $9.80. The average price, (12 + 10 + 8 + 10) / 4 = $10.00, is higher, which is the DCA effect. See §3.2 (Dollar-cost averaging).",
+    "calc": true,
+    "source": "07-packaged-retirement-tax.md §3.2"
+  },
+  {
+    "id": "pkg-L4-03",
+    "domain": "packaged",
+    "level": 4,
+    "topic": "gifted-stock-dual-basis-loss",
+    "module": "M33",
+    "stem": "A father gives his daughter 100 shares of stock he purchased for $50 per share. On the date of the gift the stock is trading at $30. Eight months later the daughter sells all 100 shares at $25. For tax purposes she reports:",
+    "options": [
+      "a $2,500 loss",
+      "a $2,000 loss",
+      "a $500 loss",
+      "no gain or loss"
+    ],
+    "answer": 2,
+    "explanation": "When FMV at the gift date is below the donor's basis, a later loss is measured from the gift-date FMV: ($30 - $25) x 100 = $500 loss (the donor's $50 basis would apply only to a gain; a sale between $30 and $50 produces neither). Because her basis here is the gift-date FMV rather than the donor's basis, the donor's holding period does NOT tack on (IRS Pub 550): her holding period starts at the gift, so the eight-month loss is short-term. The donor's holding period carries over only when his basis is used. See §3.10 (Gifted securities).",
+    "calc": true,
+    "source": "07-packaged-retirement-tax.md §3.10"
+  },
+  {
+    "id": "pkg-L4-04",
+    "domain": "packaged",
+    "level": 4,
+    "topic": "air-payment-direction",
+    "module": "M30",
+    "stem": "A variable annuity is annuitized with an assumed interest rate (AIR) of 4%. The separate account earns 8% in month 1, 5% in month 2, and 3% in month 3. The third payment, which reflects the month 2 return, compared with the second payment will be:",
+    "options": [
+      "lower, because 5% is less than the 8% earned the previous month",
+      "unchanged, because the AIR is a guaranteed rate",
+      "lower, because annuity payments decline whenever the account's return falls",
+      "higher, because 5% exceeds the 4% AIR"
+    ],
+    "answer": 3,
+    "explanation": "Each payment is compared with the AIR, never with the prior period's actual return: 5% > 4% AIR, so the third payment rises even though 5% < 8%. (The 3% month 3 return, below the AIR, would make the fourth payment fall.) See §3.5 (Annuitization and the AIR).",
+    "calc": false,
+    "source": "07-packaged-retirement-tax.md §3.5"
+  },
+  {
+    "id": "pkg-L4-05",
+    "domain": "packaged",
+    "level": 4,
+    "topic": "indirect-rollover-20-percent-withholding",
+    "module": "M31",
+    "stem": "A 45-year-old leaves her employer and asks that her $100,000 401(k) balance be paid directly to her. She receives a check for $80,000 and, within 60 days, deposits that $80,000 into a rollover IRA. The tax result is:",
+    "options": [
+      "No tax is due; the $20,000 withheld is refunded in full when she files her return",
+      "The entire $100,000 is taxable because only a direct trustee-to-trustee transfer avoids tax",
+      "$20,000 is taxable as ordinary income and is subject to a 10% early-withdrawal penalty",
+      "$20,000 is taxable as ordinary income, but no penalty applies because the plan withheld it"
+    ],
+    "answer": 2,
+    "explanation": "A plan distribution paid to the participant carries mandatory 20% withholding ($20,000); to roll over the full $100,000 she had to replace that $20,000 from other funds. The $20,000 not redeposited is a taxable distribution, and at 45 (no age-55 separation or other exception) it also incurs a 10% penalty of $2,000; the withholding is merely a credit against her total tax bill. See §3.7 (Rollovers vs transfers).",
+    "calc": true,
+    "source": "07-packaged-retirement-tax.md §3.7"
+  },
+  {
+    "id": "pkg-L5-01",
+    "domain": "packaged",
+    "level": 5,
+    "topic": "annuity-units-fixed-number",
+    "module": "M30",
+    "stem": "Once a variable annuity contract is annuitized under a life payout option, which of the following remains FIXED for the life of the payout?",
+    "options": [
+      "The number of annuity units",
+      "The value of each annuity unit",
+      "The number of accumulation units",
+      "The monthly dollar payment"
+    ],
+    "answer": 0,
+    "explanation": "At annuitization the accumulation units are converted into a fixed number of annuity units; each payment equals that fixed number times the current (fluctuating) annuity unit value, so the dollar payment varies. Accumulation units cease to exist once the contract is annuitized. See §3.5 (Annuitization).",
+    "calc": false,
+    "source": "07-packaged-retirement-tax.md §3.5"
+  },
+  {
+    "id": "pkg-L5-02",
+    "domain": "packaged",
+    "level": 5,
+    "topic": "lifo-annuity-withdrawal-with-penalty",
+    "module": "M30",
+    "stem": "A 50-year-old contributed $50,000 to a non-qualified variable annuity that is now worth $80,000. He takes a lump-sum withdrawal of $20,000 without annuitizing. The tax consequence is:",
+    "options": [
+      "Nothing is taxable, because the first $50,000 withdrawn is a return of his after-tax contributions",
+      "$20,000 is taxed as ordinary income and a $2,000 penalty applies",
+      "$7,500 is taxed as ordinary income under the exclusion ratio, plus a $750 penalty",
+      "$20,000 is taxed as a long-term capital gain with no penalty"
+    ],
+    "answer": 1,
+    "explanation": "Random withdrawals from a non-qualified annuity are LIFO: the $30,000 of earnings comes out first, so the entire $20,000 is ordinary income, and because he is under 59 1/2 a 10% penalty of $2,000 applies. FIFO treatment belongs to life insurance, and the exclusion ratio applies only to annuitized payments. See §3.5 (Taxation).",
+    "calc": true,
+    "source": "07-packaged-retirement-tax.md §3.5"
+  },
+  {
+    "id": "pkg-L5-03",
+    "domain": "packaged",
+    "level": 5,
+    "topic": "inherited-basis-always-long-term",
+    "module": "M33",
+    "stem": "A man bought 100 shares of ABC at $20 per share and died two months later, when ABC was trading at $100. His daughter inherited the shares and sold them one month after his death at $110. She reports:",
+    "options": [
+      "a short-term capital gain of $9,000",
+      "a short-term capital gain of $1,000",
+      "a long-term capital gain of $9,000",
+      "a long-term capital gain of $1,000"
+    ],
+    "answer": 3,
+    "explanation": "Inherited securities take a stepped-up basis equal to FMV at the date of death ($100) and are always treated as long-term regardless of how long the decedent or heir held them: ($110 - $100) x 100 = $1,000 long-term gain. See §3.10 (Inherited securities).",
+    "calc": true,
+    "source": "07-packaged-retirement-tax.md §3.10"
+  },
+  {
+    "id": "pkg-L5-04",
+    "domain": "packaged",
+    "level": 5,
+    "topic": "wash-sale-substantially-identical-except",
+    "module": "M33",
+    "stem": "A customer sells 500 shares of XYZ common stock at a loss on June 1. All of the following purchases made on June 15 would cause the loss to be disallowed under the wash-sale rule EXCEPT:",
+    "options": [
+      "XYZ call options",
+      "XYZ convertible bonds",
+      "common stock of XYZ's largest competitor in the same industry",
+      "XYZ common stock purchased in the customer's IRA"
+    ],
+    "answer": 2,
+    "explanation": "Within the 30-day window, calls, rights, warrants, and convertibles on the same stock are substantially identical, and a repurchase inside an IRA disallows the loss permanently (Rev. Rul. 2008-5). A different company's stock, even in the same industry, is not substantially identical. See §3.10 (Wash-sale rule).",
+    "calc": false,
+    "source": "07-packaged-retirement-tax.md §3.10"
+  },
+  {
+    "id": "pkg-L5-05",
+    "domain": "packaged",
+    "level": 5,
+    "topic": "passive-loss-offset-limit",
+    "module": "M32",
+    "stem": "An investor has a $150,000 salary, $5,000 of dividend income, and $4,000 of income from a real estate limited partnership. This year she is allocated a $10,000 loss from an oil and gas drilling program. The amount of that loss she may deduct this year is:",
+    "options": [
+      "$10,000",
+      "$4,000",
+      "$9,000",
+      "$0"
+    ],
+    "answer": 1,
+    "explanation": "DPP losses are passive and may offset only passive income, not wages (active) or dividends (portfolio): $4,000 from the other partnership is deductible and the remaining $6,000 is suspended and carried forward until she has passive income or disposes of the interest. See §3.8 (Passive activity rules).",
+    "calc": true,
+    "source": "07-packaged-retirement-tax.md §3.8"
+  }
+]

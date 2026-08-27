@@ -1,0 +1,452 @@
+[
+  {
+    "id": "fnd-L1-01",
+    "domain": "foundations",
+    "level": 1,
+    "topic": "what-a-stock-is",
+    "module": "M2",
+    "stem": "When you buy one share of a company's stock, what have you actually bought?",
+    "options": [
+      "A loan to the company that it must repay to you with interest",
+      "A small piece of ownership in the company",
+      "A promise that the company will buy the share back from you at a set price",
+      "A fixed yearly payment that the company guarantees"
+    ],
+    "answer": 1,
+    "explanation": "Stock is equity: a slice of ownership with a residual claim, and dividends are never guaranteed. A loan repaid with interest describes a bond, not a share. (02-foundations.md §3.A.1, §3.A.3)",
+    "calc": false,
+    "source": "02-foundations.md §3.A.3"
+  },
+  {
+    "id": "fnd-L1-02",
+    "domain": "foundations",
+    "level": 1,
+    "topic": "percent-change",
+    "module": "M1",
+    "stem": "A share you bought for $40 is now worth $50. By what percentage has its price increased?",
+    "options": [
+      "10%",
+      "20%",
+      "25%",
+      "125%"
+    ],
+    "answer": 2,
+    "explanation": "Percent change = (new − old) ÷ old = (50 − 40) ÷ 40 = 25%. Dividing by the new price ($10 ÷ $50 = 20%) is the classic asymmetry error. (02-foundations.md §3.J.1)",
+    "calc": true,
+    "source": "02-foundations.md §3.J.1"
+  },
+  {
+    "id": "fnd-L1-03",
+    "domain": "foundations",
+    "level": 1,
+    "topic": "why-bond-prices-fall-when-rates-rise",
+    "module": "M7",
+    "stem": "You own a bond that pays $40 a year on every $1,000 invested. Newly issued bonds of the same quality now pay $60 a year per $1,000. If you want to sell your bond today, what must happen?",
+    "options": [
+      "You must accept less than $1,000, so the buyer's return catches up to what new bonds pay",
+      "You can ask for more than $1,000, because your bond is older and proven",
+      "You will get exactly $1,000, because the bond's face value never changes",
+      "You cannot sell it until it matures"
+    ],
+    "answer": 0,
+    "explanation": "Nobody pays full price for $40 a year when $60 a year is available, so the price of the existing bond drops until its yield matches the market — the price/yield seesaw. Face value is what the issuer repays at maturity, not what a buyer pays today. (02-foundations.md §3.H.4, §3.G.3)",
+    "calc": false,
+    "source": "02-foundations.md §3.H.4"
+  },
+  {
+    "id": "fnd-L1-04",
+    "domain": "foundations",
+    "level": 1,
+    "topic": "compound-interest",
+    "module": "M1",
+    "stem": "You put $1,000 in an account that pays 10% interest once a year, and the interest is left in the account to earn interest itself. How much is in the account after two years?",
+    "options": [
+      "$1,100",
+      "$1,200",
+      "$1,220",
+      "$1,210"
+    ],
+    "answer": 3,
+    "explanation": "Compounding: $1,000 × 1.10 × 1.10 = $1,210 — the second year's 10% is earned on $1,100, not $1,000. $1,200 is simple interest (interest on principal only). (02-foundations.md §3.G.2)",
+    "calc": true,
+    "source": "02-foundations.md §3.G.2"
+  },
+  {
+    "id": "fnd-L1-05",
+    "domain": "foundations",
+    "level": 1,
+    "topic": "inflation-purchasing-power",
+    "module": "M9",
+    "stem": "Your savings account pays 2% a year. Over the same year, the prices of the things you buy rise by 3%. What happens to what your savings can buy?",
+    "options": [
+      "It grows, because the account balance is larger than a year ago",
+      "It shrinks, because prices rose faster than the balance grew",
+      "It stays the same, because the interest offsets the price increases",
+      "It shrinks by exactly 3%, because interest does not count against inflation"
+    ],
+    "answer": 1,
+    "explanation": "Real return = nominal rate − inflation = 2% − 3% = about −1%, so purchasing power falls even though the dollar balance rose. The interest does count; it just does not fully offset the 3% price rise. (02-foundations.md §3.F.2)",
+    "calc": false,
+    "source": "02-foundations.md §3.F.2"
+  },
+  {
+    "id": "fnd-L2-01",
+    "domain": "foundations",
+    "level": 2,
+    "topic": "primary-vs-secondary-market",
+    "module": "M3",
+    "stem": "An investor buys 100 shares of XYZ common stock on the New York Stock Exchange. Who receives the money the investor pays?",
+    "options": [
+      "XYZ Corporation, the issuer of the shares",
+      "The New York Stock Exchange",
+      "Another investor who sold the shares",
+      "The underwriter that originally brought XYZ public"
+    ],
+    "answer": 2,
+    "explanation": "An exchange trade is a secondary-market transaction: investors trade with each other and the issuer receives nothing. The issuer is paid only in the primary market (an IPO or follow-on offering). (02-foundations.md §3.B.2)",
+    "calc": false,
+    "source": "02-foundations.md §3.B.2"
+  },
+  {
+    "id": "fnd-L2-02",
+    "domain": "foundations",
+    "level": 2,
+    "topic": "broker-vs-dealer-compensation",
+    "module": "M4",
+    "stem": "A broker-dealer fills a customer's buy order by selling shares out of its own inventory. In this trade the firm is compensated by:",
+    "options": [
+      "A markup built into the price the customer pays",
+      "A commission disclosed separately on the confirmation",
+      "A commission plus a markup on the same trade",
+      "A management fee based on the customer's assets"
+    ],
+    "answer": 0,
+    "explanation": "Selling from inventory is acting as a dealer (principal), which is compensated by a markup; a commission is the broker (agent) capacity. A firm may not charge both on a single trade. (02-foundations.md §3.C.1)",
+    "calc": false,
+    "source": "02-foundations.md §3.C.1"
+  },
+  {
+    "id": "fnd-L2-03",
+    "domain": "foundations",
+    "level": 2,
+    "topic": "fdic-vs-sipc-coverage",
+    "module": "M6",
+    "stem": "Which of the following is protected by FDIC insurance?",
+    "options": [
+      "Shares of a stock mutual fund purchased at a bank branch",
+      "Common stock held in a brokerage account",
+      "A variable annuity sold by a bank's registered representative",
+      "A 12-month certificate of deposit issued by an FDIC-member bank"
+    ],
+    "answer": 3,
+    "explanation": "FDIC insures bank deposits (checking, savings, CDs) up to $250,000 per depositor, per bank, per ownership category. It never covers securities — mutual funds, stocks or annuities — even when bought at a bank, which is why the 'not FDIC insured / may lose value' disclosure is required. (02-foundations.md §3.D.7)",
+    "calc": false,
+    "source": "02-foundations.md §3.D.7"
+  },
+  {
+    "id": "fnd-L2-04",
+    "domain": "foundations",
+    "level": 2,
+    "topic": "regular-way-settlement",
+    "module": "M5",
+    "stem": "A customer buys shares of a listed common stock in a regular-way transaction. When does the trade settle?",
+    "options": [
+      "The same business day as the trade",
+      "One business day after the trade date",
+      "Two business days after the trade date",
+      "Three business days after the trade date"
+    ],
+    "answer": 1,
+    "explanation": "Since 2024-05-28, regular-way settlement for stocks, corporate and municipal bonds, ETFs and listed options is T+1 under amended SEC Rule 15c6-1. T+2 is the pre-2024 cycle still found in stale prep material; same-day is cash settlement. (02-foundations.md §3.E step 7)",
+    "calc": false,
+    "source": "02-foundations.md §3.E.7"
+  },
+  {
+    "id": "fnd-L2-05",
+    "domain": "foundations",
+    "level": 2,
+    "topic": "systematic-vs-nonsystematic-risk",
+    "module": "M8",
+    "stem": "Which of the following risks CANNOT be reduced by diversifying a stock portfolio across many issuers and industries?",
+    "options": [
+      "Business risk",
+      "Credit risk",
+      "Market risk",
+      "Liquidity risk"
+    ],
+    "answer": 2,
+    "explanation": "Market risk is systematic: it affects the whole market at once and cannot be diversified away (it is measured by beta). Business, credit and liquidity risks are issuer-specific, non-systematic risks that diversification reduces. (02-foundations.md §3.H.2, §3.H.3)",
+    "calc": false,
+    "source": "02-foundations.md §3.H.2"
+  },
+  {
+    "id": "fnd-L3-01",
+    "domain": "foundations",
+    "level": 3,
+    "topic": "msrb-rules-vs-enforcement",
+    "module": "M6",
+    "stem": "A FINRA member broker-dealer violates an MSRB rule while selling municipal bonds. Which body is responsible for enforcing that rule against the firm?",
+    "options": [
+      "The MSRB",
+      "FINRA",
+      "The state securities administrator",
+      "The municipal issuer"
+    ],
+    "answer": 1,
+    "explanation": "The MSRB writes rules for municipal dealers but has no enforcement arm; FINRA enforces MSRB rules against broker-dealers (bank regulators do so for bank dealers). The MSRB cannot regulate issuers at all (Tower Amendment). (02-foundations.md §3.D.3)",
+    "calc": false,
+    "source": "02-foundations.md §3.D.3"
+  },
+  {
+    "id": "fnd-L3-02",
+    "domain": "foundations",
+    "level": 3,
+    "topic": "current-yield",
+    "module": "M7",
+    "stem": "A corporate bond with a 6% coupon is trading at $1,200. What is its current yield?",
+    "options": [
+      "5.0%",
+      "6.0%",
+      "7.2%",
+      "7.5%"
+    ],
+    "answer": 0,
+    "explanation": "Current yield = annual interest ÷ market price = $60 ÷ $1,200 = 5.0%. 6% is the nominal (coupon) yield, which never changes; 7.5% would be the current yield if the bond traded at $800. (02-foundations.md §3.J.4)",
+    "calc": true,
+    "source": "02-foundations.md §3.J.4"
+  },
+  {
+    "id": "fnd-L3-03",
+    "domain": "foundations",
+    "level": 3,
+    "topic": "open-market-operations-direction",
+    "module": "M9",
+    "stem": "The Federal Open Market Committee directs the sale of Treasury securities in the open market. Which of the following is the MOST likely result?",
+    "options": [
+      "Bank reserves increase and short-term interest rates fall",
+      "The money supply expands and bond prices rise",
+      "Bank reserves increase and bond prices fall",
+      "The money supply contracts and bond prices fall"
+    ],
+    "answer": 3,
+    "explanation": "When the Fed sells securities it drains reserves from the banking system (tight money): money supply down, interest rates up, and therefore bond prices down. Buying securities produces the opposite chain. (02-foundations.md §3.F.6; 09-regulation-trading-economics.md §3.14)",
+    "calc": false,
+    "source": "02-foundations.md §3.F.6"
+  },
+  {
+    "id": "fnd-L3-04",
+    "domain": "foundations",
+    "level": 3,
+    "topic": "corporate-bond-eighths-quote",
+    "module": "M1",
+    "stem": "A corporate bond is quoted at 98 3/8. What is its dollar price?",
+    "options": [
+      "$98.38",
+      "$983.38",
+      "$983.75",
+      "$983.80"
+    ],
+    "answer": 2,
+    "explanation": "Corporate and municipal bonds are quoted as a percent of $1,000 par in eighths: 3/8 = 0.375, so 98.375% × $1,000 = $983.75. Reading the fraction as a decimal ($983.38) is the standard error. (02-foundations.md §3.J.3)",
+    "calc": true,
+    "source": "02-foundations.md §3.J.3"
+  },
+  {
+    "id": "fnd-L3-05",
+    "domain": "foundations",
+    "level": 3,
+    "topic": "quick-ratio",
+    "module": "M10",
+    "stem": "A company reports current assets of $600,000, which include inventory of $150,000, and current liabilities of $300,000. What is its quick (acid-test) ratio?",
+    "options": [
+      "1.5",
+      "2.0",
+      "2.5",
+      "1.0"
+    ],
+    "answer": 0,
+    "explanation": "Quick ratio = (current assets − inventory) ÷ current liabilities = ($600,000 − $150,000) ÷ $300,000 = 1.5. 2.0 is the current ratio, which leaves inventory in. (02-foundations.md §3.I.4)",
+    "calc": true,
+    "source": "02-foundations.md §3.I.4"
+  },
+  {
+    "id": "fnd-L4-01",
+    "domain": "foundations",
+    "level": 4,
+    "topic": "treasury-32nds-price-change",
+    "module": "M1",
+    "stem": "A Treasury note is quoted at 98.16 in the morning and 99.04 at the close. By how many dollars did the price of one $1,000 note change?",
+    "options": [
+      "$0.88",
+      "$8.80",
+      "$6.25",
+      "$18.75"
+    ],
+    "answer": 2,
+    "explanation": "Treasury notes and bonds are quoted in 32nds: 98.16 = 98 16/32 = 98.5% = $985.00 and 99.04 = 99 4/32 = 99.125% = $991.25, a change of $6.25. Treating the quotes as decimals gives the $8.80 distractor. (02-foundations.md §3.J.3)",
+    "calc": true,
+    "source": "02-foundations.md §3.J.3"
+  },
+  {
+    "id": "fnd-L4-02",
+    "domain": "foundations",
+    "level": 4,
+    "topic": "leading-vs-lagging-indicators",
+    "module": "M9",
+    "stem": "All of the following are considered leading economic indicators EXCEPT:",
+    "options": [
+      "Average weekly initial claims for unemployment insurance",
+      "New building permits for private housing",
+      "Stock prices as measured by the S&P 500",
+      "Average duration of unemployment"
+    ],
+    "answer": 3,
+    "explanation": "Initial jobless claims, building permits and stock prices all turn before the economy and are on the Conference Board's leading index; the average duration of unemployment is a lagging indicator. The trap is that jobless claims lead while unemployment measures lag. (02-foundations.md §3.F.5; 09-regulation-trading-economics.md §3.14)",
+    "calc": false,
+    "source": "02-foundations.md §3.F.5"
+  },
+  {
+    "id": "fnd-L4-03",
+    "domain": "foundations",
+    "level": 4,
+    "topic": "sipc-coverage-per-capacity",
+    "module": "M6",
+    "stem": "A customer holds $600,000 of securities and $200,000 of cash in an individual account, and $300,000 of securities in a joint account with her spouse, all at the same broker-dealer. The firm fails and is liquidated under SIPC. What is the MAXIMUM amount SIPC will cover for this customer?",
+    "options": [
+      "$500,000",
+      "$800,000",
+      "$1,000,000",
+      "$1,100,000"
+    ],
+    "answer": 1,
+    "explanation": "SIPC covers $500,000 per separate customer capacity, of which up to $250,000 may be cash. The individual account ($800,000 claim, $200,000 cash) is capped at $500,000; the joint account is a separate capacity and its $300,000 is fully covered, for $800,000 total. (02-foundations.md §3.D.6)",
+    "calc": true,
+    "source": "02-foundations.md §3.D.6"
+  },
+  {
+    "id": "fnd-L4-04",
+    "domain": "foundations",
+    "level": 4,
+    "topic": "eps-and-pe-ratio",
+    "module": "M10",
+    "stem": "A corporation reports net income of $8,000,000, pays $800,000 in preferred dividends, and has 3,000,000 common shares outstanding. Its common stock trades at $36. What is the stock's price-to-earnings ratio?",
+    "options": [
+      "15.0",
+      "13.5",
+      "11.3",
+      "22.5"
+    ],
+    "answer": 0,
+    "explanation": "EPS = (net income − preferred dividends) ÷ common shares = ($8,000,000 − $800,000) ÷ 3,000,000 = $2.40, and P/E = $36 ÷ $2.40 = 15. Forgetting to subtract the preferred dividends gives EPS of $2.67 and the 13.5 distractor. (02-foundations.md §3.I.7)",
+    "calc": true,
+    "source": "02-foundations.md §3.I.7"
+  },
+  {
+    "id": "fnd-L4-05",
+    "domain": "foundations",
+    "level": 4,
+    "topic": "reg-t-payment-date",
+    "module": "M5",
+    "stem": "A customer buys 200 shares of a listed stock in a cash account on Thursday, August 20, 2026. Under Regulation T, what is the last day the customer may pay for the purchase without the firm requesting an extension?",
+    "options": [
+      "Friday, August 21",
+      "Monday, August 24",
+      "Tuesday, August 25",
+      "Wednesday, August 26"
+    ],
+    "answer": 2,
+    "explanation": "Regular-way settlement is T+1 (Friday, August 21), and Reg T's payment period is settlement plus two business days, so payment is due Tuesday, August 25 (T+3). Wednesday reflects the pre-2024 T+2 cycle plus two days (T+4), which is now stale. (02-foundations.md §3.E step 7)",
+    "calc": true,
+    "source": "02-foundations.md §3.E.7"
+  },
+  {
+    "id": "fnd-L5-01",
+    "domain": "foundations",
+    "level": 5,
+    "topic": "secondary-offering-is-primary-market",
+    "module": "M3",
+    "stem": "A company that completed its IPO three years ago files a registration statement and sells 2,000,000 newly issued common shares to the public through an underwriting syndicate. Which statement about this transaction is TRUE?",
+    "options": [
+      "It is a secondary market transaction because the company is already publicly traded",
+      "It is a secondary distribution because the shares are sold after the initial public offering",
+      "It is a fourth market transaction if the shares are placed with institutional investors",
+      "It is a primary market transaction because the issuer receives the proceeds"
+    ],
+    "answer": 3,
+    "explanation": "Follow the cash: whenever the issuer sells new shares and receives the money it is a primary-market transaction, even though the industry calls it a 'secondary offering.' A secondary distribution is a sale of existing shares by insiders, where the issuer gets nothing. (02-foundations.md §3.B.1)",
+    "calc": false,
+    "source": "02-foundations.md §3.B.1"
+  },
+  {
+    "id": "fnd-L5-02",
+    "domain": "foundations",
+    "level": 5,
+    "topic": "zero-coupon-risk-profile",
+    "module": "M8",
+    "stem": "All of the following statements about a zero-coupon bond are TRUE EXCEPT:",
+    "options": [
+      "Its holder faces substantial reinvestment risk on the periodic interest payments",
+      "It is sold at a deep discount and redeemed at par at maturity",
+      "It carries greater interest-rate risk than a coupon bond of the same maturity",
+      "Its rate of return is locked in at purchase if it is held to maturity"
+    ],
+    "answer": 0,
+    "explanation": "A zero pays no periodic interest, so there is nothing to reinvest and it has no reinvestment risk — that is precisely why its return is locked in when held to maturity. The trade-off is maximum interest-rate (price) risk, since all of its value is one distant payment. (02-foundations.md §3.H.5)",
+    "calc": false,
+    "source": "02-foundations.md §3.H.5"
+  },
+  {
+    "id": "fnd-L5-03",
+    "domain": "foundations",
+    "level": 5,
+    "topic": "which-rate-the-fed-sets",
+    "module": "M9",
+    "stem": "Which of the following interest rates is set directly by the Federal Reserve rather than determined by banks or the market?",
+    "options": [
+      "The federal funds rate",
+      "The discount rate",
+      "The prime rate",
+      "The broker call loan rate"
+    ],
+    "answer": 1,
+    "explanation": "The Fed Board sets the discount rate it charges banks at the discount window. The fed funds rate is charged bank-to-bank and moves daily within a target range the FOMC sets — the Fed targets it but does not set it — while prime and broker call rates are set by commercial banks. (02-foundations.md §3.F.1, §4 trap 7)",
+    "calc": false,
+    "source": "02-foundations.md §3.F.1"
+  },
+  {
+    "id": "fnd-L5-04",
+    "domain": "foundations",
+    "level": 5,
+    "topic": "working-capital-effects",
+    "module": "M10",
+    "stem": "Which of the following corporate transactions would have NO effect on the company's working capital?",
+    "options": [
+      "Declaring and paying a cash dividend to common stockholders",
+      "Issuing 20-year bonds for cash",
+      "Collecting an account receivable in cash",
+      "Purchasing a machine for cash"
+    ],
+    "answer": 2,
+    "explanation": "Collecting a receivable swaps one current asset (receivables) for another (cash), so working capital (current assets − current liabilities) is unchanged. Declaring and paying a dividend or buying equipment with cash reduces it; issuing long-term bonds for cash raises it, because the new liability is long-term. (02-foundations.md §3.I.4, §4 trap 10)",
+    "calc": false,
+    "source": "02-foundations.md §3.I.4"
+  },
+  {
+    "id": "fnd-L5-05",
+    "domain": "foundations",
+    "level": 5,
+    "topic": "ex-dividend-date-under-t-plus-1",
+    "module": "M5",
+    "stem": "A corporation declares a regular quarterly cash dividend with a record date of Thursday, June 11, 2026. What is the LAST day an investor can buy the stock in a regular-way trade and still receive the dividend?",
+    "options": [
+      "Tuesday, June 9",
+      "Thursday, June 11",
+      "Friday, June 12",
+      "Wednesday, June 10"
+    ],
+    "answer": 3,
+    "explanation": "Under T+1 (FINRA Rule 11140 as amended 2024-05-28) the ex-dividend date for a regular cash dividend is the record date itself, so a purchase on Wednesday, June 10 settles on the record date and earns the dividend; buying on June 11 is ex-dividend. Tuesday, June 9 is the stale T+2-era answer ('ex-date one business day before record'). (02-foundations.md §3.E step 8)",
+    "calc": true,
+    "source": "02-foundations.md §3.E.8"
+  }
+]

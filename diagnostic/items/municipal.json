@@ -1,0 +1,452 @@
+[
+  {
+    "id": "muni-L1-01",
+    "domain": "municipal",
+    "level": 1,
+    "topic": "why-cities-borrow",
+    "module": "M26",
+    "stem": "A city wants to build a new high school that will serve residents for the next 40 years, but the cost is far larger than one year's tax collections. Why would the city issue bonds rather than pay for the school out of a single year's budget?",
+    "options": [
+      "Bonds let the city avoid ever repaying the money, since municipal debt is forgiven after 30 years",
+      "Bonds spread the cost over many years so the taxpayers who use the school over its life share in paying for it",
+      "Federal law prohibits cities from spending tax revenue on capital projects such as schools",
+      "Bond interest is paid by the federal government, making borrowing free for the city"
+    ],
+    "answer": 1,
+    "explanation": "A municipality borrows to fund large, long-lived capital projects and repays principal and interest from future taxes or revenues over the bond's life (05-municipal.md §3.1, §3.2.1). Bonds are real debt; the tax exemption is on the investor's federal income tax, not a federal subsidy of the city's interest.",
+    "calc": false,
+    "source": "05-municipal.md §3.1"
+  },
+  {
+    "id": "muni-L1-02",
+    "domain": "municipal",
+    "level": 1,
+    "topic": "tax-free-interest-meaning",
+    "module": "M12",
+    "stem": "A friend tells you that the interest on her city's bonds is \"tax-free.\" In everyday terms, what does that mean for her?",
+    "options": [
+      "She does not owe federal income tax on the interest payments she receives from the bond",
+      "She will never owe any tax of any kind on the bond, including on a profit if she sells it for more than she paid",
+      "The city pays her income taxes for her as part of each interest payment",
+      "The interest is taxed at the lower long-term capital gains rate instead of at ordinary rates"
+    ],
+    "answer": 0,
+    "explanation": "Municipal bond interest is generally exempt from federal income tax under IRC §103, but a capital gain from selling the bond above cost is fully taxable, which is the classic trap (05-municipal.md §3.3, §4).",
+    "calc": false,
+    "source": "05-municipal.md §3.3"
+  },
+  {
+    "id": "muni-L1-03",
+    "domain": "municipal",
+    "level": 1,
+    "topic": "toll-road-revenue-bond-repayment",
+    "module": "M26",
+    "stem": "A state highway authority sells bonds to build a new toll road and promises to repay bondholders only from the tolls the road collects. Who is ultimately paying back these bonds?",
+    "options": [
+      "All taxpayers of the state, through their state income taxes",
+      "The federal Department of Transportation, through highway grants",
+      "The drivers who use the road, through the tolls they pay",
+      "The bond dealers who sold the bonds to investors"
+    ],
+    "answer": 2,
+    "explanation": "This is a revenue bond, backed only by the revenues of the specific facility and not by the issuer's taxing power (05-municipal.md §3.2.2). If tolls fall short, the bondholders rather than the taxpayers bear the loss.",
+    "calc": false,
+    "source": "05-municipal.md §3.2.2"
+  },
+  {
+    "id": "muni-L1-04",
+    "domain": "municipal",
+    "level": 1,
+    "topic": "go-bond-property-tax-backing",
+    "module": "M26",
+    "stem": "A school district sells bonds backed by its \"full faith, credit, and taxing power.\" If the district's normal revenues are not enough to make the bond payments, what is the district expected to do?",
+    "options": [
+      "Default on the bonds, because a school district cannot legally borrow money",
+      "Ask the bondholders to accept lower payments until revenues recover",
+      "Sell the school buildings to raise the cash needed",
+      "Raise property taxes on residents as needed to cover the bond payments"
+    ],
+    "answer": 3,
+    "explanation": "A general obligation bond is backed by the issuer's full faith, credit, and taxing power, which for localities means chiefly ad valorem property taxes, so the issuer levies whatever tax is needed to pay debt service (05-municipal.md §3.2.1). That taxing commitment is why GO bonds usually require voter approval.",
+    "calc": false,
+    "source": "05-municipal.md §3.2.1"
+  },
+  {
+    "id": "muni-L1-05",
+    "domain": "municipal",
+    "level": 1,
+    "topic": "why-muni-yields-are-lower",
+    "module": "M12",
+    "stem": "A city bond and a corporate bond of similar credit quality mature on the same date, but the city bond pays a noticeably lower interest rate. What is the MOST likely reason investors accept the lower rate on the city bond?",
+    "options": [
+      "City bonds are guaranteed by the federal government, so they carry no risk of loss",
+      "Investors keep the city bond's interest free of federal income tax, so a lower rate leaves them with just as much after tax",
+      "Corporate bonds pay interest only once a year, while city bonds pay monthly",
+      "Cities are legally required to pay lower interest rates than corporations"
+    ],
+    "answer": 1,
+    "explanation": "Because municipal interest is federally tax-exempt, investors compare after-tax returns, so muni yields sit below comparable taxable yields before tax (05-municipal.md §3.3, §3.5 yield relationships). Municipal bonds are not federally guaranteed.",
+    "calc": false,
+    "source": "05-municipal.md §3.5"
+  },
+  {
+    "id": "muni-L2-01",
+    "domain": "municipal",
+    "level": 2,
+    "topic": "go-vs-revenue-features",
+    "module": "M12",
+    "stem": "Which of the following statements correctly distinguishes a general obligation (GO) bond from a revenue bond?",
+    "options": [
+      "A revenue bond is backed by the issuer's taxing power, while a GO bond is backed by user fees",
+      "A revenue bond generally requires voter approval, while a GO bond does not",
+      "A GO bond generally requires voter approval and counts against the issuer's debt limit, while a revenue bond does neither",
+      "A GO bond generally yields more than a revenue bond of the same issuer"
+    ],
+    "answer": 2,
+    "explanation": "GO bonds are backed by taxing power, usually need voter approval, and are subject to the statutory debt limit; revenue bonds are backed only by facility revenues, need no voter approval, sit outside the debt limit, and generally yield more (05-municipal.md §3.2.1 and §3.2.2).",
+    "calc": false,
+    "source": "05-municipal.md §3.2.2"
+  },
+  {
+    "id": "muni-L2-02",
+    "domain": "municipal",
+    "level": 2,
+    "topic": "short-term-notes-BAN",
+    "module": "M26",
+    "stem": "A county needs interim financing for a courthouse it plans to fund with a long-term bond issue later in the year. Which short-term municipal note would it MOST likely issue?",
+    "options": [
+      "Tax anticipation note (TAN)",
+      "Bond anticipation note (BAN)",
+      "Revenue anticipation note (RAN)",
+      "Grant anticipation note (GAN)"
+    ],
+    "answer": 1,
+    "explanation": "A BAN is repaid from the proceeds of a coming long-term bond issue; TANs are repaid from upcoming taxes, RANs from non-tax revenue such as state aid, and GANs from federal grants (05-municipal.md §3.2.4).",
+    "calc": false,
+    "source": "05-municipal.md §3.2.4"
+  },
+  {
+    "id": "muni-L2-03",
+    "domain": "municipal",
+    "level": 2,
+    "topic": "emma-public-disclosure",
+    "module": "M28",
+    "stem": "A retail customer wants to look up a municipal bond's official statement, its issuer's recent continuing disclosures, and real-time trade prices at no charge. The registered representative should direct the customer to:",
+    "options": [
+      "The Bond Buyer's daily new-issue calendar",
+      "FINRA's TRACE system",
+      "The issuer's bond counsel",
+      "The MSRB's EMMA website"
+    ],
+    "answer": 3,
+    "explanation": "EMMA (Electronic Municipal Market Access) is the MSRB's free public site carrying official statements, Rule 15c2-12 continuing disclosures, and trade prices reported through RTRS (05-municipal.md §3.6). TRACE is FINRA's corporate-bond reporting system, not a municipal source.",
+    "calc": false,
+    "source": "05-municipal.md §3.6"
+  },
+  {
+    "id": "muni-L2-04",
+    "domain": "municipal",
+    "level": 2,
+    "topic": "double-barreled-bond",
+    "module": "M26",
+    "stem": "A municipal bond is issued to finance a water treatment plant, is payable from the plant's user charges, and is additionally backed by the city's full taxing power if those charges fall short. This bond is BEST described as a:",
+    "options": [
+      "Double-barreled bond",
+      "Moral obligation bond",
+      "Special assessment bond",
+      "Industrial development bond"
+    ],
+    "answer": 0,
+    "explanation": "A double-barreled bond is a revenue bond additionally backed by the issuer's GO taxing power, and it is analyzed and rated as a GO (05-municipal.md §3.2.3). A moral obligation bond carries only a legislature's non-binding option to appropriate funds.",
+    "calc": false,
+    "source": "05-municipal.md §3.2.3"
+  },
+  {
+    "id": "muni-L2-05",
+    "domain": "municipal",
+    "level": 2,
+    "topic": "529-municipal-fund-security",
+    "module": "M28",
+    "stem": "Interests in a state-sponsored Section 529 college savings plan are classified under MSRB rules as:",
+    "options": [
+      "Open-end investment company shares registered under the Investment Company Act of 1940",
+      "General obligation bonds of the sponsoring state",
+      "Municipal fund securities, sold with an official statement (program disclosure document)",
+      "Exempt securities that fall entirely outside the MSRB's jurisdiction"
+    ],
+    "answer": 2,
+    "explanation": "Under MSRB Rule D-12, 529 plans, ABLE accounts, and LGIPs are municipal fund securities: they are not 1940 Act funds and are sold with an official statement subject to G-17, G-19, G-21, G-32, and G-45 (05-municipal.md §3.8, §3.7).",
+    "calc": false,
+    "source": "05-municipal.md §3.8"
+  },
+  {
+    "id": "muni-L3-01",
+    "domain": "municipal",
+    "level": 3,
+    "topic": "taxable-equivalent-yield",
+    "module": "M26",
+    "stem": "A customer in the 28% federal marginal tax bracket is considering a municipal bond yielding 3.60%. What is the bond's taxable-equivalent yield?",
+    "options": [
+      "2.59%",
+      "5.00%",
+      "4.61%",
+      "12.86%"
+    ],
+    "answer": 1,
+    "explanation": "TEY = tax-free yield ÷ (1 − marginal rate) = 3.60% ÷ 0.72 = 5.00% (05-municipal.md §3.3). Multiplying by 0.72 to get 2.59% is the tax-free-equivalent formula run in the wrong direction.",
+    "calc": true,
+    "source": "05-municipal.md §3.3"
+  },
+  {
+    "id": "muni-L3-02",
+    "domain": "municipal",
+    "level": 3,
+    "topic": "competitive-vs-negotiated-sale",
+    "module": "M28",
+    "stem": "A city plans to issue $50 million of general obligation bonds. Which of the following is MOST characteristic of the way this issue would typically be brought to market?",
+    "options": [
+      "The city publishes a Notice of Sale and awards the bonds to the syndicate submitting the lowest net or true interest cost",
+      "The city appoints a single underwriter in advance to help structure and price the issue",
+      "The city sells the bonds directly to fewer than 35 institutional investors without an official statement",
+      "The city's financial advisor purchases the bonds and resells them to the public"
+    ],
+    "answer": 0,
+    "explanation": "GO bonds are typically sold by competitive sealed bid: the issuer publishes a Notice of Sale in The Bond Buyer and awards the issue to the lowest NIC or TIC bid, while negotiated sales are typical for revenue bonds (05-municipal.md §3.4). Under G-23 a financial advisor may not underwrite the issue it advises on.",
+    "calc": false,
+    "source": "05-municipal.md §3.4"
+  },
+  {
+    "id": "muni-L3-03",
+    "domain": "municipal",
+    "level": 3,
+    "topic": "legal-opinion-bond-counsel",
+    "module": "M28",
+    "stem": "Which of the following statements about the legal opinion on a new municipal bond issue is TRUE?",
+    "options": [
+      "It is written by the syndicate manager and guarantees the bonds against default",
+      "It is contained in the Notice of Sale published by the issuer",
+      "A \"qualified\" opinion is one that expresses no reservations about the issue's legality",
+      "It is written by bond counsel and states that the bonds are validly issued and the interest is federally tax-exempt"
+    ],
+    "answer": 3,
+    "explanation": "Bond counsel's opinion states that the bonds are legally binding on the issuer and that interest is federally tax-exempt; an unqualified (clean) opinion has no reservations while a qualified opinion flags a concern (05-municipal.md §3.4). The Notice of Sale names bond counsel but does not contain the opinion, which appears in the official statement and on the bonds.",
+    "calc": false,
+    "source": "05-municipal.md §3.4"
+  },
+  {
+    "id": "muni-L3-04",
+    "domain": "municipal",
+    "level": 3,
+    "topic": "serial-basis-vs-term-dollar-quotes",
+    "module": "M27",
+    "stem": "A dealer quotes a municipal bond as \"5.20 basis.\" Which of the following is TRUE about this quote?",
+    "options": [
+      "The bond is a term bond and the quote means $520 per $1,000 of par",
+      "The bond is most likely a serial bond and the quote means a yield to maturity of 5.20%",
+      "The bond's coupon rate is 5.20% and it is trading at par",
+      "The quote must be a nominal quote because no dollar price was given"
+    ],
+    "answer": 1,
+    "explanation": "Serial bonds are quoted on a yield (basis) basis, so \"5.20 basis\" means a 5.20% YTM, while term (\"dollar\") bonds are quoted as a percentage of par (05-municipal.md §3.2.5, §3.5). If the coupon exceeds the basis the bond is priced above par.",
+    "calc": false,
+    "source": "05-municipal.md §3.5"
+  },
+  {
+    "id": "muni-L3-05",
+    "domain": "municipal",
+    "level": 3,
+    "topic": "bond-buyer-placement-ratio",
+    "module": "M28",
+    "stem": "The Bond Buyer's placement ratio for the most recent week is 95%. This tells a municipal underwriter that:",
+    "options": [
+      "Municipal yields rose 95 basis points during the week",
+      "95% of the bonds scheduled for sale over the next 30 days have already been placed",
+      "Of the new issues of $1 million or more offered that week, 95% were sold, indicating strong demand",
+      "The 20-Bond GO Index closed at 95% of its 52-week high"
+    ],
+    "answer": 2,
+    "explanation": "The placement ratio is a weekly figure: bonds sold ÷ bonds offered that week for issues of $1 million or more, and a high ratio signals strong demand for new issues (05-municipal.md §3.4). The 30-day visible supply is the separate forward-looking measure of par value scheduled for sale.",
+    "calc": false,
+    "source": "05-municipal.md §3.4"
+  },
+  {
+    "id": "muni-L4-01",
+    "domain": "municipal",
+    "level": 4,
+    "topic": "syndicate-order-priority-allocation",
+    "module": "M28",
+    "stem": "A syndicate wins a $20 million new municipal issue. The manager receives presale orders for $12 million, group net orders for $6 million, designated orders for $4 million, and member orders for $3 million. Under the standard priority of orders disclosed per MSRB Rule G-11, how many bonds are allocated to the designated orders?",
+    "options": [
+      "$0",
+      "$2 million",
+      "$4 million",
+      "$3 million"
+    ],
+    "answer": 1,
+    "explanation": "Priority runs presale, then group net, then designated, then member (\"Please Give Dealers Money\"): presale takes $12M and group net takes $6M for $18M total, leaving $2M for the $4M of designated orders and nothing for member orders (05-municipal.md §3.4).",
+    "calc": true,
+    "source": "05-municipal.md §3.4"
+  },
+  {
+    "id": "muni-L4-02",
+    "domain": "municipal",
+    "level": 4,
+    "topic": "net-revenue-coverage-ratio",
+    "module": "M26",
+    "stem": "A toll-road authority's revenue bonds are secured by a net revenue pledge. Last year the road produced gross revenues of $9,000,000, operating and maintenance expenses were $3,000,000, and annual debt service (interest plus principal) was $2,500,000. What was the debt service coverage ratio?",
+    "options": [
+      "3.6 to 1",
+      "1.2 to 1",
+      "2.0 to 1",
+      "2.4 to 1"
+    ],
+    "answer": 3,
+    "explanation": "Under a net revenue pledge, O&M is paid before debt service, so coverage = (gross revenue − O&M) ÷ debt service = ($9M − $3M) ÷ $2.5M = 2.4× (05-municipal.md §3.2.2). The 3.6× figure is the gross-pledge ratio, computed without deducting O&M.",
+    "calc": true,
+    "source": "05-municipal.md §3.2.2"
+  },
+  {
+    "id": "muni-L4-03",
+    "domain": "municipal",
+    "level": 4,
+    "topic": "tax-free-equivalent-yield",
+    "module": "M26",
+    "stem": "A customer in the 24% federal marginal tax bracket can buy a corporate bond yielding 5.50%. To provide the same after-tax return, a municipal bond of comparable quality would need to yield approximately:",
+    "options": [
+      "4.18%",
+      "7.24%",
+      "1.32%",
+      "5.50%"
+    ],
+    "answer": 0,
+    "explanation": "Tax-free-equivalent (net) yield = taxable yield × (1 − tax rate) = 5.50% × 0.76 = 4.18% (05-municipal.md §3.3). Dividing by 0.76 to get 7.24% runs the TEY formula in the wrong direction; that converts a muni yield into its taxable equivalent, not the reverse.",
+    "calc": true,
+    "source": "05-municipal.md §3.3"
+  },
+  {
+    "id": "muni-L4-04",
+    "domain": "municipal",
+    "level": 4,
+    "topic": "g37-de-minimis-contribution",
+    "module": "M28",
+    "stem": "A municipal finance professional (MFP) who lives and is registered to vote in Springfield contributes $250 to the primary campaign of a candidate for Springfield mayor and, four months later, another $250 to the same candidate's general election campaign. Under MSRB Rule G-37, which of the following is TRUE?",
+    "options": [
+      "The firm is barred from negotiated municipal securities business with Springfield for two years because the combined $500 exceeds the de minimis limit",
+      "The contributions are permitted only if the firm refunds them within 60 days of discovery",
+      "Both contributions are permitted, because the $250 de minimis exemption applies per election and the MFP is entitled to vote for the candidate",
+      "The contributions are permitted only if the firm limits itself to competitive-bid business with Springfield"
+    ],
+    "answer": 2,
+    "explanation": "The G-37 de minimis exemption is $250 per election, with primary and general elections counted separately, and it applies only when the MFP is entitled to vote for the official (05-municipal.md §3.7, Rule G-37). A two-year ban is triggered only by a contribution above that limit; the 60-day refund is the separate automatic-exemption procedure for small inadvertent violations.",
+    "calc": false,
+    "source": "05-municipal.md §3.7"
+  },
+  {
+    "id": "muni-L4-05",
+    "domain": "municipal",
+    "level": 4,
+    "topic": "de-minimis-market-discount",
+    "module": "M27",
+    "stem": "A customer buys a municipal bond with 8 years remaining to maturity in the secondary market at 97 and holds it to maturity. For federal tax purposes, the 3-point gain realized at maturity is:",
+    "options": [
+      "Tax-exempt, because it is treated as original issue discount on a municipal bond",
+      "A long-term capital gain, because the discount is de minimis",
+      "Not reportable, because the bond was held to maturity",
+      "Taxed as ordinary income, because the discount exceeds the de minimis threshold"
+    ],
+    "answer": 3,
+    "explanation": "The de minimis threshold is 0.25% of par × full years to maturity = 0.25 × 8 = 2 points, so the breakpoint price is 98; a 3-point market discount exceeds it and is taxed as ordinary income (05-municipal.md §3.3). Only original issue discount accretes as tax-exempt interest.",
+    "calc": true,
+    "source": "05-municipal.md §3.3"
+  },
+  {
+    "id": "muni-L5-01",
+    "domain": "municipal",
+    "level": 5,
+    "topic": "western-vs-eastern-account-liability",
+    "module": "M28",
+    "stem": "A member of a Western (divided) syndicate account has a 20% participation in a $10 million municipal new issue. The member sells its entire $2 million allotment, but at the end of the order period $500,000 of the issue allotted to other members remains unsold. The member's liability for the unsold bonds is:",
+    "options": [
+      "$0",
+      "$100,000",
+      "$500,000",
+      "$2,000,000"
+    ],
+    "answer": 0,
+    "explanation": "In a Western (divided) account each member's liability is limited to its own allotment, so a member that sold out owes nothing; $100,000 (20% of the unsold $500,000) would be the answer in an Eastern (undivided) account, where every member shares in any unsold bonds (05-municipal.md §3.4).",
+    "calc": true,
+    "source": "05-municipal.md §3.4"
+  },
+  {
+    "id": "muni-L5-02",
+    "domain": "municipal",
+    "level": 5,
+    "topic": "designated-order-mechanics",
+    "module": "M28",
+    "stem": "During the order period for a new municipal issue, an institutional investor instructs the syndicate manager that the takedown on its order is to be credited to two syndicate members of the investor's choosing. Under the standard priority of orders and MSRB Rule G-11, which of the following statements about this order is TRUE?",
+    "options": [
+      "It ranks ahead of group net orders because the investor named the members that are to receive the credit",
+      "The takedown is credited to every syndicate member in proportion to its participation in the account",
+      "It is filled after member orders, because the credit was directed by the buyer rather than earned by the syndicate",
+      "It is filled after presale and group net orders, and the manager must pay the two members their designated credits within 10 calendar days of the issuer's delivery of the bonds"
+    ],
+    "answer": 3,
+    "explanation": "A designated order lets the buyer name which members receive the takedown credit; it ranks third in the standard priority (presale, group net, designated, member) that G-11 requires the manager to disclose before the first offer, and G-11 also requires the manager to pay designations within 10 calendar days of the issuer's delivery of the bonds, with final syndicate settlement within 30 calendar days (05-municipal.md §3.4, §3.7). Pro-rata credit to the whole account describes a group net order, not a designated order.",
+    "calc": false,
+    "source": "05-municipal.md §3.4, §3.7"
+  },
+  {
+    "id": "muni-L5-03",
+    "domain": "municipal",
+    "level": 5,
+    "topic": "state-taxation-out-of-state-and-territorial",
+    "module": "M27",
+    "stem": "A California resident holds a New York City general obligation bond and a Commonwealth of Puerto Rico bond. Interest on which of these bonds is exempt from California state income tax?",
+    "options": [
+      "Both bonds",
+      "The New York City bond only",
+      "The Puerto Rico bond only",
+      "Neither bond"
+    ],
+    "answer": 2,
+    "explanation": "States generally exempt interest only on their own bonds and tax out-of-state munis, so California taxes the NYC bond's interest; bonds of U.S. territories (Puerto Rico, Guam, USVI) are exempt from federal, state, and local tax for every U.S. investor (05-municipal.md §3.3, §3.2.3).",
+    "calc": false,
+    "source": "05-municipal.md §3.3"
+  },
+  {
+    "id": "muni-L5-04",
+    "domain": "municipal",
+    "level": 5,
+    "topic": "market-premium-amortization",
+    "module": "M27",
+    "stem": "A customer buys a 10-year municipal bond in the secondary market at 110 and holds it to maturity. All of the following statements are TRUE EXCEPT:",
+    "options": [
+      "The premium must be amortized over the remaining life of the bond",
+      "The annual amortization is not deductible against the customer's other income",
+      "The customer's cost basis decreases each year",
+      "At maturity the customer reports a capital loss of $100 per bond"
+    ],
+    "answer": 3,
+    "explanation": "Market premium on a muni must be amortized (constant yield) down to par, the amortization is not deductible because it offsets tax-exempt interest, and the basis falls to par by maturity, so there is no capital loss at maturity (05-municipal.md §3.3).",
+    "calc": false,
+    "source": "05-municipal.md §3.3"
+  },
+  {
+    "id": "muni-L5-05",
+    "domain": "municipal",
+    "level": 5,
+    "topic": "msrb-rulemaking-vs-enforcement",
+    "module": "M28",
+    "stem": "Which of the following statements regarding the Municipal Securities Rulemaking Board (MSRB) is TRUE?",
+    "options": [
+      "The MSRB examines broker-dealers for compliance with its rules and imposes fines for violations",
+      "MSRB rules are enforced by FINRA for broker-dealers and by the bank regulators (OCC, Federal Reserve, FDIC) for bank dealers",
+      "The MSRB may require a municipal issuer to file an official statement with it before a new issue is sold",
+      "MSRB rules apply to municipal advisors but not to bank dealers"
+    ],
+    "answer": 1,
+    "explanation": "The MSRB writes rules but has no enforcement or examination power; FINRA enforces for broker-dealers, the bank regulators for bank dealers, and the SEC over all (05-municipal.md §3.1). The Tower Amendment bars the MSRB and SEC from requiring issuers to file documents before sale, and MSRB rules cover bank dealers and municipal advisors alike.",
+    "calc": false,
+    "source": "05-municipal.md §3.1"
+  }
+]

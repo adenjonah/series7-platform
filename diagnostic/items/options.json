@@ -1,0 +1,452 @@
+[
+ {
+  "id": "opt-L1-01",
+  "domain": "options",
+  "level": 1,
+  "topic": "right-not-obligation",
+  "module": "M13",
+  "stem": "An investor pays $200 for a contract that gives her \"the right, but not the obligation,\" to buy 100 shares of ABC at $50 per share at any time over the next three months. ABC then falls to $40. Which of the following BEST describes her situation?",
+  "options": [
+   "She must buy the 100 shares at $50 and will lose $1,000 on the shares",
+   "She may simply let the contract go unused, losing only the $200 she paid",
+   "She can demand her $200 back because the price moved against her",
+   "She must buy the shares at $40 and pay an additional $200 penalty"
+  ],
+  "answer": 1,
+  "explanation": "A buyer holds a right, not a duty: if exercising makes no sense she walks away and the contract expires. Her loss is capped at the $200 premium she paid (06-options.md §3.1, §3.4).",
+  "calc": false,
+  "source": "06-options.md §3.1"
+ },
+ {
+  "id": "opt-L1-02",
+  "domain": "options",
+  "level": 1,
+  "topic": "premium-goes-to-writer",
+  "module": "M13",
+  "stem": "Maria sells (writes) an option contract to Dan and collects a $300 premium. Dan later decides not to use the contract and lets it expire. What happens to the $300?",
+  "options": [
+   "It is refunded to Dan because he never exercised the contract",
+   "It is split evenly between Maria and Dan",
+   "It is held by the exchange until a new contract is written",
+   "Maria keeps it; the premium is hers whether or not Dan ever exercises"
+  ],
+  "answer": 3,
+  "explanation": "The premium is the price of the right and is paid to the writer up front; it is never refunded. If the option expires unused, the writer's profit is the entire premium (06-options.md §3.1, §3.4).",
+  "calc": false,
+  "source": "06-options.md §3.1"
+ },
+ {
+  "id": "opt-L1-03",
+  "domain": "options",
+  "level": 1,
+  "topic": "protective-put-rationale",
+  "module": "M20",
+  "stem": "An investor owns 100 shares of XYZ that she bought at $60. She is worried the price could drop sharply over the next few months but does not want to sell. Why might she pay a premium for a put option on XYZ?",
+  "options": [
+   "The put lets her sell her shares at a set price even if the market price collapses, working like an insurance policy on the stock",
+   "The put increases the dividends she receives while she waits for the price to recover",
+   "The put guarantees she will make a profit no matter what XYZ does",
+   "The put removes all risk from the position, including the premium she paid"
+  ],
+  "answer": 0,
+  "explanation": "A put gives the right to sell at the strike, so it sets a floor under the stock's value; the premium is the cost of that insurance and is itself at risk (06-options.md §3.6 protective put, §5 insurance model).",
+  "calc": false,
+  "source": "06-options.md §3.6"
+ },
+ {
+  "id": "opt-L1-04",
+  "domain": "options",
+  "level": 1,
+  "topic": "call-definition",
+  "module": "M13",
+  "stem": "A friend tells you he has \"bought a call\" on a technology stock. In plain terms, what has he purchased?",
+  "options": [
+   "A promise to sell the stock at a fixed price if he is asked to",
+   "A share of the company's future dividend payments",
+   "The right to buy the stock at a fixed price for a limited time, which becomes valuable if the stock rises",
+   "The right to sell the stock at a fixed price, which becomes valuable if the stock falls"
+  ],
+  "answer": 2,
+  "explanation": "A call is the right to buy the underlying at the strike price until expiration; the holder is bullish (call up, put down). A put is the right to sell (06-options.md §3.1).",
+  "calc": false,
+  "source": "06-options.md §3.1"
+ },
+ {
+  "id": "opt-L1-05",
+  "domain": "options",
+  "level": 1,
+  "topic": "buyer-max-loss-multiplier",
+  "module": "M13",
+  "stem": "An option on 100 shares is quoted at 2.50 per share. An investor buys one contract. What is the MOST money this investor can lose on the position?",
+  "options": [
+   "$2.50",
+   "$250",
+   "$2,500",
+   "An unlimited amount, because the stock could keep moving against him"
+  ],
+  "answer": 1,
+  "explanation": "Premiums are quoted per share and a contract covers 100 shares: 2.50 × 100 = $250. A buyer can never lose more than the premium paid (06-options.md §3.1 multiplier, §3.4).",
+  "calc": true,
+  "source": "06-options.md §3.1"
+ },
+ {
+  "id": "opt-L2-01",
+  "domain": "options",
+  "level": 2,
+  "topic": "four-positions-outlook",
+  "module": "M13",
+  "stem": "A customer expects the price of ABC stock to DECLINE over the next two months and wants a position with limited risk. Which of the following positions is MOST appropriate?",
+  "options": [
+   "Long ABC call",
+   "Short ABC put",
+   "Long ABC put",
+   "Short ABC call"
+  ],
+  "answer": 2,
+  "explanation": "A long put is bearish with loss limited to the premium. A short call is also bearish but carries unlimited risk; a long call and a short put are bullish positions (06-options.md §3.4).",
+  "calc": false,
+  "source": "06-options.md §3.4"
+ },
+ {
+  "id": "opt-L2-02",
+  "domain": "options",
+  "level": 2,
+  "topic": "occ-role",
+  "module": "M13",
+  "stem": "Which of the following BEST describes the role of the Options Clearing Corporation (OCC) in the listed options market?",
+  "options": [
+   "It issues and guarantees every listed option contract and standardizes the contract terms",
+   "It sets the premium at which each option contract trades",
+   "It approves each customer's options account before the first trade",
+   "It publishes the buy and sell recommendations used by options traders"
+  ],
+  "answer": 0,
+  "explanation": "The OCC is the issuer and guarantor of all listed options, standardizes terms (size, strikes, expirations), clears trades and assigns exercises; premiums are set by the market and accounts are approved by a Registered Options Principal (06-options.md §3.1).",
+  "calc": false,
+  "source": "06-options.md §3.1"
+ },
+ {
+  "id": "opt-L2-03",
+  "domain": "options",
+  "level": 2,
+  "topic": "american-vs-european",
+  "module": "M13",
+  "stem": "A customer holds a European-style index option with two months remaining until expiration. Which of the following statements is TRUE?",
+  "options": [
+   "The option can be exercised on any business day but cannot be sold before expiration",
+   "The option can neither be exercised nor sold until expiration",
+   "The option can be exercised at any time and sold at any time before expiration",
+   "The option can be sold at any time before expiration but exercised only at expiration"
+  ],
+  "answer": 3,
+  "explanation": "Exercise style limits exercise, not trading: a European option may be exercised only at expiration, but it trades freely until then. American-style options may be exercised on any business day (06-options.md §3.1).",
+  "calc": false,
+  "source": "06-options.md §3.1"
+ },
+ {
+  "id": "opt-L2-04",
+  "domain": "options",
+  "level": 2,
+  "topic": "moneyness-same-both-sides",
+  "module": "M13",
+  "stem": "ABC stock is trading at 56. An ABC Oct 50 call is in the money for:",
+  "options": [
+   "both the holder and the writer of the call",
+   "the holder only; the writer's position is out of the money",
+   "the writer only, because the writer collected the premium",
+   "neither party, until the stock rises above 50 plus the premium"
+  ],
+  "answer": 0,
+  "explanation": "Moneyness compares stock to strike (56 − 50 = 6 in the money), ignores the premium, and is identical for buyer and writer; a short call is in the money whenever the stock is above the strike (06-options.md §3.3).",
+  "calc": false,
+  "source": "06-options.md §3.3"
+ },
+ {
+  "id": "opt-L2-05",
+  "domain": "options",
+  "level": 2,
+  "topic": "odd-delivery-timing",
+  "module": "M22",
+  "stem": "A registered representative is opening an options account for a new customer. The Options Disclosure Document (ODD) must be furnished to the customer:",
+  "options": [
+   "within 15 days after the account is approved for options trading",
+   "at or before the time the account is approved for options trading",
+   "no later than the settlement date of the customer's first options trade",
+   "only if the customer intends to write uncovered options"
+  ],
+  "answer": 1,
+  "explanation": "Under FINRA Rule 2360 the ODD is delivered at or prior to account approval, before any trade. The 15-day clock applies to returning the signed options agreement, not the ODD (06-options.md §3.15).",
+  "calc": false,
+  "source": "06-options.md §3.15"
+ },
+ {
+  "id": "opt-L3-01",
+  "domain": "options",
+  "level": 3,
+  "topic": "long-call-breakeven",
+  "module": "M19",
+  "stem": "A customer buys 1 ABC Jun 50 call at 4. What is the customer's breakeven point at expiration?",
+  "options": [
+   "46",
+   "50",
+   "54",
+   "58"
+  ],
+  "answer": 2,
+  "explanation": "Calls add: breakeven = strike + premium = 50 + 4 = 54, the same for buyer and writer. 46 subtracts (the put rule), 50 forgets the premium, 58 double-counts it (06-options.md §3.4).",
+  "calc": true,
+  "source": "06-options.md §3.4"
+ },
+ {
+  "id": "opt-L3-02",
+  "domain": "options",
+  "level": 3,
+  "topic": "short-put-max-loss",
+  "module": "M19",
+  "stem": "A customer writes 1 XYZ Sep 40 put at 3. What is the customer's maximum potential loss?",
+  "options": [
+   "$300",
+   "$37",
+   "$3,700",
+   "$4,300"
+  ],
+  "answer": 2,
+  "explanation": "If XYZ goes to zero the writer must buy worthless stock at 40, offset by the 3 received: (40 − 3) × 100 = $3,700. $300 is the max gain, $37 forgets the multiplier, $4,300 flips the sign (06-options.md §3.4).",
+  "calc": true,
+  "source": "06-options.md §3.4"
+ },
+ {
+  "id": "opt-L3-03",
+  "domain": "options",
+  "level": 3,
+  "topic": "intrinsic-vs-time-value",
+  "module": "M19",
+  "stem": "ABC stock is trading at 58. An ABC Mar 50 call is quoted at 10. What is the time value of the call?",
+  "options": [
+   "2",
+   "8",
+   "10",
+   "0"
+  ],
+  "answer": 0,
+  "explanation": "Intrinsic value = stock − strike = 58 − 50 = 8; time value = premium − intrinsic = 10 − 8 = 2. Choosing 8 gives the intrinsic value and 10 the whole premium (06-options.md §3.3).",
+  "calc": true,
+  "source": "06-options.md §3.3"
+ },
+ {
+  "id": "opt-L3-04",
+  "domain": "options",
+  "level": 3,
+  "topic": "covered-call-max-gain",
+  "module": "M20",
+  "stem": "A customer buys 100 shares of ABC at 45 and writes 1 ABC Oct 50 call at 3. What is the customer's maximum potential gain?",
+  "options": [
+   "$300",
+   "$500",
+   "$4,200",
+   "$800"
+  ],
+  "answer": 3,
+  "explanation": "If assigned, the stock is sold at 50: (50 − 45) + 3 premium = 8 × 100 = $800. $300 is the premium alone, $500 ignores the premium, $4,200 is the maximum loss (45 − 3) (06-options.md §3.6).",
+  "calc": true,
+  "source": "06-options.md §3.6"
+ },
+ {
+  "id": "opt-L3-05",
+  "domain": "options",
+  "level": 3,
+  "topic": "long-put-pl-at-expiration",
+  "module": "M19",
+  "stem": "A customer buys 1 XYZ Sep 40 put at 3. At expiration XYZ is trading at 30 and the customer exercises. Ignoring commissions, what is the customer's profit or loss?",
+  "options": [
+   "$1,000 profit",
+   "$700 profit",
+   "$300 loss",
+   "$1,300 profit"
+  ],
+  "answer": 1,
+  "explanation": "Intrinsic value at expiration = 40 − 30 = 10; less the 3 premium = 7 × 100 = $700 profit. $1,000 forgets the premium, $1,300 adds it instead of subtracting, $300 is the loss if the put expired (06-options.md §3.4).",
+  "calc": true,
+  "source": "06-options.md §3.4"
+ },
+ {
+  "id": "opt-L4-01",
+  "domain": "options",
+  "level": 4,
+  "topic": "bull-call-spread-max-gain",
+  "module": "M21",
+  "stem": "A customer buys 1 ABC Jul 50 call at 7 and sells 1 ABC Jul 60 call at 3. What is the customer's maximum potential gain?",
+  "options": [
+   "$400",
+   "$1,000",
+   "$300",
+   "$600"
+  ],
+  "answer": 3,
+  "explanation": "Net debit = 7 − 3 = 4. Max gain = difference in strikes − net debit = (60 − 50) − 4 = 6 × 100 = $600. $400 is the max loss (net debit), $1,000 ignores the premium, $300 uses one leg only (06-options.md §3.7).",
+  "calc": true,
+  "source": "06-options.md §3.7"
+ },
+ {
+  "id": "opt-L4-02",
+  "domain": "options",
+  "level": 4,
+  "topic": "credit-put-spread-breakeven",
+  "module": "M21",
+  "stem": "A customer sells 1 XYZ Oct 80 put at 9 and buys 1 XYZ Oct 70 put at 4. What is the customer's breakeven point?",
+  "options": [
+   "65",
+   "71",
+   "75",
+   "85"
+  ],
+  "answer": 2,
+  "explanation": "Net credit = 9 − 4 = 5. Puts: subtract the net premium from the higher strike: 80 − 5 = 75. 71 uses the single 9 premium, 85 adds instead of subtracting, 65 uses the wrong strike (06-options.md §3.7 PSH).",
+  "calc": true,
+  "source": "06-options.md §3.7"
+ },
+ {
+  "id": "opt-L4-03",
+  "domain": "options",
+  "level": 4,
+  "topic": "long-straddle-breakevens",
+  "module": "M21",
+  "stem": "A customer buys 1 ABC Jan 60 call at 4 and buys 1 ABC Jan 60 put at 5. The customer's breakeven points are:",
+  "options": [
+   "69 and 51",
+   "64 and 56",
+   "65 and 55",
+   "61 and 59"
+  ],
+  "answer": 0,
+  "explanation": "Straddles ADD the premiums: total 4 + 5 = 9, so breakevens are 60 + 9 = 69 and 60 − 9 = 51. 64/56 use each leg's own premium; 61/59 subtract the premiums as if it were a spread (06-options.md §3.8).",
+  "calc": true,
+  "source": "06-options.md §3.8"
+ },
+ {
+  "id": "opt-L4-04",
+  "domain": "options",
+  "level": 4,
+  "topic": "protective-put-combined-pl",
+  "module": "M20",
+  "stem": "A customer buys 100 shares of ABC at 45 and buys 1 ABC Dec 40 put at 2. ABC falls to 30 and the customer exercises the put. What is the customer's gain or loss on the combined position?",
+  "options": [
+   "$1,500 loss",
+   "$500 loss",
+   "$700 loss",
+   "$1,700 loss"
+  ],
+  "answer": 2,
+  "explanation": "T-chart: money out = 45 (stock) + 2 (put) = 47; money in = 40 (stock sold via the put). Net −7 × 100 = $700 loss, which is the position's maximum loss regardless of how far ABC falls. $1,500 and $1,700 ignore the put's floor at 40 (06-options.md §3.5, §3.6).",
+  "calc": true,
+  "source": "06-options.md §3.6"
+ },
+ {
+  "id": "opt-L4-05",
+  "domain": "options",
+  "level": 4,
+  "topic": "uncovered-call-margin",
+  "module": "M22",
+  "stem": "A customer writes 1 ABC Nov 50 call at 3 in a margin account when ABC is trading at 48. What is the margin requirement on this uncovered call?",
+  "options": [
+   "$780",
+   "$960",
+   "$1,260",
+   "$1,060"
+  ],
+  "answer": 3,
+  "explanation": "Greater of: 20% × $4,800 = $960 + $300 premium − $200 out-of-the-money = $1,060; or 10% × $4,800 + $300 = $780. $1,060 governs. $1,260 forgets to subtract the OTM amount; $960 omits the premium (06-options.md §3.14).",
+  "calc": true,
+  "source": "06-options.md §3.14"
+ },
+ {
+  "id": "opt-L5-01",
+  "domain": "options",
+  "level": 5,
+  "topic": "index-cash-settlement",
+  "module": "M22",
+  "stem": "A customer is long 1 OEX 2900 call. At 10:00 a.m., with the OEX at 2912, the customer exercises the option. The OEX closes that day at 2908. The customer will receive:",
+  "options": [
+   "$1,200 in cash on the next business day",
+   "$800 in cash on the next business day",
+   "$800 in cash on the second business day after exercise",
+   "$1,200 worth of the index's component stocks on the next business day"
+  ],
+  "answer": 1,
+  "explanation": "Index options settle in cash on the CLOSING index value of the exercise day, not the value when the order was entered: (2908 − 2900) × $100 = $800, paid the next business day. OEX is American-style, so early exercise is permitted (06-options.md §3.9).",
+  "calc": true,
+  "source": "06-options.md §3.9"
+ },
+ {
+  "id": "opt-L5-02",
+  "domain": "options",
+  "level": 5,
+  "topic": "credit-spread-except",
+  "module": "M21",
+  "stem": "A customer sells 1 ABC Jul 50 call at 7 and buys 1 ABC Jul 60 call at 3. All of the following statements about this position are TRUE EXCEPT:",
+  "options": [
+   "The customer is bearish on ABC",
+   "The position was established for a net credit of $400",
+   "The maximum potential loss is $600",
+   "The customer profits if the difference between the two premiums widens"
+  ],
+  "answer": 3,
+  "explanation": "This is a credit call spread (short the dominant lower-strike leg): net credit 7 − 3 = 4 = $400, max loss (60 − 50) − 4 = $600, bearish. Credit spreads profit when the spread NARROWS or both legs expire; only debit spreads want the spread to widen (06-options.md §3.7).",
+  "calc": true,
+  "source": "06-options.md §3.7"
+ },
+ {
+  "id": "opt-L5-03",
+  "domain": "options",
+  "level": 5,
+  "topic": "fx-hedge-inversion",
+  "module": "M22",
+  "stem": "A Japanese manufacturer will receive payment in U.S. dollars in 90 days and wants to use listed currency options to hedge against a decline in the dollar. Which of the following is the BEST hedge?",
+  "options": [
+   "Buy yen calls",
+   "Buy U.S. dollar puts",
+   "Buy yen puts",
+   "Write yen calls"
+  ],
+  "answer": 0,
+  "explanation": "There are no listed options on the U.S. dollar in U.S. markets, so a view on the dollar is expressed inversely: a falling dollar means a rising yen, so the firm buys yen calls. EPIC (exporters buy puts) applies only from a U.S. company's perspective (06-options.md §3.10).",
+  "calc": false,
+  "source": "06-options.md §3.10"
+ },
+ {
+  "id": "opt-L5-04",
+  "domain": "options",
+  "level": 5,
+  "topic": "unlimited-risk-covered-put",
+  "module": "M22",
+  "stem": "Which of the following positions exposes the customer to UNLIMITED loss?",
+  "options": [
+   "Long 1 ABC 50 call and long 1 ABC 50 put",
+   "Short 100 shares of ABC and short 1 ABC 45 put",
+   "Short 1 ABC 50 call and long 1 ABC 60 call",
+   "Short 1 ABC 50 put"
+  ],
+  "answer": 1,
+  "explanation": "The 'covered put' (short stock + short put) is unlimited: the short stock loses without ceiling as ABC rises and the put provides no protection. A long straddle loses at most the premiums, a credit call spread at most the strike difference minus the credit, and a naked put at most strike minus premium (06-options.md §3.6, §3.16).",
+  "calc": false,
+  "source": "06-options.md §3.16"
+ },
+ {
+  "id": "opt-L5-05",
+  "domain": "options",
+  "level": 5,
+  "topic": "put-assignment-tax-basis",
+  "module": "M22",
+  "stem": "A customer writes 1 XYZ Apr 150 put at 12. XYZ falls to 130 and the put is exercised against the customer. For tax purposes, the customer's cost basis per share in the XYZ acquired is:",
+  "options": [
+   "$138",
+   "$162",
+   "$150",
+   "$130"
+  ],
+  "answer": 0,
+  "explanation": "The premium follows the stock: a put writer who is assigned buys stock at the strike, and the premium received reduces the cost basis, so 150 − 12 = $138. Exercise itself is not a taxable event; $162 flips the sign, $150 ignores the premium, $130 is the market price (06-options.md §3.13).",
+  "calc": true,
+  "source": "06-options.md §3.13"
+ }
+]

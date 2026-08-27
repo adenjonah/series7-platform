@@ -1,0 +1,452 @@
+[
+  {
+    "id": "debt-L1-01",
+    "domain": "debt",
+    "level": 1,
+    "topic": "what-a-bond-is",
+    "module": "M12",
+    "stem": "Maria pays $1,000 for a bond issued by a large company. In plain terms, what has she done?",
+    "options": [
+      "Bought a small ownership share of the company",
+      "Lent the company money in exchange for regular interest and repayment of the $1,000 at a set date",
+      "Deposited money in an account insured by the federal government",
+      "Agreed to share in the company's profits and losses each year"
+    ],
+    "answer": 1,
+    "explanation": "A bond is an IOU: the investor is the lender, the issuer is the borrower, interest is the rent on the money and the principal is repaid at maturity (04-debt.md §2 item 1, §3.1.1). Ownership and profit-sharing describe stock; deposit insurance describes a bank account.",
+    "calc": false,
+    "source": "04-debt.md §2, §3.1.1"
+  },
+  {
+    "id": "debt-L1-02",
+    "domain": "debt",
+    "level": 1,
+    "topic": "rates-up-prices-down",
+    "module": "M12",
+    "stem": "Two years ago Dan bought a bond that pays 4% interest a year. Similar new bonds now pay 6%. If Dan tries to sell his bond today, what happens to its price?",
+    "options": [
+      "It stays the same, because the issuer still pays exactly 4%",
+      "It rises, because older bonds are scarce",
+      "It rises, because the 4% payment is guaranteed",
+      "It falls, because a buyer can get 6% elsewhere and will only take Dan's bond at a discount"
+    ],
+    "answer": 3,
+    "explanation": "A bond is a fixed stream of payments; when the going rate rises, that fixed stream is worth less, so the price must fall until its yield matches the market (04-debt.md §2 items 3-4, §3.4.5).",
+    "calc": false,
+    "source": "04-debt.md §3.4.5"
+  },
+  {
+    "id": "debt-L1-03",
+    "domain": "debt",
+    "level": 1,
+    "topic": "what-a-credit-rating-tells-you",
+    "module": "M12",
+    "stem": "A rating agency gives a company's bonds a very low rating. What does this MOST directly tell an investor?",
+    "options": [
+      "There is a higher chance the company will fail to make its interest or principal payments",
+      "The bond's price will fall sharply if interest rates rise",
+      "The company pays interest less often than other issuers",
+      "The bond cannot be sold before it matures"
+    ],
+    "answer": 0,
+    "explanation": "Ratings measure default (credit) risk only, not interest-rate risk, payment frequency or liquidity (04-debt.md §3.8.1). A low rating is like a bad credit score for the borrower.",
+    "calc": false,
+    "source": "04-debt.md §3.8.1"
+  },
+  {
+    "id": "debt-L1-04",
+    "domain": "debt",
+    "level": 1,
+    "topic": "who-gets-paid-first-in-bankruptcy",
+    "module": "M12",
+    "stem": "A company goes out of business and its assets are sold to pay everyone it owes. Which group is generally paid FIRST?",
+    "options": [
+      "Common stockholders",
+      "Preferred stockholders",
+      "Lenders whose bonds are backed by specific company property",
+      "No one is first; all claims are paid in equal proportion"
+    ],
+    "answer": 2,
+    "explanation": "Secured creditors are paid first from their collateral, then unsecured creditors, then preferred and finally common stockholders (04-debt.md §3.2.3 liquidation priority). Stockholders are owners, not lenders, and stand last in line.",
+    "calc": false,
+    "source": "04-debt.md §3.2.3"
+  },
+  {
+    "id": "debt-L1-05",
+    "domain": "debt",
+    "level": 1,
+    "topic": "laddering-intuition",
+    "module": "M12",
+    "stem": "A retiree splits her savings evenly among bonds that come due one, two, three, four and five years from now. Each time one matures she buys a new five-year bond. What is the MAIN benefit of this approach?",
+    "options": [
+      "It guarantees the highest possible return",
+      "Some money comes due every year, so she is never locked into a single interest rate and always has cash coming available",
+      "It removes the risk that any issuer fails to pay",
+      "It avoids income tax on the interest"
+    ],
+    "answer": 1,
+    "explanation": "This is a bond ladder: staggered maturities average out reinvestment risk and provide regular liquidity at a moderate yield, the default conservative-retiree strategy (04-debt.md §3.15). It does not maximize return, eliminate default risk or change taxation.",
+    "calc": false,
+    "source": "04-debt.md §3.15"
+  },
+  {
+    "id": "debt-L2-01",
+    "domain": "debt",
+    "level": 2,
+    "topic": "debenture-definition",
+    "module": "M12",
+    "stem": "A corporate bond that is backed only by the issuer's general promise to pay, with no specific assets pledged as collateral, is a:",
+    "options": [
+      "Mortgage bond",
+      "Equipment trust certificate",
+      "Debenture",
+      "Collateral trust bond"
+    ],
+    "answer": 2,
+    "explanation": "Debentures are unsecured and backed by the issuer's full faith and credit; mortgage bonds, equipment trust certificates and collateral trust bonds are all secured by specific pledged assets (04-debt.md §3.2.1-3.2.2).",
+    "calc": false,
+    "source": "04-debt.md §3.2.2"
+  },
+  {
+    "id": "debt-L2-02",
+    "domain": "debt",
+    "level": 2,
+    "topic": "gnma-full-faith-and-credit",
+    "module": "M12",
+    "stem": "Which of the following agency securities is backed by the full faith and credit of the U.S. government?",
+    "options": [
+      "Ginnie Mae (GNMA) pass-through certificates",
+      "Fannie Mae (FNMA) mortgage-backed securities",
+      "Freddie Mac (FHLMC) mortgage-backed securities",
+      "Federal Home Loan Bank debentures"
+    ],
+    "answer": 0,
+    "explanation": "GNMA is a government corporation within HUD and its pass-throughs are the only MBS carrying the full faith and credit of the U.S. government; FNMA and FHLMC are GSEs with implicit backing and FHLB is a GSE lender (04-debt.md §3.10.1-3.10.3).",
+    "calc": false,
+    "source": "04-debt.md §3.10.1"
+  },
+  {
+    "id": "debt-L2-03",
+    "domain": "debt",
+    "level": 2,
+    "topic": "treasury-interest-taxation",
+    "module": "M12",
+    "stem": "Interest received on a U.S. Treasury note is:",
+    "options": [
+      "Exempt from federal income tax but subject to state income tax",
+      "Subject to federal, state and local income tax",
+      "Exempt from federal, state and local income tax",
+      "Subject to federal income tax but exempt from state and local income tax"
+    ],
+    "answer": 3,
+    "explanation": "Treasury interest is federally taxable and exempt from state and local tax; the reverse-attribute distractor (federal-exempt, state-taxable) describes nothing, and fully taxable describes GNMA/FNMA/FHLMC and corporates (04-debt.md §3.9, §3.17).",
+    "calc": false,
+    "source": "04-debt.md §3.9"
+  },
+  {
+    "id": "debt-L2-04",
+    "domain": "debt",
+    "level": 2,
+    "topic": "commercial-paper",
+    "module": "M12",
+    "stem": "Commercial paper is BEST described as:",
+    "options": [
+      "A bank-guaranteed time draft used to finance imports and exports",
+      "An unsecured short-term promissory note issued by a corporation, with a maximum maturity of 270 days",
+      "A short-term note secured by the issuer's real property",
+      "A bank time deposit that pays interest at maturity"
+    ],
+    "answer": 1,
+    "explanation": "Commercial paper is unsecured corporate paper sold at a discount with maturities of 270 days or less, which keeps it exempt from 1933 Act registration (04-debt.md §3.12). The time draft is a banker's acceptance and the interest-paying deposit is a negotiable CD.",
+    "calc": false,
+    "source": "04-debt.md §3.12"
+  },
+  {
+    "id": "debt-L2-05",
+    "domain": "debt",
+    "level": 2,
+    "topic": "inverted-yield-curve",
+    "module": "M25",
+    "stem": "When short-term Treasury yields are higher than long-term Treasury yields, the yield curve is described as:",
+    "options": [
+      "Normal",
+      "Flat",
+      "Inverted",
+      "Humped"
+    ],
+    "answer": 2,
+    "explanation": "An inverted (negative) curve has short rates above long rates, typically during Fed tightening when markets expect cuts; a normal curve slopes upward, a flat curve shows little difference and a humped curve peaks at intermediate maturities (04-debt.md §3.14).",
+    "calc": false,
+    "source": "04-debt.md §3.14"
+  },
+  {
+    "id": "debt-L3-01",
+    "domain": "debt",
+    "level": 3,
+    "topic": "corporate-quote-eighths",
+    "module": "M23",
+    "stem": "A corporate bond is quoted at 98 3/8. What is the dollar price of one bond?",
+    "options": [
+      "$980.94",
+      "$983.75",
+      "$983.30",
+      "$98.38"
+    ],
+    "answer": 1,
+    "explanation": "Corporate bonds are quoted as a percentage of $1,000 par in eighths: 3/8 = 0.375, so 98.375% x $1,000 = $983.75 (04-debt.md §3.4.1). $980.94 applies Treasury 32nds; $98.38 forgets to multiply by $1,000.",
+    "calc": true,
+    "source": "04-debt.md §3.4.1"
+  },
+  {
+    "id": "debt-L3-02",
+    "domain": "debt",
+    "level": 3,
+    "topic": "treasury-quote-32nds",
+    "module": "M23",
+    "stem": "A Treasury bond is quoted at 101-12. What is the dollar price of one bond?",
+    "options": [
+      "$1,011.20",
+      "$1,012.00",
+      "$1,013.75",
+      "$1,015.00"
+    ],
+    "answer": 2,
+    "explanation": "Treasury notes and bonds are quoted in 32nds: 101-12 = 101 + 12/32 = 101.375% of $1,000 = $1,013.75 (04-debt.md §3.4.2). $1,011.20 reads the quote as the decimal 101.12%; $1,015.00 would be 101-16 (a half point), not 101-12; $1,012.00 treats the 12 as $12.",
+    "calc": true,
+    "source": "04-debt.md §3.4.2"
+  },
+  {
+    "id": "debt-L3-03",
+    "domain": "debt",
+    "level": 3,
+    "topic": "current-yield",
+    "module": "M23",
+    "stem": "A 6% corporate bond is trading at 90. What is its current yield?",
+    "options": [
+      "6.67%",
+      "6.00%",
+      "5.40%",
+      "7.37%"
+    ],
+    "answer": 0,
+    "explanation": "Current yield = annual interest / market price = $60 / $900 = 6.67% (04-debt.md §3.5.2). 6.00% is the nominal yield and 7.37% is the approximate 10-year YTM, both distractors.",
+    "calc": true,
+    "source": "04-debt.md §3.5.2"
+  },
+  {
+    "id": "debt-L3-04",
+    "domain": "debt",
+    "level": 3,
+    "topic": "investment-grade-floor",
+    "module": "M23",
+    "stem": "Which of the following is the LOWEST rating that is still considered investment grade by Standard & Poor's?",
+    "options": [
+      "A-",
+      "BB+",
+      "BBB",
+      "BBB-"
+    ],
+    "answer": 3,
+    "explanation": "Investment grade covers the top four categories, down to and including BBB- (S&P/Fitch) or Baa3 (Moody's); BB+ and below is high-yield (04-debt.md §3.8.1).",
+    "calc": false,
+    "source": "04-debt.md §3.8.1"
+  },
+  {
+    "id": "debt-L3-05",
+    "domain": "debt",
+    "level": 3,
+    "topic": "duration-price-approximation",
+    "module": "M23",
+    "stem": "A bond has a duration of 7. If market interest rates rise by 1%, the bond's price will most likely:",
+    "options": [
+      "Fall by approximately 7%",
+      "Rise by approximately 7%",
+      "Fall by approximately 1%",
+      "Fall by approximately 14%"
+    ],
+    "answer": 0,
+    "explanation": "Percentage price change is approximately -duration x change in yield: -7 x 1% = -7% (a $1,000 bond to about $930) (04-debt.md §3.7.2). Direction is inverse; magnitude is the duration, not 1% or double.",
+    "calc": true,
+    "source": "04-debt.md §3.7.2"
+  },
+  {
+    "id": "debt-L4-01",
+    "domain": "debt",
+    "level": 4,
+    "topic": "accrued-interest-corporate-30-360",
+    "module": "M24",
+    "stem": "An 8% corporate bond pays interest on January 15 and July 15. A customer buys one bond ($1,000 par) on Tuesday, March 10, 2026, with regular-way settlement. How much accrued interest does the buyer pay the seller?",
+    "options": [
+      "$11.11",
+      "$12.22",
+      "$12.44",
+      "$12.67"
+    ],
+    "answer": 2,
+    "explanation": "Regular way is T+1, so settlement is Wednesday March 11, 2026. Using 30/360, count January 15 up to but not including March 11: 16 (Jan) + 30 (Feb) + 10 (Mar) = 56 days; $80 x 56/360 = $12.44 (04-debt.md §3.6.4). $12.67 counts 57 days by including the settlement date; $12.22 uses 55 days.",
+    "calc": true,
+    "source": "04-debt.md §3.6.4"
+  },
+  {
+    "id": "debt-L4-02",
+    "domain": "debt",
+    "level": 4,
+    "topic": "convertible-parity-arbitrage",
+    "module": "M24",
+    "stem": "A 5% convertible bond with a conversion price of $25 is trading at $1,080. The issuer's common stock is trading at $28. What arbitrage profit per bond, before commissions, is available?",
+    "options": [
+      "$40",
+      "$80",
+      "$120",
+      "None, because the bond is trading above parity"
+    ],
+    "answer": 0,
+    "explanation": "Conversion ratio = $1,000 / $25 = 40 shares; parity price of the bond = $28 x 40 = $1,120. The bond at $1,080 is below parity, so buy the bond, convert and sell 40 shares at $28 for $1,120, a $40 profit (04-debt.md §3.3.1-3.3.2). The coupon is a distractor.",
+    "calc": true,
+    "source": "04-debt.md §3.3.2"
+  },
+  {
+    "id": "debt-L4-03",
+    "domain": "debt",
+    "level": 4,
+    "topic": "yield-to-call-approximation",
+    "module": "M23",
+    "stem": "A 6% bond with 10 years to maturity is purchased at $1,100. It is callable in 5 years at 103. Using the exam approximation method, the yield to call is closest to:",
+    "options": [
+      "4.76%",
+      "4.32%",
+      "5.45%",
+      "6.00%"
+    ],
+    "answer": 1,
+    "explanation": "YTC = [annual interest + (call price - purchase price) / years to call] / [(call price + purchase price) / 2] = [$60 + ($1,030 - $1,100)/5] / [($1,030 + $1,100)/2] = $46 / $1,065 = 4.32% (04-debt.md §3.5.4). 4.76% is the approximate YTM and 5.45% the current yield; on a premium bond YTC is the lowest.",
+    "calc": true,
+    "source": "04-debt.md §3.5.4"
+  },
+  {
+    "id": "debt-L4-04",
+    "domain": "debt",
+    "level": 4,
+    "topic": "tips-inflation-adjustment",
+    "module": "M25",
+    "stem": "An investor buys a $1,000 Treasury Inflation-Protected Security with a 3% coupon. Over the first year the CPI rises 4%. Approximately how much interest will the investor receive for that year?",
+    "options": [
+      "$30.00",
+      "$40.00",
+      "$70.00",
+      "$31.20"
+    ],
+    "answer": 3,
+    "explanation": "TIPS keep the coupon rate fixed and adjust the principal for CPI: $1,000 x 1.04 = $1,040 adjusted principal, and 3% of $1,040 = $31.20 (04-debt.md §3.9.4). The inflation adjustment raises principal (taxed annually as phantom income), not the coupon rate.",
+    "calc": true,
+    "source": "04-debt.md §3.9.4"
+  },
+  {
+    "id": "debt-L4-05",
+    "domain": "debt",
+    "level": 4,
+    "topic": "t-bill-discount-yield-calc",
+    "module": "M23",
+    "stem": "A 182-day Treasury bill is purchased at $97.50 per $100 of face value. What is its annualized discount yield?",
+    "options": [
+      "2.50%",
+      "4.95%",
+      "5.14%",
+      "5.00%"
+    ],
+    "answer": 1,
+    "explanation": "Discount yield = (par - price) / par x 360 / days = (100 - 97.50) / 100 x 360 / 182 = 4.95% (04-debt.md §3.4.3). 5.14% is the bond-equivalent yield (divides by price and uses 365 days); 2.50% is the unannualized discount.",
+    "calc": true,
+    "source": "04-debt.md §3.4.3"
+  },
+  {
+    "id": "debt-L5-01",
+    "domain": "debt",
+    "level": 5,
+    "topic": "premium-bond-yield-ordering-call-above-market",
+    "module": "M23",
+    "stem": "A 5% corporate bond with 10 years to maturity is trading at 102. It is callable in 5 years at 103. Using the exam approximation formulas, which of the bond's yields is the LOWEST?",
+    "options": [
+      "Nominal yield",
+      "Current yield",
+      "Yield to maturity",
+      "Yield to call"
+    ],
+    "answer": 2,
+    "explanation": "Current yield = $50 / $1,020 = 4.90%. YTM = [$50 + ($1,000 - $1,020)/10] / [($1,000 + $1,020)/2] = $48 / $1,010 = 4.75%. YTC = [$50 + ($1,030 - $1,020)/5] / [($1,030 + $1,020)/2] = $52 / $1,025 = 5.07%. The memorized rule 'premium bond: nominal > CY > YTM > YTC' assumes a call at or near par. Here the call price (103) is ABOVE the market price (102), so a call hands the holder a gain instead of a loss and YTC becomes the HIGHEST yield. Ordering: YTC 5.07% > nominal 5.00% > CY 4.90% > YTM 4.75%, so YTM is lowest (04-debt.md §3.5.3-3.5.6).",
+    "calc": true,
+    "source": "04-debt.md §3.5.4, §3.5.6"
+  },
+  {
+    "id": "debt-L5-02",
+    "domain": "debt",
+    "level": 5,
+    "topic": "cmo-io-tranche-behavior",
+    "module": "M25",
+    "stem": "Which of the following CMO tranches would be expected to INCREASE in value when market interest rates rise?",
+    "options": [
+      "Principal-only (PO) tranche",
+      "Planned amortization class (PAC) tranche",
+      "Interest-only (IO) tranche",
+      "Z (accrual) tranche"
+    ],
+    "answer": 2,
+    "explanation": "Rising rates slow prepayments, so the mortgage interest stream lasts longer and the IO tranche gains value; it is the one bond-like security whose price moves with rates (04-debt.md §3.11.2). POs benefit from faster prepayments, and PAC and Z tranches lose value like ordinary bonds.",
+    "calc": false,
+    "source": "04-debt.md §3.11.2"
+  },
+  {
+    "id": "debt-L5-03",
+    "domain": "debt",
+    "level": 5,
+    "topic": "gnma-except",
+    "module": "M25",
+    "stem": "All of the following statements about Ginnie Mae (GNMA) pass-through certificates are true EXCEPT:",
+    "options": [
+      "They are backed by the full faith and credit of the U.S. government",
+      "Investors receive monthly payments of both interest and principal",
+      "The underlying pools consist of FHA, VA or USDA-insured mortgages",
+      "Interest received is exempt from state and local income taxes"
+    ],
+    "answer": 3,
+    "explanation": "GNMA interest is fully taxable at the federal, state and local levels; only Treasuries and the FHLB/FFCB/TVA lenders get the state exemption (04-debt.md §3.10.1, §3.17). The other three statements are the classic true attributes of GNMA pass-throughs.",
+    "calc": false,
+    "source": "04-debt.md §3.10.1"
+  },
+  {
+    "id": "debt-L5-04",
+    "domain": "debt",
+    "level": 5,
+    "topic": "t-bill-bid-ask-inversion",
+    "module": "M23",
+    "stem": "A dealer quotes a Treasury bill as bid 4.30, ask 4.25. Which of the following statements is TRUE?",
+    "options": [
+      "The bid represents a lower dollar price than the ask, because T-bills are quoted on a discount-yield basis",
+      "The bid represents a higher dollar price than the ask, as with any other security",
+      "A customer buying the bill from the dealer will pay a price based on the 4.30 yield",
+      "The quote is expressed as a percentage of par in 32nds"
+    ],
+    "answer": 0,
+    "explanation": "T-bills are quoted as annualized discount yields, so the higher number is the lower dollar price; the dealer bids to buy at the higher yield (lower price) and offers at the lower yield (04-debt.md §3.4.3). A customer buys at the ask, 4.25, and 32nds apply to notes and bonds, not bills.",
+    "calc": false,
+    "source": "04-debt.md §3.4.3"
+  },
+  {
+    "id": "debt-L5-05",
+    "domain": "debt",
+    "level": 5,
+    "topic": "accrued-interest-treasury-day-count",
+    "module": "M24",
+    "stem": "A 4% Treasury note pays interest on February 15 and August 15. A customer buys the note on Tuesday, March 10, 2026, for regular-way settlement. How many days of accrued interest will the buyer pay?",
+    "options": [
+      "27",
+      "26",
+      "25",
+      "24"
+    ],
+    "answer": 3,
+    "explanation": "Treasuries settle T+1 (Wednesday March 11) and accrue on actual calendar days from the last coupon up to but not including settlement: February 15-28 = 14 days, plus March 1-10 = 10 days, for 24 days (04-debt.md §3.6.5). 26 applies the corporate 30/360 count to a Treasury; 25 and 27 wrongly include the settlement date.",
+    "calc": true,
+    "source": "04-debt.md §3.6.5"
+  }
+]

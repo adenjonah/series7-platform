@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Series 7 Diagnostic — adaptive baseline exam</title>
+<style>
+  :root{
+    color-scheme:light;
+    --surface-1:#fcfcfb; --surface-2:#f1f1ee; --line:#dcdcd6;
+    --text-primary:#0b0b0b; --text-secondary:#52514e; --text-muted:#8a8985;
+    --series-1:#2a78d6; --series-1-soft:#d6e6f8;
+    --good:#008300; --serious:#e34948; --warn:#c98500;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      color-scheme:dark;
+      --surface-1:#1a1a19; --surface-2:#242423; --line:#3a3a38;
+      --text-primary:#ffffff; --text-secondary:#c3c2b7; --text-muted:#8f8e88;
+      --series-1:#3987e5; --series-1-soft:#213a5c;
+      --good:#3fbf3f; --serious:#e66767; --warn:#e0a020;
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--surface-1);color:var(--text-primary);font:17px/1.55 -apple-system,Inter,system-ui,sans-serif}
+  main{max-width:820px;margin:0 auto;padding:1.25rem 1.25rem 5rem}
+  header{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;border-bottom:1px solid var(--line);padding-bottom:.6rem;margin-bottom:1.2rem;font-size:14px;color:var(--text-secondary)}
+  header b{color:var(--text-primary)}
+  h1{font-size:1.6rem;margin:.2rem 0 .8rem}
+  h2{font-size:1.2rem;margin:1.8rem 0 .6rem}
+  p{margin:.5rem 0}
+  .card{background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:1.1rem 1.25rem;margin:1rem 0}
+  .stem{font-size:1.12rem;line-height:1.5;white-space:pre-wrap}
+  .tag{display:inline-block;font-size:12px;color:var(--text-secondary);background:var(--surface-1);border:1px solid var(--line);border-radius:999px;padding:.1rem .6rem;margin-right:.4rem}
+  .opts{list-style:none;padding:0;margin:1rem 0 0}
+  .opts li{margin:.45rem 0}
+  .opt{width:100%;text-align:left;display:flex;gap:.75rem;align-items:flex-start;background:var(--surface-1);color:var(--text-primary);border:1px solid var(--line);border-radius:8px;padding:.7rem .9rem;font:inherit;cursor:pointer}
+  .opt:hover{border-color:var(--series-1)}
+  .opt.sel{border-color:var(--series-1);background:var(--series-1-soft)}
+  .opt .k{font-weight:600;color:var(--text-secondary);min-width:1.3em}
+  .row{display:flex;gap:.75rem;align-items:center;flex-wrap:wrap;margin-top:1rem}
+  button.primary{background:var(--series-1);color:#fff;border:0;border-radius:8px;padding:.65rem 1.2rem;font:inherit;font-weight:600;cursor:pointer}
+  button.primary:disabled{opacity:.45;cursor:not-allowed}
+  button.ghost{background:transparent;color:var(--text-secondary);border:1px solid var(--line);border-radius:8px;padding:.6rem 1rem;font:inherit;cursor:pointer}
+  .idk{margin-left:auto}
+  .muted{color:var(--text-muted);font-size:14px}
+  .progress{height:6px;background:var(--surface-2);border-radius:3px;overflow:hidden;margin:.4rem 0 1rem}
+  .progress i{display:block;height:100%;background:var(--series-1);border-radius:3px;transition:width .3s}
+  table{border-collapse:collapse;width:100%;font-size:15px;margin:.6rem 0}
+  th,td{text-align:left;padding:.45rem .5rem;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--text-secondary);font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.03em}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .bar{height:10px;background:var(--surface-1);border:1px solid var(--line);border-radius:4px;position:relative;min-width:160px}
+  .bar i{position:absolute;top:0;bottom:0;left:0;background:var(--series-1);border-radius:3px}
+  .bar b{position:absolute;top:-4px;width:2px;height:16px;background:var(--text-muted)}
+  .hero{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:.8rem;margin:1rem 0}
+  .tile{background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:.9rem 1rem}
+  .tile .v{font-size:1.7rem;font-weight:700;letter-spacing:-.01em}
+  .tile .l{font-size:13px;color:var(--text-secondary)}
+  details{margin:.5rem 0;border:1px solid var(--line);border-radius:8px;padding:.5rem .9rem;background:var(--surface-2)}
+  summary{cursor:pointer;font-weight:600}
+  .rev{padding:.6rem 0;border-top:1px solid var(--line)}
+  .rev:first-of-type{border-top:0}
+  .rev .s{font-weight:500}
+  .rev .e{color:var(--text-secondary);font-size:15px;margin-top:.3rem}
+  .ok{color:var(--good)} .bad{color:var(--serious)} .idkc{color:var(--warn)}
+  svg text{fill:var(--text-secondary);font-size:11px}
+  .hidden{display:none}
+  .warnbox{border-left:3px solid var(--warn);padding:.4rem .9rem;background:var(--surface-2);margin:.8rem 0;font-size:15px}
+  kbd{font:13px ui-monospace,Menlo,monospace;border:1px solid var(--line);border-bottom-width:2px;border-radius:4px;padding:0 .35em;color:var(--text-secondary)}
+  pre{white-space:pre-wrap;font-size:13px;background:var(--surface-2);padding:.8rem;border-radius:8px;border:1px solid var(--line)}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div><b>Series 7 Diagnostic</b> · adaptive baseline</div>
+    <div id="hdr-right" class="muted"></div>
+  </header>
+  <div id="view"></div>
+</main>
+
+<script>
+/* ---------- Item bank (inlined by build.py) ---------- */
+const BANK = __BANK__;
+const BUILD = __BUILD__;
+
+/* ---------- Configuration ---------- */
+const DOMAINS = {
+  foundations:{ name:'Foundations & economics', weight:0.12 },
+  equity:     { name:'Equity & analysis',        weight:0.12 },
+  debt:       { name:'Debt securities',          weight:0.12 },
+  municipal:  { name:'Municipal securities',     weight:0.12 },
+  options:    { name:'Options',                  weight:0.16 },
+  packaged:   { name:'Funds, annuities, retirement, tax', weight:0.14 },
+  accounts:   { name:'Accounts, suitability, margin',     weight:0.14 },
+  regulation: { name:'Laws, underwriting, trading',       weight:0.08 },
+};
+const DOMAIN_ORDER = Object.keys(DOMAINS);
+/* Where the curriculum (00-curriculum.md §3) should start, by estimated level in each domain. */
+const START_MODULE = {
+  foundations:{1:'M1 (money & arithmetic)',2:'M2–M6 (securities, markets, the broker-dealer, regulators)',3:'M7–M10 (price/yield, risk, economics, statements)',4:'M11 — foundations are solid; begin the SIE product pass',5:'M11 — foundations are solid; begin the SIE product pass'},
+  equity:     {1:'M11 (SIE-depth equity)',2:'M11 (SIE-depth equity)',3:'M17 (S7 equity & corporate actions)',4:'M18 (securities analysis)',5:'Review M17–M18 briefly, then move on'},
+  debt:       {1:'M12 (SIE-depth debt)',2:'M12 (SIE-depth debt)',3:'M23 (quotes, yields, ratings, corporate types)',4:'M24 (convertibles, accrued interest)',5:'M25 (Treasuries, agencies, CMOs) as review'},
+  municipal:  {1:'M12 then M26 (why munis, TEY, GO vs revenue)',2:'M26 (why munis, TEY, GO vs revenue)',3:'M26 → M27 (structure, pricing, taxation)',4:'M27 → M28 (primary market, MSRB rules)',5:'M28 (MSRB rulebook) as review'},
+  options:    {1:'M13 (SIE-depth options)',2:'M13 (SIE-depth options)',3:'M19 (mechanics, four positions, T-chart)',4:'M20–M21 (hedges, spreads, straddles)',5:'M22 (non-equity, rules, margin, tax) as review'},
+  packaged:   {1:'M14 (SIE-depth packaged products)',2:'M14 (SIE-depth packaged products)',3:'M29 (investment companies & fund math)',4:'M31 → M33 (retirement plans, taxation)',5:'M30/M32 (annuities, DPPs) as review'},
+  accounts:   {1:'M15 (SIE-depth accounts & conduct)',2:'M15 (SIE-depth accounts & conduct)',3:'M34 → M35 (accounts, suitability, Reg BI, AML)',4:'M39 (margin accounts)',5:'M36 (communications) as review'},
+  regulation: {1:'M6 (regulators & statutes)',2:'M6 (regulators & statutes)',3:'M37 (primary market, exemptions, underwriting)',4:'M38 (trading, settlement, reporting)',5:'Review M37–M38 briefly, then move on'},
+};
+const LEVEL_NAME = {1:'Everyday literacy',2:'SIE level',3:'Series 7 core',4:'Series 7 hard',5:'Expert / trap'};
+const LEVEL_B = {1:-2,2:-1,3:0,4:1,5:2};   // item difficulty on the logit scale
+const A = 1.1, C = 0.15;                    // 3PL discrimination and pseudo-guessing (4-option MC; "I don't know" is offered, so guessing is below 1/4)
+const MIN_ITEMS = 30, MAX_ITEMS = 45, SE_STOP = 0.38, MIN_PER_DOMAIN = 3;
+const SOFT_MIN_MS = 45*60*1000, HARD_MAX_MS = 60*60*1000;
+const GRID = []; for (let t=-4; t<=4.0001; t+=0.05) GRID.push(+t.toFixed(2));
+
+/* ---------- IRT ---------- */
+const p3 = (theta,b) => C + (1-C)/(1+Math.exp(-A*(theta-b)));
+const info = (theta,b) => { const p=p3(theta,b), q=1-p, pstar=(p-C)/(1-C); return A*A*q/p*pstar*pstar; };
+function eap(responses, priorMu, priorSd) {
+  // responses: [{b, correct}]; returns {theta, se}
+  const w = GRID.map(t => {
+    let ll = -0.5*((t-priorMu)/priorSd)**2;
+    for (const r of responses) { const p=p3(t,r.b); ll += Math.log(r.correct ? p : 1-p); }
+    return ll;
+  });
+  const m = Math.max(...w); const e = w.map(v=>Math.exp(v-m)); const Z = e.reduce((a,b)=>a+b,0);
+  const theta = GRID.reduce((s,t,i)=>s+t*e[i],0)/Z;
+  const varr = GRID.reduce((s,t,i)=>s+(t-theta)**2*e[i],0)/Z;
+  return { theta, se: Math.sqrt(varr) };
+}
+
+/* ---------- State ---------- */
+const KEY = 's7diag.v1';
+let S = null;   // {started, responses:[{id,domain,level,b,answer,correct,idk,ms,thetaAfter}], finished, name}
+const rng = () => Math.random();
+function save(){ localStorage.setItem(KEY, JSON.stringify(S)); }
+function load(){ try { return JSON.parse(localStorage.getItem(KEY)); } catch { return null; } }
+function reset(){ localStorage.removeItem(KEY); S=null; render(); }
+
+function globalEst(){ return eap(S.responses, 0, 1.5); }
+function domainEst(d, g){
+  const rs = S.responses.filter(r=>r.domain===d);
+  return { ...eap(rs, g.theta, 1.0), n: rs.length };
+}
+function elapsed(){ return Date.now() - S.started - (S.pausedMs||0); }
+
+/* ---------- Item selection ---------- */
+function nextItem(){
+  const answered = new Set(S.responses.map(r=>r.id));
+  const g = globalEst();
+  const n = S.responses.length;
+  // First two items anchor in foundations at SIE level, then everyday level or S7 core depending on the first answer.
+  let domain;
+  if (n === 0) domain = 'foundations';
+  else {
+    // Pick the domain furthest below its target share; tie-break by highest SE (most uncertain).
+    const total = Math.max(n+1, MIN_ITEMS);
+    let best=null, bestScore=-Infinity;
+    for (const d of DOMAIN_ORDER) {
+      const est = domainEst(d, g);
+      const deficit = DOMAINS[d].weight*total - est.n;
+      const score = deficit + 0.25*est.se + (est.n<MIN_PER_DOMAIN ? 0.5 : 0);
+      if (score > bestScore) { bestScore=score; best=d; }
+    }
+    domain = best;
+  }
+  const est = domainEst(domain, g);
+  const target = n < 4 ? g.theta : est.theta;
+  const pool = BANK.filter(it => it.domain===domain && !answered.has(it.id));
+  if (!pool.length) return null;
+  // Max information at the current estimate; jitter breaks ties among same-level items; mild penalty for a topic already seen.
+  const seenTopics = new Set(S.responses.filter(r=>r.domain===domain).map(r=>r.topic));
+  let best=null, bestV=-Infinity;
+  for (const it of pool) {
+    const v = info(target, LEVEL_B[it.level]) + rng()*0.02 - (seenTopics.has(it.topic)?0.05:0);
+    if (v>bestV) { bestV=v; best=it; }
+  }
+  return best;
+}
+function shouldStop(){
+  const n = S.responses.length;
+  if (n >= MAX_ITEMS) return 'max-items';
+  if (elapsed() >= HARD_MAX_MS) return 'time';
+  if (n < MIN_ITEMS) return null;
+  const g = globalEst();
+  const allCovered = DOMAIN_ORDER.every(d => S.responses.filter(r=>r.domain===d).length >= MIN_PER_DOMAIN);
+  if (g.se <= SE_STOP && allCovered) return 'converged';
+  return null;
+}
+
+/* ---------- Views ---------- */
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmtMin = ms => { const m=Math.floor(ms/60000), s=Math.floor(ms/1000)%60; return `${m}:${String(s).padStart(2,'0')}`; };
+
+function render(){
+  if (!S) return renderIntro();
+  if (S.finished) return renderResults();
+  renderQuestion();
+}
+
+function renderIntro(){
+  const prior = load();
+  $("#hdr-right").textContent = `built ${BUILD}`;
+  $('#view').innerHTML = `
+    <h1>Where are you starting from?</h1>
+    <p>This is an <b>adaptive</b> diagnostic: each question is chosen based on how you answered the previous ones, so it homes in on your level in each of eight areas — from everyday financial literacy up to the hardest Series 7 material. It is not a pass/fail test; it tells us where the curriculum should begin for you.</p>
+    <div class="card">
+      <p><b>How it works</b></p>
+      <ul>
+        <li>About <b>30–45 questions</b>, usually <b>30–50 minutes</b>. It stops early once it's confident.</li>
+        <li>Four choices per question, plus <b>“I don't know.”</b> Use it honestly — an admitted unknown is far more useful to us than a lucky guess, and it's scored the same as a wrong answer.</li>
+        <li><b>No going back</b>, no feedback until the end. Expect it to feel hard: the test is designed to keep finding questions you get right about half the time.</li>
+        <li>Calculator and scratch paper are fine (the real exam gives you a basic calculator). No looking things up.</li>
+        <li>Keyboard: <kbd>1</kbd>–<kbd>4</kbd> select, <kbd>0</kbd> = I don't know, <kbd>Enter</kbd> confirms.</li>
+      </ul>
+    </div>
+    <div class="row">
+      <input id="name" placeholder="Your name (optional)" style="font:inherit;padding:.6rem .8rem;border:1px solid var(--line);border-radius:8px;background:var(--surface-1);color:var(--text-primary)">
+      <button class="primary" id="start">Start the diagnostic</button>
+      ${prior && !prior.finished ? `<button class="ghost" id="resume">Resume (${prior.responses.length} answered)</button>` : ''}
+      ${prior && prior.finished ? `<button class="ghost" id="resume">View last results</button>` : ''}
+    </div>`;
+  $('#start').onclick = () => { S = { started: Date.now(), responses: [], finished:false, name: $('#name').value.trim(), pausedMs:0 }; save(); render(); };
+  const r = $('#resume'); if (r) r.onclick = () => { S = prior; if (!S.finished) { S.started = Date.now() - (S.elapsedAtSave||0); } save(); render(); };
+}
+
+let current = null, shownAt = 0, sel = null, tick = null;
+function renderQuestion(){
+  const stop = shouldStop();
+  if (stop) { S.finished = true; S.stopReason = stop; S.elapsedAtSave = elapsed(); save(); return renderResults(); }
+  current = nextItem();
+  if (!current) { S.finished = true; S.stopReason='bank-exhausted'; save(); return renderResults(); }
+  sel = null; shownAt = Date.now();
+  const n = S.responses.length;
+  const pct = Math.min(100, Math.round(100*n/MIN_ITEMS*0.85));
+  $('#view').innerHTML = `
+    <div class="muted">Question ${n+1} <span id="timer"></span></div>
+    <div class="progress"><i style="width:${pct}%"></i></div>
+    <div class="card">
+      <div><span class="tag">${esc(DOMAINS[current.domain].name)}</span>${current.calc?'<span class="tag">calculation</span>':''}</div>
+      <p class="stem" style="margin-top:.7rem">${esc(current.stem)}</p>
+      <ul class="opts">${current.options.map((o,i)=>`<li><button class="opt" data-i="${i}"><span class="k">${i+1}.</span><span>${esc(o)}</span></button></li>`).join('')}</ul>
+      <div class="row">
+        <button class="primary" id="confirm" disabled>Confirm</button>
+        <button class="ghost idk" id="idk">I don't know <span class="muted">(0)</span></button>
+      </div>
+    </div>
+    <div id="timewarn"></div>`;
+  document.querySelectorAll('.opt').forEach(b => b.onclick = () => select(+b.dataset.i));
+  $('#confirm').onclick = () => submit(sel, false);
+  $('#idk').onclick = () => submit(null, true);
+  updateTimer(); clearInterval(tick); tick = setInterval(updateTimer, 1000);
+}
+function select(i){ sel=i; document.querySelectorAll('.opt').forEach(b=>b.classList.toggle('sel', +b.dataset.i===i)); $('#confirm').disabled=false; }
+function updateTimer(){
+  if (!S || S.finished) return clearInterval(tick);
+  const e = elapsed(); const t=$('#timer'); if (t) t.textContent = `· ${fmtMin(e)} elapsed`;
+  const w=$('#timewarn'); if (w) w.innerHTML = e>SOFT_MIN_MS ? `<div class="warnbox">Over 45 minutes — the test will wrap up at 60 minutes regardless. Keep going at your own pace.</div>` : '';
+  if (e >= HARD_MAX_MS) { S.finished=true; S.stopReason='time'; save(); renderResults(); }
+}
+function submit(answer, idk){
+  const correct = !idk && answer === current.answer;
+  S.responses.push({ id:current.id, domain:current.domain, level:current.level, topic:current.topic, b:LEVEL_B[current.level], answer, idk, correct, ms: Date.now()-shownAt });
+  const g = globalEst(); S.responses[S.responses.length-1].thetaAfter = +g.theta.toFixed(3); S.responses[S.responses.length-1].seAfter = +g.se.toFixed(3);
+  S.elapsedAtSave = elapsed(); save();
+  renderQuestion();
+}
+document.addEventListener('keydown', e => {
+  if (!S || S.finished || !current) return;
+  if (e.key>='1' && e.key<='4') select(+e.key-1);
+  else if (e.key==='0') submit(null,true);
+  else if (e.key==='Enter' && sel!==null) submit(sel,false);
+});
+
+/* ---------- Results ---------- */
+const BANDS = [[-1.5,'Pre-foundations','Start at the very beginning: money, percent math, what a security is (M1–M6). Nothing here is bad news — it just means no prior exposure.'],
+               [-0.5,'Foundations','Everyday financial literacy is there; the SIE-level vocabulary and product mechanics are not yet. Start at the foundations modules the table points to, then the SIE pass (M11–M16).'],
+               [ 0.5,'SIE-ready / early Series 7','SIE-level knowledge is largely in place. Sit the SIE soon, and begin Series 7 depth in the weakest domains first.'],
+               [ 1.5,'Series 7 core','Solid core knowledge. Focus on the hard-calculation and trap layer (options spreads, margin/SMA, muni syndicates, suitability scenarios) and start timed mocks.'],
+               [ 9,  'Series 7 ready','Ready for full-length blueprint-faithful mocks; the remaining work is drilling the flagged misconceptions and the readiness gate (3 fresh mocks ≥ 80–85%).']];
+const bandFor = t => BANDS.find(b => t < b[0]);
+const levelFor = t => Math.max(1, Math.min(5, Math.round(t)+3));
+
+function renderResults(){
+  clearInterval(tick);
+  const g = globalEst();
+  const band = bandFor(g.theta);
+  const n = S.responses.length, nc = S.responses.filter(r=>r.correct).length, nidk = S.responses.filter(r=>r.idk).length;
+  const pL3 = Math.round(100*p3(g.theta,0)), pL2 = Math.round(100*p3(g.theta,-1)), pL4 = Math.round(100*p3(g.theta,1));
+  const byId = Object.fromEntries(BANK.map(it=>[it.id,it]));
+  const rows = DOMAIN_ORDER.map(d => { const e = domainEst(d,g); const rs=S.responses.filter(r=>r.domain===d);
+    return { d, name:DOMAINS[d].name, ...e, correct:rs.filter(r=>r.correct).length, idk:rs.filter(r=>r.idk).length, wrong:rs.filter(r=>!r.correct&&!r.idk).length, level: levelFor(e.theta) }; });
+  const misconceptions = S.responses.filter(r => !r.correct && !r.idk && r.b <= Math.round(g.theta)).map(r=>byId[r.id]);
+  const unknowns = S.responses.filter(r => r.idk && r.b <= Math.round(g.theta)).map(r=>byId[r.id]);
+  const barPct = t => Math.round(100*(t+3)/6);   // −3…+3 → 0…100
+  $('#hdr-right').textContent = `${S.name?esc(S.name)+' · ':''}${n} questions · ${fmtMin(S.elapsedAtSave||0)}`;
+  $('#view').innerHTML = `
+    <h1>Baseline: ${esc(band[1])}</h1>
+    <p>${esc(band[2])}</p>
+    <div class="hero">
+      <div class="tile"><div class="v">${nc}/${n}</div><div class="l">answered correctly (${nidk} “I don't know”)</div></div>
+      <div class="tile"><div class="v">${g.theta.toFixed(2)} <span class="muted" style="font-size:.9rem">± ${g.se.toFixed(2)}</span></div><div class="l">ability estimate (logits; 0 = Series 7 core)</div></div>
+      <div class="tile"><div class="v">${pL3}%</div><div class="l">chance of getting a typical Series 7 core question right<br><span class="muted">SIE-level ${pL2}% · S7-hard ${pL4}%</span></div></div>
+      <div class="tile"><div class="v">${LEVEL_NAME[levelFor(g.theta)]}</div><div class="l">overall working level · stopped: ${esc(S.stopReason||'')}</div></div>
+    </div>
+
+    <h2>By domain</h2>
+    <table>
+      <thead><tr><th>Domain</th><th>Estimate</th><th>Level</th><th class="num">Items</th><th class="num">✓ / ✗ / ?</th><th>Start the curriculum at</th></tr></thead>
+      <tbody>${rows.map(r=>`<tr>
+        <td>${esc(r.name)}</td>
+        <td><div class="bar" title="θ ${r.theta.toFixed(2)} ± ${r.se.toFixed(2)}"><i style="width:${barPct(r.theta)}%"></i><b style="left:${barPct(0)}%" title="Series 7 core"></b></div><span class="muted">${r.theta.toFixed(2)} ± ${r.se.toFixed(2)}</span></td>
+        <td>${LEVEL_NAME[r.level]}</td>
+        <td class="num">${r.n}</td>
+        <td class="num">${r.correct} / ${r.wrong} / ${r.idk}</td>
+        <td>${esc(START_MODULE[r.d][r.level])}</td></tr>`).join('')}</tbody>
+    </table>
+    <p class="muted">Bars run from −3 (no exposure) to +3 (expert); the tick marks 0 = Series 7 core. Domain estimates with only 3–5 items are wide (± shown) — treat them as a starting point, not a verdict.</p>
+
+    <h2>How the estimate moved</h2>
+    <div class="card">${trajectorySvg()}</div>
+
+    <h2>Priority fixes — confident but wrong (${misconceptions.length})</h2>
+    <p class="muted">Questions at or below your estimated level that you answered rather than skipped. These are the misconceptions to clear first.</p>
+    ${misconceptions.length ? misconceptions.map(reviewRow).join('') : '<p class="muted">None — every miss was above your level or an honest “I don’t know.”</p>'}
+
+    <h2>Gaps — “I don't know” at your level (${unknowns.length})</h2>
+    ${unknowns.length ? unknowns.map(reviewRow).join('') : '<p class="muted">None.</p>'}
+
+    <details><summary>Review every question (${n})</summary>${S.responses.map(r=>reviewRow(byId[r.id])).join('')}</details>
+
+    <h2>Export</h2>
+    <div class="row">
+      <button class="primary" id="dl">Download results JSON</button>
+      <button class="ghost" id="copy">Copy text summary</button>
+      <button class="ghost" id="again">Start over</button>
+    </div>
+    <pre id="summary" class="hidden"></pre>`;
+  const exportObj = { build:BUILD, name:S.name, finishedAt:new Date().toISOString(), elapsedMs:S.elapsedAtSave, stopReason:S.stopReason,
+    overall:{ theta:+g.theta.toFixed(3), se:+g.se.toFixed(3), band:band[1], pCoreCorrect:pL3 },
+    domains: rows.map(r=>({domain:r.d, theta:+r.theta.toFixed(3), se:+r.se.toFixed(3), n:r.n, correct:r.correct, wrong:r.wrong, idk:r.idk, level:r.level, startAt:START_MODULE[r.d][r.level]})),
+    misconceptions: misconceptions.map(i=>i.id), unknownsAtLevel: unknowns.map(i=>i.id), responses:S.responses };
+  const txt = [`Series 7 diagnostic — ${S.name||'(unnamed)'} — ${new Date().toLocaleDateString()}`,
+    `Overall: ${band[1]} (θ ${g.theta.toFixed(2)} ± ${g.se.toFixed(2)}; ${nc}/${n} correct, ${nidk} IDK; ${fmtMin(S.elapsedAtSave||0)})`,
+    ...rows.map(r=>`  ${r.name}: ${LEVEL_NAME[r.level]} (θ ${r.theta.toFixed(2)} ± ${r.se.toFixed(2)}, ${r.correct}/${r.n}) → ${START_MODULE[r.d][r.level]}`),
+    `Confident-wrong at level: ${misconceptions.map(i=>i.id).join(', ')||'none'}`,
+    `IDK at level: ${unknowns.map(i=>i.id).join(', ')||'none'}`].join('\n');
+  $('#dl').onclick = () => { const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([JSON.stringify(exportObj,null,2)],{type:'application/json'})); a.download=`series7-diagnostic-${(S.name||'result').replace(/\W+/g,'-')}-${new Date().toISOString().slice(0,10)}.json`; a.click(); };
+  $('#copy').onclick = async () => { $('#summary').textContent=txt; $('#summary').classList.remove('hidden'); try { await navigator.clipboard.writeText(txt); $('#copy').textContent='Copied'; } catch {} };
+  $('#again').onclick = () => { if (confirm('Discard these results and start over?')) reset(); };
+  window.__diagExport = exportObj;
+}
+function reviewRow(it){
+  const r = S.responses.find(x=>x.id===it.id);
+  const mark = r.correct ? '<span class="ok">✓ correct</span>' : r.idk ? '<span class="idkc">? didn\'t know</span>' : '<span class="bad">✗ incorrect</span>';
+  return `<div class="rev"><div class="muted">${esc(DOMAINS[it.domain].name)} · ${LEVEL_NAME[it.level]} · ${mark} · ${Math.round(r.ms/1000)}s</div>
+    <div class="s">${esc(it.stem)}</div>
+    <div class="e"><b>Answer:</b> ${esc(it.options[it.answer])}${(!r.correct&&!r.idk)?` &nbsp;<span class="bad">You chose:</span> ${esc(it.options[r.answer])}`:''}<br>${esc(it.explanation)} <span class="muted">(${esc(it.module)})</span></div></div>`;
+}
+function trajectorySvg(){
+  const pts = S.responses.map(r=>r.thetaAfter), ses = S.responses.map(r=>r.seAfter);
+  const W=720,H=200,px=36,py=16, n=pts.length; if (n<2) return '<p class="muted">Not enough answers to chart.</p>';
+  const x=i=>px+(W-2*px)*i/(n-1), y=t=>py+(H-2*py)*(3-Math.max(-3,Math.min(3,t)))/6;
+  const path = pts.map((t,i)=>`${i?'L':'M'}${x(i).toFixed(1)},${y(t).toFixed(1)}`).join(' ');
+  const band = pts.map((t,i)=>`${x(i).toFixed(1)},${y(t+ses[i]).toFixed(1)}`).concat(pts.map((t,i)=>`${x(i).toFixed(1)},${y(t-ses[i]).toFixed(1)}`).reverse()).join(' ');
+  const grid = [-2,-1,0,1,2].map(v=>`<line x1="${px}" x2="${W-px}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)" stroke-width="${v===0?1.5:1}"/><text x="${px-6}" y="${y(v)+4}" text-anchor="end">${v>0?'+':''}${v}</text>`).join('');
+  const dots = S.responses.map((r,i)=>`<circle cx="${x(i)}" cy="${y(r.thetaAfter)}" r="4" fill="${r.correct?'var(--series-1)':'var(--surface-1)'}" stroke="var(--series-1)" stroke-width="2"><title>Q${i+1} ${DOMAINS[r.domain].name} · ${LEVEL_NAME[r.level]} · ${r.correct?'correct':r.idk?'IDK':'incorrect'} · θ ${r.thetaAfter.toFixed(2)} ± ${r.seAfter.toFixed(2)}</title></circle>`).join('');
+  return `<svg viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="Ability estimate after each question with uncertainty band">
+    ${grid}<polygon points="${band}" fill="var(--series-1)" opacity=".15"/><path d="${path}" fill="none" stroke="var(--series-1)" stroke-width="2"/>${dots}
+    <text x="${W-px}" y="${H-2}" text-anchor="end">question 1 → ${n} · filled dot = correct · shaded = ±1 SE · 0 = Series 7 core</text></svg>`;
+}
+
+/* ---------- Test hook (used by the automated check; harmless for users) ---------- */
+window.__diag = {
+  get state(){ return S; }, bank: BANK, p3, eap,
+  start(name){ S={started:Date.now(),responses:[],finished:false,name:name||'',pausedMs:0}; save(); render(); },
+  current(){ return current; },
+  answer(i, idk){ submit(idk?null:i, !!idk); },
+  reset,
+};
+
+/* ---------- Boot ---------- */
+const prior = load(); if (prior && prior.finished) { S = prior; }
+render();
+</script>
+</body>
+</html>

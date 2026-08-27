@@ -1,0 +1,452 @@
+[
+  {
+    "id": "reg-L1-01",
+    "domain": "regulation",
+    "level": 1,
+    "topic": "what-an-ipo-is",
+    "module": "M37",
+    "stem": "A private company announces it will \"go public\" through an initial public offering (IPO). What happens in an IPO?",
+    "options": [
+      "The company's founders sell their shares to one another at a fixed price",
+      "Existing shareholders trade shares among themselves on a stock exchange",
+      "The company sells shares to the public for the first time and receives the proceeds",
+      "The government buys shares to guarantee the company's success"
+    ],
+    "answer": 2,
+    "explanation": "An IPO is the first public sale of a company's shares; it is a primary-market transaction, so the issuer (not existing holders) receives the money. Later trading between investors is the secondary market.",
+    "calc": false,
+    "source": "09-regulation-trading-economics.md §2, §3.2"
+  },
+  {
+    "id": "reg-L1-02",
+    "domain": "regulation",
+    "level": 1,
+    "topic": "why-insider-trading-is-illegal",
+    "module": "M38",
+    "stem": "A company executive learns that her company will announce a large, unexpected loss next week. She sells all of her shares before the news is released. Why is this illegal?",
+    "options": [
+      "She traded on material nonpublic information, gaining an unfair advantage over other investors",
+      "Executives are never allowed to sell shares of the company they work for",
+      "Selling stock in the week before any earnings announcement is prohibited for all investors",
+      "She failed to pay a special transaction tax that applies to executives"
+    ],
+    "answer": 0,
+    "explanation": "Insider trading law targets trading on material nonpublic information (MNPI) in breach of a duty; insiders may sell, but only when the market has the same information. Penalties reach treble the profit made or loss avoided (civil) plus criminal exposure.",
+    "calc": false,
+    "source": "09-regulation-trading-economics.md §3.3 Insider trading"
+  },
+  {
+    "id": "reg-L1-03",
+    "domain": "regulation",
+    "level": 1,
+    "topic": "what-a-limit-means",
+    "module": "M38",
+    "stem": "An investor tells her broker to buy 100 shares of a stock \"with a limit of $25.\" What does this instruction mean?",
+    "options": [
+      "The order executes immediately at whatever price is currently available",
+      "She will pay no more than $25 per share, and the order may never execute if the price stays above $25",
+      "She must buy at least $25 worth of the stock",
+      "The broker will automatically sell the shares if they later fall to $25"
+    ],
+    "answer": 1,
+    "explanation": "A limit order executes only at the limit price or better; it guarantees price but not execution. A market order is the one that guarantees execution but not price.",
+    "calc": false,
+    "source": "09-regulation-trading-economics.md §3.8"
+  },
+  {
+    "id": "reg-L1-04",
+    "domain": "regulation",
+    "level": 1,
+    "topic": "why-audited-financials",
+    "module": "M6",
+    "stem": "Why are publicly traded companies required to file audited financial statements with the SEC every year?",
+    "options": [
+      "So the SEC can decide whether the stock is a good investment",
+      "So the stock exchange can set the stock's trading price",
+      "So the company can avoid paying corporate income tax",
+      "So investors can rely on independently verified information when making decisions"
+    ],
+    "answer": 3,
+    "explanation": "The securities laws are built on full and fair disclosure, not merit review: the SEC never approves a security or judges its quality. The 1934 Act's annual 10-K must contain audited financials so investors can make informed decisions.",
+    "calc": false,
+    "source": "09-regulation-trading-economics.md §3.1 (purpose), §3.3 Issuer reporting"
+  },
+  {
+    "id": "reg-L1-05",
+    "domain": "regulation",
+    "level": 1,
+    "topic": "bid-vs-ask-which-price-customer-pays",
+    "module": "M38",
+    "stem": "A dealer quotes a stock at 10.50 bid, 10.55 ask. A customer who wants to buy 100 shares from this dealer would pay approximately:",
+    "options": [
+      "$10.50 per share",
+      "$10.55 per share",
+      "$10.525 per share, the midpoint of the quote",
+      "Whatever the customer offers, because the dealer must accept any bid"
+    ],
+    "answer": 1,
+    "explanation": "The bid is the price the dealer will pay and the ask (offer) is the price the dealer will sell at, so a customer buys at the ask and sells at the bid. The spread (ask minus bid) is the dealer's compensation.",
+    "calc": false,
+    "source": "09-regulation-trading-economics.md §2, §3.7"
+  },
+  {
+    "id": "reg-L2-01",
+    "domain": "regulation",
+    "level": 2,
+    "topic": "securities-act-1933-scope",
+    "module": "M6",
+    "stem": "The Securities Act of 1933 primarily regulates which of the following?",
+    "options": [
+      "The issuance of new securities to the public, requiring registration and delivery of a prospectus",
+      "Secondary-market trading of securities on exchanges and over the counter",
+      "Persons who give investment advice for compensation",
+      "Margin requirements set by the Federal Reserve Board"
+    ],
+    "answer": 0,
+    "explanation": "The 1933 Act (the \"Paper Act\") covers new issues: registration statements, the prospectus, and anti-fraud in offerings. The 1934 Act (the \"People Act\") governs the secondary market, created the SEC, and gave the Fed margin authority.",
+    "calc": false,
+    "source": "09-regulation-trading-economics.md §3.1, §3.3"
+  },
+  {
+    "id": "reg-L2-02",
+    "domain": "regulation",
+    "level": 2,
+    "topic": "firm-commitment-vs-best-efforts",
+    "module": "M37",
+    "stem": "In which type of underwriting does the underwriter purchase the entire issue from the issuer as principal and bear the risk of any unsold shares?",
+    "options": [
+      "Best efforts",
+      "All-or-none",
+      "Mini-max",
+      "Firm commitment"
+    ],
+    "answer": 3,
+    "explanation": "In a firm commitment the underwriter buys the securities from the issuer and resells them, taking the inventory risk. Best-efforts variants (including all-or-none and mini-max) are agency arrangements in which unsold securities are returned to the issuer.",
+    "calc": false,
+    "source": "09-regulation-trading-economics.md §3.2 Types of commitment"
+  },
+  {
+    "id": "reg-L2-03",
+    "domain": "regulation",
+    "level": 2,
+    "topic": "regular-way-settlement-t-plus-1",
+    "module": "M38",
+    "stem": "Regular-way settlement of a corporate stock transaction occurs:",
+    "options": [
+      "On the same business day as the trade",
+      "Two business days after the trade date",
+      "One business day after the trade date",
+      "Three business days after the trade date"
+    ],
+    "answer": 2,
+    "explanation": "Under SEA Rule 15c6-1 as amended, regular way for stocks, corporate and municipal bonds, ETFs and mutual funds has been T+1 since May 28, 2024 (it was T+2 before). Same-day settlement is a cash trade; T+3 is now the Reg T payment date, not settlement.",
+    "calc": false,
+    "source": "09-regulation-trading-economics.md §3.11 Settlement cycles"
+  },
+  {
+    "id": "reg-L2-04",
+    "domain": "regulation",
+    "level": 2,
+    "topic": "ioc-vs-fok-vs-aon",
+    "module": "M38",
+    "stem": "Which order qualifier requires that the order be executed immediately, in whole or in part, with any unfilled portion canceled?",
+    "options": [
+      "Fill-or-kill",
+      "Immediate-or-cancel",
+      "All-or-none",
+      "Good-till-canceled"
+    ],
+    "answer": 1,
+    "explanation": "IOC = now, partial fill allowed; FOK = now and the entire order or nothing; AON = the entire order but it may wait. This three-way distinction is a standard exam item.",
+    "calc": false,
+    "source": "09-regulation-trading-economics.md §3.8 Time-in-force / qualifiers"
+  },
+  {
+    "id": "reg-L2-05",
+    "domain": "regulation",
+    "level": 2,
+    "topic": "red-herring-contents",
+    "module": "M37",
+    "stem": "A preliminary prospectus (red herring) distributed during the cooling-off period typically OMITS which of the following?",
+    "options": [
+      "The final public offering price and the effective date",
+      "A description of the issuer's business",
+      "The risk factors of the offering",
+      "The intended use of the proceeds"
+    ],
+    "answer": 0,
+    "explanation": "Under Rule 430 the red herring contains most of the registration-statement disclosure but leaves out the final POP and effective date (a price range may be shown). It carries a red legend and may not be marked up or used to solicit money.",
+    "calc": false,
+    "source": "09-regulation-trading-economics.md §3.1.1 Cooling-off period"
+  },
+  {
+    "id": "reg-L3-01",
+    "domain": "regulation",
+    "level": 3,
+    "topic": "aftermarket-prospectus-delivery-period",
+    "module": "M37",
+    "stem": "A broker-dealer sells shares in the aftermarket of an initial public offering of a company whose stock will be listed on Nasdaq. For how long after the effective date must the dealer deliver a prospectus to aftermarket purchasers?",
+    "options": [
+      "90 days",
+      "40 days",
+      "25 days",
+      "No delivery requirement applies once the offering is effective"
+    ],
+    "answer": 2,
+    "explanation": "Aftermarket delivery under Rule 174 / Rule 15c2-8 is 90 days for a non-listed IPO, 40 days for a non-listed follow-on, 25 days for an IPO that will be exchange- or Nasdaq-listed, and 0 days for a listed follow-on.",
+    "calc": false,
+    "source": "09-regulation-trading-economics.md §3.1.1 Aftermarket prospectus delivery"
+  },
+  {
+    "id": "reg-L3-02",
+    "domain": "regulation",
+    "level": 3,
+    "topic": "accredited-investor-test",
+    "module": "M37",
+    "stem": "A married couple wants to invest in a Rule 506(b) private placement. Each spouse earned $130,000 in each of the past two years ($260,000 jointly) and expects the same this year. Their net worth is $1,400,000, of which $600,000 is the equity in their primary residence. Neither holds a securities license. For Regulation D purposes the couple is:",
+    "options": [
+      "Accredited, because joint income exceeds $200,000",
+      "Accredited, because net worth exceeds $1,000,000",
+      "Accredited, because they satisfy both the income and the net-worth tests",
+      "Not accredited under either the income test or the net-worth test"
+    ],
+    "answer": 3,
+    "explanation": "The joint income test is more than $300,000 (the $200,000 test is per individual, and neither spouse reaches it), and net worth must exceed $1,000,000 EXCLUDING the primary residence, which leaves only $800,000. The Series 7/65/82 route does not apply. Thresholds are unchanged as of 2026.",
+    "calc": true,
+    "source": "09-regulation-trading-economics.md §3.1.3 Accredited investor"
+  },
+  {
+    "id": "reg-L3-03",
+    "domain": "regulation",
+    "level": 3,
+    "topic": "sell-stop-election-and-execution",
+    "module": "M38",
+    "stem": "A customer enters an order to sell 100 XYZ at 40 STOP. After the order is entered the tape shows: 40.25, 40.10, 40.00, 39.85, 39.95. At what price is the order executed?",
+    "options": [
+      "40.00",
+      "39.85",
+      "39.95",
+      "40.10"
+    ],
+    "answer": 1,
+    "explanation": "A sell stop is elected by the first trade at or below the stop price (40.00) and then becomes a market order filled at the NEXT print, 39.85. Election and execution are two different trades.",
+    "calc": true,
+    "source": "09-regulation-trading-economics.md §3.8 Ticker-tape worked example"
+  },
+  {
+    "id": "reg-L3-04",
+    "domain": "regulation",
+    "level": 3,
+    "topic": "settlement-date-across-weekend",
+    "module": "M38",
+    "stem": "A customer buys 200 shares of an NYSE-listed stock regular way on a Friday. No market holidays fall in the following week. On what day does the trade settle?",
+    "options": [
+      "The following Monday",
+      "That same Friday",
+      "The following Tuesday",
+      "The following Wednesday"
+    ],
+    "answer": 0,
+    "explanation": "Regular way is T+1 business day (since May 28, 2024), and weekends are not business days, so a Friday trade settles Monday. Reg T payment would be due on Wednesday (settlement plus two business days, T+3).",
+    "calc": true,
+    "source": "09-regulation-trading-economics.md §3.11 Settlement cycles"
+  },
+  {
+    "id": "reg-L3-05",
+    "domain": "regulation",
+    "level": 3,
+    "topic": "market-wide-circuit-breaker-level-1",
+    "module": "M38",
+    "stem": "At 1:15 pm ET the S&P 500 Index is down 7% from the previous day's close. What happens under the market-wide circuit-breaker rules?",
+    "options": [
+      "Trading continues; a halt occurs only when the decline reaches 13%",
+      "Trading halts for the remainder of the day",
+      "Trading in all equity markets halts for 15 minutes",
+      "Only the stocks in the S&P 500 are paused for 5 minutes"
+    ],
+    "answer": 2,
+    "explanation": "Market-wide circuit breakers key off the S&P 500: a Level 1 (7%) or Level 2 (13%) decline before 3:25 pm ET halts all markets for 15 minutes (each level once per day); a Level 3 (20%) decline closes the market for the rest of the day at any time. Per-stock 5-minute pauses are the separate LULD mechanism.",
+    "calc": false,
+    "source": "09-regulation-trading-economics.md §3.6 Trading halts"
+  },
+  {
+    "id": "reg-L4-01",
+    "domain": "regulation",
+    "level": 4,
+    "topic": "buy-stop-limit-on-tape",
+    "module": "M38",
+    "stem": "A customer enters an order to buy 100 ABC at 40 STOP, limit 40.10. After entry the tape shows: 39.80, 39.95, 40.00, 40.20, 40.15, 40.05. The order is:",
+    "options": [
+      "Executed at 40.00",
+      "Executed at 40.20",
+      "Elected but cannot be executed on this tape",
+      "Executed at 40.05"
+    ],
+    "answer": 3,
+    "explanation": "A buy stop is elected by the first trade at or above 40.00 (the 40.00 print) and then becomes a buy limit at 40.10, which can fill only at 40.10 or lower. The next prints 40.20 and 40.15 are above the limit; 40.05 is the first eligible trade, so the order executes at 40.05.",
+    "calc": true,
+    "source": "09-regulation-trading-economics.md §3.8 Stop-limit, ticker-tape worked example"
+  },
+  {
+    "id": "reg-L4-02",
+    "domain": "regulation",
+    "level": 4,
+    "topic": "ex-dividend-order-adjustment-with-rounding",
+    "module": "M38",
+    "stem": "A customer has two open GTC orders in XYZ: buy 100 at a limit of 50.00 and sell 100 at a limit of 55.00. XYZ goes ex-dividend for a $0.125 cash dividend. Absent a DNR instruction, on the ex-date the orders are adjusted as follows:",
+    "options": [
+      "Buy limit reduced to 49.87; sell limit unchanged",
+      "Buy limit reduced to 49.88; sell limit unchanged",
+      "Both orders reduced by $0.125",
+      "Buy limit reduced to 49.875; sell limit reduced to 54.875"
+    ],
+    "answer": 0,
+    "explanation": "FINRA Rule 5330 reduces only orders resting below the market (buy limits, sell stops, sell stop-limits) by the dividend, and rounds an off-tick result DOWN to the next lower quotation increment: 50.00 - 0.125 = 49.875, rounded down to 49.87. Sell limits and buy stops above the market are never adjusted for a cash dividend.",
+    "calc": true,
+    "source": "09-regulation-trading-economics.md §3.8 Ex-dividend order adjustment"
+  },
+  {
+    "id": "reg-L4-03",
+    "domain": "regulation",
+    "level": 4,
+    "topic": "spread-components-takedown-math",
+    "module": "M37",
+    "stem": "A corporate stock offering has a public offering price of $30.00 and the issuer receives $28.50 per share. The manager's fee is $0.25 and the underwriting fee is $0.40; the remainder of the spread is the concession. A syndicate member that sells shares from its own allotment directly to customers earns per share:",
+    "options": [
+      "$0.85",
+      "$1.10",
+      "$1.25",
+      "$1.50"
+    ],
+    "answer": 2,
+    "explanation": "Spread = $30.00 - $28.50 = $1.50; concession = $1.50 - $0.25 - $0.40 = $0.85. A syndicate member selling its own allotment keeps the takedown (underwriting fee + concession) = $0.40 + $0.85 = $1.25; the manager's fee goes to the lead underwriter on every share.",
+    "calc": true,
+    "source": "09-regulation-trading-economics.md §3.2 Spread and components"
+  },
+  {
+    "id": "reg-L4-04",
+    "domain": "regulation",
+    "level": 4,
+    "topic": "rule-5130-immediate-family-analysis",
+    "module": "M37",
+    "stem": "A registered representative's firm is a syndicate member in an equity IPO. Under FINRA Rule 5130, which of the following relatives of the representative MAY purchase shares of the new issue?",
+    "options": [
+      "The representative's sister, who shares the representative's apartment",
+      "The representative's retired father-in-law, for whom the $1,500 a month the representative sends is more than half of his income",
+      "The representative's spouse, who manages a bank trust department's equity portfolio",
+      "The representative's grandmother, who is financially independent and lives in her own home"
+    ],
+    "answer": 3,
+    "explanation": "Immediate family under 5130 is parents, in-laws, spouse, siblings, children and anyone the person materially supports; they are restricted when there is material support (more than 25% of the family member's income, or simply living in the same household), when the rep's firm is the one selling the new issue, or when the rep can influence allocation. The sister fails on the shared household and the father-in-law on material support. The spouse is restricted in her own right as a portfolio manager for a bank. Grandparents, aunts, uncles and cousins are not immediate family, so the financially independent grandmother may buy.",
+    "calc": false,
+    "source": "09-regulation-trading-economics.md §3.2 Rule 5130; §4 Classic traps"
+  },
+  {
+    "id": "reg-L4-05",
+    "domain": "regulation",
+    "level": 4,
+    "topic": "rule-144-volume-limit-calculation",
+    "module": "M37",
+    "stem": "An affiliate of ABC Corp. files Form 144 to sell control stock. ABC has 50,000,000 shares outstanding. Reported weekly trading volume for the four weeks preceding the filing was 700,000; 500,000; 650,000; and 550,000 shares. What is the maximum number of shares the affiliate may sell over the next 90 days?",
+    "options": [
+      "500,000",
+      "600,000",
+      "1,100,000",
+      "2,400,000"
+    ],
+    "answer": 1,
+    "explanation": "Rule 144 permits the GREATER of 1% of shares outstanding (500,000) or the average weekly volume of the preceding four weeks (2,400,000 / 4 = 600,000), so 600,000 shares may be sold in the 90-day window. Control stock has no holding period but is always subject to the volume limit.",
+    "calc": true,
+    "source": "09-regulation-trading-economics.md §3.1.3 Rule 144"
+  },
+  {
+    "id": "reg-L5-01",
+    "domain": "regulation",
+    "level": 5,
+    "topic": "exempt-security-vs-exempt-transaction",
+    "module": "M37",
+    "stem": "All of the following are exempt SECURITIES under the Securities Act of 1933 EXCEPT:",
+    "options": [
+      "General obligation bonds issued by a state",
+      "Commercial paper maturing in 180 days",
+      "Common stock issued by a national bank",
+      "Common stock sold to accredited investors under Rule 506(b) of Regulation D"
+    ],
+    "answer": 3,
+    "explanation": "Munis, commercial paper of 270 days or less, and bank (not bank holding company) securities are exempt securities under Section 3. A Regulation D private placement is an exempt TRANSACTION under Section 4: the method of sale is exempt, and the stock itself is restricted and must be registered or resold under Rule 144.",
+    "calc": false,
+    "source": "09-regulation-trading-economics.md §3.1.2, §3.1.3"
+  },
+  {
+    "id": "reg-L5-02",
+    "domain": "regulation",
+    "level": 5,
+    "topic": "sell-stop-limit-that-never-executes",
+    "module": "M38",
+    "stem": "A customer enters an order to sell 100 XYZ at 45 STOP, limit 45. After entry the tape shows: 45.10, 45.00, 44.90, 44.80, 44.95, 44.85. The order is:",
+    "options": [
+      "Executed at 45.00",
+      "Executed at 44.90",
+      "Executed at 44.95",
+      "Elected but not executed"
+    ],
+    "answer": 3,
+    "explanation": "The 45.10 print is above the stop and does nothing; the 45.00 print elects the order, which then becomes a sell limit at 45.00 that can fill only at 45.00 or higher. Every later print (44.90, 44.80, 44.95, 44.85) is below the limit, so the order never executes. A plain sell stop at 45 would have filled at 44.90 on the next trade.",
+    "calc": true,
+    "source": "09-regulation-trading-economics.md §3.8 Stop-limit; §4 Classic traps"
+  },
+  {
+    "id": "reg-L5-03",
+    "domain": "regulation",
+    "level": 5,
+    "topic": "riskless-principal-markup-base",
+    "module": "M38",
+    "stem": "The inside market for an OTC equity is 30.00 - 30.20. A firm with no position receives a customer order to buy 300 shares, buys 300 shares from a market maker at 30.20, and immediately sells them to the customer at 30.50. Under FINRA Rule 2121, the firm's markup on this riskless principal trade is:",
+    "options": [
+      "Approximately 0.99%",
+      "Approximately 1.64%",
+      "Approximately 1.67%",
+      "Not measured as a percentage, because the firm acted as principal"
+    ],
+    "answer": 0,
+    "explanation": "In a riskless principal trade the markup is measured from the firm's contemporaneous cost: (30.50 - 30.20) / 30.20 = 0.99%. Measuring against the inside bid (1.67%) or the customer's price (1.64%) is wrong, and because this is an equity the markup must also be disclosed on the confirmation.",
+    "calc": true,
+    "source": "09-regulation-trading-economics.md §3.9 Capacities, 5% policy worked examples"
+  },
+  {
+    "id": "reg-L5-04",
+    "domain": "regulation",
+    "level": 5,
+    "topic": "cooling-off-period-permitted-activity",
+    "module": "M37",
+    "stem": "A registration statement for an initial public offering has been filed with the SEC but is not yet effective. Which of the following MAY a registered representative do for a customer during this cooling-off period?",
+    "options": [
+      "Accept a $5,000 deposit from the customer, to be refunded in full if the customer later decides not to buy",
+      "Send the customer the red herring together with a one-page summary the representative wrote of its risk-factors section",
+      "Note in the firm's book that the customer wants 500 shares if the final price falls within the range shown in the red herring",
+      "Send the customer the firm's research report on the issuer, which was published before the registration statement was filed"
+    ],
+    "answer": 2,
+    "explanation": "During the cooling-off period a rep may distribute an unaltered red herring, publish tombstones, and take indications of interest, which are non-binding on both sides even when the customer names a quantity and a price condition. The rep may not accept money (even refundable), may not attach the rep's own summary or any sales literature to the preliminary prospectus, and may not send research on an IPO issuer (the Rule 138/139 safe harbors cover only seasoned reporting issuers).",
+    "calc": false,
+    "source": "09-regulation-trading-economics.md §3.1.1 Cooling-off period"
+  },
+  {
+    "id": "reg-L5-05",
+    "domain": "regulation",
+    "level": 5,
+    "topic": "schedule-13d-vs-13g",
+    "module": "M38",
+    "stem": "An investment adviser registered under the Investment Advisers Act acquires, in the ordinary course of business for its clients' accounts, 6% of a company's registered common stock on March 10. It has no intention of influencing control of the company. What must it file, and by when?",
+    "options": [
+      "Schedule 13D, within 5 business days of March 10",
+      "Schedule 13G, within 45 days after the end of the calendar quarter in which it crossed 5%",
+      "Schedule 13G, within 10 calendar days of March 10",
+      "Form 3, within 10 days of March 10"
+    ],
+    "answer": 1,
+    "explanation": "Schedule 13D is for owners above 5% who intend to influence control. Holders with no such intent file the short-form Schedule 13G; a registered investment adviser acquiring in the ordinary course of business is a qualified institutional investor, whose initial 13G is due 45 days after the end of the calendar quarter in which it crossed 5% (5 business days applies to 13D and to non-institutional passive investors; 10 calendar days was the pre-2024 13D deadline, per the October 2023 amendments effective in 2024). Form 3 applies only to Section 16 insiders (officers, directors, holders above 10%).",
+    "calc": false,
+    "source": "09-regulation-trading-economics.md §3.3 Beneficial ownership 13(d)/(g); §5 quick-reference table"
+  }
+]

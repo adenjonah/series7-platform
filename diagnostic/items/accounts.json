@@ -1,0 +1,452 @@
+[
+  {
+    "id": "acct-L1-01",
+    "domain": "accounts",
+    "level": 1,
+    "topic": "leverage-intuition",
+    "module": "M15",
+    "stem": "An investor has $10,000 to invest in a stock. A friend suggests borrowing another $10,000 from the brokerage firm so she can buy $20,000 worth of shares. Compared with investing only her own $10,000, borrowing to buy the stock will:",
+    "options": [
+      "reduce her risk, because the loan is secured by the shares she buys",
+      "have no effect on her percentage gain or loss, since she owns the same stock either way",
+      "magnify both her percentage gain and her percentage loss on the $10,000 of her own money",
+      "guarantee a larger profit, because she owns twice as many shares"
+    ],
+    "answer": 2,
+    "explanation": "The $10,000 loan does not change when the stock moves, so every dollar of price change lands on her own $10,000: a 10% move on $20,000 of stock ($2,000) is a 20% gain or loss on her equity. Leverage cuts both ways; it never reduces risk or guarantees profit.",
+    "calc": false,
+    "source": "08-accounts-suitability-margin.md §3.9.4, §5.2"
+  },
+  {
+    "id": "acct-L1-02",
+    "domain": "accounts",
+    "level": 1,
+    "topic": "why-customer-profile",
+    "module": "M15",
+    "stem": "Before recommending an investment, a registered representative asks a new customer about her goals, how soon she will need the money, and how much risk she can tolerate. The MAIN reason for gathering this information is to:",
+    "options": [
+      "make sure any recommendation actually fits this customer's situation and needs",
+      "determine the commission rate the firm is permitted to charge her",
+      "decide whether the customer is allowed to open an account at all",
+      "verify the customer's identity for the government"
+    ],
+    "answer": 0,
+    "explanation": "Objectives, time horizon and risk tolerance are elements of the customer investment profile; a recommendation must be suitable (in the customer's best interest) for this specific customer. Identity verification is a separate process (CIP), and an account can be opened even if the customer declines to give financial information.",
+    "calc": false,
+    "source": "08-accounts-suitability-margin.md §3.4.1, §3.1.3"
+  },
+  {
+    "id": "acct-L1-03",
+    "domain": "accounts",
+    "level": 1,
+    "topic": "jtwros-survivorship-intuition",
+    "module": "M15",
+    "stem": "A married couple opens a brokerage account titled \"joint tenants with right of survivorship.\" If one spouse dies, what happens to the assets in the account?",
+    "options": [
+      "Half of the account is frozen until the decedent's will is settled in probate court",
+      "The surviving spouse automatically owns the entire account, without the assets passing through the decedent's estate",
+      "The account is split between the surviving spouse and the heirs named in the decedent's will",
+      "The brokerage firm liquidates the account and pays the proceeds to the estate"
+    ],
+    "answer": 1,
+    "explanation": "\"Right of survivorship\" means the decedent's interest passes automatically to the surviving owner(s), outside probate. Passing a share to the estate is what happens under tenants in common, not JTWROS.",
+    "calc": false,
+    "source": "08-accounts-suitability-margin.md §3.2.3, §3.6.5"
+  },
+  {
+    "id": "acct-L1-04",
+    "domain": "accounts",
+    "level": 1,
+    "topic": "sipc-not-market-loss",
+    "module": "M15",
+    "stem": "An investor's stock portfolio held at a brokerage firm falls 40% during a market downturn. He asks whether SIPC will reimburse his losses. The BEST response is that SIPC:",
+    "options": [
+      "reimburses investors for losses up to $500,000 whenever their securities decline in value",
+      "reimburses market losses only if the decline exceeds $250,000",
+      "is a government agency that insures brokerage accounts the same way the FDIC insures bank deposits",
+      "protects customers only when a brokerage firm fails and their cash or securities are missing, not against market losses"
+    ],
+    "answer": 3,
+    "explanation": "SIPC is a non-profit membership corporation (not a government agency) that steps in when a broker-dealer becomes insolvent and customer assets are missing, up to $500,000 per separate customer including $250,000 cash. It never covers a decline in the market value of securities.",
+    "calc": false,
+    "source": "08-accounts-suitability-margin.md §3.8"
+  },
+  {
+    "id": "acct-L1-05",
+    "domain": "accounts",
+    "level": 1,
+    "topic": "trusted-contact-purpose",
+    "module": "M15",
+    "stem": "When opening an account, a brokerage firm asks the customer to name a \"trusted contact person.\" What is the purpose of this contact?",
+    "options": [
+      "The trusted contact may place trades for the customer while the customer is traveling",
+      "The trusted contact becomes the beneficiary of the account when the customer dies",
+      "The trusted contact must co-sign any withdrawal from the account over $10,000",
+      "The firm may call the trusted contact if it suspects the customer is being financially exploited or cannot reach the customer"
+    ],
+    "answer": 3,
+    "explanation": "Under Rule 4512 the firm makes reasonable efforts to obtain a trusted contact (age 18+) whom it may call to address possible financial exploitation, confirm the customer's contact information or health status, or identify a guardian or POA holder. The TCP has no trading authority and is not a beneficiary.",
+    "calc": false,
+    "source": "08-accounts-suitability-margin.md §3.1.5"
+  },
+  {
+    "id": "acct-L2-01",
+    "domain": "accounts",
+    "level": 2,
+    "topic": "new-account-form-signatures",
+    "module": "M34",
+    "stem": "Which of the following signatures is REQUIRED on the new account form for an individual cash account?",
+    "options": [
+      "The customer's signature",
+      "The registered representative's signature",
+      "The signatures of both the customer and the registered representative",
+      "The signature of a principal (partner, officer or manager) accepting the account"
+    ],
+    "answer": 3,
+    "explanation": "Rule 4512 requires the signature of the partner, officer or manager denoting acceptance of the account. The customer's signature is not required on a cash new account form (the customer signs the margin, options or discretionary agreements), and only the representative's name, not signature, is required.",
+    "calc": false,
+    "source": "08-accounts-suitability-margin.md §3.1.1, §4 trap 1"
+  },
+  {
+    "id": "acct-L2-02",
+    "domain": "accounts",
+    "level": 2,
+    "topic": "utma-features",
+    "module": "M34",
+    "stem": "Which of the following statements about an UTMA custodial account is TRUE?",
+    "options": [
+      "A gift made into the account is irrevocable and belongs to the minor",
+      "One custodian may hold the assets of several minors in a single account",
+      "The custodian may buy securities on margin to accelerate the account's growth",
+      "The account is opened under the custodian's Social Security number"
+    ],
+    "answer": 0,
+    "explanation": "UTMA/UGMA gifts are irrevocable and indefeasibly vested in the minor, who is the beneficial owner and whose SSN is used. Each account has one custodian and one minor, and margin, short sales and uncovered options are prohibited.",
+    "calc": false,
+    "source": "08-accounts-suitability-margin.md §3.2.4"
+  },
+  {
+    "id": "acct-L2-03",
+    "domain": "accounts",
+    "level": 2,
+    "topic": "cip-refused-tin",
+    "module": "M34",
+    "stem": "A prospective customer wishes to open a cash account but refuses to provide a Social Security number or taxpayer identification number and has not applied for one. Under the firm's Customer Identification Program, the firm should:",
+    "options": [
+      "open the account and withhold 24% of any dividends and interest as backup withholding",
+      "not open the account, because an identification number is required before an account may be opened",
+      "open the account but accept only unsolicited orders",
+      "open the account and report the refusal to FINRA within 30 days"
+    ],
+    "answer": 1,
+    "explanation": "CIP (31 CFR 1023.220) requires name, date of birth, address and an identification number before opening; the only exception is a customer who has applied for a TIN. Backup withholding applies to a customer who provides a TIN but will not certify it on Form W-9, and unsolicited-only treatment applies to a customer who declines to give financial information, not identity information.",
+    "calc": false,
+    "source": "08-accounts-suitability-margin.md §3.1.3"
+  },
+  {
+    "id": "acct-L2-04",
+    "domain": "accounts",
+    "level": 2,
+    "topic": "aml-layering-stage",
+    "module": "M35",
+    "stem": "A customer deposits funds, then repeatedly wires money among accounts at several institutions in different countries and buys and sells securities with no apparent investment purpose, making the origin of the funds difficult to trace. This activity is characteristic of which stage of money laundering?",
+    "options": [
+      "Placement",
+      "Structuring",
+      "Layering",
+      "Integration"
+    ],
+    "answer": 2,
+    "explanation": "Layering is the movement of funds through multiple transactions and accounts to obscure the audit trail; brokerage accounts are most exposed at this stage. Placement is the entry of cash into the system, integration is the re-emergence of funds as legitimate assets, and structuring is a cash-reporting evasion technique, not one of the three stages.",
+    "calc": false,
+    "source": "08-accounts-suitability-margin.md §3.7"
+  },
+  {
+    "id": "acct-L2-05",
+    "domain": "accounts",
+    "level": 2,
+    "topic": "reg-bi-four-obligations",
+    "module": "M35",
+    "stem": "Regulation Best Interest requires a broker-dealer to satisfy four component obligations when recommending a securities transaction or strategy to a retail customer. Which of the following is NOT one of those four obligations?",
+    "options": [
+      "Care Obligation",
+      "Conflict of Interest Obligation",
+      "Best Execution Obligation",
+      "Compliance Obligation"
+    ],
+    "answer": 2,
+    "explanation": "Reg BI's four obligations are Disclosure, Care, Conflict of Interest and Compliance. Best execution is a separate duty under FINRA Rule 5310, not a component of Reg BI.",
+    "calc": false,
+    "source": "08-accounts-suitability-margin.md §3.4.3"
+  },
+  {
+    "id": "acct-L3-01",
+    "domain": "accounts",
+    "level": 3,
+    "topic": "reg-t-deposit-and-deadline",
+    "module": "M39",
+    "stem": "A customer with an existing margin account (equity well above $2,000) buys 200 shares of XYZ at $60 per share on Monday. Under Regulation T, what deposit is required and by when? (Assume no market holidays.)",
+    "options": [
+      "$6,000, no later than Thursday, three business days after the trade date",
+      "$3,000, no later than Thursday, three business days after the trade date",
+      "$6,000, no later than Tuesday, the settlement date",
+      "$12,000, no later than Friday, four business days after the trade date"
+    ],
+    "answer": 0,
+    "explanation": "200 x $60 = $12,000; Reg T initial requirement is 50% = $6,000. Payment is due within one payment period = settlement (T+1) plus two business days = T+3, so a Monday trade must be paid by Thursday; the older T+4 figure predates the May 2024 move to T+1 settlement.",
+    "calc": true,
+    "source": "08-accounts-suitability-margin.md §3.9.3, §4 memorization table"
+  },
+  {
+    "id": "acct-L3-02",
+    "domain": "accounts",
+    "level": 3,
+    "topic": "rule-2210-retail-communication",
+    "module": "M36",
+    "stem": "A registered representative sends the same letter recommending a mutual fund to 40 retail customers over a two-week period. Under FINRA Rule 2210, this letter is classified as:",
+    "options": [
+      "correspondence, subject to supervisory review but not principal pre-approval",
+      "a retail communication, requiring approval by an appropriately qualified registered principal before use",
+      "an institutional communication, because it was sent only to existing customers",
+      "a public appearance, because it contains a recommendation"
+    ],
+    "answer": 1,
+    "explanation": "A written communication sent to more than 25 retail investors within any 30-calendar-day period is a retail communication and needs prior principal approval; 25 or fewer would be correspondence. Being an existing customer does not make a person an institutional investor.",
+    "calc": false,
+    "source": "08-accounts-suitability-margin.md §3.5.1"
+  },
+  {
+    "id": "acct-L3-03",
+    "domain": "accounts",
+    "level": 3,
+    "topic": "tenants-in-common-fit",
+    "module": "M34",
+    "stem": "Two unrelated business associates want to open a joint brokerage account in which one contributes 60% of the capital and the other 40%. Each wants his share to pass to his own heirs, not to the other owner, at death. Which form of joint ownership BEST fits their needs?",
+    "options": [
+      "Joint tenants with right of survivorship",
+      "Community property",
+      "Transfer on death registration in one owner's name",
+      "Tenants in common"
+    ],
+    "answer": 3,
+    "explanation": "Tenants in common permits specified, unequal fractional interests, and a decedent's fraction passes to his estate rather than to the surviving owner. JTWROS requires equal interests and passes everything to the survivor; community property is limited to married couples in community-property states.",
+    "calc": false,
+    "source": "08-accounts-suitability-margin.md §3.2.3"
+  },
+  {
+    "id": "acct-L3-04",
+    "domain": "accounts",
+    "level": 3,
+    "topic": "rule-3210-outside-accounts",
+    "module": "M35",
+    "stem": "A registered representative of Member Firm A wants to open a personal brokerage account at Member Firm B in which she will buy and sell individual stocks. Under FINRA Rule 3210, she must:",
+    "options": [
+      "notify FINRA in writing within 30 days of opening the account",
+      "obtain prior written consent from Firm B and arrange for duplicate statements to be sent to FINRA",
+      "obtain prior written consent from Firm A and notify Firm B in writing that she is associated with Firm A",
+      "do nothing, because Rule 3210 applies only to discretionary accounts"
+    ],
+    "answer": 2,
+    "explanation": "Rule 3210 requires the employing member's prior written consent and written notice of the association to the executing firm, which then supplies duplicate confirmations and statements upon the employer's request. FINRA is not notified; only accounts limited to mutual funds, UITs, variable contracts or 529 plans are exempt.",
+    "calc": false,
+    "source": "08-accounts-suitability-margin.md §3.3.1"
+  },
+  {
+    "id": "acct-L3-05",
+    "domain": "accounts",
+    "level": 3,
+    "topic": "death-of-customer-poa-terminates",
+    "module": "M34",
+    "stem": "A registered representative learns that a customer holding an individual account died yesterday. The customer's son, who holds a durable power of attorney over the account, calls and instructs the representative to sell all positions. The representative should:",
+    "options": [
+      "cancel all open orders, freeze the account, and await instructions from the estate's court-appointed executor or administrator",
+      "execute the son's sell order, because a durable power of attorney survives the grantor's death",
+      "execute the order only after obtaining a certified copy of the death certificate from the son",
+      "transfer the positions into the son's name, since he is the next of kin"
+    ],
+    "answer": 0,
+    "explanation": "Any power of attorney, durable or not, terminates at the grantor's death. On notice of death the firm cancels open orders, marks the account deceased, and takes instructions only from the executor or administrator once letters testamentary or letters of administration are presented.",
+    "calc": false,
+    "source": "08-accounts-suitability-margin.md §3.6.5, §3.2.9"
+  },
+  {
+    "id": "acct-L4-01",
+    "domain": "accounts",
+    "level": 4,
+    "topic": "sma-and-buying-power-after-rise",
+    "module": "M39",
+    "stem": "A customer opens a margin account by buying 500 shares of ABC at $80 and deposits the Regulation T requirement. ABC subsequently rises to $100. Assuming no other activity, what is the customer's buying power for additional marginable securities?",
+    "options": [
+      "$5,000",
+      "$10,000",
+      "$20,000",
+      "$30,000"
+    ],
+    "answer": 1,
+    "explanation": "LMV $40,000, deposit $20,000, DR $20,000. At $100: LMV $50,000, EQ $30,000, Reg T requirement $25,000, excess equity (SMA) $5,000. Buying power = SMA x 2 = $10,000; $5,000 is the SMA itself, $30,000 is the equity.",
+    "calc": true,
+    "source": "08-accounts-suitability-margin.md §3.9.4 State A, §3.9.5"
+  },
+  {
+    "id": "acct-L4-02",
+    "domain": "accounts",
+    "level": 4,
+    "topic": "maintenance-call-amount",
+    "module": "M39",
+    "stem": "A customer's long margin account has a debit balance of $30,000. After a market decline, the long market value is $36,000. Under FINRA's 25% minimum maintenance requirement, what is the status of the account?",
+    "options": [
+      "Restricted, but no maintenance call, because equity is still positive",
+      "A maintenance call of $9,000",
+      "A maintenance call of $12,000",
+      "A maintenance call of $3,000"
+    ],
+    "answer": 3,
+    "explanation": "EQ = $36,000 - $30,000 = $6,000, which is 16.7% of LMV. Maintenance requirement = 25% x $36,000 = $9,000, so the call is $9,000 - $6,000 = $3,000. $9,000 is the requirement, not the call, and $12,000 comes from wrongly using 50% ($18,000 - $6,000).",
+    "calc": true,
+    "source": "08-accounts-suitability-margin.md §3.9.4 State C"
+  },
+  {
+    "id": "acct-L4-03",
+    "domain": "accounts",
+    "level": 4,
+    "topic": "short-account-equity",
+    "module": "M39",
+    "stem": "A customer sells short 1,000 shares of DEF at $40 and deposits the Regulation T requirement. DEF later rises to $48. What is the equity in the short margin account?",
+    "options": [
+      "$12,000",
+      "$14,400",
+      "$20,000",
+      "$28,000"
+    ],
+    "answer": 0,
+    "explanation": "Credit balance = $40,000 proceeds + $20,000 deposit = $60,000 and does not change with price. CR - SMV = $60,000 - $48,000 = $12,000 equity; the $8,000 rise reduces a short seller's equity. $28,000 moves equity the wrong direction, $20,000 ignores the price change, and $14,400 is the 30% maintenance requirement (so the account also has a $2,400 call).",
+    "calc": true,
+    "source": "08-accounts-suitability-margin.md §3.9.6"
+  },
+  {
+    "id": "acct-L4-04",
+    "domain": "accounts",
+    "level": 4,
+    "topic": "suitability-income-high-bracket",
+    "module": "M35",
+    "stem": "A 72-year-old retired customer has a net worth of $3 million, is in the highest federal income tax bracket, and states that her objective is current income with preservation of capital. She has no near-term liquidity needs. Which of the following is the MOST suitable recommendation?",
+    "options": [
+      "Zero-coupon Treasury bonds",
+      "A diversified portfolio of small-cap growth stocks",
+      "Investment-grade municipal bonds",
+      "High-yield corporate bonds"
+    ],
+    "answer": 2,
+    "explanation": "Current income plus preservation points to investment-grade debt, and the highest tax bracket makes tax-exempt municipal bonds the best fit. Zero-coupon bonds pay no current income, growth stocks do not match the objective, and high-yield bonds sacrifice the preservation-of-capital requirement.",
+    "calc": false,
+    "source": "08-accounts-suitability-margin.md §3.4.2 objective-to-product table"
+  },
+  {
+    "id": "acct-L4-05",
+    "domain": "accounts",
+    "level": 4,
+    "topic": "sar-vs-ctr-thresholds",
+    "module": "M35",
+    "stem": "A customer who owns a retail store deposits $9,500 in currency and asks the registered representative whether the deposit \"will be reported to the government.\" Two business days later he deposits another $9,000 in currency. Which of the following describes the firm's obligation?",
+    "options": [
+      "File a Currency Transaction Report within 15 days, because the deposits exceed $10,000 in aggregate",
+      "File a Suspicious Activity Report within 30 calendar days of detection, without informing the customer",
+      "No filing is required, because no single deposit exceeded $10,000",
+      "Notify OFAC and block the account pending review"
+    ],
+    "answer": 1,
+    "explanation": "A CTR aggregates cash only within a single business day, so two sub-$10,000 deposits on different days do not trigger one. But the pattern plus the customer's concern about reporting is a structuring red flag; the aggregate exceeds the $5,000 SAR threshold, so a SAR must be filed within 30 calendar days and the customer must not be tipped off. OFAC screening concerns sanctioned persons, not cash reporting.",
+    "calc": false,
+    "source": "08-accounts-suitability-margin.md §3.7, §4 trap 15"
+  },
+  {
+    "id": "acct-L5-01",
+    "domain": "accounts",
+    "level": 5,
+    "topic": "sma-not-excess-after-decline",
+    "module": "M39",
+    "stem": "A customer buys 1,000 shares of GHI at $50 in a new margin account and deposits the Regulation T requirement. GHI rises to $70 and then falls back to $60. The customer has used no SMA and made no other transactions. After the decline to $60, what is the balance in the SMA?",
+    "options": [
+      "$0, because the account no longer has excess equity above its previous high",
+      "$5,000",
+      "$10,000",
+      "$20,000"
+    ],
+    "answer": 2,
+    "explanation": "DR is fixed at $25,000. At $70: LMV $70,000, EQ $45,000, Reg T $35,000, so SMA is set at $10,000. At $60: LMV $60,000, EQ $35,000, Reg T $30,000, so current excess equity is only $5,000, but SMA is a high-water mark that falls only when used, so it remains $10,000 ($20,000 is the resulting buying power).",
+    "calc": true,
+    "source": "08-accounts-suitability-margin.md §3.9.5, §4 trap 23"
+  },
+  {
+    "id": "acct-L5-02",
+    "domain": "accounts",
+    "level": 5,
+    "topic": "minimum-equity-vs-cost-exception",
+    "module": "M39",
+    "stem": "A customer opens a new margin account and, as her first transaction, buys 100 shares of JKL at $15 per share. What is the minimum deposit required?",
+    "options": [
+      "$1,500",
+      "$750",
+      "$2,000",
+      "$3,000"
+    ],
+    "answer": 0,
+    "explanation": "The purchase is 100 x $15 = $1,500. Reg T would call for 50% ($750) and FINRA's $2,000 minimum would exceed that, but Rule 4210 never requires a deposit greater than the full cost of a long purchase, so the deposit is $1,500. Had this been a short sale of $1,500, the full $2,000 would be required.",
+    "calc": true,
+    "source": "08-accounts-suitability-margin.md §3.9.3 decision table"
+  },
+  {
+    "id": "acct-L5-03",
+    "domain": "accounts",
+    "level": 5,
+    "topic": "restricted-account-sale-release",
+    "module": "M39",
+    "stem": "A customer's margin account shows long market value of $50,000 and a debit balance of $28,000. The customer sells $10,000 of stock from the account. What is the MAXIMUM cash the customer may withdraw as a result of this sale?",
+    "options": [
+      "$0, because a restricted account must apply all sale proceeds to the debit balance",
+      "$7,000, the proceeds remaining after the Regulation T deficiency is cured",
+      "$10,000, the full proceeds, because a sale reduces the debit balance",
+      "$5,000"
+    ],
+    "answer": 3,
+    "explanation": "EQ = $50,000 - $28,000 = $22,000 versus a Reg T requirement of $25,000, so the account is restricted by $3,000. A restricted account is not required to cure the deficiency; the retention requirement is 50% of sale proceeds, so $5,000 pays down the debit and $5,000 may be withdrawn. After the sale and withdrawal the debit is $28,000 - $10,000 + $5,000 = $23,000 against LMV $40,000, leaving equity of $17,000 (42.5%), comfortably above the 25% maintenance requirement.",
+    "calc": true,
+    "source": "08-accounts-suitability-margin.md §3.9.4 restricted account, §5.4"
+  },
+  {
+    "id": "acct-L5-04",
+    "domain": "accounts",
+    "level": 5,
+    "topic": "time-and-price-vs-discretion",
+    "module": "M34",
+    "stem": "On Monday morning a customer telephones his registered representative and says, \"Buy 300 shares of MNO for me today, whenever you think the price looks best.\" No written discretionary authorization is on file. Watching the stock, the representative buys the 300 shares on Tuesday afternoon. Which statement is CORRECT?",
+    "options": [
+      "The trade was properly executed, because the customer specified the action, the asset and the amount",
+      "The trade required prior written discretionary authorization even on Monday, because the representative chose the time and price",
+      "The customer's instruction was valid only until the close of business on Monday; the Tuesday purchase was an unauthorized discretionary trade",
+      "The trade was proper because a principal may approve time-and-price orders promptly after execution"
+    ],
+    "answer": 2,
+    "explanation": "When the customer fixes action, asset and amount and leaves only time and price to the representative, no written discretion is needed, but under Rule 3260 that authority is good only until the end of that business day absent a signed, dated written extension. Executing on Tuesday required fresh instructions or written discretionary authorization.",
+    "calc": false,
+    "source": "08-accounts-suitability-margin.md §3.2.10, §4 trap 3"
+  },
+  {
+    "id": "acct-L5-05",
+    "domain": "accounts",
+    "level": 5,
+    "topic": "margin-agreement-parts-and-rehypothecation-limit",
+    "module": "M39",
+    "stem": "A customer's margin account holds stock with a long market value of $60,000 against a debit balance of $22,000. When the account was opened the customer signed the credit agreement and the hypothecation agreement but declined to sign the loan consent. Which statement is CORRECT?",
+    "options": [
+      "The firm may not carry the margin account, because every part of the margin agreement must be signed before credit is extended",
+      "The firm may repledge up to $30,800 of the customer's securities to a bank as collateral for the margin loan, but may not lend her shares to a short seller",
+      "The firm may lend the customer's shares to a short seller but may not repledge any of them to a bank",
+      "The firm may repledge the full $60,000 position to a bank, because the hypothecation agreement sets no limit on the amount repledged"
+    ],
+    "answer": 1,
+    "explanation": "The loan consent is the only optional part of the margin agreement, and it is the piece that permits the firm to lend the customer's securities to short sellers; without it the firm may not lend them out. The hypothecation agreement, which she did sign, lets the firm repledge her securities to a bank, but SEC Rules 8c-1/15c2-1 cap rehypothecation at 140% of the debit balance: 1.40 x $22,000 = $30,800. The excess must be segregated.",
+    "calc": true,
+    "source": "08-accounts-suitability-margin.md §3.9.1, §3.9.2"
+  }
+]
