@@ -6,87 +6,158 @@
   "reading": [
     {
       "h": "The three statements",
-      "body": "**Balance sheet** — a *snapshot* at one date. Its identity: **Assets = Liabilities + Shareholders' Equity.**\n\n**Income statement** — a *flow* over a period: Revenue − expenses = net income.\n\n**Cash-flow statement** — cash from operations, investing, and financing (net income + depreciation ≈ cash flow from operations).\n\nA public company files a **10-K** (annual, audited), **10-Q** (quarterly), and **8-K** (material event). Footnotes explain the accounting methods, and the auditor's opinion vouches for the statements."
+      "body": "A company reports through three statements.\n\nThe **balance sheet** is a **snapshot** at one date. Its identity: **Assets = Liabilities + Shareholders' Equity.**\n\nThe **income statement** is a **flow** over a period: revenue − expenses = net income.\n\nThe **cash-flow statement** shows cash from operations, investing, and financing. Net income + depreciation is about equal to cash flow from operations.\n\nA public company files a **10-K** (annual, audited), a **10-Q** (quarterly), and an **8-K** (material event). Footnotes explain the accounting methods, and the auditor's opinion vouches for the statements."
     },
     {
       "h": "Balance-sheet vocabulary",
-      "body": "**Current assets** (cash, marketable securities, receivables, inventory) convert to cash within 12 months; **fixed assets** (plant, equipment, less accumulated **depreciation**); **intangibles** (**goodwill**, patents).\n\n**Current liabilities** (accounts payable, wages, taxes, the current portion of long-term debt) are due within 12 months; **long-term liabilities** are bonds and other debt beyond a year.\n\n**Shareholders' equity** = preferred + common at par + paid-in surplus + **retained earnings**. **Net worth = total assets − total liabilities = shareholders' equity.** Inventory methods matter: in inflation, **LIFO** gives higher cost of goods sold → lower reported profit → lower taxes; **FIFO** gives higher profit."
+      "body": "**Current assets** turn into cash within 12 months: cash, marketable securities, receivables, and inventory. **Fixed assets** are plant and equipment, less accumulated **depreciation**. **Intangibles** are **goodwill** and patents.\n\n**Current liabilities** come due within 12 months: accounts payable, wages, taxes, and the current portion of long-term debt. **Long-term liabilities** are bonds and other debt due beyond a year.\n\n**Shareholders' equity** = preferred + common at par + paid-in surplus + **retained earnings**. **Net worth = total assets − total liabilities = shareholders' equity.**\n\nInventory method matters. In inflation, **LIFO** gives higher cost of goods sold, so lower reported profit and lower taxes. **FIFO** gives higher profit."
     },
     {
       "h": "The income waterfall to EPS",
-      "body": "Follow the flow down the income statement:\n\nRevenue − cost of goods sold = **gross profit** − operating expenses = **operating income (EBIT)**; add back depreciation & amortization → **EBITDA**; EBIT − interest = **pre-tax income (EBT)** − taxes = **net income** − preferred dividends = **earnings available to common** ÷ shares outstanding = **EPS**.\n\nThe order that gets tested: **interest is paid before taxes** (it is tax-deductible), while **dividends are paid after taxes** (not deductible). That is why debt is 'cheaper' to the company and why interest-coverage ratios matter."
+      "body": "Follow the flow down the income statement.\n\nRevenue − cost of goods sold = **gross profit**. Gross profit − operating expenses = **operating income (EBIT)**. Add back depreciation and amortization to get **EBITDA**. EBIT − interest = **pre-tax income (EBT)**. EBT − taxes = **net income**. Net income − preferred dividends = **earnings available to common**. Divide by shares outstanding to get **EPS**.\n\nHere is the order the exam tests: the company **pays interest before taxes** because interest is tax-deductible. The company **pays dividends after taxes** because dividends are not deductible. That is why debt is cheaper to the company, and why interest-coverage ratios matter."
     },
     {
       "h": "Liquidity ratios",
-      "body": "**Working capital = current assets − current liabilities** — the cash cushion for near-term obligations.\n\n**Current ratio = current assets ÷ current liabilities** (about 2:1 is comfortable).\n\n**Quick (acid-test) ratio = (current assets − inventory) ÷ current liabilities** (about 1:1). It strips out inventory because inventory is the hardest current asset to convert to cash quickly.\n\nExample: current assets $600,000 including $150,000 inventory, current liabilities $300,000 → current ratio 2.0, quick ratio ($450,000 ÷ $300,000) 1.5."
+      "body": "**Working capital = current assets − current liabilities.** It is the cash cushion for near-term bills.\n\n**Current ratio = current assets ÷ current liabilities.** About 2:1 is comfortable.\n\n**Quick (acid-test) ratio = (current assets − inventory) ÷ current liabilities.** About 1:1 is comfortable. It drops inventory because inventory is the hardest current asset to turn into cash quickly.\n\nExample: current assets $600,000 including $150,000 inventory, current liabilities $300,000. The current ratio is 2.0. The quick ratio is $450,000 ÷ $300,000 = 1.5."
     },
     {
       "h": "Capitalization and coverage ratios",
-      "body": "**Total capitalization = long-term debt + shareholders' equity.**\n\n**Bond (debt) ratio = long-term debt ÷ total capitalization** — the share of the company financed by long-term debt.\n\n**Debt-to-equity ratio = long-term debt ÷ shareholders' equity** (definitions vary by provider, so a stem should state which it means). A high ratio means the company is 'highly leveraged' — typical of utilities, atypical of tech.\n\n**Bond interest coverage = EBIT ÷ annual interest** (times interest earned) — how many times operating income covers the interest bill. Coverage below 2 is a warning sign."
+      "body": "**Total capitalization = long-term debt + shareholders' equity.**\n\n**Bond (debt) ratio = long-term debt ÷ total capitalization.** It is the share of the company funded by long-term debt.\n\n**Debt-to-equity ratio = long-term debt ÷ shareholders' equity.** Definitions vary by provider, so a stem should state which one it means. A high ratio means the company is highly leveraged, which is typical of utilities and atypical of tech.\n\n**Bond interest coverage = EBIT ÷ annual interest** (times interest earned). It shows how many times operating income covers the interest bill. Coverage below 2 is a warning sign."
     },
     {
       "h": "Per-share metrics the exam loves",
-      "body": "**EPS = (net income − preferred dividends) ÷ common shares.** Example: net income $5.5M, preferred dividends $0.5M, 2.5M shares → (5.5 − 0.5) ÷ 2.5 = **$2.00**. Forgetting to subtract preferred dividends is the classic error.\n\n**P/E ratio = market price ÷ EPS.** Price $40, EPS $2 → **20×**. High P/E signals growth expectations; low P/E signals value or a mature company.\n\n**Dividend payout ratio = dividends per share ÷ EPS.** Dividend $0.80, EPS $2 → **40%**.\n\n**Current (dividend) yield = annual dividend ÷ market price.** $0.80 ÷ $40 = **2%**.\n\n**Book value per share = (equity − preferred − intangibles) ÷ common shares.**"
+      "body": "**EPS = (net income − preferred dividends) ÷ common shares.** Example: net income $5.5M, preferred dividends $0.5M, 2.5M shares → (5.5 − 0.5) ÷ 2.5 = **$2.00**. The classic error is forgetting to subtract preferred dividends.\n\n**P/E ratio = market price ÷ EPS.** Price $40, EPS $2 → **20×**. A high P/E signals growth expectations. A low P/E signals value or a mature company.\n\n**Dividend payout ratio = dividends per share ÷ EPS.** Dividend $0.80, EPS $2 → **40%**.\n\n**Current (dividend) yield = annual dividend ÷ market price.** $0.80 ÷ $40 = **2%**.\n\n**Book value per share = (equity − preferred − intangibles) ÷ common shares.**"
     },
     {
       "h": "What changes working capital",
-      "body": "Working capital = current assets − current liabilities, so only items that touch a *current* account move it:\n\n**Paying a cash dividend** → cash (current asset) down → working capital **down**.\n**Buying equipment with cash** → cash down, fixed asset up → working capital **down**.\n**Issuing long-term bonds for cash** → cash (current) up, new liability is *long-term* → working capital **up**.\n**Collecting a receivable in cash** → one current asset (receivables) becomes another (cash) → working capital **unchanged**."
+      "body": "Working capital = current assets − current liabilities. So only items that touch a **current** account move it.\n\n**Paying a cash dividend** lowers cash, a current asset, so working capital falls.\n\n**Buying equipment with cash** lowers cash and raises a fixed asset, so working capital falls.\n\n**Issuing long-term bonds for cash** raises cash, a current asset, while the new liability is long-term, so working capital rises.\n\n**Collecting a receivable in cash** turns one current asset into another, so working capital does not change."
     }
   ],
   "flashcards": [
-    { "front": "Balance-sheet identity", "back": "Assets = Liabilities + Shareholders' Equity. Net worth = total assets − total liabilities = shareholders' equity." },
-    { "front": "10-K vs 10-Q vs 8-K", "back": "10-K = annual, audited; 10-Q = quarterly; 8-K = material event." },
-    { "front": "LIFO vs FIFO in inflation", "back": "LIFO → higher COGS → lower profit → lower taxes. FIFO → higher reported profit." },
-    { "front": "Income waterfall to EPS", "back": "Revenue − COGS = gross profit − opex = EBIT (+D&A = EBITDA) − interest = EBT − taxes = net income − preferred div = earnings to common ÷ shares = EPS." },
-    { "front": "Interest vs dividends — paid before or after taxes?", "back": "Interest is paid BEFORE taxes (deductible). Dividends are paid AFTER taxes (not deductible)." },
-    { "front": "Working capital", "back": "Current assets − current liabilities." },
-    { "front": "Current ratio vs quick ratio", "back": "Current = CA ÷ CL (~2:1). Quick (acid-test) = (CA − inventory) ÷ CL (~1:1). Quick strips out inventory." },
-    { "front": "Bond interest coverage", "back": "EBIT ÷ annual interest (times interest earned). Below 2 is a warning sign." },
-    { "front": "EPS formula", "back": "(Net income − preferred dividends) ÷ common shares outstanding." },
-    { "front": "P/E ratio", "back": "Market price ÷ EPS. High P/E = growth expectations; low = value/mature." },
-    { "front": "Dividend payout ratio vs current yield", "back": "Payout = dividend ÷ EPS. Current yield = annual dividend ÷ market price." },
-    { "front": "Which transaction leaves working capital UNCHANGED?", "back": "Collecting a receivable in cash — swaps one current asset for another." }
+    {
+      "front": "Balance-sheet identity",
+      "back": "Assets = Liabilities + Shareholders' Equity. Net worth = total assets − total liabilities = shareholders' equity."
+    },
+    {
+      "front": "10-K vs 10-Q vs 8-K",
+      "back": "10-K = annual, audited; 10-Q = quarterly; 8-K = material event."
+    },
+    {
+      "front": "LIFO vs FIFO in inflation",
+      "back": "LIFO → higher COGS → lower profit → lower taxes. FIFO → higher reported profit."
+    },
+    {
+      "front": "Income waterfall to EPS",
+      "back": "Revenue − COGS = gross profit − opex = EBIT (+D&A = EBITDA) − interest = EBT − taxes = net income − preferred div = earnings to common ÷ shares = EPS."
+    },
+    {
+      "front": "Interest vs dividends — paid before or after taxes?",
+      "back": "The company pays interest BEFORE taxes (deductible). It pays dividends AFTER taxes (not deductible)."
+    },
+    {
+      "front": "Working capital",
+      "back": "Current assets − current liabilities."
+    },
+    {
+      "front": "Current ratio vs quick ratio",
+      "back": "Current = CA ÷ CL (about 2:1). Quick (acid-test) = (CA − inventory) ÷ CL (about 1:1). Quick drops inventory."
+    },
+    {
+      "front": "Bond interest coverage",
+      "back": "EBIT ÷ annual interest (times interest earned). Below 2 is a warning sign."
+    },
+    {
+      "front": "EPS formula",
+      "back": "(Net income − preferred dividends) ÷ common shares outstanding."
+    },
+    {
+      "front": "P/E ratio",
+      "back": "Market price ÷ EPS. High P/E = growth expectations; low = value or mature."
+    },
+    {
+      "front": "Dividend payout ratio vs current yield",
+      "back": "Payout = dividend ÷ EPS. Current yield = annual dividend ÷ market price."
+    },
+    {
+      "front": "Which transaction leaves working capital UNCHANGED?",
+      "back": "Collecting a receivable in cash — it swaps one current asset for another."
+    }
   ],
   "quiz": [
     {
       "stem": "A company reports current assets of $600,000, which include inventory of $150,000, and current liabilities of $300,000. What is its quick (acid-test) ratio?",
-      "options": ["1.5", "2.0", "2.5", "1.0"],
+      "options": [
+        "1.5",
+        "2.0",
+        "2.5",
+        "1.0"
+      ],
       "answer": 0,
       "explanation": "Quick ratio = (current assets − inventory) ÷ current liabilities = ($600,000 − $150,000) ÷ $300,000 = 1.5. The 2.0 answer is the current ratio, which leaves inventory in."
     },
     {
       "stem": "A corporation reports net income of $8,000,000, pays $800,000 in preferred dividends, and has 3,000,000 common shares outstanding. Its stock trades at $36. What is the price-to-earnings ratio?",
-      "options": ["15.0", "13.5", "11.3", "22.5"],
+      "options": [
+        "15.0",
+        "13.5",
+        "11.3",
+        "22.5"
+      ],
       "answer": 0,
       "explanation": "EPS = (net income − preferred dividends) ÷ common shares = ($8,000,000 − $800,000) ÷ 3,000,000 = $2.40, and P/E = $36 ÷ $2.40 = 15. Forgetting to subtract preferred dividends gives EPS of $2.67 and the 13.5 distractor."
     },
     {
       "stem": "Which of the following corporate transactions would have NO effect on the company's working capital?",
-      "options": ["Declaring and paying a cash dividend to common stockholders", "Issuing 20-year bonds for cash", "Collecting an account receivable in cash", "Purchasing a machine for cash"],
+      "options": [
+        "Declaring and paying a cash dividend to common stockholders",
+        "Issuing 20-year bonds for cash",
+        "Collecting an account receivable in cash",
+        "Purchasing a machine for cash"
+      ],
       "answer": 2,
       "explanation": "Collecting a receivable swaps one current asset (receivables) for another (cash), so working capital is unchanged. Paying a dividend or buying equipment with cash reduces it; issuing long-term bonds for cash raises it, because the new liability is long-term."
     },
     {
       "stem": "A company has current assets of $900,000 and current liabilities of $450,000. What is its current ratio?",
-      "options": ["1.0", "1.5", "2.0", "2.5"],
+      "options": [
+        "1.0",
+        "1.5",
+        "2.0",
+        "2.5"
+      ],
       "answer": 2,
       "explanation": "Current ratio = current assets ÷ current liabilities = $900,000 ÷ $450,000 = 2.0. The quick ratio would be lower because it removes inventory from the numerator."
     },
     {
       "stem": "On an income statement, a company's operating income (EBIT) is $10,000,000 and its annual bond interest expense is $2,500,000. What is its bond interest coverage?",
-      "options": ["2.5 times", "4.0 times", "0.25 times", "7.5 times"],
+      "options": [
+        "2.5 times",
+        "4.0 times",
+        "0.25 times",
+        "7.5 times"
+      ],
       "answer": 1,
       "explanation": "Bond interest coverage (times interest earned) = EBIT ÷ annual interest = $10,000,000 ÷ $2,500,000 = 4.0 times. This measures how many times operating income covers the interest bill; below 2 would be a warning sign."
     },
     {
       "stem": "A company earns EPS of $3.00 and pays an annual dividend of $1.20 per share. What is its dividend payout ratio?",
-      "options": ["25%", "40%", "60%", "2.5%"],
+      "options": [
+        "25%",
+        "40%",
+        "60%",
+        "2.5%"
+      ],
       "answer": 1,
       "explanation": "Dividend payout ratio = dividend per share ÷ EPS = $1.20 ÷ $3.00 = 40%. Do not confuse this with current yield, which divides the dividend by the market price, not by EPS."
     },
     {
       "stem": "On the income statement, which item is subtracted from operating income (EBIT) BEFORE income taxes are applied?",
-      "options": ["Preferred dividends", "Common dividends", "Bond interest expense", "Cost of goods sold"],
+      "options": [
+        "Preferred dividends",
+        "Common dividends",
+        "Bond interest expense",
+        "Cost of goods sold"
+      ],
       "answer": 2,
       "explanation": "Interest is deducted before taxes (EBIT − interest = pre-tax income), which is why debt is tax-advantaged. Cost of goods sold is subtracted higher up to reach gross profit, and both preferred and common dividends are paid out of after-tax income."
     }

@@ -6,89 +6,165 @@
   "reading": [
     {
       "h": "Reading a quote: eighths, 32nds, and discount yields",
-      "body": "Three quoting conventions, three different dollar values from the same-looking number.\n\n**Corporate (and muni dollar) bonds** quote as a percent of $1,000 par in **eighths**: 1 point = $10, 1/8 = $1.25. A quote of **98 3/8** = 98.375% × $1,000 = **$983.75**.\n\n**Treasury notes and bonds** quote in **32nds**: 1/32 = $0.3125, and a '+' adds a 64th. **101-12** = 101 + 12/32 = 101.375% = **$1,013.75**. The trap: '101.12' on a Treasury is *not* 101.12% — it is 101 and 12/32.\n\n**T-bills** are quoted as an annualized **discount yield**, not a price. Because the quote is a *yield*, the **bid yield is higher than the ask yield** (a higher yield = a lower dollar price). Discount yield = (par − price)/par × 360/days. A 182-day bill at $97.50 → (2.50/100) × (360/182) = **4.95%**."
+      "body": "Three quoting conventions give three different dollar values from the same-looking number.\n\n**Corporate and muni dollar bonds** quote as a percent of $1,000 par in **eighths**: 1 point = $10, 1/8 = $1.25. A quote of **98 3/8** = 98.375% × $1,000 = **$983.75**.\n\n**Treasury notes and bonds** quote in **32nds**: 1/32 = $0.3125, and a '+' adds a 64th. **101-12** = 101 + 12/32 = 101.375% = **$1,013.75**. Watch the trap: '101.12' on a Treasury is not 101.12%. It is 101 and 12/32.\n\n**T-bills** quote as an annualized **discount yield**, not a price. Because the quote is a yield, the **bid yield is higher than the ask yield** (a higher yield means a lower dollar price). Discount yield = (par − price)/par × 360/days. A 182-day bill at $97.50 gives (2.50/100) × (360/182) = **4.95%**."
     },
     {
       "h": "The four yields and their ordering",
-      "body": "**Nominal (coupon)** = annual interest ÷ par, fixed for life. **Current yield = annual interest ÷ price.** **Yield to maturity (YTM)** counts the coupons plus the discount gain or premium loss at maturity; approximate it with **[annual interest + (par − price)/years] ÷ [(par + price)/2]**. **Yield to call (YTC)** uses the *call price* and *years to call* instead of par and maturity. **Yield to worst (YTW)** is simply the lowest of YTM and every YTC.\n\nThe ordering falls out of the seesaw: **discount bond → Nominal < CY < YTM < YTC; premium bond → Nominal > CY > YTM > YTC; par bond → all equal.** On a confirm, a callable **premium** bond is priced to the **lower** of YTM or YTC (usually YTC); a discount bond is priced to maturity."
+      "body": "**Nominal (coupon) yield** = annual interest ÷ par, fixed for life. **Current yield = annual interest ÷ price.** **Yield to maturity (YTM)** counts the coupons plus the discount gain or premium loss at maturity. Approximate it with **[annual interest + (par − price)/years] ÷ [(par + price)/2]**. **Yield to call (YTC)** uses the **call price** and **years to call** instead of par and maturity. **Yield to worst (YTW)** is the lowest of YTM and every YTC.\n\nThe order falls out of the seesaw. **Discount bond: Nominal < CY < YTM < YTC. Premium bond: Nominal > CY > YTM > YTC. Par bond: all equal.** On a confirm, a callable **premium** bond is priced to the **lower** of YTM or YTC, usually YTC. A discount bond is priced to maturity."
     },
     {
       "h": "Interest-rate risk and duration",
-      "body": "**Interest-rate (market) risk** is the price fall when rates rise. Its magnitude grows with **longer maturity** and **lower coupon** (and lower yield). So for a given rate move, the most volatile bond is the **long-maturity, low-coupon** one — a long zero is the extreme; a short high-coupon bond swings least; a floating-rate note barely moves.\n\n**Duration** puts a number on that sensitivity — roughly the years to recoup the price, and the % price move for a 1% rate change. Rules: duration **rises** with maturity, **falls** with coupon and yield; a **zero's duration equals its maturity**. Approximation: **% price change ≈ −duration × change in yield.** A bond with duration 7, if rates rise 1%, falls about **7%** ($1,000 → ~$930). Direction is always inverse."
+      "body": "**Interest-rate (market) risk** is the price fall when rates rise. It grows with **longer maturity** and **lower coupon** (and lower yield). So for a given rate move, the most volatile bond is the **long-maturity, low-coupon** one. A long zero is the extreme. A short high-coupon bond swings least. A floating-rate note barely moves.\n\n**Duration** puts a number on that sensitivity. It is roughly the years to recoup the price, and the percent price move for a 1% rate change. Duration **rises** with maturity and **falls** with coupon and yield. A **zero's duration equals its maturity**. The approximation is **% price change ≈ −duration × change in yield**. A bond with duration 7 falls about **7%** if rates rise 1% ($1,000 → about $930). The direction is always inverse."
     },
     {
       "h": "Bond ratings",
-      "body": "Ratings grade **default (credit) risk only** — not interest-rate risk, not price. **Investment grade** is the top four categories: Moody's Aaa/Aa/A/**Baa**, S&P–Fitch AAA/AA/A/**BBB**, down to the floor of **Baa3 / BBB−**. Below that (Ba/BB and lower) is **high-yield / 'junk'** — higher coupon, higher default and liquidity risk, more equity-like price behavior; a bond downgraded out of investment grade is a 'fallen angel.'\n\nMoody's uses number modifiers (1-2-3); S&P and Fitch use +/−. Ratings are paid for by the issuer, and *unrated* does not mean low quality (the issue may just be small). Many institutions — bank trust departments especially — may hold only investment-grade paper."
+      "body": "Ratings grade **default (credit) risk only**, not interest-rate risk and not price. **Investment grade** is the top four categories: Moody's Aaa/Aa/A/**Baa**, S&P and Fitch AAA/AA/A/**BBB**, down to the floor of **Baa3 / BBB−**. Below that (Ba/BB and lower) is **high-yield, or 'junk'**: higher coupon, higher default and liquidity risk, and more equity-like price behavior. A bond downgraded out of investment grade is a 'fallen angel.'\n\nMoody's uses number modifiers (1-2-3). S&P and Fitch use +/−. The issuer pays for the rating. Unrated does not mean low quality; the issue may just be small. Many institutions, especially bank trust departments, may hold only investment-grade paper."
     },
     {
       "h": "Corporate types by security and the priority ladder",
-      "body": "**Secured** bonds pledge assets: *mortgage bonds* (real property; open-end lets equal-claim bonds be added, closed-end only junior ones), *equipment trust certificates* (rolling stock, title held by a trustee, usually serial, very safe), *collateral trust bonds* (securities the issuer owns). **Unsecured** bonds pledge only a promise: a *debenture* (full faith and credit of the company) and, below it, a *subordinated debenture* (often convertible, higher yield).\n\nLiquidation priority runs: secured creditors on their collateral → wages/taxes/admin → general creditors incl. debentures → subordinated debentures → **preferred** → **common**. Exam form: 'Which has the *lowest* priority among the bonds?' → the subordinated debenture."
+      "body": "**Secured** bonds pledge assets. **Mortgage bonds** pledge real property; open-end lets equal-claim bonds be added, closed-end only junior ones. **Equipment trust certificates** pledge rolling stock, with title held by a trustee, usually serial, and very safe. **Collateral trust bonds** pledge securities the issuer owns. **Unsecured** bonds pledge only a promise. A **debenture** has the full faith and credit of the company. A **subordinated debenture** sits below it and is often convertible, with a higher yield.\n\nLiquidation priority runs: secured creditors on their collateral, then wages, taxes, and admin, then general creditors including debentures, then subordinated debentures, then **preferred**, then **common**. A common exam stem asks which bond has the lowest priority. The answer is the subordinated debenture."
     },
     {
       "h": "Calls, puts, sinking funds, and the special coupons",
-      "body": "**Callable** bonds let the issuer redeem early (usually to refinance when rates fall), so they pay a **higher** coupon and their price is capped near the call price when rates drop ('negative convexity'). Call *protection* is the years before the first call; a **sinking fund** sets aside money yearly to retire part of the issue, usually at par. **Puttable** bonds let the holder sell back at par when rates rise, so they pay a **lower** coupon.\n\n**Zero-coupon** bonds: deep discount, no cash until maturity, max interest-rate risk, phantom income. **Step-up / floating-rate** notes reset the coupon (floaters stay near par — low rate risk). **Income (adjustment) bonds** pay interest only if earned and trade **flat**. **Guaranteed** bonds are backed by a third party (usually a parent) — credit equals the guarantor's."
+      "body": "**Callable** bonds let the issuer redeem early, usually to refinance when rates fall. So they pay a **higher** coupon, and their price is capped near the call price when rates drop ('negative convexity'). Call **protection** is the years before the first call. A **sinking fund** sets aside money each year to retire part of the issue, usually at par. **Puttable** bonds let the holder sell back at par when rates rise, so they pay a **lower** coupon.\n\n**Zero-coupon** bonds have a deep discount, no cash until maturity, the most interest-rate risk, and phantom income. **Step-up and floating-rate** notes reset the coupon; floaters stay near par and carry low rate risk. **Income (adjustment) bonds** pay interest only if earned and trade **flat**. **Guaranteed** bonds are backed by a third party, usually a parent, so their credit equals the guarantor's."
     }
   ],
   "flashcards": [
-    { "front": "Corporate quote 98 3/8 = ?", "back": "98.375% × $1,000 = $983.75. Corporates quote in eighths; 1/8 = $1.25." },
-    { "front": "Treasury quote 101-12 = ?", "back": "101 + 12/32 = 101.375% = $1,013.75. 32nds; 1/32 = $0.3125. '101.12' is NOT 101.12%." },
-    { "front": "T-bill discount yield formula & bid/ask", "back": "(par − price)/par × 360/days. Quote is a yield, so bid yield > ask yield (higher yield = lower price)." },
-    { "front": "YTM approximation", "back": "[annual interest + (par − price)/years] ÷ [(par + price)/2]." },
-    { "front": "Yield to worst", "back": "The lowest of YTM and every YTC. Premium callable bonds are priced to the lower of YTM/YTC on the confirm." },
-    { "front": "Most / least interest-rate risk", "back": "Most: long maturity + low coupon (long zero = extreme). Least: short + high coupon; floaters ≈ none." },
-    { "front": "Duration price approximation", "back": "% price change ≈ −duration × change in yield. Duration 7, rates +1% → about −7%. Zero's duration = its maturity." },
-    { "front": "What do ratings measure?", "back": "Default (credit) risk only — not interest-rate risk or price. IG floor = Baa3 / BBB−." },
-    { "front": "Moody's vs S&P notation", "back": "Moody's uses number modifiers (Aa1/Aa2/Aa3); S&P and Fitch use +/− (AA+/AA/AA−)." },
-    { "front": "Lowest-priority corporate bond", "back": "Subordinated debenture — below general debentures, above preferred/common." },
-    { "front": "Equipment trust certificate", "back": "Secured by rolling stock (railcars, aircraft), title held by a trustee, usually serial maturities. Very safe." },
-    { "front": "Bonds that trade flat", "back": "Zero-coupon, income (adjustment), and defaulted bonds — no accrued interest." }
+    {
+      "front": "Corporate quote 98 3/8 = ?",
+      "back": "98.375% × $1,000 = $983.75. Corporates quote in eighths; 1/8 = $1.25."
+    },
+    {
+      "front": "Treasury quote 101-12 = ?",
+      "back": "101 + 12/32 = 101.375% = $1,013.75. 32nds; 1/32 = $0.3125. '101.12' is NOT 101.12%."
+    },
+    {
+      "front": "T-bill discount yield formula & bid/ask",
+      "back": "(par − price)/par × 360/days. Quote is a yield, so bid yield > ask yield (higher yield = lower price)."
+    },
+    {
+      "front": "YTM approximation",
+      "back": "[annual interest + (par − price)/years] ÷ [(par + price)/2]."
+    },
+    {
+      "front": "Yield to worst",
+      "back": "The lowest of YTM and every YTC. Premium callable bonds are priced to the lower of YTM/YTC on the confirm."
+    },
+    {
+      "front": "Most / least interest-rate risk",
+      "back": "Most: long maturity + low coupon (long zero = extreme). Least: short + high coupon; floaters ≈ none."
+    },
+    {
+      "front": "Duration price approximation",
+      "back": "% price change ≈ −duration × change in yield. Duration 7, rates +1% → about −7%. Zero's duration = its maturity."
+    },
+    {
+      "front": "What do ratings measure?",
+      "back": "Default (credit) risk only, not interest-rate risk or price. IG floor = Baa3 / BBB−."
+    },
+    {
+      "front": "Moody's vs S&P notation",
+      "back": "Moody's uses number modifiers (Aa1/Aa2/Aa3); S&P and Fitch use +/− (AA+/AA/AA−)."
+    },
+    {
+      "front": "Lowest-priority corporate bond",
+      "back": "Subordinated debenture: below general debentures, above preferred and common."
+    },
+    {
+      "front": "Equipment trust certificate",
+      "back": "Secured by rolling stock (railcars, aircraft), title held by a trustee, usually serial maturities. Very safe."
+    },
+    {
+      "front": "Bonds that trade flat",
+      "back": "Zero-coupon, income (adjustment), and defaulted bonds. No accrued interest."
+    }
   ],
   "quiz": [
     {
       "stem": "A corporate bond is quoted at 98 3/8. What is the dollar price of one bond?",
-      "options": ["$980.94", "$983.75", "$983.30", "$98.38"],
+      "options": [
+        "$980.94",
+        "$983.75",
+        "$983.30",
+        "$98.38"
+      ],
       "answer": 1,
       "explanation": "Corporates quote as a percent of $1,000 par in eighths: 3/8 = 0.375, so 98.375% × $1,000 = $983.75. $980.94 wrongly applies Treasury 32nds; $98.38 forgets to multiply by $1,000."
     },
     {
       "stem": "A Treasury bond is quoted at 101-12. What is the dollar price of one bond?",
-      "options": ["$1,011.20", "$1,012.00", "$1,013.75", "$1,015.00"],
+      "options": [
+        "$1,011.20",
+        "$1,012.00",
+        "$1,013.75",
+        "$1,015.00"
+      ],
       "answer": 2,
       "explanation": "Treasuries quote in 32nds: 101-12 = 101 + 12/32 = 101.375% × $1,000 = $1,013.75. $1,011.20 reads it as the decimal 101.12%; $1,015.00 would be 101-16 (a half point); $1,012.00 treats the 12 as $12."
     },
     {
       "stem": "A 6% corporate bond is trading at 80. What is its current yield?",
-      "options": ["6.00%", "4.80%", "7.50%", "8.00%"],
+      "options": [
+        "6.00%",
+        "4.80%",
+        "7.50%",
+        "8.00%"
+      ],
       "answer": 2,
       "explanation": "Current yield = annual interest ÷ price = $60 ÷ $800 = 7.50%. 6.00% is the nominal yield; because the bond trades at a discount, current yield must exceed the coupon, so 4.80% (below the coupon) is a trap."
     },
     {
       "stem": "A bond has a duration of 7. If market interest rates rise by 1%, the bond's price will MOST likely:",
-      "options": ["Fall by approximately 7%", "Rise by approximately 7%", "Fall by approximately 1%", "Fall by approximately 14%"],
+      "options": [
+        "Fall by approximately 7%",
+        "Rise by approximately 7%",
+        "Fall by approximately 1%",
+        "Fall by approximately 14%"
+      ],
       "answer": 0,
       "explanation": "% price change ≈ −duration × change in yield = −7 × 1% = about −7% ($1,000 → ~$930). Direction is inverse (so 'rise' is wrong), and the magnitude is the duration, not 1% or double it."
     },
     {
       "stem": "A 6% bond with 10 years to maturity is purchased at $1,100 and is callable in 5 years at 103. Using the exam approximation, the yield to call is closest to:",
-      "options": ["4.76%", "4.32%", "5.45%", "6.00%"],
+      "options": [
+        "4.76%",
+        "4.32%",
+        "5.45%",
+        "6.00%"
+      ],
       "answer": 1,
       "explanation": "YTC = [60 + (1,030 − 1,100)/5] ÷ [(1,030 + 1,100)/2] = (60 − 14) ÷ 1,065 = 4.32%. 4.76% is the approximate YTM and 5.45% the current yield; on a premium bond YTC is the lowest of the yields."
     },
     {
       "stem": "A 182-day Treasury bill is purchased at $97.50 per $100 of face value. What is its annualized discount yield?",
-      "options": ["2.50%", "4.95%", "5.14%", "5.00%"],
+      "options": [
+        "2.50%",
+        "4.95%",
+        "5.14%",
+        "5.00%"
+      ],
       "answer": 1,
       "explanation": "Discount yield = (par − price)/par × 360/days = (100 − 97.50)/100 × 360/182 = 4.95%. 5.14% is the bond-equivalent yield (divides by price, uses 365); 2.50% is the un-annualized discount."
     },
     {
       "stem": "For a given 1% change in market interest rates, which of the following bonds would show the GREATEST change in price?",
-      "options": ["A 3-year, 8% coupon bond", "A 30-year, 8% coupon bond", "A 3-year, 3% coupon bond", "A 30-year, 3% coupon bond"],
+      "options": [
+        "A 3-year, 8% coupon bond",
+        "A 30-year, 8% coupon bond",
+        "A 3-year, 3% coupon bond",
+        "A 30-year, 3% coupon bond"
+      ],
       "answer": 3,
       "explanation": "Interest-rate risk rises with longer maturity and lower coupon, so the 30-year, 3% bond is most volatile. The 30-year 8% bond is long but higher-coupon, and both 3-year bonds are too short to swing much."
     },
     {
       "stem": "Which of the following corporate bonds has the LOWEST priority of claim in a liquidation?",
-      "options": ["A first mortgage bond", "A debenture", "A subordinated debenture", "An equipment trust certificate"],
+      "options": [
+        "A first mortgage bond",
+        "A debenture",
+        "A subordinated debenture",
+        "An equipment trust certificate"
+      ],
       "answer": 2,
       "explanation": "A subordinated debenture ranks below general debentures and other unsecured creditors, above only preferred and common stock. Mortgage bonds and equipment trust certificates are secured (highest), and a plain debenture outranks a subordinated one."
     }

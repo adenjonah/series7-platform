@@ -5,47 +5,83 @@
   "estMinutes": 24,
   "reading": [
     {
-      "h": "Cumulative voting: same total, different concentration",
-      "body": "Under **both** statutory and cumulative voting, your **total votes = shares owned × number of seats up for election**. That total never changes with the method — the exam's favorite trick is to ask \"how many votes total?\" and both answers are identical.\n\nWhat differs is how you may *spread* them. **Statutory** voting caps you at your share count per candidate. **Cumulative** voting lets you pile every vote onto one candidate, which is why it favors small (minority) holders trying to win a single board seat.\n\nWorked example: you own 300 shares and 4 directors are being elected. Total votes = 300 × 4 = **1,200** either way. Under statutory voting the most you can give one candidate is 300; under cumulative voting you can put all **1,200** on one candidate. When a stem asks \"maximum votes for a single director,\" the method decides the answer."
+      "h": "Cumulative voting: same total, different spread",
+      "body": "Under **both** statutory and cumulative voting, your **total votes = shares owned × seats up for election**. The method never changes that total. The exam's favorite trick asks \"how many votes total?\" Both methods give the same answer.\n\nWhat differs is how you may spread the votes. **Statutory** voting caps you at your share count per candidate. **Cumulative** voting lets you pile every vote onto one candidate. That is why it helps small holders who want to win a single board seat.\n\nWorked example. You own 300 shares and 4 directors are up for election. Total votes = 300 × 4 = **1,200** either way. Under statutory voting, the most you can give one candidate is 300 votes. Under cumulative voting, you can put all **1,200** votes on one candidate. When a stem asks for the maximum votes for one director, the method decides the answer."
     },
     {
-      "h": "Dividends in arrears — don't forget the current year",
-      "body": "Cumulative preferred accrues every skipped dividend as **dividends in arrears**, and the company must clear *all* of them **plus the current year** before paying any common dividend.\n\nFormula: **Arrears owed = (years missed × annual dividend) + current-year dividend.**\n\nWorked example: a **6% $100-par** cumulative preferred skips two years. The board now wants to pay a common dividend. Each preferred share must first receive $6 + $6 (the two missed years) + $6 (this year) = **$18**.\n\nContrast: a **straight** (non-cumulative) preferred in the same fact pattern gets only the **current** $6 — the missed years are gone forever. The classic trap answer leaves off the current year (here, $12 instead of $18)."
+      "h": "Dividends in arrears: don't forget the current year",
+      "body": "Cumulative preferred piles up every skipped dividend as **dividends in arrears**. The company must pay all of them, **plus the current year**, before it pays any common dividend.\n\nFormula: **Arrears owed = (years missed × annual dividend) + current-year dividend.**\n\nWorked example. A **6% $100-par** cumulative preferred skips two years. The board now wants to pay a common dividend. Each preferred share must first get $6 + $6 for the two missed years + $6 for this year = **$18**.\n\nContrast a **straight** (non-cumulative) preferred with the same facts. It gets only the **current** $6. The missed years are gone for good. The classic trap answer leaves off the current year, so it shows $12 instead of $18."
     },
     {
       "h": "Convertible preferred: parity in both directions",
-      "body": "Think of a convertible as a coupon for a fixed number of common shares.\n\n**Conversion ratio (CR) = par ÷ conversion price.** A $100-par preferred convertible at $20 gives CR = 5 shares.\n\n**Parity price of common = preferred price ÷ CR.** Preferred at $110 → $110 ÷ 5 = **$22**. If the common trades above $22, converting is profitable.\n\n**Parity price of preferred = common price × CR.** Common at $12, CR 2 → preferred parity $24.\n\n**Forced conversion** (issuer calls a convertible): compare all exits. A $100-par 6% preferred convertible at $20 (CR 5), callable at $103, is called; preferred trades $104, common $21.50. Converting yields 5 × $21.50 = **$107.50** — more than the $104 market or the $103 call, so \"convert and sell\" wins.\n\n**Anti-dilution:** on a split or stock dividend the CR is multiplied and the conversion price divided by the same factor, so the conversion value is preserved — the coupon still buys the same slice of the company."
+      "body": "Think of a convertible as a coupon for a fixed number of common shares.\n\n**Conversion ratio (CR) = par ÷ conversion price.** A $100-par preferred convertible at $20 gives CR = 5 shares.\n\n**Parity price of common = preferred price ÷ CR.** Preferred at $110 gives $110 ÷ 5 = **$22**. If the common trades above $22, you profit by converting.\n\n**Parity price of preferred = common price × CR.** Common at $12 with CR 2 gives preferred parity of $24.\n\n**Forced conversion** happens when the issuer calls a convertible. Compare all your exits. Take a $100-par 6% preferred convertible at $20, so CR is 5, callable at $103. The issuer calls it. The preferred trades at $104 and the common at $21.50. Converting gives 5 × $21.50 = **$107.50**. That beats the $104 market price and the $103 call, so \"convert and sell\" wins.\n\n**Anti-dilution:** on a split or stock dividend, the CR is multiplied and the conversion price divided by the same factor. So the conversion value holds. The coupon still buys the same slice of the company."
     },
     {
       "h": "Rights: the cum vs. ex \"+1\"",
-      "body": "A right's theoretical value depends on whether the stock still trades *with* the right attached.\n\n**Cum-rights (before the ex-date): value = (Market − Subscription) ÷ (rights needed per new share + 1).**\n\n**Ex-rights (on/after the ex-date): value = (Market − Subscription) ÷ (rights needed per new share).**\n\nMemory: *cum* = \"with\" → add the 1 (the right embedded in the share itself); *ex* = \"without\" → no 1.\n\nWorked example: stock $44, subscription $36, 3 rights needed per new share. **Cum-rights = ($44 − $36) ÷ (3 + 1) = $2.00.** Omitting the +1 gives $2.67 — that is the *ex*-rights value, and it is the trap when the stem says \"before the ex-rights date.\" The two stay consistent because on the ex-date the stock price drops by exactly one right's value. **Warrants**, by contrast, are long-term sweeteners priced above market at issue with no intrinsic value — never mix the two formulas."
+      "body": "A right's value depends on whether the stock still trades **with** the right attached.\n\n**Cum-rights (before the ex-date): value = (Market − Subscription) ÷ (rights needed per new share + 1).**\n\n**Ex-rights (on or after the ex-date): value = (Market − Subscription) ÷ (rights needed per new share).**\n\nMemory: **cum** means \"with,\" so add the 1 for the right inside the share itself. **Ex** means \"without,\" so no 1.\n\nWorked example. Stock $44, subscription $36, 3 rights needed per new share. **Cum-rights = ($44 − $36) ÷ (3 + 1) = $2.00.** Leave off the +1 and you get $2.67. That is the ex-rights value, and it is the trap when the stem says \"before the ex-rights date.\" The two values stay in line because on the ex-date the stock price drops by exactly one right's value. **Warrants** are different. They are long-term sweeteners priced above market at issue with no intrinsic value. Never mix the two formulas."
     },
     {
       "h": "Splits, stock dividends, cost basis, and option adjustments",
-      "body": "A split or stock dividend never changes total basis — only the **per-share** basis. **Factor = split numerator ÷ denominator, or (1 + stock-dividend %).** New shares = old × factor; **new basis per share = old basis ÷ factor.** None of this is taxable, and the holding period carries over.\n\nWorked: 200 shares at $60 basis, 20% stock dividend → 240 shares, basis $12,000 ÷ 240 = **$50/share**. The trap ($60 × 0.8 = $48) applies the wrong operation.\n\nListed options adjust by the same logic (the options domain owns the detail). **Even split (ends in :1)** → number of contracts × factor, strike ÷ factor, still 100 shares (1 Jan 200 call, 2:1 → 2 Jan 100 calls). **Uneven split, stock dividend, or reverse split** → contracts unchanged, strike ÷ factor, deliverable = 100 × factor shares (1 Sep 90 put, 3:2 → 1 Sep 60 put on 150 shares). Ordinary cash dividends: no option adjustment."
+      "body": "A split or stock dividend never changes total basis. It changes only the **per-share** basis. **Factor = split numerator ÷ denominator, or (1 + stock-dividend %).** New shares = old shares × factor. **New basis per share = old basis ÷ factor.** None of this is taxable, and the holding period carries over.\n\nWorked. 200 shares at $60 basis, 20% stock dividend gives 240 shares. Basis = $12,000 ÷ 240 = **$50 per share**. The trap ($60 × 0.8 = $48) uses the wrong operation.\n\nListed options adjust the same way. An **even split (ends in :1)** multiplies the number of contracts by the factor, divides the strike by the factor, and keeps 100 shares. One Jan 200 call at 2:1 becomes two Jan 100 calls. An **uneven split, stock dividend, or reverse split** keeps the contracts the same, divides the strike by the factor, and sets the deliverable at 100 × factor shares. One Sep 90 put at 3:2 becomes one Sep 60 put on 150 shares. An ordinary cash dividend brings no option adjustment."
     },
     {
       "h": "Dividend dates under T+1, due bills, and the 25% rule",
-      "body": "Since **2024-05-28** (T+1 settlement, FINRA Rule 11140 as amended), for a **regular** cash dividend the **ex-date equals the record date** if the record date is a business day. The logic: a buyer must be *settled* by the record date, settlement takes one business day, so a purchase on the record date settles a day too late. **The last day to buy and still get the dividend is the business day before the record date.** Legacy \"one or two days before the record date\" rules are stale — do not use them.\n\nWorked: record date Thursday March 12 (no holidays) → ex-date is **Thursday March 12**; last day to buy for the dividend is Wednesday March 11.\n\n**Large distributions (≥ 25% of value** — big stock dividends/splits): the ex-date is the **first business day AFTER the payable date**; trades between record and payable carry **due bills**. Worked: 30% stock dividend, record June 10, payable June 24 → ex-date **June 25**."
+      "body": "Since **2024-05-28** (T+1 settlement, FINRA Rule 11140 as amended), a **regular** cash dividend has its **ex-date equal to the record date**, as long as the record date is a business day. Here is why. A buyer must be settled by the record date. Settlement takes one business day. So a purchase on the record date settles one day too late. **The last day to buy and still get the dividend is the business day before the record date.** The old \"one or two days before the record date\" rules are out of date. Do not use them.\n\nWorked. Record date Thursday March 12, no holidays, so the ex-date is **Thursday March 12**. The last day to buy for the dividend is Wednesday March 11.\n\n**Large distributions (25% of value or more)**, such as big stock dividends and splits, work differently. The ex-date is the **first business day after the payable date**. Trades between the record and payable dates carry **due bills**. Worked: 30% stock dividend, record June 10, payable June 24, so the ex-date is **June 25**."
     },
     {
       "h": "Rule 144 and spin-off basis",
-      "body": "Rule 144 covers two populations. **Restricted stock** is acquired unregistered from the issuer (e.g., a private placement); **control stock** is any stock — even bought on the exchange — owned by an **affiliate** (officer, director, or ≥10% holder). Rule: *the holding period cures 'unregistered'; the volume limit tames 'insider.'* The **6-month** holding period (reporting issuer) applies only to restricted stock — control stock bought in the open market has **no** holding period but is still volume-limited.\n\n**Affiliate volume limit (any 3 months) = the GREATER of 1% of outstanding shares or the average weekly volume of the prior 4 weeks.** A **Form 144** is required when a sale exceeds **5,000 shares or $50,000** in 3 months.\n\nWorked: 12,000,000 shares outstanding (1% = 120,000); prior 4 weeks' volume 150,000 / 130,000 / 140,000 / 140,000 (average 140,000). Max = greater of 120,000 or 140,000 = **140,000**.\n\n**Spin-off** basis: allocate the original cost between parent and spun-off shares by relative fair market value. 100 shares, $5,000 basis; after the spin-off the parent is worth $80 and the spinco $20 per original share → 80% ($4,000) to the parent, 20% ($1,000) to the spinco; holding periods carry over."
+      "body": "Rule 144 covers two groups. **Restricted stock** is bought unregistered from the issuer, such as in a private placement. **Control stock** is any stock owned by an **affiliate** (an officer, director, or 10%-or-more holder), even stock bought on the exchange. The rule of thumb: the holding period cures \"unregistered,\" and the volume limit tames \"insider.\" The **6-month** holding period for a reporting issuer applies only to restricted stock. Control stock bought in the open market has **no** holding period, but it still has a volume limit.\n\n**Affiliate volume limit (any 3 months) = the GREATER of 1% of outstanding shares or the average weekly volume of the prior 4 weeks.** A **Form 144** is required when a sale tops **5,000 shares or $50,000** in 3 months.\n\nWorked. 12,000,000 shares outstanding, so 1% = 120,000 shares. The prior 4 weeks' volume was 150,000, 130,000, 140,000, and 140,000 shares, an average of 140,000 shares. The maximum is the greater of 120,000 or 140,000, so **140,000 shares**.\n\n**Spin-off** basis: split the original cost between the parent and the spun-off shares by relative fair market value. 100 shares, $5,000 basis. After the spin-off, the parent is worth $80 and the spinco $20 per original share. So 80% ($4,000) goes to the parent and 20% ($1,000) goes to the spinco. Holding periods carry over."
     }
   ],
   "flashcards": [
-    { "front": "Cumulative voting — total votes and max on one candidate", "back": "Total = shares × seats (same under both methods). Cumulative lets you put ALL of them on one candidate; statutory caps you at your share count per candidate." },
-    { "front": "Dividends in arrears owed before common", "back": "(years missed × annual dividend) + current-year dividend. Straight preferred gets only the current year." },
-    { "front": "Conversion ratio (CR)", "back": "CR = par ÷ conversion price. ($100 par, $20 conv. price → 5 shares.)" },
-    { "front": "Parity price of the common", "back": "Preferred market price ÷ CR." },
-    { "front": "Parity price of the preferred", "back": "Common market price × CR." },
-    { "front": "Forced conversion — how to decide", "back": "Compute CR × common price (value of the shares now) and compare to the market price and call price. Pick the largest; usually 'convert and sell.'" },
-    { "front": "Cum-rights vs. ex-rights value", "back": "Cum: (Market − Subscription) ÷ (rights needed + 1). Ex: (Market − Subscription) ÷ (rights needed). Cum = 'with' → +1." },
-    { "front": "Per-share basis after a split/stock dividend", "back": "New basis = old basis ÷ factor; factor = split ratio or (1 + stock-dividend %). Total basis and holding period unchanged; not taxable." },
-    { "front": "Option adjustment: even vs. uneven split", "back": "Even (ends in :1): contracts × factor, strike ÷ factor, still 100 shares. Uneven/stock dividend/reverse: contracts unchanged, strike ÷ factor, deliverable = 100 × factor." },
-    { "front": "Ex-date rule under T+1", "back": "Regular dividend: ex-date = record date (last day to buy = business day before record). Distributions ≥ 25%: ex-date = first business day AFTER payable; due bills between record and payable." },
-    { "front": "Rule 144 affiliate volume limit", "back": "Greater of 1% of outstanding shares OR average weekly volume of the prior 4 weeks. Form 144 required if sale > 5,000 shares or > $50,000 in 3 months." },
-    { "front": "Spin-off cost basis", "back": "Allocate original basis between parent and spinco by relative fair market value; holding period carries over." }
+    {
+      "front": "Cumulative voting: total votes and max on one candidate",
+      "back": "Total = shares × seats, the same under both methods. Cumulative lets you put ALL votes on one candidate. Statutory caps you at your share count per candidate."
+    },
+    {
+      "front": "Dividends in arrears owed before common",
+      "back": "(years missed × annual dividend) + current-year dividend. Straight preferred gets only the current year."
+    },
+    {
+      "front": "Conversion ratio (CR)",
+      "back": "CR = par ÷ conversion price. ($100 par, $20 conv. price → 5 shares.)"
+    },
+    {
+      "front": "Parity price of the common",
+      "back": "Preferred market price ÷ CR."
+    },
+    {
+      "front": "Parity price of the preferred",
+      "back": "Common market price × CR."
+    },
+    {
+      "front": "Forced conversion: how to decide",
+      "back": "Work out CR × common price, the value of the shares now. Compare it to the market price and the call price. Pick the largest, usually 'convert and sell.'"
+    },
+    {
+      "front": "Cum-rights vs. ex-rights value",
+      "back": "Cum: (Market − Subscription) ÷ (rights needed + 1). Ex: (Market − Subscription) ÷ (rights needed). Cum = 'with' → +1."
+    },
+    {
+      "front": "Per-share basis after a split/stock dividend",
+      "back": "New basis = old basis ÷ factor. Factor = split ratio or (1 + stock-dividend %). Total basis and holding period do not change. Not taxable."
+    },
+    {
+      "front": "Option adjustment: even vs. uneven split",
+      "back": "Even (ends in :1): contracts × factor, strike ÷ factor, still 100 shares. Uneven/stock dividend/reverse: contracts unchanged, strike ÷ factor, deliverable = 100 × factor."
+    },
+    {
+      "front": "Ex-date rule under T+1",
+      "back": "Regular dividend: ex-date = record date (last day to buy = business day before record). Distributions ≥ 25%: ex-date = first business day AFTER payable; due bills between record and payable."
+    },
+    {
+      "front": "Rule 144 affiliate volume limit",
+      "back": "Greater of 1% of outstanding shares OR average weekly volume of the prior 4 weeks. Form 144 required if sale > 5,000 shares or > $50,000 in 3 months."
+    },
+    {
+      "front": "Spin-off cost basis",
+      "back": "Split the original basis between parent and spinco by relative fair market value. Holding period carries over."
+    }
   ],
   "quiz": [
     {

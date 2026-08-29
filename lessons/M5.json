@@ -6,87 +6,158 @@
   "reading": [
     {
       "h": "The lifecycle of a single trade",
-      "body": "Follow one purchase of 100 shares from start to finish. Every step has a vocabulary word the exam uses:\n\n**Account opening → quote → order → routing & execution → confirmation → clearing → settlement.**\n\nAt account opening the firm collects the new-account information (name, address, DOB, SSN/TIN, employment, income, net worth, objectives, risk tolerance under **Rule 4512**) and verifies identity under the **CIP** (PATRIOT Act). A **principal** approves the account. A customer's signature is **not required to open a cash account**, but **is required for margin** (margin/hypothecation agreement) and for options (options agreement within 15 days of approval)."
+      "body": "A trade moves through seven steps, and each step has a term the exam tests. The steps run **account opening → quote → order → routing and execution → confirmation → clearing → settlement.**\n\nAt account opening the firm collects the new-account facts. These are name, address, date of birth, SSN or TIN, employment, income, net worth, goals, and risk tolerance under **Rule 4512**. The firm verifies identity under the **CIP** rule from the PATRIOT Act. A **principal** approves the account.\n\nThe customer does **not** sign to open a cash account. The customer **must** sign for margin, using the margin and hypothecation agreement. The customer must also sign an options agreement within 15 days of options approval."
     },
     {
       "h": "Reading the quote and taking the order",
-      "body": "The RR pulls a quote — say **bid 49.95 × ask 50.00**. A customer buying pays the **ask**; a customer selling receives the **bid**.\n\nThe order goes onto a ticket that records the account number, symbol, buy/sell (and, if selling, long or short), quantity, price qualifier, time-in-force, whether it was solicited, and the RR's ID. Two things are **not** on the ticket before execution: the **execution price and the time** — those are filled in after the trade prints. Time-in-force is either **day** (expires at the close) or **GTC** (good-til-cancelled)."
+      "body": "The rep pulls a quote, say **bid 49.95 × ask 50.00**. A customer who buys pays the **ask**. A customer who sells receives the **bid**.\n\nThe order goes on a ticket. The ticket records the account number, symbol, buy or sell, and long or short when selling. It also records the quantity, price qualifier, time-in-force, whether the trade was solicited, and the rep's ID.\n\nTwo items are **not** on the ticket before the trade runs: the **execution price and the time**. The firm fills those in after the trade prints. Time-in-force is either **day**, which expires at the close, or **GTC** (good-til-cancelled)."
     },
     {
       "h": "Order types and BLiSS / SLoBS",
-      "body": "**Market order** — executes immediately at the best available price; execution is certain, price is not.\n**Limit order** — executes only at the specified price *or better*; price is certain, execution is not.\n**Stop order** — dormant until the stop price trades, then becomes a **market** order.\n**Stop-limit** — triggers into a *limit* order and may never fill.\n\nPlacement mnemonic — **BLiSS / SLoBS**: **B**uy **Li**mits and **S**ell **S**tops go **below** the market; **S**ell **L**imits and Bu**y** **S**tops go **above**. Protective logic: to protect a **long** position, use a **sell stop below** the market; to protect a **short**, use a **buy stop above**."
+      "body": "A **market order** fills right away at the best price available. Execution is certain, the price is not.\n\nA **limit order** fills only at the set price or better. The price is certain, execution is not.\n\nA **stop order** sits idle until the stop price trades, then turns into a **market** order. A **stop-limit** turns into a **limit** order and may never fill.\n\nUse the **BLiSS / SLoBS** mnemonic for placement. **B**uy **Li**mits and **S**ell **S**tops go **below** the market. **S**ell **L**imits and Bu**y** **S**tops go **above**. To protect a **long** position, place a **sell stop below** the market. To protect a **short**, place a **buy stop above**."
     },
     {
       "h": "Routing, execution, and the confirmation",
-      "body": "The firm's router sends the order to an exchange, market maker, or ATS under **best execution** (Rule 5310) and order-protection rules (**Reg NMS / NBBO**). The trade prints to the tape within seconds.\n\nThe customer then receives a **confirmation** (Rule 2232 / SEC 10b-10) **at or before completion of the transaction — i.e., by settlement**. The confirm shows the trade date, security, quantity, price, the firm's **capacity** (agent or principal), any commission if acting as agent, and the CUSIP."
+      "body": "The firm's router sends the order to an exchange, a market maker, or an ATS. It must seek **best execution** under Rule 5310 and follow order-protection rules (**Reg NMS / NBBO**). The trade prints to the tape within seconds.\n\nThe customer then gets a **confirmation** under Rule 2232 and SEC 10b-10. The firm must deliver it at or before completion of the trade, which means by settlement. The confirm shows the trade date, security, quantity, price, and the firm's **capacity** (agent or principal). It also shows any commission when the firm acts as agent, plus the CUSIP."
     },
     {
       "h": "Settlement clocks: T+1, cash, and Reg T",
-      "body": "Since **2024-05-28**, **regular-way settlement is T+1** — one business day after the trade — for stocks, corporate and municipal bonds, ETFs, and listed options (SEC Rule 15c6-1). U.S. **Treasuries are also T+1**. **Cash settlement is same day** (used when a trade must settle today).\n\nSeparate from settlement is the **Reg T payment date**: a customer's purchase must be *paid for* by **settlement + 2 business days = T+3**. If it is not, the firm requests an extension or freezes the account for 90 days. Stale material says T+2 settlement / T+4 payment — that is the pre-2024 cycle. **Ownership transfers on settlement**, which is why a buyer must be settled by the record date to receive a dividend."
+      "body": "Since **2024-05-28**, regular-way settlement is **T+1**, one business day after the trade. This covers stocks, corporate and municipal bonds, ETFs, and listed options under SEC Rule 15c6-1. U.S. **Treasuries also settle T+1**. **Cash settlement is same day**, used when a trade must settle today.\n\nThe **Reg T payment date** is separate from settlement. A customer must pay for a purchase by settlement plus 2 business days, which is **T+3**. If the customer does not pay, the firm asks for an extension or freezes the account for 90 days.\n\nOld material says T+2 settlement and T+4 payment. That is the pre-2024 cycle and is wrong now. **Ownership transfers on settlement.** So a buyer must settle by the record date to receive a dividend."
     },
     {
       "h": "The ex-dividend date under T+1",
-      "body": "Under T+1, FINRA Rule 11140 sets the **ex-dividend date on the record date itself** for a regular cash dividend. Buy **on or after** the ex-date and you do **not** get the dividend; the stock opens reduced by the dividend amount.\n\nSo the **last day to buy regular-way and still receive the dividend is one business day before the ex-date** (which now equals one business day before the record date), because that purchase settles on the record date. Old materials say 'ex-date is one business day before the record date' — that was the T+2-era rule and is now wrong. For large distributions of **25% or more** (big stock dividends, splits), the ex-date moves to the business day *after* the payable date."
+      "body": "Under T+1, FINRA Rule 11140 sets the **ex-dividend date on the record date itself** for a regular cash dividend. Buy **on or after** the ex-date and you do **not** get the dividend. The stock opens lower by the dividend amount.\n\nSo the **last day to buy regular-way and still get the dividend is one business day before the ex-date.** That now equals one business day before the record date, because the purchase settles on the record date.\n\nOld material says the ex-date is one business day before the record date. That was the T+2 rule and is wrong now. For large distributions of **25% or more**, such as big stock dividends and splits, the ex-date moves to the business day after the payable date."
     },
     {
       "h": "Clearing, good delivery, and ACATS",
-      "body": "After execution the **NSCC** nets the two firms' obligations. If the firms disagree on the trade terms it is a **DK ('don't know')** to be resolved. Delivery is normally **book-entry** through the DTC (street name); physical certificates and DRS still exist. **Good delivery** means proper endorsement, correct denominations (100-share round lots or units that add to 100), no mutilation, and matching names; a **due bill** accompanies a late delivery that carries a dividend.\n\nTo move an account between firms, the receiving firm submits a **TIF** and the carrying firm has **1 business day to validate** and **3 business days after validation to deliver** — the **ACATS** process (Rule 11870)."
+      "body": "After execution the **NSCC** nets the two firms' obligations. If the firms disagree on the trade terms, it is a **DK ('don't know')** and they must resolve it.\n\nDelivery is normally **book-entry** through the DTC in street name. Physical certificates and DRS still exist. **Good delivery** means proper endorsement, correct denominations, no mutilation, and matching names. Correct denominations means 100-share round lots or units that add to 100. A **due bill** goes with a late delivery that carries a dividend.\n\nTo move an account between firms, the receiving firm submits a **TIF**. The carrying firm then has **1 business day to validate** and **3 business days after validation to deliver**. This is the **ACATS** process under Rule 11870."
     }
   ],
   "flashcards": [
-    { "front": "Regular-way settlement for stocks/corporate & muni bonds/ETFs/listed options", "back": "T+1 (one business day) since 2024-05-28. Treasuries also T+1. T+2 is the stale pre-2024 answer." },
-    { "front": "Cash settlement", "back": "Same day as the trade — used when someone needs the trade settled today." },
-    { "front": "Reg T payment date", "back": "Settlement + 2 business days = T+3. Unpaid → extension or a 90-day freeze. (Stale material says T+4.)" },
-    { "front": "Ex-dividend date under T+1", "back": "The ex-date is the record date itself (regular cash dividend, FINRA 11140). Buy on/after ex → no dividend." },
-    { "front": "Last day to buy and still get the dividend", "back": "One business day before the ex-date (= one business day before the record date); that purchase settles on the record date." },
-    { "front": "Market vs limit order", "back": "Market: immediate, price uncertain. Limit: at the stated price or better, execution uncertain." },
-    { "front": "Stop order — what does it become when triggered?", "back": "A market order (a stop-limit becomes a limit order and may never fill)." },
-    { "front": "BLiSS / SLoBS", "back": "Buy Limits and Sell Stops go BELOW the market; Sell Limits and Buy Stops go ABOVE." },
-    { "front": "How do you protect a long vs a short position?", "back": "Long → sell stop below the market. Short → buy stop above the market." },
-    { "front": "When must a confirmation be delivered?", "back": "At or before completion of the transaction — i.e., by settlement (Rule 2232 / SEC 10b-10)." },
-    { "front": "What is a DK?", "back": "'Don't Know' — a trade the counterparty firm disputes/does not recognize at comparison; must be resolved." },
-    { "front": "ACATS clocks", "back": "Carrying firm: 1 business day to validate the transfer, then 3 business days to deliver (Rule 11870)." }
+    {
+      "front": "Regular-way settlement for stocks/corporate & muni bonds/ETFs/listed options",
+      "back": "T+1, one business day, since 2024-05-28. Treasuries also settle T+1. T+2 is the old pre-2024 answer."
+    },
+    {
+      "front": "Cash settlement",
+      "back": "Same day as the trade. Use it when someone needs the trade settled today."
+    },
+    {
+      "front": "Reg T payment date",
+      "back": "Settlement plus 2 business days, which is T+3. If unpaid, the firm gets an extension or freezes the account 90 days. Old material says T+4."
+    },
+    {
+      "front": "Ex-dividend date under T+1",
+      "back": "The ex-date is the record date itself for a regular cash dividend (FINRA 11140). Buy on or after the ex-date and you get no dividend."
+    },
+    {
+      "front": "Last day to buy and still get the dividend",
+      "back": "One business day before the ex-date, which equals one business day before the record date. That purchase settles on the record date."
+    },
+    {
+      "front": "Market vs limit order",
+      "back": "Market: fills now, price uncertain. Limit: fills at the stated price or better, execution uncertain."
+    },
+    {
+      "front": "Stop order: what does it become when triggered?",
+      "back": "A market order. A stop-limit becomes a limit order and may never fill."
+    },
+    {
+      "front": "BLiSS / SLoBS",
+      "back": "Buy Limits and Sell Stops go BELOW the market. Sell Limits and Buy Stops go ABOVE."
+    },
+    {
+      "front": "How do you protect a long vs a short position?",
+      "back": "Long: sell stop below the market. Short: buy stop above the market."
+    },
+    {
+      "front": "When must a confirmation be delivered?",
+      "back": "At or before completion of the trade, which means by settlement (Rule 2232 / SEC 10b-10)."
+    },
+    {
+      "front": "What is a DK?",
+      "back": "Don't Know. The other firm disputes or does not recognize the trade at comparison. The firms must resolve it."
+    },
+    {
+      "front": "ACATS clocks",
+      "back": "Carrying firm gets 1 business day to validate the transfer, then 3 business days to deliver (Rule 11870)."
+    }
   ],
   "quiz": [
     {
       "stem": "A customer buys shares of a listed common stock in a regular-way transaction. When does the trade settle?",
-      "options": ["The same business day as the trade", "One business day after the trade date", "Two business days after the trade date", "Three business days after the trade date"],
+      "options": [
+        "The same business day as the trade",
+        "One business day after the trade date",
+        "Two business days after the trade date",
+        "Three business days after the trade date"
+      ],
       "answer": 1,
       "explanation": "Since 2024-05-28, regular-way settlement for stocks, corporate and municipal bonds, ETFs, and listed options is T+1 under amended SEC Rule 15c6-1. T+2 is the pre-2024 cycle still found in stale material; same-day is cash settlement."
     },
     {
       "stem": "A customer buys 200 shares of a listed stock in a cash account on Thursday, August 20, 2026. Under Regulation T, what is the last day the customer may pay without the firm requesting an extension?",
-      "options": ["Friday, August 21", "Monday, August 24", "Tuesday, August 25", "Wednesday, August 26"],
+      "options": [
+        "Friday, August 21",
+        "Monday, August 24",
+        "Tuesday, August 25",
+        "Wednesday, August 26"
+      ],
       "answer": 2,
       "explanation": "Regular-way settlement is T+1 (Friday, August 21), and Reg T's payment period is settlement plus two business days, so payment is due Tuesday, August 25 (T+3). Wednesday reflects the pre-2024 T+2 cycle plus two days (T+4), which is now stale."
     },
     {
       "stem": "A corporation declares a regular quarterly cash dividend with a record date of Thursday, June 11, 2026. What is the LAST day an investor can buy the stock in a regular-way trade and still receive the dividend?",
-      "options": ["Tuesday, June 9", "Thursday, June 11", "Friday, June 12", "Wednesday, June 10"],
+      "options": [
+        "Tuesday, June 9",
+        "Thursday, June 11",
+        "Friday, June 12",
+        "Wednesday, June 10"
+      ],
       "answer": 3,
       "explanation": "Under T+1 (FINRA Rule 11140) the ex-dividend date for a regular cash dividend is the record date itself, so a purchase on Wednesday, June 10 settles on the record date and earns the dividend; buying June 11 is ex-dividend. Tuesday, June 9 is the stale T+2-era answer."
     },
     {
       "stem": "A customer owns 100 shares of a stock now trading at $48 and wants to limit losses if the price drops. Which order accomplishes this?",
-      "options": ["A buy stop order placed above $48", "A sell stop order placed below $48", "A sell limit order placed below $48", "A buy limit order placed above $48"],
+      "options": [
+        "A buy stop order placed above $48",
+        "A sell stop order placed below $48",
+        "A sell limit order placed below $48",
+        "A buy limit order placed above $48"
+      ],
       "answer": 1,
       "explanation": "To protect a long position you place a sell stop below the market; if the price falls to the stop, it becomes a market order to sell. BLiSS/SLoBS: sell stops go below the market. A buy stop protects a short, and a sell limit below the market makes no sense for downside protection."
     },
     {
       "stem": "A customer places a limit order to buy 100 shares at $30. Which statement is TRUE?",
-      "options": ["The order guarantees execution but not the price", "The order will execute only at $30 or lower, and may not execute at all", "The order becomes a market order once the stock reaches $30", "The order will execute at $30 or higher"],
+      "options": [
+        "The order guarantees execution but not the price",
+        "The order will execute only at $30 or lower, and may not execute at all",
+        "The order becomes a market order once the stock reaches $30",
+        "The order will execute at $30 or higher"
+      ],
       "answer": 1,
       "explanation": "A buy limit executes only at the limit price or better (lower), so price is certain but execution is not — if the stock never trades at $30 or below, nothing fills. A stop order (not a limit) becomes a market order when triggered."
     },
     {
       "stem": "A customer needs the proceeds from a stock sale to settle today. Which settlement type should the trade use?",
-      "options": ["Regular-way (T+1)", "Cash settlement (same day)", "When-issued settlement", "Seller's option"],
+      "options": [
+        "Regular-way (T+1)",
+        "Cash settlement (same day)",
+        "When-issued settlement",
+        "Seller's option"
+      ],
       "answer": 1,
       "explanation": "Cash settlement delivers and pays the same business day, which is what a customer needing same-day funds requires. Regular-way is T+1; when-issued and seller's option settle later, not sooner."
     },
     {
       "stem": "During clearing, one firm's record of a trade does not match the other firm's record of the terms. This unmatched trade is called a:",
-      "options": ["Due bill", "DK ('don't know')", "Freeriding violation", "Round lot"],
+      "options": [
+        "Due bill",
+        "DK ('don't know')",
+        "Freeriding violation",
+        "Round lot"
+      ],
       "answer": 1,
       "explanation": "A DK ('don't know') is a trade the counterparty firm does not recognize or disputes at comparison, which must be resolved. A due bill accompanies a late delivery carrying a dividend; freeriding is paying for a purchase with the sale proceeds."
     }

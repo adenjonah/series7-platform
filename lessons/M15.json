@@ -6,88 +6,161 @@
   "reading": [
     {
       "h": "Four ways to run an account",
-      "body": "Every customer account is set up to allow a certain kind of activity, and the exam expects you to know the difference cold.\n\n**Cash account:** the customer pays in full for everything. This is the default, and the only kind allowed for IRAs, custodial (UTMA) accounts, and most fiduciary accounts.\n\n**Margin account:** the firm lends the customer part of the purchase price, using the securities as collateral. The customer signs a margin agreement (a cash account needs no customer signature). Margin lets a customer buy more than their cash allows and sell short — both of which magnify gains AND losses.\n\n**Options account:** requires the customer to receive the Options Disclosure Document (ODD) and sign an options agreement, and a Registered Options Principal (ROP) must approve it.\n\n**Discretionary account:** the customer gives written authority for the rep to choose trades. This one carries the most rules — see below."
+      "body": "An account is set up for one kind of activity. Know the four cold.\n\n**Cash account:** the customer pays in full for everything. This is the default. It is the only kind allowed for IRAs, custodial (UTMA) accounts, and most fiduciary accounts.\n\n**Margin account:** the firm lends the customer part of the price and holds the securities as collateral. The customer signs a margin agreement. A cash account needs no customer signature. Margin lets a customer buy more than their cash allows and sell short. Both raise gains and losses.\n\n**Options account:** the customer must get the Options Disclosure Document (ODD) and sign an options agreement. A Registered Options Principal (ROP) must approve it.\n\n**Discretionary account:** the customer gives written authority for the rep to choose trades. This one has the most rules. See below."
     },
     {
       "h": "Who owns it: JTWROS vs. TIC vs. UTMA",
-      "body": "The registration decides who can trade, where the money goes, and what happens at death.\n\n**JTWROS (joint tenants with right of survivorship):** each owner holds an equal, undivided interest. Any one owner can enter orders, but checks must be payable to ALL owners jointly. At death, the decedent's interest passes automatically to the survivor, outside probate — typical for spouses.\n\n**TIC (tenants in common):** owners hold specified, possibly unequal fractions. At death, the decedent's fraction goes to the decedent's ESTATE, not the survivor — typical for business partners or siblings.\n\n**UTMA (custodial):** one custodian, one minor, registered under the minor's Social Security number. Gifts are irrevocable and belong to the minor. Cash only — no margin, no short sales, no uncovered options (covered calls are generally allowed). The custodian is a fiduciary and may not be paid. Assets pass to the minor at the age of majority regardless of the custodian's wishes."
+      "body": "The registration decides who can trade, where the money goes, and what happens at death.\n\n**JTWROS (joint tenants with right of survivorship):** each owner holds an equal, undivided share. Any one owner can enter orders. But checks must be payable to ALL owners jointly. At death the deceased owner's share passes straight to the survivor, outside probate. This is typical for spouses.\n\n**TIC (tenants in common):** owners hold set fractions that can be unequal. At death the deceased owner's fraction goes to the ESTATE, not the survivor. This is typical for business partners or siblings.\n\n**UTMA (custodial):** one custodian, one minor, registered under the minor's Social Security number. Gifts are irrevocable and belong to the minor. Cash only: no margin, no short sales, no uncovered options. Covered calls are generally allowed. The custodian is a fiduciary and may not be paid. The assets pass to the minor at the age of majority, whatever the custodian wants."
     },
     {
       "h": "Knowing who the customer is: CIP and KYC",
-      "body": "Before opening any account, the firm's **Customer Identification Program (CIP)** must form a reasonable belief that it knows the customer's true identity. It collects four minimum items BEFORE opening: **name, date of birth, physical address, and an identification number** (Social Security number or TIN for a U.S. person; a passport number and country for a non-U.S. person). The firm verifies these and checks the customer against government terrorist/OFAC lists. CIP records are kept 5 years after the account closes.\n\n**Know Your Customer (Rule 2090)** is broader: use reasonable diligence to know the essential facts about every customer and about anyone with authority over the account. KYC applies whether or not a recommendation is ever made — that is the key contrast with suitability (Rule 2111), which is triggered ONLY by a recommendation."
+      "body": "The **Customer Identification Program (CIP)** comes first. Before it opens any account, the firm must form a reasonable belief that it knows the customer's true identity. It collects four items before opening: **name, date of birth, physical address, and an identification number.** The ID number is a Social Security number or TIN for a U.S. person, or a passport number and country for a non-U.S. person. The firm verifies these items and checks the customer against government terrorist and OFAC lists. It keeps CIP records for 5 years after the account closes.\n\n**Know Your Customer (Rule 2090)** is broader. Use reasonable diligence to know the key facts about every customer and about anyone with authority over the account. KYC applies whether or not you ever make a recommendation. That is the key contrast with suitability (Rule 2111), which starts ONLY when you make a recommendation."
     },
     {
       "h": "Anti-money-laundering: the three stages",
-      "body": "Money laundering runs in three stages, and the exam loves asking which stage a described activity is.\n\n**Placement** — dirty cash first enters the financial system (cash deposits, money orders, structured deposits).\n\n**Layering** — funds are moved through many transactions and accounts to obscure the trail (wires between accounts and countries, buying and selling securities with no economic purpose, journal transfers). Brokerage accounts are most exposed here.\n\n**Integration** — the funds re-emerge looking legitimate (real estate, a business, a securities portfolio).\n\nTwo required reports: a **CTR** (Currency Transaction Report) is filed automatically for cash transactions over $10,000 in one business day — no suspicion needed. A **SAR** (Suspicious Activity Report) is a judgment call — filed for suspicious activity of $5,000 or more, within 30 days, and the customer is NEVER told. Both go to FinCEN (Treasury)."
+      "body": "Money laundering runs in three stages. The exam often asks which stage a described activity is.\n\n**Placement:** dirty cash first enters the financial system. Think cash deposits, money orders, and structured deposits.\n\n**Layering:** the funds move through many transactions and accounts to hide the trail. Think wires between accounts and countries, buying and selling securities with no economic purpose, and journal transfers. Brokerage accounts are most exposed at this stage.\n\n**Integration:** the funds come back looking legitimate. Think real estate, a business, or a securities portfolio.\n\nTwo reports are required. A **CTR** (Currency Transaction Report) is filed automatically for cash over $10,000 in one business day. No suspicion is needed. A **SAR** (Suspicious Activity Report) is a judgment call. You file it for suspicious activity of $5,000 or more, within 30 days, and you never tell the customer. Both go to FinCEN (Treasury)."
     },
     {
       "h": "Regulation Best Interest: four obligations",
-      "body": "When a broker-dealer recommends a securities transaction or strategy to a **retail customer** (any natural person using it for personal, family, or household purposes — no wealth threshold), it must act in that customer's best interest. Reg BI is satisfied by **four obligations**:\n\n**Disclosure** — put the material facts (capacity, fees, scope of services, conflicts) in writing, at or before the recommendation. Form CRS is part of this.\n\n**Care** — reasonable diligence to understand the product, believe it fits this customer, and confirm a series of trades is not excessive. Cost and reasonably available alternatives must always be considered.\n\n**Conflict of Interest** — written policies to identify, disclose, mitigate, or eliminate conflicts; sales contests on specific securities are banned.\n\n**Compliance** — written policies to achieve compliance overall.\n\nMemory hook: Reg BI has FOUR obligations, and the three-part suitability test lives INSIDE the Care obligation."
+      "body": "When a broker-dealer recommends a securities transaction or strategy to a **retail customer**, it must act in that customer's best interest. A retail customer is any natural person who uses the advice for personal, family, or household purposes. There is no wealth threshold. Reg BI is met by **four obligations.**\n\n**Disclosure:** put the material facts in writing at or before the recommendation. These include capacity, fees, scope of services, and conflicts. Form CRS is part of this.\n\n**Care:** use reasonable diligence to understand the product, believe it fits this customer, and confirm a series of trades is not excessive. You must always consider cost and reasonably available alternatives.\n\n**Conflict of Interest:** keep written policies to identify, disclose, reduce, or remove conflicts. Sales contests on specific securities are banned.\n\n**Compliance:** keep written policies to meet the rules overall.\n\nMemory hook: Reg BI has FOUR obligations, and the three-part suitability test lives inside Care."
     },
     {
       "h": "Suitability vs. Reg BI in one picture",
-      "body": "FINRA **Rule 2111 (suitability)** has three components: **reasonable-basis** (the rep understands the product well enough to recommend it to anyone), **customer-specific** (it fits this customer's profile), and **quantitative** (a series of recommendations is not excessive).\n\nSince Reg BI took effect (June 30, 2020), Rule 2111 no longer applies to recommendations covered by Reg BI — that is, to retail natural persons. So today **Reg BI governs retail customers; Rule 2111 governs institutional and other non-retail** recommendations. KYC applies to everyone, always. Do not treat these three as competing answers: KYC = know who they are; suitability/Reg BI = only when you recommend."
+      "body": "FINRA **Rule 2111 (suitability)** has three parts. **Reasonable-basis:** the rep understands the product well enough to recommend it to anyone. **Customer-specific:** it fits this customer's profile. **Quantitative:** a series of recommendations is not excessive.\n\nReg BI took effect June 30, 2020. Since then Rule 2111 no longer applies to recommendations that Reg BI covers, which means retail natural persons. So today **Reg BI governs retail customers, and Rule 2111 governs institutional and other non-retail recommendations.** KYC applies to everyone, always.\n\nDo not treat these three as competing answers. KYC means know who they are. Suitability and Reg BI apply only when you recommend."
     }
   ],
   "flashcards": [
-    { "front": "Which account types require a CUSTOMER signature?", "back": "Margin, options, and discretionary (plus TOD, loan consent). A cash new-account form does NOT — only a principal signs it." },
-    { "front": "JTWROS at death vs. TIC at death", "back": "JTWROS: passes automatically to the survivor, outside probate. TIC: the decedent's fraction goes to the estate." },
-    { "front": "UTMA: allowed vs. prohibited", "back": "Allowed: cash purchases, mutual funds, covered calls. Prohibited: margin, short sales, uncovered options. One custodian, one minor, minor's SSN." },
-    { "front": "CIP's four required items", "back": "Name, date of birth, physical address, and an ID number (SSN/TIN, or passport + country for a non-U.S. person)." },
-    { "front": "KYC vs. suitability trigger", "back": "KYC (2090) applies always. Suitability (2111) / Reg BI is triggered only by a recommendation." },
-    { "front": "Three stages of money laundering", "back": "Placement (cash in) → Layering (move it around; brokerage's exposure) → Integration (out clean)." },
-    { "front": "SAR vs. CTR", "back": "CTR: cash over $10,000/day, automatic, 15 days, no suspicion. SAR: suspicious $5,000+, 30 days, never tip off. Both to FinCEN." },
-    { "front": "Reg BI's four obligations", "back": "Disclosure, Care, Conflict of Interest, Compliance. The three-part suitability test sits inside Care." },
-    { "front": "Who is a 'retail customer' under Reg BI?", "back": "Any natural person using the recommendation for personal/family/household purposes — no wealth threshold (a billionaire individual is still retail)." },
-    { "front": "Rule 2111's three components", "back": "Reasonable-basis, customer-specific, and quantitative suitability." },
-    { "front": "Discretionary account: the 3 A's", "back": "Discretion = the rep chooses Action (buy/sell), Asset (which security), or Amount. Any one of these needs prior written authority." }
+    {
+      "front": "Which account types require a CUSTOMER signature?",
+      "back": "Margin, options, and discretionary, plus TOD and loan consent. A cash new-account form does not. Only a principal signs that one."
+    },
+    {
+      "front": "JTWROS at death vs. TIC at death",
+      "back": "JTWROS: the share passes straight to the survivor, outside probate. TIC: the deceased owner's fraction goes to the estate."
+    },
+    {
+      "front": "UTMA: allowed vs. prohibited",
+      "back": "Allowed: cash purchases, mutual funds, covered calls. Not allowed: margin, short sales, uncovered options. One custodian, one minor, the minor's SSN."
+    },
+    {
+      "front": "CIP's four required items",
+      "back": "Name, date of birth, physical address, and an ID number. Use SSN or TIN, or a passport plus country for a non-U.S. person."
+    },
+    {
+      "front": "KYC vs. suitability trigger",
+      "back": "KYC (2090) applies always. Suitability (2111) and Reg BI start only when you make a recommendation."
+    },
+    {
+      "front": "Three stages of money laundering",
+      "back": "Placement (cash in), then Layering (move it around, where brokerage is exposed), then Integration (out clean)."
+    },
+    {
+      "front": "SAR vs. CTR",
+      "back": "CTR: cash over $10,000 per day, automatic, 15 days, no suspicion. SAR: suspicious $5,000 or more, 30 days, never tip off. Both go to FinCEN."
+    },
+    {
+      "front": "Reg BI's four obligations",
+      "back": "Disclosure, Care, Conflict of Interest, and Compliance. The three-part suitability test sits inside Care."
+    },
+    {
+      "front": "Who is a 'retail customer' under Reg BI?",
+      "back": "Any natural person who uses the advice for personal, family, or household purposes. There is no wealth threshold. A billionaire individual is still retail."
+    },
+    {
+      "front": "Rule 2111's three components",
+      "back": "Reasonable-basis, customer-specific, and quantitative suitability."
+    },
+    {
+      "front": "Discretionary account: the 3 A's",
+      "back": "Discretion is the rep choosing Action (buy or sell), Asset (which security), or Amount. Any one of the three needs prior written authority."
+    }
   ],
   "quiz": [
     {
       "stem": "A married couple opens a joint account as tenants with right of survivorship. One spouse dies. What happens to the account?",
-      "options": ["Half the account is frozen and passes through probate under the decedent's will", "The surviving spouse automatically owns the entire account, outside probate", "The account is divided between the survivor and the decedent's other heirs", "The firm liquidates the account and pays the estate"],
+      "options": [
+        "Half the account is frozen and passes through probate under the decedent's will",
+        "The surviving spouse automatically owns the entire account, outside probate",
+        "The account is divided between the survivor and the decedent's other heirs",
+        "The firm liquidates the account and pays the estate"
+      ],
       "answer": 1,
       "explanation": "Right of survivorship means the decedent's interest passes automatically to the surviving owner, outside probate. Passing a share to the estate is what happens under tenants in common (TIC), which is the trap here."
     },
     {
       "stem": "Which of the following may be done in an UTMA custodial account? I. Buy stock on margin II. Write covered calls III. Sell stock short IV. Buy mutual fund shares",
-      "options": ["I and III", "II and IV", "I, II and IV", "I, II, III and IV"],
+      "options": [
+        "I and III",
+        "II and IV",
+        "I, II and IV",
+        "I, II, III and IV"
+      ],
       "answer": 1,
       "explanation": "An UTMA account is cash-only: covered calls (II) and mutual funds (IV) are permitted, but margin (I) and short sales (III) are prohibited because they create obligations beyond the assets gifted to the minor."
     },
     {
       "stem": "A prospective customer refuses to provide a Social Security number or TIN and has not applied for one. Under the firm's CIP, the firm should:",
-      "options": ["Open the account but withhold 24% of dividends as backup withholding", "Open the account but accept only unsolicited orders", "Not open the account, because an identification number is required before opening", "Open the account and report the refusal to FINRA within 30 days"],
+      "options": [
+        "Open the account but withhold 24% of dividends as backup withholding",
+        "Open the account but accept only unsolicited orders",
+        "Not open the account, because an identification number is required before opening",
+        "Open the account and report the refusal to FINRA within 30 days"
+      ],
       "answer": 2,
       "explanation": "CIP requires name, date of birth, address, and an ID number before opening; the only exception is a customer who has APPLIED for a TIN. Backup withholding applies when a customer gives a TIN but won't certify it on Form W-9, and unsolicited-only treatment applies when a customer declines FINANCIAL (not identity) information."
     },
     {
       "stem": "A customer deposits funds and then repeatedly wires the money among accounts at several banks in different countries, buying and selling securities with no apparent investment purpose. This is characteristic of which stage of money laundering?",
-      "options": ["Placement", "Layering", "Integration", "Structuring"],
+      "options": [
+        "Placement",
+        "Layering",
+        "Integration",
+        "Structuring"
+      ],
       "answer": 1,
       "explanation": "Layering is the movement of funds through multiple transactions and accounts to obscure the audit trail — the stage where brokerage accounts are most exposed. Placement is cash entering the system, integration is funds re-emerging as legitimate assets, and structuring is a cash-reporting evasion technique, not one of the three stages."
     },
     {
       "stem": "Regulation Best Interest is satisfied by four component obligations. Which of the following is NOT one of them?",
-      "options": ["Care Obligation", "Best Execution Obligation", "Conflict of Interest Obligation", "Disclosure Obligation"],
+      "options": [
+        "Care Obligation",
+        "Best Execution Obligation",
+        "Conflict of Interest Obligation",
+        "Disclosure Obligation"
+      ],
       "answer": 1,
       "explanation": "Reg BI's four obligations are Disclosure, Care, Conflict of Interest, and Compliance. Best execution is a separate duty under FINRA Rule 5310, not a component of Reg BI."
     },
     {
       "stem": "A registered representative gathers a new customer's objectives, time horizon, and risk tolerance. Which rule is triggered ONLY when the representative actually makes a recommendation?",
-      "options": ["Know Your Customer (Rule 2090)", "The Customer Identification Program", "Suitability / Regulation Best Interest", "The anti-money-laundering program"],
+      "options": [
+        "Know Your Customer (Rule 2090)",
+        "The Customer Identification Program",
+        "Suitability / Regulation Best Interest",
+        "The anti-money-laundering program"
+      ],
       "answer": 2,
       "explanation": "Suitability (Rule 2111) and Reg BI are triggered by a recommendation. KYC applies whether or not any recommendation is made, CIP applies at account opening, and the AML program applies to all account activity."
     },
     {
       "stem": "A customer's stock portfolio held at a broker-dealer falls 40% in a market downturn. He asks whether SIPC will reimburse the loss. The BEST response is that SIPC:",
-      "options": ["Reimburses market losses up to $500,000", "Insures brokerage accounts the way the FDIC insures bank deposits", "Protects customers only when a broker-dealer fails and their cash or securities are missing — not against market losses", "Reimburses losses only if they exceed $250,000"],
+      "options": [
+        "Reimburses market losses up to $500,000",
+        "Insures brokerage accounts the way the FDIC insures bank deposits",
+        "Protects customers only when a broker-dealer fails and their cash or securities are missing — not against market losses",
+        "Reimburses losses only if they exceed $250,000"
+      ],
       "answer": 2,
       "explanation": "SIPC is a non-profit membership corporation (not a government agency) that steps in when a broker-dealer becomes insolvent and customer assets go missing, up to $500,000 per separate customer including $250,000 cash. It never covers a decline in market value."
     },
     {
       "stem": "A customer wants a representative to have authority to decide which securities to buy and how many, without calling first for each trade. Before the representative may exercise this authority, the account must have:",
-      "options": ["Only the representative's principal's approval, given after each trade", "Prior written discretionary authorization from the customer and firm acceptance", "A signed margin agreement", "Nothing in writing, as long as each order is confirmed by phone"],
+      "options": [
+        "Only the representative's principal's approval, given after each trade",
+        "Prior written discretionary authorization from the customer and firm acceptance",
+        "A signed margin agreement",
+        "Nothing in writing, as long as each order is confirmed by phone"
+      ],
       "answer": 1,
       "explanation": "Choosing the Asset or Amount is discretion under the 3 A's, which requires prior WRITTEN authorization from the customer and written acceptance by the firm. Each discretionary order is then approved by a principal promptly after execution — but that principal approval is not a substitute for the customer's written authority."
     }

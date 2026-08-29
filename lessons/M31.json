@@ -6,93 +6,169 @@
   "reading": [
     {
       "h": "The 2026 limits table (know the shape, verify the numbers)",
-      "body": "These are the tax-year **2026** figures (IRS Notice 2025-67); dollar amounts are indexed and re-released every November, so learn the *structure* and treat the exact dollars as annual-verify.\n\n**IRA** (traditional + Roth combined): **$7,500**, plus a **$1,100** catch-up at 50+. **401(k)/403(b)/457(b)/TSP** elective deferral: **$24,500**, plus **$8,000** catch-up at 50+ (a larger \"super\" catch-up of $11,250 at ages 60-63). **415(c)** total defined-contribution addition (employee + employer): **$72,000**. **SEP**: employer contribution up to 25% of comp, max **$72,000**. **SIMPLE** deferral: **$17,000** (+$4,000 catch-up). **Defined-benefit** max annual benefit: **$290,000**. Compensation cap: **$360,000**.\n\nThe pattern that survives the annual reset: IRA is the smallest bucket, the 401(k)/403(b)/457 family shares one deferral number, and 457(b) sits *separate* from the others (an employee with a 403(b) and a governmental 457(b) can defer the full amount to **each**)."
+      "body": "These are the tax-year **2026** figures (IRS Notice 2025-67). The IRS indexes the dollar amounts and re-releases them every November. So learn the structure, and treat the exact dollars as annual-verify.\n\n**IRA** (traditional plus Roth combined): **$7,500**, plus a **$1,100** catch-up at 50 or older. **401(k)/403(b)/457(b)/TSP** elective deferral: **$24,500**, plus **$8,000** catch-up at 50 or older (a larger super catch-up of $11,250 at ages 60-63). **415(c)** total defined-contribution addition (employee plus employer): **$72,000**. **SEP**: employer contribution up to 25% of comp, max **$72,000**. **SIMPLE** deferral: **$17,000** (plus $4,000 catch-up). **Defined-benefit** max annual benefit: **$290,000**. Compensation cap: **$360,000**.\n\nOne pattern survives the annual reset. The IRA is the smallest bucket. The 401(k)/403(b)/457 family shares one deferral number. And 457(b) sits separate from the others: an employee with a 403(b) and a governmental 457(b) can defer the full amount to **each**."
     },
     {
       "h": "Traditional IRA — eligibility, deadline, penalties",
-      "body": "Anyone with **earned income** (wages, self-employment, pre-2019 alimony) can contribute — **not** interest, dividends, capital gains, pension, or rental income. There is **no age limit** on contributions, and a **spousal IRA** lets a non-working spouse contribute on a joint return.\n\nThe deadline is the **tax-filing deadline (April 15), no extensions**. An **excess contribution** is penalized **6% per year** until removed. Growth is tax-deferred; withdrawals are **ordinary income**, with a **10% penalty before age 59½** on the taxable amount.\n\n**Prohibited** IRA investments: **life insurance, collectibles, and naked/uncovered options**; margin is barred. Municipal bonds are legal but **unsuitable** (you'd convert tax-free income into taxable)."
+      "body": "Anyone with **earned income** can contribute — wages, self-employment, or pre-2019 alimony. Interest, dividends, capital gains, pension, and rental income do **not** count. There is **no age limit** on contributions, and a **spousal IRA** lets a non-working spouse contribute on a joint return.\n\nThe deadline is the **tax-filing deadline (April 15), no extensions**. An **excess contribution** is penalized **6% per year** until you remove it. Growth is tax-deferred. Withdrawals are **ordinary income**, with a **10% penalty before age 59½** on the taxable amount.\n\nSome IRA investments are **prohibited**: **life insurance, collectibles, and naked/uncovered options**; margin is barred too. Municipal bonds are legal but **unsuitable**, because you would turn tax-free income into taxable income."
     },
     {
       "h": "RMDs and the Roth 5-year rule",
-      "body": "**Required minimum distributions (RMDs)** from traditional, SEP, SIMPLE, and 403(b) accounts begin at age **73** (for those born 1951-1959) or **75** (born 1960 or later). The first RMD may be delayed to **April 1 of the year after** you turn 73 — but then you take two that year. A missed RMD is penalized **25%**, cut to **10%** if corrected within two years.\n\nA **Roth IRA** owner has **no lifetime RMDs**. A Roth **qualified (tax-free) distribution** needs **both**: (a) **5 tax years** since the first Roth contribution, **and** (b) a trigger — age 59½, death, disability, or first-home purchase ($10,000 lifetime). **Ordering rules**: withdrawals come out contributions first (always tax- and penalty-free), then conversions, then earnings."
+      "body": "**Required minimum distributions (RMDs)** from traditional, SEP, SIMPLE, and 403(b) accounts begin at age **73** (born 1951-1959) or **75** (born 1960 or later). You may delay the first RMD to **April 1 of the year after** you turn 73, but then you take two that year. A missed RMD is penalized **25%**, cut to **10%** if you fix it within two years.\n\nA **Roth IRA** owner has **no lifetime RMDs**. A Roth **qualified (tax-free) distribution** needs **both**: (a) **5 tax years** since the first Roth contribution, and (b) a trigger — age 59½, death, disability, or first-home purchase ($10,000 lifetime). **Ordering rules**: withdrawals come out contributions first (always tax- and penalty-free), then conversions, then earnings."
     },
     {
       "h": "Rollovers vs. transfers — the 20% trap",
-      "body": "A **direct (trustee-to-trustee) transfer** is unlimited, with no tax and no withholding — the money never touches the participant.\n\nAn **indirect rollover** pays the participant, who must redeposit within **60 days**. Two catches: IRA-to-IRA indirect rollovers are limited to **one per 12 months**, and a distribution from a **qualified plan** paid to the participant carries **mandatory 20% federal withholding**.\n\nWorked example: a 45-year-old asks for her $100,000 401(k) paid to her; she receives **$80,000** (20% withheld). To roll over the full $100,000 she must add **$20,000 from other funds** within 60 days. If she deposits only the $80,000, the missing **$20,000 is a taxable distribution** plus a **10% penalty** ($2,000) at her age; the withholding is only a credit against her tax bill."
+      "body": "A **direct (trustee-to-trustee) transfer** is unlimited, with no tax and no withholding. The money never touches the participant.\n\nAn **indirect rollover** pays the participant, who must redeposit within **60 days**. Two catches. IRA-to-IRA indirect rollovers are limited to **one per 12 months**. And a distribution from a **qualified plan** paid to the participant carries **mandatory 20% federal withholding**.\n\nWorked example: a 45-year-old asks for her $100,000 401(k) paid to her. She receives **$80,000** (20% withheld). To roll over the full $100,000, she must add **$20,000 from other funds** within 60 days. If she deposits only the $80,000, the missing **$20,000 is a taxable distribution** plus a **10% penalty** ($2,000) at her age. The withholding is only a credit against her tax bill."
     },
     {
       "h": "The plan zoo: who sponsors, who funds",
-      "body": "**SEP IRA** — **employer-funded only** (no employee deferrals); up to 25% of comp; covers employees 21+ who worked **3 of the last 5 years**; **immediate 100% vesting**. **SIMPLE** — for employers with **≤100 employees** and no other plan; employer must **match up to 3%** or make a **2% non-elective** contribution; a **25% penalty** (not 10%) applies to withdrawals in the first 2 years.\n\n**401(k)** — elective deferrals plus optional match, vesting schedules on employer money, loans up to **50% of vested balance / $50,000 max**. **403(b)/TSA** — public schools and 501(c)(3)s; investments limited to **annuities and mutual funds**. **457(b)** — state/local governments and tax-exempts; the limit is **separate** from 401(k)/403(b), and **governmental 457(b) withdrawals carry no 10% penalty** regardless of age. **Keogh (HR-10)** — for self-employed/unincorporated businesses.\n\n**Defined benefit** promises a formula benefit (employer bears the risk, PBGC-insured); **defined contribution** defines the input and the **employee bears the risk**."
+      "body": "**SEP IRA** — **employer-funded only** (no employee deferrals); up to 25% of comp; covers employees 21 or older who worked **3 of the last 5 years**; **immediate 100% vesting**. **SIMPLE** — for employers with **100 employees or fewer** and no other plan; the employer must **match up to 3%** or make a **2% non-elective** contribution; a **25% penalty** (not 10%) applies to withdrawals in the first 2 years.\n\n**401(k)** — elective deferrals plus optional match, vesting schedules on employer money, loans up to **50% of vested balance or $50,000 max**. **403(b)/TSA** — public schools and 501(c)(3)s; investments limited to **annuities and mutual funds**. **457(b)** — state and local governments and tax-exempts; the limit is **separate** from 401(k)/403(b), and **governmental 457(b) withdrawals carry no 10% penalty** at any age. **Keogh (HR-10)** — for self-employed or unincorporated businesses.\n\n**Defined benefit** promises a formula benefit; the employer bears the risk, and the PBGC insures it. **Defined contribution** defines the input, and the **employee bears the risk**."
     },
     {
       "h": "The 10% penalty exceptions",
-      "body": "The **10% early-withdrawal penalty** (before 59½) is waived for the classic list the exam tests: **death; total and permanent disability; substantially equal periodic payments (72(t)/SEPP); unreimbursed medical expenses over 7.5% of AGI; an IRS levy;** and, **IRA-only**, a **first-time home purchase ($10,000 lifetime)** and **qualified higher-education expenses**. From employer plans only, **separation from service in or after the year you turn 55** (the \"Rule of 55\") and **QDRO** payments also escape the penalty.\n\nNote the split: first-home and education waivers are **IRA-only**; the age-55 separation waiver is **employer-plan-only**."
+      "body": "The **10% early-withdrawal penalty** (before 59½) is waived for the classic list the exam tests: **death; total and permanent disability; substantially equal periodic payments (72(t)/SEPP); unreimbursed medical expenses over 7.5% of AGI; an IRS levy**; and, **IRA-only**, a **first-time home purchase ($10,000 lifetime)** and **qualified higher-education expenses**. From employer plans only, **separation from service in or after the year you turn 55** (the Rule of 55) and **QDRO** payments also escape the penalty.\n\nNote the split. First-home and education waivers are **IRA-only**. The age-55 separation waiver is **employer-plan-only**."
     },
     {
       "h": "Education accounts: Coverdell vs. 529",
-      "body": "A **Coverdell ESA** allows a small annual contribution (**$2,000** per beneficiary, not indexed) from after-tax money, has **contributor income limits**, requires contributions to stop at age **18**, and must be **used or rolled to a family member by age 30**; it covers K-12 and higher education.\n\nA **529 plan** is a **municipal fund security** sold with a disclosure document. It has **no federal income limit** on contributors and much higher contribution room. A 529 **contribution is a gift**, so it uses the annual gift exclusion or a **5-year election** (front-loading five years of exclusions at once). The owner keeps control and can change the beneficiary to a **family member** tax-free; earnings are federally tax-free for qualified education expenses; a non-qualified withdrawal is taxed on earnings plus a **10% penalty**. SECURE 2.0 even allows a lifetime **$35,000 529-to-Roth rollover** once the account is 15 years old."
+      "body": "A **Coverdell ESA** allows a small yearly contribution (**$2,000** per beneficiary, not indexed) from after-tax money. It has **contributor income limits**, requires contributions to stop at age **18**, and must be **used or rolled to a family member by age 30**. It covers K-12 and higher education.\n\nA **529 plan** is a **municipal fund security** sold with a disclosure document. It has **no federal income limit** on contributors and much higher contribution room. A 529 **contribution is a gift**, so it uses the annual gift exclusion or a **5-year election** (front-loading five years of exclusions at once). The owner keeps control and can change the beneficiary to a **family member** tax-free. Earnings are federally tax-free for qualified education expenses. A non-qualified withdrawal is taxed on earnings plus a **10% penalty**. SECURE 2.0 even allows a lifetime **$35,000 529-to-Roth rollover** once the account is 15 years old."
     }
   ],
   "flashcards": [
-    { "front": "Which income qualifies you to contribute to an IRA?", "back": "EARNED income (wages, self-employment, pre-2019 alimony). NOT interest, dividends, capital gains, pension, or rental income." },
-    { "front": "IRA contribution deadline and excess penalty", "back": "Tax-filing deadline (April 15), no extensions. Excess contribution penalized 6% per year until removed." },
-    { "front": "RMD start ages", "back": "73 for those born 1951-1959; 75 for those born 1960 or later. Roth IRA owner: NO lifetime RMDs." },
-    { "front": "Roth qualified distribution — two requirements", "back": "5 tax years since first Roth contribution AND a trigger (59½, death, disability, or first home $10,000)." },
-    { "front": "Roth ordering rules", "back": "Contributions first (always tax/penalty free), then conversions, then earnings." },
-    { "front": "Indirect rollover mechanics", "back": "60 days to redeposit; IRA-to-IRA limited to one per 12 months; qualified-plan distribution to the participant has mandatory 20% withholding." },
-    { "front": "SEP IRA — who funds, eligibility, vesting", "back": "Employer-funded only (no employee deferrals); covers 21+ who worked 3 of last 5 years; immediate 100% vesting." },
-    { "front": "SIMPLE plan basics", "back": "≤100 employees, no other plan; employer match up to 3% OR 2% non-elective; 25% penalty (not 10%) on withdrawals in first 2 years." },
-    { "front": "Governmental 457(b) — penalty?", "back": "No 10% early-withdrawal penalty regardless of age; its deferral limit is SEPARATE from 401(k)/403(b)." },
-    { "front": "IRA-only vs. plan-only penalty exceptions", "back": "IRA-only: first home ($10k), higher education. Employer-plan-only: separation from service at/after age 55 (Rule of 55), QDRO." },
-    { "front": "Prohibited IRA investments", "back": "Life insurance, collectibles, naked/uncovered options; no margin. Munis are legal but unsuitable." },
-    { "front": "529 vs. Coverdell — key contrasts", "back": "529: no federal income limit, high contribution room, treated as a gift, muni fund security. Coverdell: $2,000/yr, income-limited, contribute until 18, use by 30." }
+    {
+      "front": "Which income qualifies you to contribute to an IRA?",
+      "back": "Earned income (wages, self-employment, pre-2019 alimony). Not interest, dividends, capital gains, pension, or rental income."
+    },
+    {
+      "front": "IRA contribution deadline and excess penalty",
+      "back": "Tax-filing deadline (April 15), no extensions. An excess contribution is penalized 6% per year until removed."
+    },
+    {
+      "front": "RMD start ages",
+      "back": "73 for those born 1951-1959; 75 for those born 1960 or later. A Roth IRA owner has no lifetime RMDs."
+    },
+    {
+      "front": "Roth qualified distribution — two requirements",
+      "back": "5 tax years since the first Roth contribution, and a trigger (59½, death, disability, or first home $10,000)."
+    },
+    {
+      "front": "Roth ordering rules",
+      "back": "Contributions first (always tax- and penalty-free), then conversions, then earnings."
+    },
+    {
+      "front": "Indirect rollover mechanics",
+      "back": "60 days to redeposit; IRA-to-IRA limited to one per 12 months; a qualified-plan distribution to the participant has mandatory 20% withholding."
+    },
+    {
+      "front": "SEP IRA — who funds, eligibility, vesting",
+      "back": "Employer-funded only (no employee deferrals); covers those 21 or older who worked 3 of the last 5 years; immediate 100% vesting."
+    },
+    {
+      "front": "SIMPLE plan basics",
+      "back": "100 employees or fewer, no other plan; employer match up to 3% or 2% non-elective; 25% penalty (not 10%) on withdrawals in the first 2 years."
+    },
+    {
+      "front": "Governmental 457(b) — penalty?",
+      "back": "No 10% early-withdrawal penalty at any age. Its deferral limit is separate from 401(k)/403(b)."
+    },
+    {
+      "front": "IRA-only vs. plan-only penalty exceptions",
+      "back": "IRA-only: first home ($10k), higher education. Employer-plan-only: separation from service at or after age 55 (Rule of 55), QDRO."
+    },
+    {
+      "front": "Prohibited IRA investments",
+      "back": "Life insurance, collectibles, naked/uncovered options; no margin. Munis are legal but unsuitable."
+    },
+    {
+      "front": "529 vs. Coverdell — key contrasts",
+      "back": "529: no federal income limit, high contribution room, treated as a gift, muni fund security. Coverdell: $2,000/yr, income-limited, contribute until 18, use by 30."
+    }
   ],
   "quiz": [
     {
       "stem": "An employer matches 100% of an employee's 401(k) contributions up to 4% of salary. An employee earning $50,000 contributes exactly 4% of salary this year. Before any investment gains, how much goes into the account for the year?",
-      "options": ["$2,000, because the match is paid only at retirement", "$2,080, because the employer adds 4% of the $2,000 contribution", "$4,000, the employee's $2,000 plus a $2,000 employer match", "$6,000, because the employer contributes 4% of salary plus a matching $2,000"],
+      "options": [
+        "$2,000, because the match is paid only at retirement",
+        "$2,080, because the employer adds 4% of the $2,000 contribution",
+        "$4,000, the employee's $2,000 plus a $2,000 employer match",
+        "$6,000, because the employer contributes 4% of salary plus a matching $2,000"
+      ],
       "answer": 2,
       "explanation": "4% of $50,000 = $2,000 from the employee; a 100% match up to 4% adds another $2,000, for $4,000 total. The match is an immediate dollar-for-dollar addition, not a percentage of the employee's contribution."
     },
     {
       "stem": "Which of the following accounts does NOT require the original owner to take required minimum distributions during his or her lifetime?",
-      "options": ["Traditional IRA", "SEP IRA", "Roth IRA", "403(b) plan"],
+      "options": [
+        "Traditional IRA",
+        "SEP IRA",
+        "Roth IRA",
+        "403(b) plan"
+      ],
       "answer": 2,
       "explanation": "A Roth IRA owner has no lifetime RMDs (beneficiaries do). Traditional, SEP, and 403(b) accounts all require RMDs beginning at age 73 (75 for those born in 1960 or later)."
     },
     {
       "stem": "A 45-year-old leaves her employer and asks that her $100,000 401(k) balance be paid directly to her. She receives a check for $80,000 and, within 60 days, deposits that $80,000 into a rollover IRA. The tax result is:",
-      "options": ["No tax is due; the $20,000 withheld is refunded in full when she files", "The entire $100,000 is taxable because only a direct transfer avoids tax", "$20,000 is taxable as ordinary income and is subject to a 10% early-withdrawal penalty", "$20,000 is taxable, but no penalty applies because the plan withheld it"],
+      "options": [
+        "No tax is due; the $20,000 withheld is refunded in full when she files",
+        "The entire $100,000 is taxable because only a direct transfer avoids tax",
+        "$20,000 is taxable as ordinary income and is subject to a 10% early-withdrawal penalty",
+        "$20,000 is taxable, but no penalty applies because the plan withheld it"
+      ],
       "answer": 2,
       "explanation": "A plan distribution paid to the participant carries mandatory 20% withholding ($20,000). To roll over the full $100,000 she had to replace that $20,000 from other money; the amount not redeposited is a taxable distribution plus, at age 45, a 10% penalty. The withholding is merely a credit against her total tax."
     },
     {
       "stem": "Under current rules, an individual born in 1955 must begin taking required minimum distributions from a traditional IRA at age:",
-      "options": ["70½", "72", "73", "75"],
+      "options": [
+        "70½",
+        "72",
+        "73",
+        "75"
+      ],
       "answer": 2,
       "explanation": "For those born 1951-1959 the required beginning age is 73; age 75 applies only to those born in 1960 or later. The old 70½ and interim 72 ages no longer apply after SECURE 2.0."
     },
     {
       "stem": "A distribution of earnings from a Roth IRA is tax-free (qualified) only if the account has met the 5-year holding requirement AND one of the following. Which one?",
-      "options": ["The owner has reached age 55 and separated from service", "The owner is at least 59½, or the distribution is due to death, disability, or a first-home purchase", "The owner has stopped making new contributions", "The distribution is rolled into another Roth within 60 days"],
+      "options": [
+        "The owner has reached age 55 and separated from service",
+        "The owner is at least 59½, or the distribution is due to death, disability, or a first-home purchase",
+        "The owner has stopped making new contributions",
+        "The distribution is rolled into another Roth within 60 days"
+      ],
       "answer": 1,
       "explanation": "A qualified Roth distribution requires both the 5-tax-year clock and a qualifying event: age 59½, death, disability, or a first-home purchase ($10,000 lifetime). The Rule of 55 is an employer-plan penalty exception, not a Roth qualified-distribution trigger."
     },
     {
       "stem": "Which of the following is a defining characteristic of a SEP IRA?",
-      "options": ["It is funded entirely by the employer; employees make no salary-deferral contributions", "Employees may defer part of their salary, and the employer must match dollar-for-dollar", "It is available only to employers with more than 100 employees", "Contributions vest on a 3-year cliff schedule"],
+      "options": [
+        "It is funded entirely by the employer; employees make no salary-deferral contributions",
+        "Employees may defer part of their salary, and the employer must match dollar-for-dollar",
+        "It is available only to employers with more than 100 employees",
+        "Contributions vest on a 3-year cliff schedule"
+      ],
       "answer": 0,
       "explanation": "A SEP is employer-funded only — there are no employee elective deferrals — and contributions are immediately 100% vested. Salary deferrals and matching describe a 401(k) or SIMPLE, not a SEP."
     },
     {
       "stem": "A single taxpayer under age 59½ takes an early withdrawal from her traditional IRA. Which use of the funds is NOT among the exceptions that avoid the 10% early-withdrawal penalty?",
-      "options": ["A first-time home purchase up to $10,000", "Qualified higher-education expenses", "The purchase of a new automobile for commuting to work", "Total and permanent disability"],
+      "options": [
+        "A first-time home purchase up to $10,000",
+        "Qualified higher-education expenses",
+        "The purchase of a new automobile for commuting to work",
+        "Total and permanent disability"
+      ],
       "answer": 2,
       "explanation": "A first-time home purchase, higher-education expenses, and disability are recognized exceptions; buying a car is not. The car purchase is an ordinary personal expense and does not waive the 10% penalty."
     },
     {
       "stem": "Which statement correctly distinguishes a 529 plan from a Coverdell ESA?",
-      "options": ["A 529 plan imposes a federal income limit on contributors; a Coverdell does not", "A 529 plan has no federal income limit on contributors and allows much larger contributions than a Coverdell", "A Coverdell allows a 5-year gift election; a 529 does not", "A Coverdell has no age limits, while a 529 must be used by age 30"],
+      "options": [
+        "A 529 plan imposes a federal income limit on contributors; a Coverdell does not",
+        "A 529 plan has no federal income limit on contributors and allows much larger contributions than a Coverdell",
+        "A Coverdell allows a 5-year gift election; a 529 does not",
+        "A Coverdell has no age limits, while a 529 must be used by age 30"
+      ],
       "answer": 1,
       "explanation": "A 529 has no federal income limit on contributors and far higher contribution room, and a contribution is treated as a gift (eligible for the 5-year election). The Coverdell is the one with contributor income limits, a small annual cap, and age limits (contribute until 18, use by 30)."
     }

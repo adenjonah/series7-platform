@@ -5,88 +5,159 @@
   "estMinutes": 22,
   "reading": [
     {
-      "h": "Two contracts, two verbs: call up, put down",
-      "body": "Every provider says the same thing: **more people fail the Series 7 because of options than any other topic.** So this module starts them at the SIE stage and never lets go. The good news is that all of it is built from four simple positions — get those four cold and spreads, straddles and hedges become bookkeeping on top of them.\n\nAn option is a contract on **100 shares** of an underlying stock. There are only two kinds.\n\nA **call** is the right to *buy* the stock at a fixed price. You want a call when you think the stock will go **up** — you can buy it cheap and it is worth more.\n\nA **put** is the right to *sell* the stock at a fixed price. You want a put when you think the stock will go **down** — you can sell high while the market is low.\n\nThe memory hook is **\"call up, put down\"**: call it up, put it down. The fixed price is the **strike** (or exercise) price; the last day the contract is alive is **expiration**."
+      "h": "Two contracts: call up, put down",
+      "body": "More people fail the Series 7 on options than on any other topic. So this module starts at the basics and builds up. All of it rests on four positions. Learn those four well, and spreads, straddles, and hedges become bookkeeping on top.\n\nAn option is a contract on **100 shares** of a stock. There are only two kinds.\n\nA **call** is the right to buy the stock at a set price. You want a call when you think the stock will go **up**. You buy it cheap, and it is worth more.\n\nA **put** is the right to sell the stock at a set price. You want a put when you think the stock will go **down**. You sell high while the market is low.\n\nThe memory hook is **\"call up, put down.\"** The set price is the **strike** (or exercise) price. The last day the contract lives is **expiration**."
     },
     {
-      "h": "Rights vs. obligations — who pays whom",
-      "body": "This is the hinge the whole topic turns on. Every contract has two sides.\n\nThe **buyer** (also called the *holder* or the *long*) pays a **premium** and gets a **right** — they may exercise or may walk away. Because they can always walk away, a buyer's loss is capped at the premium paid.\n\nThe **writer** (the *seller*, the *short*) collects the premium and takes on an **obligation** — if the buyer exercises, the writer must perform. The premium is the writer's to keep no matter what; in exchange they carry the risk.\n\nModel it as **insurance**: the buyer is the policyholder paying a premium for protection; the writer is the insurance company collecting premiums and hoping never to pay a claim. Buyers have limited risk; writers accept the larger risk."
+      "h": "Rights and obligations: who pays whom",
+      "body": "Every contract has two sides. This split drives the whole topic.\n\nThe **buyer** (the holder, or the long) pays a **premium** and gets a **right**. The buyer may exercise or walk away. Because the buyer can always walk away, the loss is capped at the premium paid.\n\nThe **writer** (the seller, or the short) collects the premium and takes on an **obligation**. If the buyer exercises, the writer must perform. The writer keeps the premium no matter what, and carries the risk in return.\n\nThink of it as **insurance**. The buyer is the policyholder who pays a premium for protection. The writer is the insurance company that collects premiums and hopes to never pay a claim. Buyers have limited risk. Writers accept the larger risk."
     },
     {
       "h": "The premium and the times-100 multiplier",
-      "body": "Premiums are quoted **per share**, but one contract covers **100 shares**. So the dollar cost is always **premium × 100**.\n\n\"ABC Jan 50 call @ 3\" means: a call on ABC, strike $50, expiring in January, premium $3 per share. One contract costs **3 × 100 = $300**.\n\nForgetting the ×100 is the single most common arithmetic slip on the whole exam. A \"$3\" answer choice will always be sitting there to catch people who quote the per-share number. Whenever you see a premium, immediately think in hundreds of dollars."
+      "body": "Premiums are quoted **per share**, but one contract covers **100 shares**. So the dollar cost is always **premium × 100**.\n\n\"ABC Jan 50 call @ 3\" means a call on ABC, strike $50, expiring in January, premium $3 per share. One contract costs **3 × 100 = $300**.\n\nForgetting the ×100 is the most common math slip on the exam. A \"$3\" answer choice will sit there to catch anyone who quotes the per-share number. When you see a premium, think in hundreds of dollars right away."
     },
     {
-      "h": "Moneyness: intrinsic value, and why premium is ignored",
-      "body": "**Intrinsic value** is how much an option is *in the money* right now — the real, exercise-today value. It is never negative.\n\nFor a **call**, intrinsic value = stock price − strike (when the stock is above the strike). For a **put**, intrinsic value = strike − stock price (when the stock is below the strike).\n\nExample: ABC trades at 58. An ABC 50 **call** has intrinsic value 58 − 50 = **8** (in the money). An ABC 50 **put** has intrinsic value 0 (out of the money — you would not sell at 50 when the market pays 58).\n\nTwo rules the exam loves: **moneyness ignores the premium** (you classify by stock vs. strike only), and **it is the same for the buyer and the writer**. A call is in the money when the stock is above the strike — whether you are long it or short it. \"A short call is in the money when the stock is above the strike\" is TRUE."
+      "h": "Moneyness and intrinsic value",
+      "body": "**Intrinsic value** is how much an option is in the money right now. It is the value if you exercise today, and it is never below zero.\n\nFor a **call**, intrinsic value = stock price − strike, when the stock is above the strike. For a **put**, intrinsic value = strike − stock price, when the stock is below the strike.\n\nSay ABC trades at 58. An ABC 50 **call** has intrinsic value 58 − 50 = **8**, so it is in the money. An ABC 50 **put** has intrinsic value 0. It is out of the money, since you would not sell at 50 when the market pays 58.\n\nTwo rules the exam loves. First, moneyness ignores the premium; you classify by stock versus strike only. Second, moneyness is the same for the buyer and the writer. A call is in the money when the stock is above the strike, whether you are long it or short it. So \"a short call is in the money when the stock is above the strike\" is TRUE."
     },
     {
       "h": "The four basic positions",
-      "body": "Every options question is built from these four. Learn the row, not the cell.\n\n**Long call** — bullish. Max gain **unlimited** (stock can keep rising); max loss the **premium**; breakeven = **strike + premium**.\n\n**Short (naked) call** — bearish/neutral. Max gain the **premium**; max loss **UNLIMITED** (the writer must deliver stock at any price); breakeven = **strike + premium**.\n\n**Long put** — bearish. Max gain = **strike − premium** (best case: stock goes to zero); max loss the **premium**; breakeven = **strike − premium**.\n\n**Short (naked) put** — bullish/neutral. Max gain the **premium**; max loss = **strike − premium**; breakeven = **strike − premium**.\n\nThree things to burn in: **calls add** the premium to the strike, **puts subtract** it; **the buyer and the writer of the same contract share the same breakeven**; and the only single position with truly **unlimited** loss is the **short call** (because only a stock price has no ceiling)."
+      "body": "Every options question is built from these four. Learn the row, not the cell.\n\n**Long call** — bullish. Max gain **unlimited**, because the stock can keep rising. Max loss the **premium**. Breakeven = **strike + premium**.\n\n**Short (naked) call** — bearish or neutral. Max gain the **premium**. Max loss **UNLIMITED**, because the writer must deliver stock at any price. Breakeven = **strike + premium**.\n\n**Long put** — bearish. Max gain = **strike − premium**, when the stock goes to zero. Max loss the **premium**. Breakeven = **strike − premium**.\n\n**Short (naked) put** — bullish or neutral. Max gain the **premium**. Max loss = **strike − premium**. Breakeven = **strike − premium**.\n\nBurn in three things. Calls **add** the premium to the strike; puts **subtract** it. The buyer and the writer of the same contract share the same breakeven. Only the **short call** has a truly **unlimited** loss, because only a stock price has no ceiling."
     },
     {
       "h": "Worked breakevens",
-      "body": "**Long 1 ABC Jun 50 call @ 4.** Breakeven = 50 + 4 = **54**. Max loss = the $400 premium. If ABC is 60 at expiration: intrinsic 10, minus the 4 paid = +6 × 100 = **+$600**. If ABC is 45: the call expires worthless, loss **−$400**.\n\n**Long 1 XYZ Sep 40 put @ 3.** Breakeven = 40 − 3 = **37**. Max loss = the $300 premium. Best case, XYZ falls to 0: gain (40 − 3) × 100 = **+$3,700**. If XYZ is 30 at expiration: intrinsic 10, minus 3 = +7 × 100 = **+$700**.\n\nNotice the writer of that same put has breakeven 37 too — the shared-breakeven rule in action."
+      "body": "**Long 1 ABC Jun 50 call @ 4.** Breakeven = 50 + 4 = **54**. Max loss = the $400 premium. If ABC is 60 at expiration, intrinsic is 10, minus the 4 paid = +6 × 100 = **+$600**. If ABC is 45, the call expires worthless, a loss of **−$400**.\n\n**Long 1 XYZ Sep 40 put @ 3.** Breakeven = 40 − 3 = **37**. Max loss = the $300 premium. If XYZ falls to 0, the gain is (40 − 3) × 100 = **+$3,700**. If XYZ is 30 at expiration, intrinsic is 10, minus 3 = +7 × 100 = **+$700**.\n\nThe writer of that same put has a breakeven of 37 too. That is the shared-breakeven rule at work."
     },
     {
       "h": "Who stands behind the contract: the OCC and the ODD",
-      "body": "Listed options are standardized and guaranteed by the **Options Clearing Corporation (OCC)**. The OCC is the *issuer and guarantor* of every listed option: it sets the standard terms (100-share size, strike intervals, expiration dates), clears every trade, and assigns exercises. Because the OCC stands between every buyer and every writer, a holder never has to worry about a particular writer's credit.\n\nBefore a customer's first options trade, they must receive the OCC's **Options Disclosure Document (ODD)** — the booklet \"Characteristics and Risks of Standardized Options.\"\n\nOne more distinction you will see: **American-style** options can be exercised any business day up to expiration (all equity options); **European-style** options can be exercised only *at* expiration (most index options). Style limits *exercise*, not *trading* — both trade freely until they expire."
+      "body": "Listed options are standardized and guaranteed by the **Options Clearing Corporation (OCC)**. The OCC is the issuer and guarantor of every listed option. It sets the standard terms (100-share size, strike intervals, expiration dates), clears every trade, and assigns exercises. Because the OCC stands between every buyer and every writer, a holder never has to worry about one writer's credit.\n\nBefore a customer's first options trade, the customer must receive the OCC's **Options Disclosure Document (ODD)**. This is the booklet \"Characteristics and Risks of Standardized Options.\"\n\nOne more distinction shows up often. **American-style** options can be exercised any business day up to expiration (all equity options). **European-style** options can be exercised only at expiration (most index options). Style limits exercise, not trading. Both trade freely until they expire."
     }
   ],
   "flashcards": [
-    { "front": "Call vs. put in one phrase", "back": "Call = right to BUY (bullish, \"call up\"). Put = right to SELL (bearish, \"put down\")." },
-    { "front": "Buyer vs. writer: rights and money", "back": "Buyer pays the premium and holds a RIGHT (limited loss). Writer collects the premium and takes an OBLIGATION (larger risk)." },
-    { "front": "Dollar cost of an option", "back": "Premium × 100. \"@ 3\" = $300 per contract. Forgetting ×100 is the most common exam error." },
-    { "front": "Intrinsic value of a call / of a put", "back": "Call: stock − strike. Put: strike − stock. Never negative; premium is ignored." },
-    { "front": "Is moneyness different for the writer?", "back": "No. Moneyness compares stock to strike and is identical for buyer and writer. A short call is ITM when stock > strike." },
-    { "front": "Long call: outlook, max gain, max loss, breakeven", "back": "Bullish; unlimited gain; loss = premium; BE = strike + premium." },
-    { "front": "Short (naked) call: max loss?", "back": "UNLIMITED — the only single position with no ceiling (stock can rise forever). BE = strike + premium." },
-    { "front": "Long put: max gain and breakeven", "back": "Max gain = strike − premium (stock to zero); BE = strike − premium." },
-    { "front": "Short put: max loss and breakeven", "back": "Max loss = strike − premium; BE = strike − premium; max gain = the premium." },
-    { "front": "Calls add, puts ___", "back": "Puts subtract. Call BE = strike + premium; put BE = strike − premium. Buyer and writer share the same breakeven." },
-    { "front": "What is the OCC?", "back": "Options Clearing Corporation — issuer and guarantor of every listed option; standardizes terms, clears trades, assigns exercises." },
-    { "front": "American vs. European exercise", "back": "American = exercise any business day (equity options). European = exercise only at expiration (most index options). Both trade freely until expiry." }
+    {
+      "front": "Call versus put, in one phrase",
+      "back": "Call = right to BUY (bullish, \"call up\"). Put = right to SELL (bearish, \"put down\")."
+    },
+    {
+      "front": "Buyer versus writer: rights and money",
+      "back": "Buyer pays the premium and holds a RIGHT (limited loss). Writer collects the premium and takes an OBLIGATION (larger risk)."
+    },
+    {
+      "front": "Dollar cost of an option",
+      "back": "Premium × 100. \"@ 3\" = $300 per contract. Forgetting ×100 is the most common exam error."
+    },
+    {
+      "front": "Intrinsic value of a call and of a put",
+      "back": "Call: stock − strike. Put: strike − stock. Never negative; premium is ignored."
+    },
+    {
+      "front": "Is moneyness different for the writer?",
+      "back": "No. Moneyness compares stock to strike and is the same for buyer and writer. A short call is ITM when stock > strike."
+    },
+    {
+      "front": "Long call: outlook, max gain, max loss, breakeven",
+      "back": "Bullish; unlimited gain; loss = premium; BE = strike + premium."
+    },
+    {
+      "front": "Short (naked) call: max loss?",
+      "back": "UNLIMITED. The only single position with no ceiling, because a stock can rise forever. BE = strike + premium."
+    },
+    {
+      "front": "Long put: max gain and breakeven",
+      "back": "Max gain = strike − premium (stock to zero); BE = strike − premium."
+    },
+    {
+      "front": "Short put: max loss and breakeven",
+      "back": "Max loss = strike − premium; BE = strike − premium; max gain = the premium."
+    },
+    {
+      "front": "Calls add, puts do what?",
+      "back": "Puts subtract. Call BE = strike + premium; put BE = strike − premium. Buyer and writer share the same breakeven."
+    },
+    {
+      "front": "What is the OCC?",
+      "back": "Options Clearing Corporation. Issuer and guarantor of every listed option; standardizes terms, clears trades, assigns exercises."
+    },
+    {
+      "front": "American versus European exercise",
+      "back": "American = exercise any business day (equity options). European = exercise only at expiration (most index options). Both trade freely until expiry."
+    }
   ],
   "quiz": [
     {
       "stem": "An investor pays $200 for a contract giving her the right, but not the obligation, to buy 100 shares of ABC at $50. ABC then falls to $40. What is her best course of action and her result?",
-      "options": ["Exercise and buy the shares at $50, losing $1,000", "Let the contract expire unused, losing only the $200 premium", "Demand a refund of the $200 because the stock moved against her", "Buy the shares at $40 and pay a $200 penalty"],
+      "options": [
+        "Exercise and buy the shares at $50, losing $1,000",
+        "Let the contract expire unused, losing only the $200 premium",
+        "Demand a refund of the $200 because the stock moved against her",
+        "Buy the shares at $40 and pay a $200 penalty"
+      ],
       "answer": 1,
       "explanation": "A call buyer holds a RIGHT, not a duty. Buying at $50 when the market is $40 makes no sense, so she walks away and the call expires; her loss is capped at the $200 premium. There is no refund — the premium was the price of the right, and it belongs to the writer."
     },
     {
       "stem": "A customer expects XYZ to DECLINE over the next two months and wants a position with limited risk. Which is MOST appropriate?",
-      "options": ["Long XYZ call", "Short XYZ call", "Long XYZ put", "Short XYZ put"],
+      "options": [
+        "Long XYZ call",
+        "Short XYZ call",
+        "Long XYZ put",
+        "Short XYZ put"
+      ],
       "answer": 2,
       "explanation": "A long put is bearish (\"put down\") with loss limited to the premium. A short call is also bearish but carries UNLIMITED risk, so it fails the limited-risk requirement. A long call and a short put are both bullish."
     },
     {
       "stem": "An option is quoted at 2.50 per share and an investor buys one contract. What is the MOST this buyer can lose?",
-      "options": ["$2.50", "$250", "$2,500", "Unlimited, because the stock could keep moving against him"],
+      "options": [
+        "$2.50",
+        "$250",
+        "$2,500",
+        "Unlimited, because the stock could keep moving against him"
+      ],
       "answer": 1,
       "explanation": "Premiums are per share and a contract covers 100 shares: 2.50 × 100 = $250. A buyer can never lose more than the premium. \"$2.50\" forgets the ×100 multiplier; \"unlimited\" applies to a naked writer, not a buyer."
     },
     {
       "stem": "ABC stock trades at 56. An ABC Oct 50 call is in the money for:",
-      "options": ["both the holder and the writer", "the holder only; the writer is out of the money", "the writer only, because the writer collected the premium", "neither party until the stock exceeds 50 plus the premium"],
+      "options": [
+        "both the holder and the writer",
+        "the holder only; the writer is out of the money",
+        "the writer only, because the writer collected the premium",
+        "neither party until the stock exceeds 50 plus the premium"
+      ],
       "answer": 0,
       "explanation": "Moneyness compares stock to strike (56 − 50 = 6 in the money), ignores the premium, and is identical for both sides. A call is ITM whenever the stock is above the strike, whether you are long or short it."
     },
     {
       "stem": "Which BEST describes the role of the Options Clearing Corporation (OCC)?",
-      "options": ["It issues and guarantees every listed option and standardizes the contract terms", "It sets the premium at which each contract trades", "It approves each customer's options account before the first trade", "It publishes buy and sell recommendations for options traders"],
+      "options": [
+        "It issues and guarantees every listed option and standardizes the contract terms",
+        "It sets the premium at which each contract trades",
+        "It approves each customer's options account before the first trade",
+        "It publishes buy and sell recommendations for options traders"
+      ],
       "answer": 0,
       "explanation": "The OCC is the issuer and guarantor of all listed options; it standardizes terms, clears trades, and assigns exercises. Premiums are set by the market, and an account is approved by a Registered Options Principal — not by the OCC."
     },
     {
       "stem": "A customer buys 1 DEF Mar 30 call at 2. What is the breakeven point at expiration?",
-      "options": ["28", "30", "32", "34"],
+      "options": [
+        "28",
+        "30",
+        "32",
+        "34"
+      ],
       "answer": 2,
       "explanation": "Calls ADD: breakeven = strike + premium = 30 + 2 = 32, the same for buyer and writer. \"28\" applies the put rule (subtract), \"30\" forgets the premium, and \"34\" double-counts it."
     },
     {
       "stem": "Maria writes a put and collects a $300 premium from Dan. At expiration the put is out of the money and Dan lets it expire. What happens to the $300?",
-      "options": ["It is refunded to Dan because he never exercised", "It is split evenly between the two parties", "The exchange holds it until a new contract is written", "Maria keeps it; the premium is hers whether or not the option is exercised"],
+      "options": [
+        "It is refunded to Dan because he never exercised",
+        "It is split evenly between the two parties",
+        "The exchange holds it until a new contract is written",
+        "Maria keeps it; the premium is hers whether or not the option is exercised"
+      ],
       "answer": 3,
       "explanation": "The premium is paid to the writer up front as the price of the right and is never refunded. If the option expires unused, the writer's gain is the entire premium — here, Maria's $300."
     }

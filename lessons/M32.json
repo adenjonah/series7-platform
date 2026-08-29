@@ -6,93 +6,169 @@
   "reading": [
     {
       "h": "What a DPP is, and its one advantage",
-      "body": "A **direct participation program (DPP)** is a business venture — usually a **limited partnership** — that **passes income, gains, losses, deductions, and credits straight through** to investors. There is no entity-level tax; each investor gets a **Schedule K-1** and reports a share of the results.\n\nThe single feature that sets a DPP apart from a REIT or a corporation is the **flow-through of losses**. A corporation traps its losses at the entity level and a REIT cannot pass losses through at all; a DPP hands them to the investors. That is the whole reason high-bracket investors with passive income use them — and the reason a DPP is unsuitable for a low-bracket investor or a retirement account."
+      "body": "A **direct participation program (DPP)** is a business venture, usually a **limited partnership**. It **passes income, gains, losses, deductions, and credits straight through** to investors. There is no entity-level tax. Each investor gets a **Schedule K-1** and reports a share of the results.\n\nOne feature sets a DPP apart from a REIT or a corporation: the **flow-through of losses**. A corporation traps its losses at the entity level, and a REIT cannot pass losses through at all. A DPP hands them to the investors. That is the whole reason high-bracket investors with passive income use them. It is also the reason a DPP is unsuitable for a low-bracket investor or a retirement account."
     },
     {
       "h": "GP vs. LP — the liability line",
-      "body": "The **general partner (GP)** runs the business, owes a **fiduciary duty** to the limited partners, keeps at least a 1% interest, and carries **unlimited personal liability**.\n\nThe **limited partners (LPs)** put up the capital and stay **passive**. Their liability is **limited to what they invested plus any recourse debt they personally signed for**. LPs may vote on major matters (dissolve the partnership, sell assets, remove the GP) and inspect the books — but if an LP starts **participating in management, they risk losing their limited liability**. In a dissolution, the priority order is secured creditors, then general/unsecured creditors, then **limited partners, then general partners** — LPs rank ahead of GPs."
+      "body": "The **general partner (GP)** runs the business. The GP owes a **fiduciary duty** to the limited partners, keeps at least a 1% interest, and carries **unlimited personal liability**.\n\nThe **limited partners (LPs)** put up the capital and stay **passive**. Their liability is **limited to what they invested plus any recourse debt they personally signed for**. LPs may vote on major matters — dissolve the partnership, sell assets, remove the GP — and inspect the books. But if an LP starts to **manage the business, the LP risks losing that limited liability**. In a dissolution, the priority order is secured creditors, then general and unsecured creditors, then **limited partners, then general partners**. LPs rank ahead of GPs."
     },
     {
       "h": "The three documents and becoming an LP",
-      "body": "Three documents build a limited partnership. The **certificate of limited partnership** is filed with the state and names the GP, the business, and the capital. The **partnership agreement** sets out rights, duties, the profit split, and the GP's powers. The **subscription agreement** is what the investor signs to apply — it states the investor's net worth and income, affirms they understand the risks, and grants the GP power of attorney.\n\nThe timing point the exam loves: an investor becomes a limited partner **only when the GP signs and accepts** the subscription agreement — not when the investor signs it."
+      "body": "Three documents build a limited partnership. The **certificate of limited partnership** is filed with the state and names the GP, the business, and the capital. The **partnership agreement** sets out rights, duties, the profit split, and the GP's powers. The **subscription agreement** is what the investor signs to apply. It states the investor's net worth and income, affirms they understand the risks, and grants the GP power of attorney.\n\nHere is the timing point the exam loves. An investor becomes a limited partner only when the **GP signs and accepts** the subscription agreement, not when the investor signs it."
     },
     {
       "h": "Rule 2310 and the offering",
-      "body": "DPP interests are sold **public** (registered, with a prospectus) or by **private placement** (Reg D, accredited investors). Under **FINRA Rule 2310**, total **organization and offering expenses are capped at 15% of gross proceeds**, and **underwriting compensation is capped at 10%**. Before recommending a DPP, a rep must gather the customer's **income, net worth, and tax-bracket** data — suitability here is strict because of illiquidity and complexity.\n\nA program is called a **\"blind pool\"** when a large share of proceeds is raised for **unspecified** properties or projects, so investors are betting on the GP rather than on named assets."
+      "body": "DPP interests are sold **public** (registered, with a prospectus) or by **private placement** (Reg D, accredited investors). Under **FINRA Rule 2310**, total **organization and offering expenses are capped at 15% of gross proceeds**, and **underwriting compensation is capped at 10%**. Before recommending a DPP, a rep must gather the customer's **income, net worth, and tax-bracket** data. Suitability here is strict, because the product is illiquid and complex.\n\nA program is a **blind pool** when it raises a large share of proceeds for **unspecified** properties or projects. Investors then bet on the GP rather than on named assets."
     },
     {
       "h": "Program types and their tax deductions",
-      "body": "**Real estate:** **raw land** is pure appreciation — **no depreciation, no income, most speculative**; **existing properties** give immediate cash flow and depreciation (most conservative); **new construction** carries cost-overrun risk. Depreciation runs straight-line over **27.5 years** (residential) or **39 years** (commercial); **land is never depreciable**.\n\n**Oil and gas:** **exploratory (wildcat)** drilling is the **highest risk and offers the largest first-year deductions** through **intangible drilling costs (IDCs)** — labor, fuel, site prep, deductible in the year incurred whether or not the well produces. **Income (stripper)** programs buy producing wells for immediate, lower-risk cash flow. Oil and gas is the **only** DPP in which **nonrecourse debt does NOT add to basis** (in real estate, qualified nonrecourse financing does)."
+      "body": "**Real estate:** **raw land** is pure appreciation — **no depreciation, no income, most speculative**. **Existing properties** give immediate cash flow and depreciation (most conservative). **New construction** carries cost-overrun risk. Depreciation runs straight-line over **27.5 years** (residential) or **39 years** (commercial). **Land is never depreciable**.\n\n**Oil and gas:** **exploratory (wildcat)** drilling is the **highest risk and offers the largest first-year deductions** through **intangible drilling costs (IDCs)** — labor, fuel, and site prep, deductible in the year incurred whether or not the well produces. **Income (stripper)** programs buy producing wells for immediate, lower-risk cash flow. Oil and gas is the **only** DPP in which **nonrecourse debt does NOT add to basis** (in real estate, qualified nonrecourse financing does)."
     },
     {
       "h": "Passive losses, basis, and phantom income",
-      "body": "DPP income and losses are **passive**, so a passive loss can offset **only passive income** (from other DPPs or rental real estate) — **never** wages (active) or interest, dividends, and capital gains (portfolio). Unused passive losses **carry forward** and are released when the interest is fully disposed of.\n\nWorked example: an investor with a $150,000 salary, $5,000 of dividends, and $4,000 of income from another partnership is allocated a $10,000 DPP loss. Only **$4,000** (against the passive partnership income) is deductible this year; the other **$6,000 is suspended** and carried forward.\n\nOther mechanics: **basis** = cash invested + share of recourse debt + income − distributions − losses, and losses are deductible only up to basis (**at-risk rules**). The **crossover point** is when a program's taxable income first exceeds its deductions, producing **phantom income** — taxable income without matching cash. On sale, depreciation is **recaptured** as ordinary income."
+      "body": "DPP income and losses are **passive**. So a passive loss can offset **only passive income** (from other DPPs or rental real estate). It can **never** offset wages (active) or interest, dividends, and capital gains (portfolio). Unused passive losses **carry forward** and are released when you fully dispose of the interest.\n\nWorked example: an investor with a $150,000 salary, $5,000 of dividends, and $4,000 of income from another partnership is allocated a $10,000 DPP loss. Only **$4,000** offsets the passive partnership income this year; the other **$6,000 is suspended** and carried forward.\n\nOther mechanics: **basis** = cash invested + share of recourse debt + income − distributions − losses, and losses are deductible only up to basis (**at-risk rules**). The **crossover point** is when a program's taxable income first exceeds its deductions, which produces **phantom income** — taxable income without matching cash. On sale, depreciation is **recaptured** as ordinary income."
     },
     {
       "h": "REITs — the loss contrast",
-      "body": "A **REIT** owns or finances income-producing real estate; its shares are registered under the **1933 Act** (not the 1940 Act). **Listed REITs** trade on exchanges (liquid); **non-traded REITs** are illiquid, high-commission, and a FINRA sales-practice focus.\n\nTo qualify under IRC §856, a REIT must invest **≥75%** of assets in real estate, earn **≥75%** of gross income from real estate, and **distribute ≥90% of its taxable income** — then it deducts dividends paid, like a conduit. Distributions are mostly **ordinary income** (with a 20% §199A deduction). The exam's key contrast: a **REIT does NOT pass through losses** — that flow-through belongs to DPPs alone. A REIT is not a DPP and not an investment company."
+      "body": "A **REIT** owns or finances income-producing real estate. Its shares register under the **1933 Act**, not the 1940 Act. **Listed REITs** trade on exchanges and are liquid. **Non-traded REITs** are illiquid, high-commission, and a FINRA sales-practice focus.\n\nTo qualify under IRC §856, a REIT must invest **75% or more** of assets in real estate, earn **75% or more** of gross income from real estate, and **distribute 90% or more of its taxable income**. It then deducts dividends paid, like a conduit. Distributions are mostly **ordinary income** (with a 20% §199A deduction). Here is the exam's key contrast: a **REIT does NOT pass through losses**. That flow-through belongs to DPPs alone. A REIT is not a DPP and not an investment company."
     }
   ],
   "flashcards": [
-    { "front": "DPP's one advantage over a REIT or corporation", "back": "Flow-through of LOSSES to investors (via Schedule K-1). A REIT passes through income but NOT losses." },
-    { "front": "GP vs. LP liability", "back": "GP: unlimited personal liability + fiduciary duty. LP: limited to investment plus any recourse debt personally signed." },
-    { "front": "When does an investor become a limited partner?", "back": "When the GP signs/accepts the subscription agreement — not when the investor signs it." },
-    { "front": "The three DPP documents", "back": "Certificate of limited partnership (filed with state), partnership agreement, subscription agreement." },
-    { "front": "Rule 2310 caps", "back": "Organization & offering expenses ≤ 15% of gross proceeds; underwriting compensation ≤ 10%." },
-    { "front": "Passive losses offset what?", "back": "Only passive income (other DPPs, rental real estate). NOT wages (active) or interest/dividends/gains (portfolio). Excess carries forward." },
-    { "front": "Which DPP gives the largest first-year deductions and highest risk?", "back": "Exploratory (wildcat) oil & gas, via intangible drilling costs (IDCs) deductible in year one." },
-    { "front": "Raw land depreciation", "back": "None — land is never depreciable; raw land is pure appreciation, no income, most speculative." },
-    { "front": "Nonrecourse debt and basis", "back": "Oil & gas: nonrecourse debt does NOT add to basis. Real estate: qualified nonrecourse financing DOES add to basis." },
-    { "front": "REIT qualification (IRC 856)", "back": "75% assets in real estate, 75% income from real estate, distribute 90% of taxable income; 100 holders; 5/50 rule." },
-    { "front": "Phantom income / crossover point", "back": "Crossover = year taxable income first exceeds deductions; phantom income = taxable income without matching cash." },
-    { "front": "Dissolution priority (partnership)", "back": "Secured creditors → general/unsecured creditors → limited partners → general partners." }
+    {
+      "front": "DPP's one advantage over a REIT or corporation",
+      "back": "Flow-through of losses to investors (via Schedule K-1). A REIT passes through income but not losses."
+    },
+    {
+      "front": "GP vs. LP liability",
+      "back": "GP: unlimited personal liability plus fiduciary duty. LP: limited to the investment plus any recourse debt personally signed."
+    },
+    {
+      "front": "When does an investor become a limited partner?",
+      "back": "When the GP signs and accepts the subscription agreement, not when the investor signs it."
+    },
+    {
+      "front": "The three DPP documents",
+      "back": "Certificate of limited partnership (filed with the state), partnership agreement, subscription agreement."
+    },
+    {
+      "front": "Rule 2310 caps",
+      "back": "Organization and offering expenses 15% of gross proceeds or less; underwriting compensation 10% or less."
+    },
+    {
+      "front": "Passive losses offset what?",
+      "back": "Only passive income (other DPPs, rental real estate). Not wages (active) or interest, dividends, and gains (portfolio). Excess carries forward."
+    },
+    {
+      "front": "Which DPP gives the largest first-year deductions and highest risk?",
+      "back": "Exploratory (wildcat) oil and gas, through intangible drilling costs (IDCs) deductible in year one."
+    },
+    {
+      "front": "Raw land depreciation",
+      "back": "None. Land is never depreciable. Raw land is pure appreciation, no income, most speculative."
+    },
+    {
+      "front": "Nonrecourse debt and basis",
+      "back": "Oil and gas: nonrecourse debt does not add to basis. Real estate: qualified nonrecourse financing does add to basis."
+    },
+    {
+      "front": "REIT qualification (IRC 856)",
+      "back": "75% assets in real estate, 75% income from real estate, distribute 90% of taxable income; 100 holders; 5/50 rule."
+    },
+    {
+      "front": "Phantom income / crossover point",
+      "back": "Crossover = the year taxable income first exceeds deductions. Phantom income = taxable income without matching cash."
+    },
+    {
+      "front": "Dissolution priority (partnership)",
+      "back": "Secured creditors → general and unsecured creditors → limited partners → general partners."
+    }
   ],
   "quiz": [
     {
       "stem": "A limited partner invests $25,000 in a real estate limited partnership. The partnership later defaults on $2 million it borrowed. The limited partner's maximum possible loss is:",
-      "options": ["$25,000 plus a proportional share of the $2 million", "Unlimited, the same as the general partner", "Zero, because the general partner must absorb losses", "$25,000, unless she personally signed for any of the partnership's debt"],
+      "options": [
+        "$25,000 plus a proportional share of the $2 million",
+        "Unlimited, the same as the general partner",
+        "Zero, because the general partner must absorb losses",
+        "$25,000, unless she personally signed for any of the partnership's debt"
+      ],
       "answer": 3,
       "explanation": "A limited partner's liability is capped at the amount invested plus any recourse debt she personally signed for. The general partner carries unlimited personal liability; a limited partner does not share the partnership's borrowings beyond her investment."
     },
     {
       "stem": "An investor has a $150,000 salary, $5,000 of dividend income, and $4,000 of income from a real estate limited partnership. This year she is allocated a $10,000 loss from an oil and gas drilling program. The amount of that loss she may deduct this year is:",
-      "options": ["$10,000", "$4,000", "$9,000", "$0"],
+      "options": [
+        "$10,000",
+        "$4,000",
+        "$9,000",
+        "$0"
+      ],
       "answer": 1,
       "explanation": "DPP losses are passive and may offset only passive income — not the salary (active) or dividends (portfolio). The $4,000 of partnership income is passive, so $4,000 is deductible; the remaining $6,000 is suspended and carried forward until she has passive income or disposes of the interest."
     },
     {
       "stem": "The primary tax advantage a direct participation program offers that a REIT does NOT is:",
-      "options": ["Tax-free distributions to investors", "The flow-through of losses to investors", "Exemption from all federal income tax", "A guaranteed 90% distribution of income"],
+      "options": [
+        "Tax-free distributions to investors",
+        "The flow-through of losses to investors",
+        "Exemption from all federal income tax",
+        "A guaranteed 90% distribution of income"
+      ],
       "answer": 1,
       "explanation": "A DPP passes losses through to investors on a Schedule K-1; a REIT passes income through but cannot pass through losses. Neither vehicle makes distributions tax-free, and the 90% distribution is a REIT qualification test, not a DPP advantage."
     },
     {
       "stem": "An investor signs and submits a subscription agreement for a limited partnership interest. The investor formally becomes a limited partner when:",
-      "options": ["The investor signs the subscription agreement", "The general partner signs and accepts the subscription agreement", "The certificate of limited partnership is filed with the state", "The first cash distribution is paid"],
+      "options": [
+        "The investor signs the subscription agreement",
+        "The general partner signs and accepts the subscription agreement",
+        "The certificate of limited partnership is filed with the state",
+        "The first cash distribution is paid"
+      ],
       "answer": 1,
       "explanation": "An investor becomes a limited partner only when the general partner signs and accepts the subscription agreement. The investor's signature is an application; the GP's acceptance completes admission."
     },
     {
       "stem": "Under FINRA Rule 2310, total organization and offering expenses in a direct participation program are limited to what percentage of gross proceeds?",
-      "options": ["10%", "15%", "8.5%", "25%"],
+      "options": [
+        "10%",
+        "15%",
+        "8.5%",
+        "25%"
+      ],
       "answer": 1,
       "explanation": "Rule 2310 caps organization and offering expenses at 15% of gross proceeds, with underwriting compensation separately capped at 10%. The 8.5% figure is the mutual-fund maximum sales charge, a different rule."
     },
     {
       "stem": "An investor seeking the LARGEST first-year deductions and willing to accept the HIGHEST risk should be shown which DPP?",
-      "options": ["An existing-property real estate program", "An income (stripper-well) oil and gas program", "An exploratory (wildcat) oil and gas program", "A raw-land real estate program"],
+      "options": [
+        "An existing-property real estate program",
+        "An income (stripper-well) oil and gas program",
+        "An exploratory (wildcat) oil and gas program",
+        "A raw-land real estate program"
+      ],
       "answer": 2,
       "explanation": "Exploratory (wildcat) drilling carries the highest risk and generates the largest intangible drilling cost (IDC) deductions in year one. Existing-property and income programs are more conservative, and raw land produces no deductions at all (land is not depreciable)."
     },
     {
       "stem": "Which statement about REITs is TRUE?",
-      "options": ["A REIT passes operating losses through to its shareholders", "A REIT must distribute at least 90% of its taxable income to avoid entity-level tax on distributed income", "A REIT is registered as an investment company under the Investment Company Act of 1940", "REIT distributions are generally tax-free to shareholders"],
+      "options": [
+        "A REIT passes operating losses through to its shareholders",
+        "A REIT must distribute at least 90% of its taxable income to avoid entity-level tax on distributed income",
+        "A REIT is registered as an investment company under the Investment Company Act of 1940",
+        "REIT distributions are generally tax-free to shareholders"
+      ],
       "answer": 1,
       "explanation": "A qualifying REIT distributes at least 90% of taxable income and deducts dividends paid, acting as a conduit. It is registered under the 1933 Act (not the 1940 Act), its distributions are mostly ordinary income, and — unlike a DPP — it cannot pass losses through to shareholders."
     },
     {
       "stem": "In an oil and gas direct participation program, nonrecourse debt taken on by the partnership:",
-      "options": ["Increases each limited partner's basis, just as it does in a real estate program", "Does not add to a limited partner's basis, unlike qualified nonrecourse financing in real estate", "Is treated as a distribution to the limited partners", "Converts the limited partners into general partners"],
+      "options": [
+        "Increases each limited partner's basis, just as it does in a real estate program",
+        "Does not add to a limited partner's basis, unlike qualified nonrecourse financing in real estate",
+        "Is treated as a distribution to the limited partners",
+        "Converts the limited partners into general partners"
+      ],
       "answer": 1,
       "explanation": "Oil and gas is the only DPP in which nonrecourse debt does not add to a limited partner's basis. In a real estate program, qualified nonrecourse financing does add to basis, which is why the contrast is tested."
     }

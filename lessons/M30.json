@@ -6,93 +6,169 @@
   "reading": [
     {
       "h": "General account vs. separate account — who bears the risk",
-      "body": "Every annuity question starts with one fork: *where does the premium go, and who eats the investment risk?*\n\nA **fixed annuity** puts the premium in the insurer's **general account**, guarantees the interest rate and the payout, and so the **insurer bears investment risk**. The owner instead bears **purchasing-power (inflation) risk**, and because nothing about it is a security, the seller needs only a state **insurance license**.\n\nA **variable annuity** puts the premium in a **separate account** invested in subaccounts the owner chooses, so the **owner bears the investment risk** and the payout varies. That makes the contract a **security**: a **prospectus** is required and the rep needs **both** a securities license and an insurance license. An **indexed annuity** is a fixed annuity whose credited interest is tied to an index through a participation rate, cap, and floor — generally sold as insurance, not a security."
+      "body": "Every annuity question starts with one fork: where does the premium go, and who eats the investment risk?\n\nA **fixed annuity** puts the premium in the insurer's **general account**. It guarantees the interest rate and the payout, so the **insurer bears investment risk**. The owner instead bears **purchasing-power (inflation) risk**. Nothing about it is a security, so the seller needs only a state **insurance license**.\n\nA **variable annuity** puts the premium in a **separate account** invested in subaccounts the owner chooses. So the **owner bears the investment risk** and the payout varies. That makes the contract a **security**: it needs a **prospectus**, and the rep needs both a securities license and an insurance license. An **indexed annuity** is a fixed annuity whose credited interest is tied to an index through a participation rate, cap, and floor. It is generally sold as insurance, not a security."
     },
     {
       "h": "Purchase options — the one that doesn't exist",
-      "body": "You fund a deferred annuity and later turn it into income; or you fund an immediate annuity and start income right away. The real combinations: **single-premium immediate (SPIA)** — lump sum, payout begins within a year; **single-premium deferred** — lump sum, payout later; **periodic-payment deferred** — pay in over time, payout later (the most common).\n\nThe classic trap is the combination that **cannot exist**: a **periodic-payment immediate** annuity. You cannot pay in gradually and receive lifetime income at the same time — there is no such product."
+      "body": "You fund a deferred annuity and later turn it into income. Or you fund an immediate annuity and start income right away. The real combinations: **single-premium immediate (SPIA)** — lump sum, payout begins within a year; **single-premium deferred** — lump sum, payout later; **periodic-payment deferred** — pay in over time, payout later (the most common).\n\nThe classic trap is the combination that cannot exist: a **periodic-payment immediate** annuity. You cannot pay in gradually and receive lifetime income at the same time. There is no such product."
     },
     {
       "h": "Accumulation units vs. annuity units",
-      "body": "During the **accumulation phase**, each variable-annuity payment buys **accumulation units** whose value floats with the subaccounts. The **number of units grows** with every contribution while the **value per unit varies**.\n\nAt **annuitization** (an irrevocable choice), the accumulation units convert into a **fixed number of annuity units**. From then on each payment = **that fixed number of units × the current annuity unit value**. Because the unit value still floats, the **dollar payment varies** month to month — but the number of annuity units never changes again."
+      "body": "During the **accumulation phase**, each variable-annuity payment buys **accumulation units** whose value floats with the subaccounts. The **number of units grows** with every contribution, while the **value per unit varies**.\n\nAt **annuitization** (an irrevocable choice), the accumulation units convert into a **fixed number of annuity units**. From then on, each payment = **that fixed number of units × the current annuity unit value**. The unit value still floats, so the **dollar payment varies** month to month. But the number of annuity units never changes again."
     },
     {
       "h": "The AIR — compare actual to the AIR, never to last period",
-      "body": "The insurer prices the first annuitized payment using a conservative **assumed interest rate (AIR)**. The rule that trips people up: each new payment moves based on **actual separate-account return vs. the AIR** — **never** vs. the previous period's actual return.\n\nIf actual **> AIR**, the next payment **rises**; **= AIR**, it **stays the same**; **< AIR**, it **falls**. Worked example with a 4% AIR: month 1 earns 8% → payment 2 rises. Month 2 earns 5% → payment 3 **rises again** (5% > 4%), even though 5% is less than the prior 8%. Month 3 earns 3% → payment 4 **falls** (3% < 4%). Month 4 earns exactly 4% → payment 5 **equals** payment 4."
+      "body": "The insurer prices the first annuitized payment with a conservative **assumed interest rate (AIR)**. Here is the rule that trips people up. Each new payment moves on **actual separate-account return vs. the AIR**, never vs. the previous period's actual return.\n\nActual **> AIR** → the next payment **rises**. **= AIR** → it **stays the same**. **< AIR** → it **falls**. Worked example with a 4% AIR: month 1 earns 8% → payment 2 rises. Month 2 earns 5% → payment 3 **rises again** (5% > 4%), even though 5% is less than the prior 8%. Month 3 earns 3% → payment 4 **falls** (3% < 4%). Month 4 earns exactly 4% → payment 5 **equals** payment 4."
     },
     {
       "h": "Taxation: LIFO withdrawals and the exclusion ratio",
-      "body": "A non-qualified annuity is funded with **after-tax** dollars (that is your **basis**), and the growth is **tax-deferred**.\n\nTake a **random withdrawal** (not annuitized) and it comes out **LIFO** — earnings first, taxed as **ordinary income**, plus a **10% penalty** on the taxable portion if under 59½. Example: $50,000 basis, now worth $80,000, withdraw $20,000 at age 50 → the $30,000 of earnings comes out first, so **all $20,000 is ordinary income** and a **$2,000 penalty** applies.\n\n**Annuitized** payments instead use an **exclusion ratio = investment ÷ expected return** = the tax-free fraction of each payment. Basis $100,000 with an expected total payout of $250,000 → **40% of each payment is tax-free** (return of your own money), the rest ordinary income, until basis is recovered."
+      "body": "A non-qualified annuity is funded with **after-tax** dollars, which are your **basis**, and the growth is **tax-deferred**.\n\nTake a **random withdrawal** (not annuitized) and it comes out **LIFO** — earnings first, taxed as **ordinary income**, plus a **10% penalty** on the taxable part if you are under 59½. Example: $50,000 basis, now worth $80,000, withdraw $20,000 at age 50. The $30,000 of earnings comes out first, so **all $20,000 is ordinary income** and a **$2,000 penalty** applies.\n\n**Annuitized** payments instead use an **exclusion ratio = investment ÷ expected return**, the tax-free fraction of each payment. Basis $100,000 with an expected total payout of $250,000 → **40% of each payment is tax-free** (return of your own money), and the rest is ordinary income, until you recover your basis."
     },
     {
       "h": "1035 exchanges and payout options",
-      "body": "A **Section 1035 exchange** swaps one contract for another with **no current tax**. The permitted directions: **annuity → annuity, life → life, life → annuity**, and either into **long-term care**. The forbidden one to memorize: **you may NOT exchange an annuity into life insurance** — that direction is taxable.\n\n**Payout options**, ranked highest monthly amount to lowest: **straight life** (most, stops at death), **life with period certain**, **unit/installment refund**, and **joint and last survivor** (least, pays until the second death). More lives or more guarantees means a smaller check.\n\nOn the **death benefit** during accumulation, the beneficiary gets the greater of contributions or current value, and the gain is **ordinary income with no step-up** in basis — unlike inherited stock."
+      "body": "A **Section 1035 exchange** swaps one contract for another with **no current tax**. The permitted directions: **annuity → annuity, life → life, life → annuity**, and either one into **long-term care**. Memorize the forbidden one: you may **not** exchange an annuity into life insurance. That direction is taxable.\n\n**Payout options** rank from highest monthly amount to lowest: **straight life** (most, stops at death), **life with period certain**, **unit/installment refund**, and **joint and last survivor** (least, pays until the second death). More lives or more guarantees means a smaller check.\n\nOn the **death benefit** during accumulation, the beneficiary gets the greater of contributions or current value. The gain is **ordinary income with no step-up** in basis, unlike inherited stock."
     },
     {
       "h": "Life insurance and the FIFO/MEC flip",
-      "body": "The insurance ladder: **term** (pure protection, no cash value, cheapest), **whole life** (level premium, guaranteed cash value in the general account), **universal life** (flexible premium/death benefit), and **variable life (VLI)** — a **security** with cash value in a **separate account** (prospectus and dual license required). VLI has a **guaranteed minimum death benefit** that is recalculated **annually**, while the non-guaranteed cash value is recalculated **monthly**.\n\nThe tax contrast to lock in: life-insurance withdrawals are **FIFO** (basis first, tax-free) — the **opposite** of an annuity's LIFO — **unless** the policy is a **modified endowment contract (MEC)**, which is then taxed like an annuity (LIFO plus the 10% penalty)."
+      "body": "The insurance ladder: **term** (pure protection, no cash value, cheapest), **whole life** (level premium, guaranteed cash value in the general account), **universal life** (flexible premium and death benefit), and **variable life (VLI)** — a **security** with cash value in a **separate account** (prospectus and dual license required). VLI has a **guaranteed minimum death benefit** recalculated **each year**, while its non-guaranteed cash value is recalculated **each month**.\n\nLock in the tax contrast. Life-insurance withdrawals are **FIFO** (basis first, tax-free), the opposite of an annuity's LIFO. The exception is a **modified endowment contract (MEC)**, which is taxed like an annuity (LIFO plus the 10% penalty)."
     }
   ],
   "flashcards": [
-    { "front": "Fixed vs. variable annuity — who bears investment risk?", "back": "Fixed = insurer (general account); variable = owner (separate account). Variable is a security: prospectus + dual license." },
-    { "front": "The annuity purchase option that does NOT exist", "back": "Periodic-payment IMMEDIATE. You cannot pay in gradually and receive lifetime income at the same time." },
-    { "front": "Accumulation units vs. annuity units", "back": "Accumulation: number grows, value varies. After annuitizing: number of annuity units is FIXED, unit value floats, so the dollar payment varies." },
-    { "front": "AIR direction rule", "back": "Compare actual return to the AIR, never to last period. Actual > AIR → payment up; = AIR → same; < AIR → down." },
-    { "front": "Non-qualified annuity random withdrawal — taxation", "back": "LIFO: earnings out first, ordinary income, + 10% penalty on the taxable part if under 59½." },
-    { "front": "Exclusion ratio", "back": "Investment ÷ expected return = tax-free fraction of each annuitized payment. $100k ÷ $250k = 40% tax-free." },
-    { "front": "1035 exchange — the forbidden direction", "back": "Annuity → life insurance is NOT allowed (taxable). Allowed: annuity→annuity, life→life, life→annuity, either→LTC." },
-    { "front": "Payout options ranked (highest to lowest monthly)", "back": "Straight life > life with period certain > unit/installment refund > joint and last survivor." },
-    { "front": "VA death benefit basis treatment", "back": "Gain is ordinary income to the beneficiary — NO step-up in basis." },
-    { "front": "Variable life — how often recalculated?", "back": "Guaranteed minimum death benefit recalculated ANNUALLY; cash value (not guaranteed) recalculated MONTHLY." },
-    { "front": "Life insurance withdrawals — FIFO or LIFO?", "back": "FIFO (basis first, tax-free) — opposite of annuities — UNLESS it is a MEC, which is taxed like an annuity (LIFO + penalty)." },
-    { "front": "Indexed annuity — security or not?", "back": "A fixed annuity (participation rate, cap, floor); generally regulated as insurance, not a security." }
+    {
+      "front": "Fixed vs. variable annuity — who bears investment risk?",
+      "back": "Fixed: insurer (general account). Variable: owner (separate account). Variable is a security: prospectus plus dual license."
+    },
+    {
+      "front": "The annuity purchase option that does NOT exist",
+      "back": "Periodic-payment immediate. You cannot pay in gradually and receive lifetime income at the same time."
+    },
+    {
+      "front": "Accumulation units vs. annuity units",
+      "back": "Accumulation: number grows, value varies. After annuitizing: number of annuity units is fixed, unit value floats, so the dollar payment varies."
+    },
+    {
+      "front": "AIR direction rule",
+      "back": "Compare actual return to the AIR, never to last period. Actual > AIR → payment up; = AIR → same; < AIR → down."
+    },
+    {
+      "front": "Non-qualified annuity random withdrawal — taxation",
+      "back": "LIFO: earnings out first, ordinary income, plus a 10% penalty on the taxable part if under 59½."
+    },
+    {
+      "front": "Exclusion ratio",
+      "back": "Investment ÷ expected return = the tax-free fraction of each annuitized payment. $100k ÷ $250k = 40% tax-free."
+    },
+    {
+      "front": "1035 exchange — the forbidden direction",
+      "back": "Annuity → life insurance is not allowed (taxable). Allowed: annuity→annuity, life→life, life→annuity, either→LTC."
+    },
+    {
+      "front": "Payout options ranked (highest to lowest monthly)",
+      "back": "Straight life > life with period certain > unit/installment refund > joint and last survivor."
+    },
+    {
+      "front": "VA death benefit basis treatment",
+      "back": "The gain is ordinary income to the beneficiary. No step-up in basis."
+    },
+    {
+      "front": "Variable life — how often recalculated?",
+      "back": "Guaranteed minimum death benefit recalculated each year; cash value (not guaranteed) recalculated each month."
+    },
+    {
+      "front": "Life insurance withdrawals — FIFO or LIFO?",
+      "back": "FIFO (basis first, tax-free), the opposite of annuities. Exception: a MEC is taxed like an annuity (LIFO plus penalty)."
+    },
+    {
+      "front": "Indexed annuity — security or not?",
+      "back": "A fixed annuity (participation rate, cap, floor). Generally regulated as insurance, not a security."
+    }
   ],
   "quiz": [
     {
       "stem": "During the accumulation period of a variable annuity, the investment risk is borne by:",
-      "options": ["The insurance company, which guarantees a minimum rate of return", "The contract owner, whose premiums are invested in a separate account", "The broker-dealer that sold the contract", "The state insurance guaranty association"],
+      "options": [
+        "The insurance company, which guarantees a minimum rate of return",
+        "The contract owner, whose premiums are invested in a separate account",
+        "The broker-dealer that sold the contract",
+        "The state insurance guaranty association"
+      ],
       "answer": 1,
       "explanation": "Variable annuity premiums go into a separate account whose value fluctuates, so the owner bears investment risk. In a fixed annuity the insurer's general account bears investment risk and the owner instead bears purchasing-power risk."
     },
     {
       "stem": "A variable annuity is annuitized with an assumed interest rate (AIR) of 4%. The separate account earns 8% in month 1 and 5% in month 2. The third payment (reflecting the month-2 return), compared with the second payment, will be:",
-      "options": ["Lower, because 5% is less than the 8% earned the previous month", "Unchanged, because the AIR is a guaranteed rate", "Lower, because payments decline whenever the account's return falls", "Higher, because 5% exceeds the 4% AIR"],
+      "options": [
+        "Lower, because 5% is less than the 8% earned the previous month",
+        "Unchanged, because the AIR is a guaranteed rate",
+        "Lower, because payments decline whenever the account's return falls",
+        "Higher, because 5% exceeds the 4% AIR"
+      ],
       "answer": 3,
       "explanation": "Each payment is compared with the AIR, never with the prior period's actual return: 5% > 4% AIR, so the third payment rises even though 5% is below the previous month's 8%. A return below the AIR would make the next payment fall."
     },
     {
       "stem": "Once a variable annuity is annuitized under a life payout option, which of the following remains FIXED for the life of the payout?",
-      "options": ["The number of annuity units", "The value of each annuity unit", "The number of accumulation units", "The monthly dollar payment"],
+      "options": [
+        "The number of annuity units",
+        "The value of each annuity unit",
+        "The number of accumulation units",
+        "The monthly dollar payment"
+      ],
       "answer": 0,
       "explanation": "At annuitization the accumulation units convert into a fixed number of annuity units; each payment equals that fixed number times the current (fluctuating) unit value, so the dollar payment varies. Accumulation units cease to exist once the contract is annuitized."
     },
     {
       "stem": "A 50-year-old contributed $50,000 to a non-qualified variable annuity now worth $80,000 and takes a $20,000 lump-sum withdrawal without annuitizing. The tax consequence is:",
-      "options": ["Nothing is taxable; the first $50,000 withdrawn is a return of after-tax contributions", "$20,000 is taxed as ordinary income and a $2,000 penalty applies", "$7,500 is taxed as ordinary income under the exclusion ratio, plus a $750 penalty", "$20,000 is taxed as long-term capital gain with no penalty"],
+      "options": [
+        "Nothing is taxable; the first $50,000 withdrawn is a return of after-tax contributions",
+        "$20,000 is taxed as ordinary income and a $2,000 penalty applies",
+        "$7,500 is taxed as ordinary income under the exclusion ratio, plus a $750 penalty",
+        "$20,000 is taxed as long-term capital gain with no penalty"
+      ],
       "answer": 1,
       "explanation": "Random withdrawals from a non-qualified annuity are LIFO: the $30,000 of earnings comes out first, so the entire $20,000 is ordinary income, and being under 59½ triggers a 10% penalty = $2,000. FIFO is for life insurance, and the exclusion ratio applies only to annuitized payments."
     },
     {
       "stem": "Under IRC Section 1035, which of the following exchanges is NOT permitted on a tax-free basis?",
-      "options": ["Annuity for another annuity", "Life insurance for an annuity", "Annuity for life insurance", "Life insurance for another life insurance policy"],
+      "options": [
+        "Annuity for another annuity",
+        "Life insurance for an annuity",
+        "Annuity for life insurance",
+        "Life insurance for another life insurance policy"
+      ],
       "answer": 2,
       "explanation": "Section 1035 allows annuity-to-annuity, life-to-life, life-to-annuity, and either into long-term care, but NOT annuity-to-life insurance — that direction is a taxable event."
     },
     {
       "stem": "A customer wants to make periodic payments into an annuity over her working years and begin receiving lifetime income immediately upon her first payment. A representative should explain that:",
-      "options": ["This is best accomplished with a single-premium immediate annuity", "No such product exists; a periodic-payment immediate annuity is not available", "A periodic-payment deferred annuity begins income immediately", "An indexed annuity is required for this feature"],
+      "options": [
+        "This is best accomplished with a single-premium immediate annuity",
+        "No such product exists; a periodic-payment immediate annuity is not available",
+        "A periodic-payment deferred annuity begins income immediately",
+        "An indexed annuity is required for this feature"
+      ],
       "answer": 1,
       "explanation": "A periodic-payment immediate annuity does not exist — you cannot pay in gradually and receive income at the same time. Immediate annuities are funded by a single premium; periodic payments are only available with deferred contracts."
     },
     {
       "stem": "An investor annuitizes a contract with $100,000 of after-tax basis and an expected total return of $250,000. What portion of each annuity payment is excluded from taxable income?",
-      "options": ["25%", "40%", "60%", "100%"],
+      "options": [
+        "25%",
+        "40%",
+        "60%",
+        "100%"
+      ],
       "answer": 1,
       "explanation": "The exclusion ratio = investment ÷ expected return = $100,000 ÷ $250,000 = 40%, the tax-free (return-of-basis) portion of each payment. The remaining 60% is taxable as ordinary income until the basis is fully recovered."
     },
     {
       "stem": "Which statement correctly contrasts the taxation of withdrawals from an annuity and from a (non-MEC) life insurance policy?",
-      "options": ["Both are taxed FIFO, so basis comes out first tax-free", "Annuity withdrawals are LIFO (earnings first); life insurance withdrawals are FIFO (basis first)", "Both are taxed LIFO, so earnings come out first", "Annuity withdrawals are FIFO; life insurance withdrawals are LIFO"],
+      "options": [
+        "Both are taxed FIFO, so basis comes out first tax-free",
+        "Annuity withdrawals are LIFO (earnings first); life insurance withdrawals are FIFO (basis first)",
+        "Both are taxed LIFO, so earnings come out first",
+        "Annuity withdrawals are FIFO; life insurance withdrawals are LIFO"
+      ],
       "answer": 1,
       "explanation": "Non-qualified annuity withdrawals are LIFO — earnings out first as ordinary income — while a non-MEC life insurance policy is FIFO, letting basis come out tax-free first. A modified endowment contract (MEC) would flip the life policy to annuity-style LIFO."
     }

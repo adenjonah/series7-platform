@@ -6,82 +6,150 @@
   "reading": [
     {
       "h": "One rule of thumb for the whole topic",
-      "body": "FINRA Rule 2210 sorts every communication into one of three categories, and one sentence unlocks the topic: **audience decides the category; the category decides approval; the product decides filing.**\n\nGet those three questions in order and almost every 2210 item falls out. First figure out who received it (that names the category). Then apply the approval rule for that category. Then check whether the product mentioned triggers a filing with FINRA. Keep those separate — a common trap blends 'approval' and 'filing' as if they were the same step."
+      "body": "FINRA Rule 2210 sorts every communication into one of three categories. One sentence unlocks the topic: **audience decides the category; the category decides approval; the product decides filing.**\n\nGet those three questions in order and almost every 2210 item falls out. First figure out who received it. That names the category. Then apply the approval rule for that category. Then check whether the product mentioned triggers a filing with FINRA. Keep the two steps separate. A common trap blends 'approval' and 'filing' as if they were one step."
     },
     {
       "h": "The three categories",
-      "body": "**Correspondence** — a written or electronic communication to **25 or fewer retail investors within any 30-calendar-day period.** It needs supervision/review under Rule 3110 but **no principal pre-approval**, and it is not filed.\n\n**Retail communication** — a communication to **more than 25 retail investors within 30 calendar days** (ads, sales literature, websites, seminar handouts, form letters, TV/radio, and static social-media content). It requires **prior approval by an appropriately qualified registered principal** before use.\n\n**Institutional communication** — distributed only to institutional investors (members, banks, insurers, RIAs, RICs, benefit plans with 100+ participants, entities with $50 million+ in assets) and not meant to be forwarded to retail. It needs written supervisory **procedures**, not pre-approval, and no filing.\n\n'Retail investor' means any person who is not an institutional investor — whether or not a customer. The 25-in-30 line is the single most-tested number here. Records are kept **3 years**."
+      "body": "**Correspondence** is a written or electronic communication to **25 or fewer retail investors within any 30-calendar-day period.** It needs supervision and review under Rule 3110 but **no principal pre-approval**, and it is not filed.\n\n**Retail communication** is a communication to **more than 25 retail investors within 30 calendar days.** This covers ads, sales literature, websites, seminar handouts, form letters, TV, radio, and static social-media content. It requires **prior approval by a qualified registered principal** before use.\n\n**Institutional communication** goes only to institutional investors and is not meant to be forwarded to retail. Institutional investors are members, banks, insurers, RIAs, RICs, benefit plans with 100 or more participants, and entities with $50 million or more in assets. It needs written supervisory **procedures**, not pre-approval, and no filing.\n\nA 'retail investor' is any person who is not an institutional investor, whether or not a customer. The 25-in-30 line is the single most-tested number here. Records are kept **3 years.**"
     },
     {
       "h": "Filing with FINRA's Advertising Regulation Department",
-      "body": "Filing is a separate question from approval. The timing depends on the firm and the product.\n\n**New member firms** (the first year of FINRA membership) file any broadly disseminated retail communication **10 business days BEFORE first use.**\n\n**File 10 business days BEFORE use:** retail communications about **investment company rankings** the firm created (Rule 2212), **bond fund volatility ratings** (Rule 2213), and **security futures**.\n\n**File within 10 business days AFTER first use:** retail communications about **registered investment companies** (mutual funds, ETFs, variable annuities, UITs), **public DPPs**, and **CMOs** (Rule 2216).\n\n**Exempt from filing:** correspondence, institutional communications, generic tombstone ads, prospectuses filed with the SEC (except Rule 482 fund advertisements, which ARE retail communications), press releases to the media only, and reprints of independent third-party articles."
+      "body": "Filing is a separate question from approval. The timing depends on the firm and the product.\n\n**New member firms** (in their first year of FINRA membership) file any broadly spread retail communication **10 business days BEFORE first use.**\n\n**File 10 business days BEFORE use:** retail communications about **investment company rankings** the firm created (Rule 2212), **bond fund volatility ratings** (Rule 2213), and **security futures.**\n\n**File within 10 business days AFTER first use:** retail communications about **registered investment companies** (mutual funds, ETFs, variable annuities, UITs), **public DPPs**, and **CMOs** (Rule 2216).\n\n**Exempt from filing:** correspondence, institutional communications, generic tombstone ads, prospectuses filed with the SEC (except Rule 482 fund ads, which ARE retail communications), press releases to the media only, and reprints of independent third-party articles."
     },
     {
       "h": "Content standards",
-      "body": "All communications must be fair and balanced, present risks alongside benefits, and contain no exaggerated, promissory, or misleading statements and no omission of material facts.\n\n**No predictions or projections of performance** — with narrow exceptions such as hypothetical illustrations of a mathematical principle (like compounding), investment-analysis-tool output, and reasonable-basis price targets in research reports.\n\n**Testimonials** must disclose that the testimonial may not be representative of other customers, is no guarantee of future performance, and — if the person was paid more than $100 — that it is a **paid** testimonial. A testimonial on a technical matter must come from someone qualified.\n\n**Recommendations** in retail communications need a reasonable basis and must disclose the firm's conflicts: ownership of options/warrants, market-making in the security, and any underwriting of the issuer within the past 12 months."
+      "body": "Every communication must be fair and balanced, show risks alongside benefits, and carry no exaggerated, promissory, or misleading statements and no omission of material facts.\n\n**No predictions or projections of performance.** The exceptions are narrow: a hypothetical illustration of a math principle (like compounding), investment-analysis-tool output, and reasonable-basis price targets in research reports.\n\n**Testimonials** must disclose that the testimonial may not match other customers' experiences, is no guarantee of future performance, and, if the person was paid more than $100, that it is a **paid** testimonial. A testimonial on a technical matter must come from someone qualified.\n\n**Recommendations** in retail communications need a reasonable basis and must disclose the firm's conflicts: ownership of options or warrants, market-making in the security, and any underwriting of the issuer within the past 12 months."
     },
     {
       "h": "Product-specific and social-media rules",
-      "body": "**Options** communications must be approved by a **Registered Options Principal (ROP)**, and any retail options communication that goes beyond a general description must be preceded or accompanied by the current **Options Disclosure Document (ODD).**\n\n**Municipal** advertising (MSRB G-21) is approved by a municipal securities principal. **CMOs** (Rule 2216) must use the full term 'collateralized mortgage obligation,' may not compare a CMO to a certificate of deposit, and must disclose prepayment sensitivity. **Investment company** ads (SEC Rule 482) must show standardized 1-, 5-, and 10-year returns and state that past performance is no guarantee.\n\n**Social media:** static content (a profile, a website, a pinned post) is a **retail communication** needing principal pre-approval; **interactive real-time** content (live chat, replies) is treated like correspondence/a public appearance — supervised, not pre-approved. All business communications must be retained regardless of the device used."
+      "body": "**Options** communications must be approved by a **Registered Options Principal (ROP).** Any retail options communication that goes beyond a general description must be preceded or accompanied by the current **Options Disclosure Document (ODD).**\n\n**Municipal** advertising (MSRB G-21) is approved by a municipal securities principal. **CMOs** (Rule 2216) must use the full term 'collateralized mortgage obligation,' may not compare a CMO to a certificate of deposit, and must disclose prepayment sensitivity. **Investment company** ads (SEC Rule 482) must show standardized 1-, 5-, and 10-year returns and state that past performance is no guarantee.\n\n**Social media:** static content (a profile, a website, a pinned post) is a **retail communication** and needs principal pre-approval. Interactive real-time content (live chat, replies) is treated like correspondence or a public appearance: supervised, not pre-approved. All business communications must be kept, whatever device is used."
     },
     {
       "h": "Telemarketing and prospecting (Rule 3230)",
-      "body": "Cold calls to residences are allowed only between **8:00 a.m. and 9:00 p.m. in the local time of the person being CALLED** — not the caller. On each call the rep must give their name, the firm's name, a phone number or address for the firm, and that the purpose is to solicit.\n\nThe firm maintains its own **do-not-call list** and must check the **National Do-Not-Call Registry** using data no more than **31 days** old. Two exceptions to the national list: an **established business relationship** (a transaction within the last **18 months** or an inquiry within the last **3 months**) and prior express written consent. A firm-specific do-not-call request overrides the business-relationship exception."
+      "body": "Cold calls to homes are allowed only between **8:00 a.m. and 9:00 p.m. in the local time of the person being CALLED**, not the caller. On each call the rep must give their name, the firm's name, a phone number or address for the firm, and that the purpose is to solicit.\n\nThe firm keeps its own **do-not-call list** and must check the **National Do-Not-Call Registry** with data no more than **31 days** old. Two exceptions to the national list: an **established business relationship** (a transaction within the last **18 months** or an inquiry within the last **3 months**) and prior express written consent. A firm-specific do-not-call request overrides the business-relationship exception."
     }
   ],
   "flashcards": [
-    { "front": "The 2210 one-liner", "back": "Audience decides the category; category decides approval; product decides filing." },
-    { "front": "Correspondence vs. retail communication line", "back": "25 or fewer retail investors in 30 days = correspondence (review, no pre-approval). More than 25 = retail communication (principal pre-approval)." },
-    { "front": "Institutional communication approval", "back": "Written supervisory procedures — no principal pre-approval, no filing. Must not be expected to reach retail." },
-    { "front": "File 10 business days BEFORE use", "back": "New-member retail communications (first year), investment company rankings (2212), bond fund volatility ratings (2213), security futures." },
-    { "front": "File within 10 business days AFTER first use", "back": "Registered investment companies, public DPPs, and CMOs (Rule 2216)." },
-    { "front": "Communications recordkeeping", "back": "3 years from last use, including the approving principal's name and date." },
-    { "front": "Paid-testimonial disclosure", "back": "Must state it may not be representative, is no guarantee of future results, and — if over $100 was paid — that it is a paid testimonial." },
-    { "front": "Options communication requirements", "back": "Approval by a Registered Options Principal (ROP); beyond a general description it must be preceded/accompanied by the ODD." },
-    { "front": "Static vs. interactive social media", "back": "Static content = retail communication (pre-approval). Interactive real-time = correspondence/public appearance (supervised, not pre-approved)." },
-    { "front": "Telemarketing calling hours", "back": "8:00 a.m. to 9:00 p.m. in the CALLED party's local time." },
-    { "front": "National DNC refresh and EBR windows", "back": "Check the national registry with data no older than 31 days; established business relationship = 18 months (transaction) / 3 months (inquiry)." }
+    {
+      "front": "The 2210 one-liner",
+      "back": "Audience decides the category; category decides approval; product decides filing."
+    },
+    {
+      "front": "Correspondence vs. retail communication line",
+      "back": "25 or fewer retail investors in 30 days: correspondence (review, no pre-approval). More than 25: retail communication (principal pre-approval)."
+    },
+    {
+      "front": "Institutional communication approval",
+      "back": "Written supervisory procedures. No principal pre-approval, no filing. It must not be expected to reach retail."
+    },
+    {
+      "front": "File 10 business days BEFORE use",
+      "back": "New-member retail communications (first year), investment company rankings (2212), bond fund volatility ratings (2213), security futures."
+    },
+    {
+      "front": "File within 10 business days AFTER first use",
+      "back": "Registered investment companies, public DPPs, and CMOs (Rule 2216)."
+    },
+    {
+      "front": "Communications recordkeeping",
+      "back": "3 years from last use, including the approving principal's name and date."
+    },
+    {
+      "front": "Paid-testimonial disclosure",
+      "back": "Must state it may not match other customers, is no guarantee of future results, and, if over $100 was paid, that it is a paid testimonial."
+    },
+    {
+      "front": "Options communication requirements",
+      "back": "Approval by a Registered Options Principal (ROP). Beyond a general description it must be preceded or accompanied by the ODD."
+    },
+    {
+      "front": "Static vs. interactive social media",
+      "back": "Static content: retail communication (pre-approval). Interactive real-time: correspondence or public appearance (supervised, not pre-approved)."
+    },
+    {
+      "front": "Telemarketing calling hours",
+      "back": "8:00 a.m. to 9:00 p.m. in the CALLED party's local time."
+    },
+    {
+      "front": "National DNC refresh and EBR windows",
+      "back": "Check the national registry with data no older than 31 days. Established business relationship: 18 months (transaction) or 3 months (inquiry)."
+    }
   ],
   "quiz": [
     {
       "stem": "A representative sends the same letter recommending a mutual fund to 40 retail customers over a two-week period. Under Rule 2210, this letter is:",
-      "options": ["Correspondence, subject to review but not principal pre-approval", "A retail communication, requiring prior approval by a qualified registered principal", "An institutional communication, because it went only to existing customers", "A public appearance, because it contains a recommendation"],
+      "options": [
+        "Correspondence, subject to review but not principal pre-approval",
+        "A retail communication, requiring prior approval by a qualified registered principal",
+        "An institutional communication, because it went only to existing customers",
+        "A public appearance, because it contains a recommendation"
+      ],
       "answer": 1,
       "explanation": "A written communication to more than 25 retail investors within 30 calendar days is a retail communication and needs prior principal approval; 25 or fewer would be correspondence. Being an existing customer does not make a person institutional."
     },
     {
       "stem": "An email is sent to 20 retail customers within a 30-day period. Under Rule 2210 this communication is classified as:",
-      "options": ["A retail communication requiring principal pre-approval", "Correspondence, subject to supervisory review", "An institutional communication", "An advertisement requiring a filing with FINRA"],
+      "options": [
+        "A retail communication requiring principal pre-approval",
+        "Correspondence, subject to supervisory review",
+        "An institutional communication",
+        "An advertisement requiring a filing with FINRA"
+      ],
       "answer": 1,
       "explanation": "25 or fewer retail investors within 30 calendar days makes it correspondence, which is supervised under Rule 3110 but needs neither principal pre-approval nor a filing. More than 25 would make it a retail communication."
     },
     {
       "stem": "A member firm creates a retail communication that ranks a family of mutual funds it distributes. When must it be filed with FINRA?",
-      "options": ["It is exempt from filing", "Within 10 business days after first use", "At least 10 business days before first use", "Within 30 days after first use"],
+      "options": [
+        "It is exempt from filing",
+        "Within 10 business days after first use",
+        "At least 10 business days before first use",
+        "Within 30 days after first use"
+      ],
       "answer": 2,
       "explanation": "Retail communications containing investment company rankings created by the member (Rule 2212), bond fund volatility ratings, and security futures must be filed at least 10 business days before first use. Ordinary registered-investment-company retail communications are filed within 10 business days after use."
     },
     {
       "stem": "A retail communication that goes beyond a general description of options strategies must be:",
-      "options": ["Approved by a general securities principal only", "Preceded or accompanied by the current Options Disclosure Document and approved by a Registered Options Principal", "Filed with the SEC before use", "Sent only to institutional investors"],
+      "options": [
+        "Approved by a general securities principal only",
+        "Preceded or accompanied by the current Options Disclosure Document and approved by a Registered Options Principal",
+        "Filed with the SEC before use",
+        "Sent only to institutional investors"
+      ],
       "answer": 1,
       "explanation": "Options communications must be approved by a Registered Options Principal (ROP), and a retail options communication that discusses more than the general nature of options must be preceded or accompanied by the current ODD."
     },
     {
       "stem": "A firm posts a paid customer testimonial on its public website. Which disclosure is REQUIRED?",
-      "options": ["That the testimonial guarantees similar results for other clients", "That the testimonial may not be representative, is no guarantee of future performance, and, because payment exceeded $100, is a paid testimonial", "Only the customer's full name and account number", "No disclosure, because website content is exempt"],
+      "options": [
+        "That the testimonial guarantees similar results for other clients",
+        "That the testimonial may not be representative, is no guarantee of future performance, and, because payment exceeded $100, is a paid testimonial",
+        "Only the customer's full name and account number",
+        "No disclosure, because website content is exempt"
+      ],
       "answer": 1,
       "explanation": "A testimonial must disclose that it may not be representative of other customers' experiences and is no guarantee of future performance, and if more than $100 in value was paid, that it is a paid testimonial. Website static content is a retail communication, not exempt."
     },
     {
       "stem": "A registered representative may make a cold call to a prospect's residence only during which hours?",
-      "options": ["9:00 a.m. to 5:00 p.m. in the caller's local time", "8:00 a.m. to 9:00 p.m. in the called party's local time", "8:00 a.m. to 8:00 p.m. in the caller's local time", "Any time, if the firm maintains a do-not-call list"],
+      "options": [
+        "9:00 a.m. to 5:00 p.m. in the caller's local time",
+        "8:00 a.m. to 9:00 p.m. in the called party's local time",
+        "8:00 a.m. to 8:00 p.m. in the caller's local time",
+        "Any time, if the firm maintains a do-not-call list"
+      ],
       "answer": 1,
       "explanation": "Rule 3230 permits solicitation calls only between 8:00 a.m. and 9:00 p.m. in the local time of the person being called, not the caller. The firm must also honor its do-not-call list and check the national registry with data no older than 31 days."
     },
     {
       "stem": "Which of the following is EXEMPT from filing with FINRA's Advertising Regulation Department?",
-      "options": ["A retail communication about a public direct participation program", "An institutional communication distributed only to banks and insurers", "A retail communication about a CMO", "A new member firm's television advertisement"],
+      "options": [
+        "A retail communication about a public direct participation program",
+        "An institutional communication distributed only to banks and insurers",
+        "A retail communication about a CMO",
+        "A new member firm's television advertisement"
+      ],
       "answer": 1,
       "explanation": "Institutional communications are exempt from filing (they need only supervisory procedures). Retail communications about DPPs and CMOs are filed within 10 business days after use, and a new member's broadly disseminated retail communication is filed 10 business days before use."
     }

@@ -6,87 +6,158 @@
   "reading": [
     {
       "h": "Why a dollar later is worth less than a dollar now",
-      "body": "This is the single idea that drives the entire bond half of the exam. **A dollar you receive in the future is worth less than a dollar today**, because a dollar today can be invested and grow. The more the going interest rate is, the more you give up by waiting — so a fixed future payment is worth *less* when rates are high and *more* when rates are low.\n\nA bond is nothing but a set of fixed future payments: the coupons, plus the return of par at maturity. So the value of a bond is the **present value** of those fixed payments — and that value moves opposite to interest rates. Hold onto this: everything else in this lesson is a consequence of it."
+      "body": "**A dollar you get in the future is worth less than a dollar today.** A dollar today can be invested and grow. This one idea drives the whole bond half of the exam.\n\nThe higher the going interest rate, the more you give up by waiting. So a fixed future payment is worth less when rates are high. It is worth more when rates are low.\n\nA bond is just a set of fixed future payments: the coupons plus the return of par at maturity. So a bond's value is the **present value** of those payments. That value moves opposite to interest rates. Everything else in this lesson follows from it."
     },
     {
       "h": "Present value and future value",
-      "body": "**Future value (FV)** grows a sum forward: **FV = PV × (1 + r)ⁿ**. $1,000 invested at 6% for two years, compounded annually, becomes 1,000 × 1.06² = **$1,123.60**. **Present value (PV)** runs the same math backward — it discounts a future amount to today by dividing by (1 + r)ⁿ.\n\nCompounding *frequency* matters: the more often interest compounds, the faster money grows, so the same nominal rate produces a higher *effective* return when compounded semiannually than annually. **Rule of 72** is the shortcut: years to double ≈ 72 ÷ rate. At 6%, money doubles in about 12 years; at 8%, about 9. Turned around, something that doubles in 12 years earned roughly 72 ÷ 12 = 6%."
+      "body": "**Future value (FV)** grows a sum forward: **FV = PV × (1 + r)ⁿ**. Put $1,000 in at 6% for two years, compounded once a year. It becomes 1,000 × 1.06² = **$1,123.60**. **Present value (PV)** runs the same math backward. It discounts a future amount to today by dividing by (1 + r)ⁿ.\n\nHow often interest compounds matters. The more often it compounds, the faster money grows. So the same rate pays a higher effective return when it compounds twice a year than once a year.\n\n**Rule of 72** is the shortcut. Years to double ≈ 72 ÷ rate. At 6%, money doubles in about 12 years. At 8%, about 9 years. The other way round: something that doubles in 12 years earned about 72 ÷ 12 = 6%."
     },
     {
       "h": "The price/yield seesaw",
-      "body": "Because a bond is a fixed stream of payments, its price and its yield move in **opposite directions**. Picture a seesaw: **price on one end, yield on the other, the fixed coupon as the pivot.** Push price up and yield drops; push price down and yield rises.\n\nWhy prices *fall when rates rise*: suppose you own an old bond paying $40 a year per $1,000 (a 4% coupon) and new bonds of equal quality now pay $60 (6%). No one will pay you full $1,000 for $40 a year when $60 is available elsewhere. Your bond's price must **drop** until the $40 it pays represents a competitive yield to the buyer — it sells at a **discount**. If instead new bonds only paid 2%, your 4% bond would be prized and sell at a **premium**. Coupon below market → discount; coupon above market → premium; coupon equal to market → par."
+      "body": "A bond is a fixed stream of payments, so its price and its yield move in **opposite directions**. Think of a seesaw: **price on one end, yield on the other, the fixed coupon as the pivot.** Push price up and yield drops. Push price down and yield rises.\n\nHere is why prices fall when rates rise. Say you own an old bond that pays $40 a year per $1,000, a 4% coupon. New bonds of equal quality now pay $60, a 6% coupon. No one will pay you the full $1,000 for $40 a year when $60 is on offer elsewhere. So your bond's price drops until its $40 pays the buyer a competitive yield. It sells at a **discount**.\n\nIf instead new bonds paid only 2%, your 4% bond would be worth more and sell at a **premium**. Coupon below market means a discount. Coupon above market means a premium. Coupon equal to market means par."
     },
     {
       "h": "Nominal yield and current yield",
-      "body": "**Nominal (coupon) yield** is the fixed annual interest as a percent of par. It is set at issue and *never changes*: a 6% bond pays $60 a year for life, whatever the price does.\n\n**Current yield (CY)** measures the coupon against what you actually pay today: **CY = annual interest ÷ current market price.** A 6% bond bought at a discount price of $850 has a current yield of 60 ÷ 850 = **7.06%** — higher than the 6% coupon, because you paid less than par. The same bond bought at a premium of $1,100 yields 60 ÷ 1,100 = **5.45%**. Discount raises current yield above the coupon; premium pushes it below."
+      "body": "**Nominal (coupon) yield** is the fixed annual interest as a percent of par. It is set at issue and never changes. A 6% bond pays $60 a year for life, whatever the price does.\n\n**Current yield (CY)** measures the coupon against what you pay today: **CY = annual interest ÷ current market price.** A 6% bond bought at a discount price of $850 has a current yield of 60 ÷ 850 = **7.06%**. That beats the 6% coupon because you paid less than par. The same bond bought at a premium of $1,100 yields 60 ÷ 1,100 = **5.45%**. A discount raises current yield above the coupon. A premium pushes it below."
     },
     {
       "h": "Yield to maturity (and yield to call)",
-      "body": "**Yield to maturity (YTM)** is the total return if you hold to maturity, counting the coupons *and* the gain (on a discount bond) or loss (on a premium bond) realized when par is repaid. The exam approximation:\n\n**YTM ≈ [annual interest + (par − price) ÷ years] ÷ [(par + price) ÷ 2]**.\n\nA 5% bond priced at $850 with 10 years left: (50 + (1,000 − 850)/10) ÷ ((1,000 + 850)/2) = (50 + 15) ÷ 925 = **7.03%**. The discount ($150) is extra return spread over 10 years, so YTM lands above the current yield.\n\n**Yield to call (YTC)** uses the same formula but substitutes the **call price** and the **years to call**. For a premium bond, a call takes the premium away sooner, so YTC comes in *below* YTM."
+      "body": "**Yield to maturity (YTM)** is the total return if you hold to maturity. It counts the coupons plus the gain on a discount bond, or the loss on a premium bond, when par is repaid. The exam approximation:\n\n**YTM ≈ [annual interest + (par − price) ÷ years] ÷ [(par + price) ÷ 2]**.\n\nTake a 5% bond priced at $850 with 10 years left: (50 + (1,000 − 850)/10) ÷ ((1,000 + 850)/2) = (50 + 15) ÷ 925 = **7.03%**. The $150 discount is extra return spread over 10 years. So YTM lands above the current yield.\n\n**Yield to call (YTC)** uses the same formula. It just puts in the **call price** and the **years to call**. On a premium bond, a call takes the premium away sooner, so YTC comes in below YTM."
     },
     {
       "h": "The yield-ordering rule",
-      "body": "You rarely have to compute these on the exam — you have to **order** them. The rule follows straight from the seesaw:\n\n- **Discount bond (price below par): Nominal < CY < YTM < YTC.** Yields rise as you look 'further out,' because you also collect the discount.\n- **Premium bond (price above par): Nominal > CY > YTM > YTC.** Yields fall further out, because you also give back the premium.\n- **Par bond: all four are equal.**\n\nClassic stems: 'A 5% bond trading at 105 — which yield is *highest*?' → the nominal 5%. 'Which is *lowest*?' → yield to call. (One nuance to file away: the premium ordering assumes the call price is near par; a call priced well *above* the current price can flip YTC back to the top. The exam's plain premium questions use a call at or near par.)"
+      "body": "On the exam you rarely compute these yields. You **order** them. The order follows from the seesaw.\n\n**Discount bond, price below par: Nominal < CY < YTM < YTC.** The yields rise as you look further out, because you also collect the discount. **Premium bond, price above par: Nominal > CY > YTM > YTC.** The yields fall further out, because you also give back the premium. **Par bond: all four are equal.**\n\nA common stem asks about a 5% bond trading at 105. The highest yield is the nominal 5%. The lowest is the yield to call. One case to remember: this premium order assumes the call price is near par. A call price well above the current price can push YTC back to the top. The exam's plain premium questions use a call at or near par."
     },
     {
       "h": "Basis points and a first look at taxable-equivalent yield",
-      "body": "Yields move in **basis points**: **1 bp = 0.01%**, so 100 bp = 1%. A yield rising from 4.25% to 4.60% moved 35 basis points — shift the decimal two places.\n\nOne cross-over idea you'll reuse for municipals: to compare a tax-free yield with a taxable one, gross it up. **Taxable-equivalent yield = tax-free yield ÷ (1 − tax bracket).** A 4% municipal to an investor in the 32% bracket is worth 4% ÷ (1 − 0.32) = **5.88%** in taxable terms. Same seesaw logic, just adjusted for tax."
+      "body": "Yields move in **basis points**. **1 basis point = 0.01%**, so 100 basis points = 1%. A yield rising from 4.25% to 4.60% moved 35 basis points. Shift the decimal two places.\n\nYou will reuse one idea for municipals. To compare a tax-free yield with a taxable one, gross it up. **Taxable-equivalent yield = tax-free yield ÷ (1 − tax bracket).** A 4% municipal bond for an investor in the 32% bracket is worth 4% ÷ (1 − 0.32) = **5.88%** in taxable terms."
     }
   ],
   "flashcards": [
-    { "front": "Why is a future dollar worth less than a dollar today?", "back": "A dollar today can be invested and grow; the higher the interest rate, the more you give up by waiting. A bond's value is the present value of its fixed future payments." },
-    { "front": "Future value formula", "back": "FV = PV × (1 + r)ⁿ. $1,000 at 6% for 2 years = 1,000 × 1.06² = $1,123.60." },
-    { "front": "Rule of 72", "back": "Years to double ≈ 72 ÷ rate. 6% → ~12 years; 8% → ~9 years." },
-    { "front": "Price/yield seesaw", "back": "Price and yield move opposite. Rates up → prices down. Coupon is the fixed pivot." },
-    { "front": "Discount vs premium vs par", "back": "Coupon < market rate → discount; coupon > market → premium; coupon = market → par." },
-    { "front": "Nominal (coupon) yield", "back": "Annual interest ÷ par. Fixed at issue; never changes. 6% bond = $60/yr for life." },
-    { "front": "Current yield formula", "back": "CY = annual interest ÷ current market price. 6% bond at $850 → 60/850 = 7.06%." },
-    { "front": "YTM approximation", "back": "[annual interest + (par − price)/years] ÷ [(par + price)/2]. 5% bond, $850, 10 yr → 7.03%." },
-    { "front": "Yield order — discount bond", "back": "Nominal < CY < YTM < YTC (yields rise further out)." },
-    { "front": "Yield order — premium bond", "back": "Nominal > CY > YTM > YTC (yields fall further out). Par bond: all equal." },
-    { "front": "1 basis point", "back": "0.01%. 100 bp = 1%. A move 4.25% → 4.60% = 35 bp." },
-    { "front": "Taxable-equivalent yield", "back": "Tax-free yield ÷ (1 − bracket). 4% muni at 32% = 4/0.68 = 5.88%." }
+    {
+      "front": "Why is a future dollar worth less than a dollar today?",
+      "back": "A dollar today can be invested and grow. The higher the interest rate, the more you give up by waiting. A bond's value is the present value of its fixed future payments."
+    },
+    {
+      "front": "Future value formula",
+      "back": "FV = PV × (1 + r)ⁿ. $1,000 at 6% for 2 years = 1,000 × 1.06² = $1,123.60."
+    },
+    {
+      "front": "Rule of 72",
+      "back": "Years to double ≈ 72 ÷ rate. 6% → ~12 years; 8% → ~9 years."
+    },
+    {
+      "front": "Price/yield seesaw",
+      "back": "Price and yield move opposite. Rates up → prices down. Coupon is the fixed pivot."
+    },
+    {
+      "front": "Discount vs premium vs par",
+      "back": "Coupon < market rate → discount; coupon > market → premium; coupon = market → par."
+    },
+    {
+      "front": "Nominal (coupon) yield",
+      "back": "Annual interest ÷ par. Fixed at issue; never changes. 6% bond = $60/yr for life."
+    },
+    {
+      "front": "Current yield formula",
+      "back": "CY = annual interest ÷ current market price. 6% bond at $850 → 60/850 = 7.06%."
+    },
+    {
+      "front": "YTM approximation",
+      "back": "[annual interest + (par − price)/years] ÷ [(par + price)/2]. 5% bond, $850, 10 yr → 7.03%."
+    },
+    {
+      "front": "Yield order — discount bond",
+      "back": "Nominal < CY < YTM < YTC (yields rise further out)."
+    },
+    {
+      "front": "Yield order — premium bond",
+      "back": "Nominal > CY > YTM > YTC (yields fall further out). Par bond: all equal."
+    },
+    {
+      "front": "1 basis point",
+      "back": "0.01%. 100 basis points = 1%. A move 4.25% → 4.60% = 35 basis points."
+    },
+    {
+      "front": "Taxable-equivalent yield",
+      "back": "Tax-free yield ÷ (1 − bracket). 4% muni at 32% = 4/0.68 = 5.88%."
+    }
   ],
   "quiz": [
     {
       "stem": "An investor owns a bond paying a 4% coupon. Newly issued bonds of the same quality now pay 6%. If the investor sells today, the price of the older bond will MOST likely:",
-      "options": ["Stay at par, because the coupon is still 4%", "Rise, because older bonds are proven", "Fall to a discount, so its yield becomes competitive with new 6% bonds", "Be unsellable until maturity"],
+      "options": [
+        "Stay at par, because the coupon is still 4%",
+        "Rise, because older bonds are proven",
+        "Fall to a discount, so its yield becomes competitive with new 6% bonds",
+        "Be unsellable until maturity"
+      ],
       "answer": 2,
       "explanation": "The bond is a fixed stream of payments; when market rates rise, that stream is worth less, so the price falls to a discount until the yield matches the 6% market. Par is only what the issuer repays at maturity, not what a buyer pays today, so the 'stay at par' choice is the trap."
     },
     {
       "stem": "A 6% corporate bond is trading at $850. What is its current yield?",
-      "options": ["6.00%", "7.06%", "5.10%", "5.88%"],
+      "options": [
+        "6.00%",
+        "7.06%",
+        "5.10%",
+        "5.88%"
+      ],
       "answer": 1,
       "explanation": "Current yield = annual interest ÷ market price = $60 ÷ $850 = 7.06%. 6.00% is the nominal (coupon) yield, which never changes; 5.88% divides price by interest or reflects a premium price — both distractors. Because the bond trades at a discount, current yield must exceed the coupon."
     },
     {
       "stem": "A 5% bond with 10 years to maturity is trading at $850. Using the exam approximation, its yield to maturity is closest to:",
-      "options": ["5.00%", "5.88%", "7.03%", "8.50%"],
+      "options": [
+        "5.00%",
+        "5.88%",
+        "7.03%",
+        "8.50%"
+      ],
       "answer": 2,
       "explanation": "YTM ≈ [50 + (1,000 − 850)/10] ÷ [(1,000 + 850)/2] = (50 + 15) ÷ 925 = 7.03%. 5.00% is the nominal yield and 5.88% is the current yield; on a discount bond YTM sits above both because you also collect the $150 discount at maturity."
     },
     {
       "stem": "A 5% bond is trading at 105 and is callable in five years at par. Which of its yields is the HIGHEST?",
-      "options": ["Nominal yield", "Current yield", "Yield to maturity", "Yield to call"],
+      "options": [
+        "Nominal yield",
+        "Current yield",
+        "Yield to maturity",
+        "Yield to call"
+      ],
       "answer": 0,
       "explanation": "This is a premium bond, so the ordering is Nominal > CY > YTM > YTC. The nominal 5% is highest; yield to call is lowest because a call at par removes the premium fastest. Picking yield to call inverts the premium rule."
     },
     {
       "stem": "Using the Rule of 72, an investment that doubles in about 12 years earned an approximate annual rate of:",
-      "options": ["4%", "6%", "8%", "12%"],
+      "options": [
+        "4%",
+        "6%",
+        "8%",
+        "12%"
+      ],
       "answer": 1,
       "explanation": "Rule of 72: rate ≈ 72 ÷ years = 72 ÷ 12 = 6%. Choosing 12% confuses the doubling period with the rate; 8% would double money in about 9 years."
     },
     {
       "stem": "A discount bond's yields are ranked from LOWEST to HIGHEST as:",
-      "options": ["Yield to call, yield to maturity, current yield, nominal", "Nominal, current yield, yield to maturity, yield to call", "Current yield, nominal, yield to call, yield to maturity", "They are all equal"],
+      "options": [
+        "Yield to call, yield to maturity, current yield, nominal",
+        "Nominal, current yield, yield to maturity, yield to call",
+        "Current yield, nominal, yield to call, yield to maturity",
+        "They are all equal"
+      ],
       "answer": 1,
       "explanation": "For a discount bond the order is Nominal < CY < YTM < YTC — yields rise as you look further out because the discount is extra return. The reversed sequence describes a premium bond, and 'all equal' describes a par bond."
     },
     {
       "stem": "A bond's yield rises from 4.25% to 4.60%. By how many basis points did the yield move?",
-      "options": ["3.5 basis points", "35 basis points", "0.35 basis points", "350 basis points"],
+      "options": [
+        "3.5 basis points",
+        "35 basis points",
+        "0.35 basis points",
+        "350 basis points"
+      ],
       "answer": 1,
       "explanation": "1 basis point = 0.01%. 4.60% − 4.25% = 0.35% = 35 basis points. Shift the decimal two places; 3.5 and 350 misplace it."
     }

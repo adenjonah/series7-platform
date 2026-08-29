@@ -6,46 +6,82 @@
   "reading": [
     {
       "h": "One company, four share counts",
-      "body": "Owning stock means owning a slice of a corporation. But the exam leans on four different share numbers, and mixing them up costs points.\n\n**Authorized** is the ceiling the corporate charter permits; raising it needs a shareholder vote. **Issued** is how many of those shares the company has actually sold. **Treasury** is issued shares the company later bought back and now holds itself. **Outstanding** is the number in public hands right now — the shares that vote, collect dividends, and count in earnings per share.\n\nThe one formula to keep: **Outstanding = Issued − Treasury.**\n\nWorked example: a charter authorizes 1,000,000 shares; the company issues 500,000; it then buys back 100,000. Now 500,000 are still *issued*, 100,000 sit in *treasury*, and **400,000 are outstanding**. The 500,000 never-sold shares are authorized-but-unissued."
+      "body": "Owning stock means owning a slice of a company. The exam uses four different share counts. Mix them up and you lose points.\n\n**Authorized** is the most shares the corporate charter allows. To raise it, shareholders must vote. **Issued** is how many of those shares the company has sold. **Treasury** is issued shares the company bought back and now holds. **Outstanding** is the number in public hands right now. Outstanding shares vote, collect dividends, and count in earnings per share.\n\nKeep one formula: **Outstanding = Issued − Treasury.**\n\nWorked example. A charter authorizes 1,000,000 shares. The company issues 500,000 shares. It then buys back 100,000 shares. Now 500,000 shares are still **issued**, 100,000 shares sit in **treasury**, and **400,000 shares are outstanding**. The other 500,000 shares were never sold. They are authorized but unissued."
     },
     {
-      "h": "Treasury stock has no life of its own",
-      "body": "Treasury stock is the classic trap. Once shares are repurchased, they **do not vote, receive no dividend, and are left out of the EPS calculation** — yet they are still counted as *issued*. The exam loves the distractor \"treasury stock is no longer issued.\" It is: it is issued but not outstanding.\n\nWhy buy back stock? Fewer shares outstanding spreads the same earnings over a smaller base, so **EPS rises**. If a company earns $10M on 5M shares, EPS is $2.00; buy back to 4M shares and EPS is $2.50 with no change in actual earnings."
+      "h": "Treasury stock is issued but not outstanding",
+      "body": "Treasury stock is the classic trap. When a company buys back shares, those shares **do not vote, get no dividend, and drop out of the EPS count**. But they are still counted as **issued**. The exam offers the wrong answer \"treasury stock is no longer issued.\" It is issued. It is just not outstanding.\n\nWhy buy back stock? Fewer shares outstanding split the same earnings among fewer shares, so **EPS rises**. Say a company earns $10 million on 5 million shares. EPS is $2.00. Buy back to 4 million shares and EPS is $2.50. The actual earnings did not change."
     },
     {
       "h": "Three values of a share",
-      "body": "A share has three unrelated \"values,\" and the exam checks that you don't confuse them.\n\n**Par (or stated) value** is an arbitrary accounting figure — often $0.01 or $1 — with *no* relationship to market price. Common stock can even be no-par.\n\n**Book value** is the net worth backing each share (roughly equity minus preferred and intangibles, divided by common shares) — what a share would theoretically claim in liquidation at balance-sheet values.\n\n**Market value** is simply what the stock trades at, set by supply and demand. Par has nothing to do with book, and book has nothing to do with market — remember that and a whole family of \"which is TRUE\" questions falls apart."
+      "body": "A share has three separate values. The exam checks that you do not confuse them.\n\n**Par (or stated) value** is an accounting figure, often $0.01 or $1 per share. It has no link to market price. Common stock can even be no-par.\n\n**Book value** is the net worth behind each share. Take equity, subtract preferred and intangibles, then divide by common shares. It is what a share would claim in liquidation at balance-sheet values.\n\n**Market value** is what the stock trades at. Supply and demand set it. Par has no link to book. Book has no link to market. Learn that, and a whole set of \"which is TRUE\" questions falls apart."
     },
     {
       "h": "What a common stockholder actually gets",
-      "body": "Common stockholders own the company and hold a bundle of rights: **vote** for directors and on major matters (mergers, stock splits, more authorized shares, issuing convertibles or warrants); a **pro-rata share of dividends** *if and when the board declares them* — never guaranteed; the right to **inspect the books**; the **preemptive right** to buy new shares first to keep their percentage; and a **residual claim** in liquidation — they are paid dead last, after every creditor and preferred holder.\n\nTwo boundaries the exam tests. Stockholders do **not** vote on whether a dividend is paid (the board decides) and do **not** hire officers. And because of **limited liability**, a shareholder can lose only what they invested — never the company's debts. If you pay $2,000 for shares that go to zero, your maximum loss is $2,000."
+      "body": "Common stockholders own the company. They hold a set of rights.\n\nThey **vote** for directors and on major matters: mergers, stock splits, more authorized shares, and new convertibles or warrants. They get a **pro-rata share of dividends**, but only if and when the board declares them. Dividends are never guaranteed. They have the right to **inspect the books**. They have the **preemptive right** to buy new shares first and keep their percentage. They have a **residual claim** in liquidation. They are paid last, after every creditor and every preferred holder.\n\nThe exam tests two limits. Stockholders do **not** vote on whether a dividend is paid. The board decides that. Stockholders also do **not** hire officers. Because of **limited liability**, a shareholder can lose only what they put in, never the company's debts. Pay $2,000 for shares that fall to zero, and your maximum loss is $2,000."
     },
     {
       "h": "Preferred stock: equity that behaves like a bond",
-      "body": "Preferred stock is still ownership, but it acts like a fixed-income security. It pays a **fixed dividend** stated as a percent of par (usually $100 par) or as a dollar amount, has priority over common for both dividends and liquidation, and **usually carries no vote**. A 6% $100-par preferred pays $6 a year.\n\nBecause the payment is fixed and there is no maturity, preferred prices move *inversely* with interest rates, like a long bond. **Current yield = annual dividend ÷ market price**: a $6 dividend on a $80 price is a 7.5% yield.\n\nThe key type at this level is **cumulative** preferred: any skipped dividend accrues as **dividends in arrears** and must be paid in full before common sees a penny. **Straight (non-cumulative)** preferred loses a skipped dividend forever. Other flavors — participating, convertible, callable, adjustable-rate — get their full workout in the Series 7 depth module."
+      "body": "Preferred stock is still ownership, but it acts like a bond. It pays a **fixed dividend**, stated as a percent of par (usually $100 par) or as a dollar amount. It has priority over common for both dividends and liquidation. It **usually has no vote**. A 6% $100-par preferred pays $6 per year.\n\nThe payment is fixed and there is no maturity date. So preferred prices move opposite to interest rates, like a long bond. **Current yield = annual dividend ÷ market price.** A $6 dividend on an $80 price is a 7.5% yield.\n\nThe main type here is **cumulative** preferred. Any skipped dividend piles up as **dividends in arrears**. The company must pay all of it before common gets a penny. **Straight (non-cumulative)** preferred loses a skipped dividend for good. Other types (participating, convertible, callable, adjustable-rate) get their full treatment in the Series 7 depth module."
     },
     {
       "h": "Rights vs. warrants",
-      "body": "Both let you buy the issuer's stock at a set price, but they are opposites.\n\n**Rights** come from a company's own **preemptive right**: existing shareholders get one right per share, the subscription price is set **below** market so the right has immediate value, and they are **short-lived** (about 30–90 days).\n\n**Warrants** are long-term \"sweeteners\" attached to a bond or preferred offering to make it easier to sell. Their exercise price is set **above** market at issue, so at first they have **only time value, no intrinsic value**, and they can last for years — some are perpetual.\n\nNeither one pays dividends or votes. Memory hook: rights = short, below market, intrinsic value now; warrants = long, above market, hope for later."
+      "body": "Both let you buy the issuer's stock at a set price. But they are opposites.\n\n**Rights** come from the company's own **preemptive right**. Existing shareholders get one right per share. The subscription price sits **below** market, so the right has value right away. Rights are **short-lived**, about 30 to 90 days.\n\n**Warrants** are long-term \"sweeteners.\" A company attaches them to a bond or preferred offering to make it sell. The exercise price sits **above** market at issue. So at first a warrant has **only time value and no intrinsic value**. Warrants can last for years, and some never expire.\n\nNeither one pays dividends or votes. Memory hook: rights are short, below market, with value now. Warrants are long, above market, a bet on later."
     },
     {
       "h": "ADRs, dividends, and why splits create nothing",
-      "body": "An **ADR** (American Depositary Receipt) is a receipt issued by a U.S. bank for a set number of foreign shares it holds abroad. It lets Americans buy foreign stock **in U.S. dollars**, on U.S. markets, with dividends converted to dollars. The catch the exam always tests: **currency risk remains** — a weaker foreign currency lowers the dollar value of the dividend and the ADR — and ADR holders usually **do not vote**.\n\nDividends follow four dates — **D**eclaration, **E**x-dividend, **R**ecord, **P**ayable. Buy on or after the ex-date and you do *not* get the dividend.\n\nA **stock split** just re-slices the pie: 100 shares at $80 in a 2-for-1 split become 200 shares at $40 — still $8,000. Total value and total cost basis are **unchanged**; a split creates no wealth. Restricted stock sold under **Rule 144** normally requires a **6-month** holding period for a reporting company — a number worth locking in now."
+      "body": "An **ADR** (American Depositary Receipt) is a receipt from a U.S. bank for a set number of foreign shares it holds abroad. It lets Americans buy foreign stock **in U.S. dollars**, on U.S. markets, with dividends paid in dollars. The catch the exam tests: **currency risk remains**. A weaker foreign currency lowers the dollar value of both the dividend and the ADR. ADR holders usually **do not vote**.\n\nDividends follow four dates: **D**eclaration, **E**x-dividend, **R**ecord, **P**ayable. Buy on or after the ex-date and you do **not** get the dividend.\n\nA **stock split** just re-cuts the pie. 100 shares at $80 in a 2-for-1 split become 200 shares at $40, still $8,000. Total value and total cost basis do **not** change. A split creates no wealth. Restricted stock sold under **Rule 144** needs a **6-month** holding period for a reporting company. Lock that number in now."
     }
   ],
   "flashcards": [
-    { "front": "Outstanding shares formula", "back": "Outstanding = Issued − Treasury. Outstanding shares are the ones that vote, get dividends, and count in EPS." },
-    { "front": "Treasury stock: vote? dividend? issued?", "back": "No vote, no dividend, excluded from EPS — but still counted as ISSUED (just not outstanding)." },
-    { "front": "Par vs. book vs. market value", "back": "Par = arbitrary accounting number. Book = net worth per share. Market = trading price. All three are unrelated." },
-    { "front": "Do common stockholders vote on dividends?", "back": "No. The board declares dividends. Shareholders vote on directors, mergers, splits, more authorized shares, and issuing convertibles/warrants." },
-    { "front": "Limited liability means…", "back": "A stockholder can lose only the amount invested — never responsible for the corporation's debts." },
-    { "front": "Liquidation priority (top to bottom)", "back": "Secured creditors → unsecured creditors → subordinated debt → preferred stock → common stock (residual, last)." },
-    { "front": "Cumulative vs. straight preferred", "back": "Cumulative: skipped dividends accrue as arrears and must be paid before common. Straight: a skipped dividend is gone forever." },
-    { "front": "Preferred current yield", "back": "Current yield = annual dividend ÷ market price. Price and yield move inversely (behaves like a long bond)." },
-    { "front": "Rights vs. warrants", "back": "Rights: to existing holders, below market, short-lived (30–90 days), intrinsic value now. Warrants: sweetener, above market at issue, long-term/perpetual, only time value." },
-    { "front": "ADR — one thing that is TRUE", "back": "Trades and pays dividends in U.S. dollars, but the holder STILL bears currency risk and usually cannot vote." },
-    { "front": "Does a stock split change total value?", "back": "No. More shares at a proportionally lower price; total value and total cost basis are unchanged." },
-    { "front": "Rule 144 holding period (reporting issuer)", "back": "6 months for restricted stock of an SEC-reporting company (1 year if non-reporting)." }
+    {
+      "front": "Outstanding shares formula",
+      "back": "Outstanding = Issued − Treasury. Outstanding shares are the ones that vote, get dividends, and count in EPS."
+    },
+    {
+      "front": "Treasury stock: vote? dividend? issued?",
+      "back": "No vote, no dividend, left out of EPS. Still counted as ISSUED, just not outstanding."
+    },
+    {
+      "front": "Par vs. book vs. market value",
+      "back": "Par = an accounting number. Book = net worth per share. Market = trading price. The three have no link."
+    },
+    {
+      "front": "Do common stockholders vote on dividends?",
+      "back": "No. The board declares dividends. Shareholders vote on directors, mergers, splits, more authorized shares, and new convertibles or warrants."
+    },
+    {
+      "front": "Limited liability means…",
+      "back": "A stockholder can lose only what they put in. They are never liable for the company's debts."
+    },
+    {
+      "front": "Liquidation priority (top to bottom)",
+      "back": "Secured creditors → unsecured creditors → subordinated debt → preferred stock → common stock (residual, last)."
+    },
+    {
+      "front": "Cumulative vs. straight preferred",
+      "back": "Cumulative: skipped dividends pile up as arrears and must be paid before common. Straight: a skipped dividend is gone for good."
+    },
+    {
+      "front": "Preferred current yield",
+      "back": "Current yield = annual dividend ÷ market price. Price and yield move opposite ways, like a long bond."
+    },
+    {
+      "front": "Rights vs. warrants",
+      "back": "Rights: to existing holders, below market, short-lived (30 to 90 days), value now. Warrants: sweetener, above market at issue, long-term, only time value."
+    },
+    {
+      "front": "ADR — one thing that is TRUE",
+      "back": "Trades and pays dividends in U.S. dollars. The holder STILL has currency risk and usually cannot vote."
+    },
+    {
+      "front": "Does a stock split change total value?",
+      "back": "No. More shares at a lower price. Total value and total cost basis do not change."
+    },
+    {
+      "front": "Rule 144 holding period (reporting issuer)",
+      "back": "6 months for restricted stock of an SEC-reporting company (1 year if non-reporting)."
+    }
   ],
   "quiz": [
     {

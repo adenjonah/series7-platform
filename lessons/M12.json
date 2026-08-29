@@ -6,93 +6,169 @@
   "reading": [
     {
       "h": "A bond is a loan",
-      "body": "Strip away the jargon and every bond is an **IOU**: the investor is the **lender**, the issuer is the **borrower**, interest is the **rent on the money**, and the **principal** (par, face value — **$1,000** unless told otherwise) is repaid at **maturity**. The **coupon** (nominal rate) is the fixed annual interest, normally paid **semiannually** — a 6% bond pays $30 twice a year.\n\nContrast this with stock: a stockholder *owns* a slice of the company; a bondholder is merely *owed* money. That difference decides who gets paid, how they're taxed, and where they stand if the company fails. Keep asking of any product: *does the holder own this, or are they owed money?*"
+      "body": "Every bond is an **IOU**. The investor is the **lender**. The issuer is the **borrower**. Interest is the **rent on the money**. The **principal** (par, or face value, **$1,000** unless told otherwise) is repaid at **maturity**. The **coupon** (nominal rate) is the fixed annual interest, normally paid **semiannually**. A 6% bond pays $30 twice a year.\n\nStock is different. A stockholder owns a slice of the company. A bondholder is only owed money. That difference decides who gets paid, how they are taxed, and where they stand if the company fails. Ask this of any product: does the holder own this, or is the holder owed money?"
     },
     {
       "h": "Corporate bond types and who gets paid first",
-      "body": "Corporate bonds split by whether specific assets are pledged. **Secured** bonds pledge collateral: *mortgage bonds* (real property), *equipment trust certificates* (railcars, aircraft — very safe, usually serial), *collateral trust bonds* (securities the issuer owns). **Unsecured** bonds pledge only the issuer's promise: a *debenture* is backed by full faith and credit of the company, and a *subordinated debenture* ranks even lower.\n\nIf the company is liquidated, claims are paid in a fixed order **[memorize]**: (1) secured creditors from their collateral → (2) unpaid wages, taxes, admin costs → (3) general/unsecured creditors incl. debentures → (4) subordinated debentures → (5) **preferred** stock → (6) **common** stock. Owners (stockholders) always stand behind lenders."
+      "body": "Corporate bonds split by whether specific assets are pledged. **Secured** bonds pledge collateral. **Mortgage bonds** pledge real property. **Equipment trust certificates** pledge railcars or aircraft; they are very safe and usually serial. **Collateral trust bonds** pledge securities the issuer owns. **Unsecured** bonds pledge only the issuer's promise. A **debenture** is backed by the full faith and credit of the company. A **subordinated debenture** ranks even lower.\n\nIf the company is liquidated, claims are paid in a fixed order **[memorize]**: (1) secured creditors from their collateral, (2) unpaid wages, taxes, and admin costs, (3) general or unsecured creditors including debentures, (4) subordinated debentures, (5) **preferred** stock, (6) **common** stock. Owners always stand behind lenders."
     },
     {
       "h": "U.S. Treasuries: the risk-free benchmark",
-      "body": "Treasuries carry the **full faith and credit** of the U.S. government — the credit-risk-free yardstick. They are book-entry, non-callable, and their interest is **taxable federally but exempt from state and local tax**. The family by maturity: **T-bills** (one year or less; sold at a discount, no coupon), **T-notes** (2–10 years; semiannual coupons), **T-bonds** (20 and 30 years). **TIPS** adjust their principal for inflation (CPI), so the dollar interest rises with prices. **STRIPS** are Treasuries stripped into zero-coupon pieces — bought at a discount, maturing at par, with **direct** government backing.\n\nZeros and STRIPS carry **phantom income**: the annual accretion of the discount is taxed as interest even though no cash arrives — so they belong in tax-deferred accounts."
+      "body": "Treasuries carry the **full faith and credit** of the U.S. government. They are the credit-risk-free yardstick. They are book-entry and non-callable. Their interest is **taxable federally but exempt from state and local tax**.\n\nThe family by maturity: **T-bills** (one year or less, sold at a discount, no coupon), **T-notes** (2 to 10 years, semiannual coupons), and **T-bonds** (20 and 30 years). **TIPS** adjust their principal for inflation (CPI), so the dollar interest rises with prices. **STRIPS** are Treasuries stripped into zero-coupon pieces, bought at a discount and maturing at par, with **direct** government backing.\n\nZeros and STRIPS carry **phantom income**. The annual accretion of the discount is taxed as interest even though no cash arrives. So they belong in tax-deferred accounts."
     },
     {
       "h": "Agencies: GNMA versus the GSEs",
-      "body": "Agency mortgage securities package home loans and pass the payments through to investors. **Ginnie Mae (GNMA)** is a government corporation within HUD — its pass-throughs are the **only** mortgage-backed security with the **full faith and credit** of the U.S. government. **Fannie Mae (FNMA)** and **Freddie Mac (FHLMC)** are **government-sponsored enterprises (GSEs)** — publicly traded, privately owned, chartered by Congress, carrying only **implicit** (moral) backing, not full faith and credit.\n\nThe classic trap: agency interest is **fully taxable at the federal, state, and local levels** — GNMA is 'government,' but it is *not* a Treasury, so no state-tax exemption. (Three lender agencies — FHLB, FFCB/Farm Credit, TVA — are the exception, state-tax-exempt.)"
+      "body": "Agency mortgage securities package home loans and pass the payments through to investors. **Ginnie Mae (GNMA)** is a government corporation within HUD. Its pass-throughs are the **only** mortgage-backed security with the **full faith and credit** of the U.S. government. **Fannie Mae (FNMA)** and **Freddie Mac (FHLMC)** are **government-sponsored enterprises (GSEs)**. They are publicly traded, privately owned, and chartered by Congress. They carry only **implicit** (moral) backing, not full faith and credit.\n\nWatch the tax trap. Agency interest is **fully taxable at the federal, state, and local levels**. GNMA is 'government,' but it is not a Treasury, so it gets no state-tax exemption. Three lender agencies are the exception and are state-tax-exempt: FHLB, FFCB (Farm Credit), and TVA."
     },
     {
       "h": "Money market instruments and the 270-day line",
-      "body": "Money market instruments are high-quality debt with **one year or less** to maturity; most are sold at a **discount** and mature at par. The ones to know:\n\n- **T-bills** — the safest, federal-tax-only.\n- **Commercial paper** — unsecured corporate promissory notes, maximum **270 days**, which keeps them exempt from 1933 Act registration.\n- **Banker's acceptances (BAs)** — bank-guaranteed time drafts that finance **import/export** trade, up to 270 days.\n- **Negotiable (jumbo) CDs** — bank CDs of **$100,000+** that, unlike the others, **pay interest** (issued at par) and trade with accrued interest.\n- **Repos** and **fed funds** — very short-term bank/dealer borrowing.\n\nRate ladder, low to high: **fed funds < discount rate < broker call rate < prime rate.**"
+      "body": "Money market instruments are high-quality debt with **one year or less** to maturity. Most are sold at a **discount** and mature at par. Here are the ones to know.\n\n**T-bills** are the safest and are taxed federally only. **Commercial paper** is unsecured corporate promissory notes, maximum **270 days**, which keeps them exempt from 1933 Act registration. **Banker's acceptances (BAs)** are bank-guaranteed time drafts that finance **import/export** trade, up to 270 days. **Negotiable (jumbo) CDs** are bank CDs of **$100,000+**; unlike the others they **pay interest**, are issued at par, and trade with accrued interest. **Repos** and **fed funds** are very short-term bank and dealer borrowing.\n\nRate ladder, low to high: **fed funds < discount rate < broker call rate < prime rate.**"
     },
     {
       "h": "A first look at municipals",
-      "body": "Municipal bonds are issued by states and their subdivisions, and their interest is generally **exempt from federal income tax**. That exemption is why investors accept a *lower* yield on a muni than on a comparable taxable corporate — after tax, they come out even. (A capital gain from selling a muni above cost is still fully taxable — the classic trap.)\n\nTwo big families: **general obligation (GO)** bonds are backed by the issuer's **taxing power**, usually need **voter approval**, and count against its debt limit; **revenue** bonds are backed only by the **fees a specific project** generates (a toll road, water system), need no vote, and generally yield more. You'll go deep on munis later; for now, just place them: government issuer, tax-advantaged interest, GO vs revenue."
+      "body": "Municipal bonds are issued by states and their subdivisions. Their interest is generally **exempt from federal income tax**. That exemption is why investors accept a lower yield on a muni than on a comparable taxable corporate. After tax, they come out even. A capital gain from selling a muni above cost is still fully taxable, which is a common trap.\n\nThere are two big families. **General obligation (GO)** bonds are backed by the issuer's **taxing power**, usually need **voter approval**, and count against its debt limit. **Revenue** bonds are backed only by the **fees a specific project** generates, such as a toll road or water system. They need no vote and generally yield more. You cover munis in depth later. For now, place them: government issuer, tax-advantaged interest, GO versus revenue."
     },
     {
       "h": "Ratings, calls, and zeros in one pass",
-      "body": "**Ratings** grade a borrower's chance of default — a credit score for the issuer. Top four categories are **investment grade**, down to **BBB− (S&P/Fitch) / Baa3 (Moody's)**; anything below is 'high-yield' or 'junk.' Ratings measure **default risk only**, not interest-rate risk or price.\n\n**Call** features let the *issuer* redeem early (used when rates fall to refinance cheaper) — so callable bonds pay a **higher** coupon to compensate the holder. **Put** features let the *holder* sell back at par (valuable when rates rise) — so puttables pay a **lower** coupon. **Zero-coupon** bonds pay nothing until maturity: bought at a deep discount, they mature at par, carry the most interest-rate risk for their maturity, and generate phantom income."
+      "body": "**Ratings** grade a borrower's chance of default. They work like a credit score for the issuer. The top four categories are **investment grade**, down to **BBB− (S&P/Fitch) / Baa3 (Moody's)**. Anything below is 'high-yield' or 'junk.' Ratings measure **default risk only**, not interest-rate risk or price.\n\n**Call** features let the issuer redeem early, used when rates fall to refinance cheaper. So callable bonds pay a **higher** coupon to make up for it. **Put** features let the holder sell back at par, which is valuable when rates rise. So puttables pay a **lower** coupon. **Zero-coupon** bonds pay nothing until maturity. Bought at a deep discount, they mature at par, carry the most interest-rate risk for their maturity, and generate phantom income."
     }
   ],
   "flashcards": [
-    { "front": "A bond, in one sentence", "back": "An IOU: investor = lender, issuer = borrower, interest = rent on money, principal ($1,000 par) repaid at maturity." },
-    { "front": "Corporate liquidation priority", "back": "Secured creditors → wages/taxes/admin → general creditors (debentures) → subordinated debentures → preferred → common." },
-    { "front": "Debenture", "back": "An unsecured corporate bond backed only by the issuer's full faith and credit (no pledged collateral)." },
-    { "front": "Which MBS has full faith and credit?", "back": "GNMA (Ginnie Mae) — the only one. FNMA and FHLMC are GSEs with implicit backing only." },
-    { "front": "Treasury interest taxation", "back": "Federally taxable, exempt from state and local tax." },
-    { "front": "GNMA interest taxation", "back": "Fully taxable — federal, state, AND local (it's not a Treasury). Trap." },
-    { "front": "Commercial paper max maturity", "back": "270 days — keeps it exempt from 1933 Act registration. Unsecured, discount." },
-    { "front": "Banker's acceptance purpose", "back": "Bank-guaranteed time draft financing import/export trade; up to 270 days." },
-    { "front": "Money market rate ladder (low→high)", "back": "Fed funds < discount rate < broker call rate < prime rate." },
-    { "front": "GO vs revenue bond", "back": "GO = backed by taxing power, needs voter approval, counts vs debt limit. Revenue = backed by project fees, no vote, higher yield." },
-    { "front": "Investment-grade floor", "back": "BBB− (S&P/Fitch) / Baa3 (Moody's). Below that is high-yield/junk." },
-    { "front": "Callable vs puttable coupon", "back": "Callable pays MORE (holder bears call risk); puttable pays LESS (holder gets the option)." }
+    {
+      "front": "A bond, in one sentence",
+      "back": "An IOU: investor = lender, issuer = borrower, interest = rent on money, principal ($1,000 par) repaid at maturity."
+    },
+    {
+      "front": "Corporate liquidation priority",
+      "back": "Secured creditors → wages/taxes/admin → general creditors (debentures) → subordinated debentures → preferred → common."
+    },
+    {
+      "front": "Debenture",
+      "back": "An unsecured corporate bond backed only by the issuer's full faith and credit (no pledged collateral)."
+    },
+    {
+      "front": "Which MBS has full faith and credit?",
+      "back": "GNMA (Ginnie Mae) — the only one. FNMA and FHLMC are GSEs with implicit backing only."
+    },
+    {
+      "front": "Treasury interest taxation",
+      "back": "Federally taxable, exempt from state and local tax."
+    },
+    {
+      "front": "GNMA interest taxation",
+      "back": "Fully taxable: federal, state, and local (it is not a Treasury). Common trap."
+    },
+    {
+      "front": "Commercial paper max maturity",
+      "back": "270 days. Keeps it exempt from 1933 Act registration. Unsecured, sold at a discount."
+    },
+    {
+      "front": "Banker's acceptance purpose",
+      "back": "Bank-guaranteed time draft financing import/export trade; up to 270 days."
+    },
+    {
+      "front": "Money market rate ladder (low→high)",
+      "back": "Fed funds < discount rate < broker call rate < prime rate."
+    },
+    {
+      "front": "GO vs revenue bond",
+      "back": "GO = backed by taxing power, needs voter approval, counts vs debt limit. Revenue = backed by project fees, no vote, higher yield."
+    },
+    {
+      "front": "Investment-grade floor",
+      "back": "BBB− (S&P/Fitch) / Baa3 (Moody's). Below that is high-yield/junk."
+    },
+    {
+      "front": "Callable vs puttable coupon",
+      "back": "Callable pays MORE (holder bears call risk); puttable pays LESS (holder gets the option)."
+    }
   ],
   "quiz": [
     {
       "stem": "Maria pays $1,000 for a bond issued by a large company. In plain terms, what has she done?",
-      "options": ["Bought a small ownership share of the company", "Lent the company money in exchange for interest and repayment of the $1,000 at maturity", "Deposited money in a federally insured account", "Agreed to share in the company's profits and losses each year"],
+      "options": [
+        "Bought a small ownership share of the company",
+        "Lent the company money in exchange for interest and repayment of the $1,000 at maturity",
+        "Deposited money in a federally insured account",
+        "Agreed to share in the company's profits and losses each year"
+      ],
       "answer": 1,
       "explanation": "A bond is an IOU: the investor is the lender, the issuer the borrower, interest the rent on the money, principal repaid at maturity. Ownership and profit-sharing describe stock; deposit insurance describes a bank account."
     },
     {
       "stem": "A company is liquidated and its assets are sold to pay claims. Which group is generally paid FIRST?",
-      "options": ["Common stockholders", "Preferred stockholders", "Lenders whose bonds are secured by specific company property", "All claims are paid in equal proportion"],
+      "options": [
+        "Common stockholders",
+        "Preferred stockholders",
+        "Lenders whose bonds are secured by specific company property",
+        "All claims are paid in equal proportion"
+      ],
       "answer": 2,
       "explanation": "Secured creditors are paid first from their collateral, then unsecured/general creditors, then preferred, then common. Stockholders are owners, not lenders, and stand last — so both stockholder choices are traps."
     },
     {
       "stem": "Which agency security is backed by the full faith and credit of the U.S. government?",
-      "options": ["Ginnie Mae (GNMA) pass-through certificates", "Fannie Mae (FNMA) mortgage-backed securities", "Freddie Mac (FHLMC) mortgage-backed securities", "Federal Home Loan Bank debentures"],
+      "options": [
+        "Ginnie Mae (GNMA) pass-through certificates",
+        "Fannie Mae (FNMA) mortgage-backed securities",
+        "Freddie Mac (FHLMC) mortgage-backed securities",
+        "Federal Home Loan Bank debentures"
+      ],
       "answer": 0,
       "explanation": "GNMA is a government corporation within HUD, and its pass-throughs are the only MBS carrying full faith and credit. FNMA and FHLMC are GSEs with implicit backing; FHLB is a GSE lender."
     },
     {
       "stem": "Interest received on a U.S. Treasury note is:",
-      "options": ["Exempt from federal tax but subject to state tax", "Subject to federal, state, and local tax", "Exempt from federal, state, and local tax", "Subject to federal tax but exempt from state and local tax"],
+      "options": [
+        "Exempt from federal tax but subject to state tax",
+        "Subject to federal, state, and local tax",
+        "Exempt from federal, state, and local tax",
+        "Subject to federal tax but exempt from state and local tax"
+      ],
       "answer": 3,
       "explanation": "Treasury interest is federally taxable and exempt from state and local tax. 'Fully taxable' describes GNMA, FNMA, FHLMC, and corporates; the federal-exempt/state-taxable choice describes nothing and is the reverse-attribute trap."
     },
     {
       "stem": "Commercial paper is BEST described as:",
-      "options": ["A bank-guaranteed time draft used to finance imports and exports", "An unsecured short-term corporate promissory note with a maximum maturity of 270 days", "A short-term note secured by the issuer's real property", "A bank time deposit that pays interest at maturity"],
+      "options": [
+        "A bank-guaranteed time draft used to finance imports and exports",
+        "An unsecured short-term corporate promissory note with a maximum maturity of 270 days",
+        "A short-term note secured by the issuer's real property",
+        "A bank time deposit that pays interest at maturity"
+      ],
       "answer": 1,
       "explanation": "Commercial paper is unsecured corporate paper sold at a discount, maturing in 270 days or less to stay exempt from 1933 Act registration. The time draft is a banker's acceptance; the interest-paying deposit is a negotiable CD."
     },
     {
       "stem": "A city bond and a corporate bond of similar credit quality mature on the same date, but the city bond pays a noticeably lower rate. The MOST likely reason investors accept the lower rate is that:",
-      "options": ["City bonds are federally guaranteed, so they carry no risk", "The city bond's interest is exempt from federal income tax, so a lower rate leaves just as much after tax", "Corporate bonds pay interest only once a year", "Cities are legally required to pay lower rates"],
+      "options": [
+        "City bonds are federally guaranteed, so they carry no risk",
+        "The city bond's interest is exempt from federal income tax, so a lower rate leaves just as much after tax",
+        "Corporate bonds pay interest only once a year",
+        "Cities are legally required to pay lower rates"
+      ],
       "answer": 1,
       "explanation": "Municipal interest is generally federally tax-exempt, so investors compare after-tax returns and accept a lower pre-tax yield. Munis are not federally guaranteed, and the payment-frequency and 'required by law' choices are invented distractors."
     },
     {
       "stem": "Which of the following is the LOWEST rating still considered investment grade by Standard & Poor's?",
-      "options": ["A−", "BB+", "BBB", "BBB−"],
+      "options": [
+        "A−",
+        "BB+",
+        "BBB",
+        "BBB−"
+      ],
       "answer": 3,
       "explanation": "Investment grade runs down to and including BBB− (S&P/Fitch) or Baa3 (Moody's). BB+ and below is high-yield/junk. A− and BBB are investment grade but not the lowest rung."
     },
     {
       "stem": "Compared with an otherwise identical non-callable bond, a callable bond will generally carry a:",
-      "options": ["Higher coupon, because the holder bears the risk of an early call", "Lower coupon, because the holder gains flexibility", "Identical coupon, because the call feature has no value", "Higher coupon only if it is also convertible"],
+      "options": [
+        "Higher coupon, because the holder bears the risk of an early call",
+        "Lower coupon, because the holder gains flexibility",
+        "Identical coupon, because the call feature has no value",
+        "Higher coupon only if it is also convertible"
+      ],
       "answer": 0,
       "explanation": "A call benefits the issuer (refinance when rates fall) and hurts the holder, so the holder is paid a higher coupon to accept it. Puttable and convertible bonds — where the option favors the holder — carry lower coupons, which is the mirror-image trap."
     }
