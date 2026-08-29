@@ -25,6 +25,8 @@
   .mod[data-status="in_progress"] button.p, .mod[data-status="in_progress"] { }
   button.p.on { border-color:var(--prog); color:var(--prog); background:#fff8ec; }
   button.d.on { border-color:var(--done); color:var(--done); background:#eafaf3; }
+  a.study { text-decoration:none; border:1px solid var(--accent); color:var(--accent); border-radius:8px; padding:5px 10px; font-size:12px; font-weight:600; }
+  a.study:hover { background:#eef3fe; }
   .extras { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px; margin-top:20px; }
   .extras h3 { margin:0 0 8px; font-size:14px; }
   .row { display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin-top:8px; }
@@ -97,6 +99,7 @@ function render(mods) {
         '<div class="meta"><span class="id">' + m.id + "</span> " +
         '<span class="ttl">' + m.title + " · " + m.hours + "h</span></div>" +
         '<div class="btns">' +
+          '<a class="study" href="./lesson.html?m=' + m.id + '&s=' + encodeURIComponent(STUDENT) + '">Study</a>' +
           '<button class="s p ' + (st === "in_progress" ? "on" : "") + '" data-id="' + m.id + '" data-st="in_progress">In progress</button>' +
           '<button class="s d ' + (st === "done" ? "on" : "") + '" data-id="' + m.id + '" data-st="done">Done</button>' +
         "</div></div>";

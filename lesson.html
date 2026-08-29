@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Series 7 — lesson</title>
+<style>
+  :root { --ink:#1a2233; --muted:#6b7688; --line:#e6e9ef; --bg:#f7f8fa; --card:#fff; --accent:#2f6df6; --done:#1a9e6b; --bad:#c0392b; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; color:var(--ink); background:var(--bg); }
+  header { background:var(--card); border-bottom:1px solid var(--line); padding:14px 18px; position:sticky; top:0; z-index:5; }
+  header .m { font-size:12px; color:var(--muted); }
+  header h1 { margin:2px 0 0; font-size:17px; }
+  header a.back { font-size:13px; color:var(--accent); text-decoration:none; }
+  .steps { display:flex; gap:6px; margin-top:10px; }
+  .steps span { flex:1; height:4px; border-radius:3px; background:var(--line); }
+  .steps span.on { background:var(--accent); } .steps span.done { background:var(--done); }
+  main { max-width:720px; margin:0 auto; padding:22px 16px 80px; }
+  h2 { font-size:20px; margin:26px 0 8px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:18px 18px; margin-bottom:14px; }
+  button { font:inherit; cursor:pointer; border-radius:10px; padding:11px 16px; border:1px solid var(--line); background:#fff; }
+  button.primary { background:var(--accent); color:#fff; border:0; font-weight:600; }
+  .barrow { position:fixed; bottom:0; left:0; right:0; background:var(--card); border-top:1px solid var(--line); padding:12px 16px; display:flex; justify-content:space-between; align-items:center; }
+  .barrow .prog { color:var(--muted); font-size:13px; }
+  /* flashcard */
+  .flash { min-height:180px; display:flex; align-items:center; justify-content:center; text-align:center; font-size:19px; cursor:pointer; user-select:none; }
+  .flash .side { max-width:90%; } .flash .hint { color:var(--muted); font-size:12px; margin-top:14px; }
+  .flash.back { background:#f2f7ff; }
+  /* quiz */
+  .opt { display:block; width:100%; text-align:left; margin:8px 0; }
+  .opt.correct { border-color:var(--done); background:#eafaf3; } .opt.wrong { border-color:var(--bad); background:#fdecec; }
+  .exp { background:#f7f8fa; border-left:3px solid var(--accent); padding:10px 12px; margin-top:10px; font-size:14px; border-radius:6px; }
+  .result { text-align:center; padding:30px 10px; }
+  .result .big { font-size:40px; font-weight:700; }
+  .err { background:#fdecec; color:#a11; border:1px solid #f5c2c2; border-radius:10px; padding:14px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="m" id="crumb">Lesson</div>
+  <h1 id="title">Loading…</h1>
+  <div class="steps"><span id="s0"></span><span id="s1"></span><span id="s2"></span></div>
+</header>
+<main id="app"></main>
+<div class="barrow" id="bar" style="display:none">
+  <span class="prog" id="barprog"></span>
+  <button class="primary" id="barbtn"></button>
+</div>
+
+<script>
+const q = new URLSearchParams(location.search);
+const API = (q.get("api") || localStorage.getItem("s7api") || "https://series7-progress.adenjonah.workers.dev").replace(/\/$/, "");
+const MOD = (q.get("m") || "").toUpperCase();
+const STUDENT = q.get("s") || "";
+const PASS = 0.8;
+const app = document.getElementById("app"), bar = document.getElementById("bar");
+const barbtn = document.getElementById("barbtn"), barprog = document.getElementById("barprog");
+let L = null, stage = 0;
+
+// safe: escape everything, then allow only **bold**; \n\n -> paragraphs
+function md(t) {
+  const esc = String(t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+  return esc.split(/\n\n+/).map(p =>
+    "<p>" + p.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>").replace(/\n/g, "<br>") + "</p>"
+  ).join("");
+}
+function setSteps() {
+  [0,1,2].forEach(i => {
+    const el = document.getElementById("s"+i);
+    el.className = i < stage ? "done" : i === stage ? "on" : "";
+  });
+}
+function showBar(label, on) { bar.style.display = "flex"; barbtn.textContent = label; barprog.textContent = on || ""; }
+
+// ---------- stage 0: reading ----------
+function renderReading() {
+  stage = 0; setSteps();
+  app.innerHTML = "<h2>Read</h2>" + L.reading.map(s =>
+    '<div class="card"><h3 style="margin:0 0 6px">' + md(s.h).replace(/^<p>|<\/p>$/g,"") + "</h3>" + md(s.body) + "</div>").join("");
+  showBar("Continue to flashcards →", L.reading.length + " sections");
+  barbtn.onclick = renderFlash;
+  window.scrollTo(0, 0);
+}
+
+// ---------- stage 1: flashcards ----------
+let fi = 0, flipped = false;
+function renderFlash() {
+  stage = 1; setSteps(); fi = 0; flipped = false; drawCard();
+  window.scrollTo(0, 0);
+}
+function drawCard() {
+  const c = L.flashcards[fi];
+  app.innerHTML = "<h2>Flashcards</h2><div class='card flash" + (flipped ? " back" : "") + "' id='fc'>" +
+    "<div class='side'>" + md(flipped ? c.back : c.front) +
+    "<div class='hint'>" + (flipped ? "click for front" : "click to flip") + "</div></div></div>";
+  document.getElementById("fc").onclick = () => { flipped = !flipped; drawCard(); };
+  showBar(fi === L.flashcards.length - 1 ? "Start the quiz →" : "Next card →", "Card " + (fi + 1) + " / " + L.flashcards.length);
+  barbtn.onclick = () => {
+    if (fi === L.flashcards.length - 1) return renderQuiz();
+    fi++; flipped = false; drawCard();
+  };
+}
+
+// ---------- stage 2: quiz ----------
+let qi = 0, correct = 0, answered = false;
+function renderQuiz() {
+  stage = 2; setSteps(); qi = 0; correct = 0; drawQ();
+  window.scrollTo(0, 0);
+}
+function drawQ() {
+  answered = false;
+  const item = L.quiz[qi];
+  app.innerHTML = "<h2>Quiz</h2><div class='card'><p style='font-weight:600'>" + md(item.stem).replace(/^<p>|<\/p>$/g,"") + "</p>" +
+    item.options.map((o, i) => "<button class='opt' data-i='" + i + "'>" + md(o).replace(/^<p>|<\/p>$/g,"") + "</button>").join("") +
+    "<div id='exp'></div></div>";
+  document.querySelectorAll(".opt").forEach(b => b.onclick = () => choose(+b.dataset.i));
+  showBar("", "Question " + (qi + 1) + " / " + L.quiz.length + " · score " + correct);
+  barbtn.style.visibility = "hidden";
+}
+function choose(i) {
+  if (answered) return; answered = true;
+  const item = L.quiz[qi];
+  document.querySelectorAll(".opt").forEach((b, j) => {
+    if (j === item.answer) b.classList.add("correct");
+    else if (j === i) b.classList.add("wrong");
+    b.disabled = true;
+  });
+  if (i === item.answer) correct++;
+  document.getElementById("exp").innerHTML = "<div class='exp'>" +
+    (i === item.answer ? "<strong>Correct.</strong> " : "<strong>Not quite.</strong> ") + md(item.explanation).replace(/^<p>|<\/p>$/g,"") + "</div>";
+  barprog.textContent = "Question " + (qi + 1) + " / " + L.quiz.length + " · score " + correct;
+  barbtn.style.visibility = "visible";
+  barbtn.textContent = qi === L.quiz.length - 1 ? "See result →" : "Next question →";
+  barbtn.onclick = () => { if (qi === L.quiz.length - 1) return finish(); qi++; drawQ(); };
+}
+async function finish() {
+  stage = 2; setSteps();
+  const pct = Math.round((100 * correct) / L.quiz.length);
+  const passed = correct / L.quiz.length >= PASS;
+  bar.style.display = "none";
+  let saveMsg = "";
+  if (STUDENT && passed) {
+    try {
+      const r = await fetch(API + "/progress", { method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ student: STUDENT, item: MOD, status: "done" }) });
+      saveMsg = r.ok ? "<p style='color:var(--done)'>✓ " + MOD + " marked complete on your plan.</p>"
+                     : "<p class='err'>Couldn't save to your plan (backend error).</p>";
+    } catch (e) { saveMsg = "<p class='err'>Couldn't save: " + e.message + "</p>"; }
+  } else if (STUDENT && !passed) {
+    try { await fetch(API + "/progress", { method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ student: STUDENT, item: MOD, status: "in_progress" }) }); } catch (e) {}
+    saveMsg = "<p class='muted'>Marked in-progress — retake the quiz to reach " + Math.round(PASS*100) + "% and complete it.</p>";
+  }
+  app.innerHTML = "<div class='result'><div class='big' style='color:" + (passed ? "var(--done)" : "var(--bad)") + "'>" + pct + "%</div>" +
+    "<p>" + correct + " of " + L.quiz.length + " correct — " + (passed ? "passed!" : "keep at it.") + "</p>" + saveMsg +
+    "<div style='margin-top:18px;display:flex;gap:10px;justify-content:center'>" +
+    "<button onclick='renderQuiz()'>Retake quiz</button>" +
+    "<button class='primary' onclick=\"location.href='./progress.html?s=" + encodeURIComponent(STUDENT) + "'\">Back to my plan</button></div></div>";
+  window.scrollTo(0, 0);
+}
+
+async function boot() {
+  document.querySelector("header .m").innerHTML = STUDENT
+    ? '<a class="back" href="./progress.html?s=' + encodeURIComponent(STUDENT) + '">← my plan</a>' : "Lesson";
+  if (!/^M\d{1,2}$/.test(MOD)) { app.innerHTML = "<div class='err'>No lesson selected.</div>"; return; }
+  try {
+    const res = await fetch("./lessons/" + MOD + ".json");
+    if (!res.ok) throw new Error("nolesson");
+    L = await res.json();
+    document.getElementById("title").textContent = L.module + " · " + L.title;
+    renderReading();
+  } catch (e) {
+    document.getElementById("title").textContent = MOD;
+    app.innerHTML = "<div class='card'><h2 style='margin-top:0'>Lesson coming soon</h2>" +
+      "<p>The reading, flashcards, and quiz for <b>" + MOD + "</b> haven't been written yet. " +
+      "For now, use the module's <b>Start at</b> pointer in your study plan and the diagnostic review.</p>" +
+      (STUDENT ? "<p><a href='./progress.html?s=" + encodeURIComponent(STUDENT) + "'>← back to my plan</a></p>" : "") + "</div>";
+  }
+}
+boot();
+</script>
+</body>
+</html>

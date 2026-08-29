@@ -1,0 +1,82 @@
+{
+  "module": "M1",
+  "title": "Money, lending, ownership, and the arithmetic the exam assumes",
+  "domain": "foundations",
+  "estMinutes": 20,
+  "reading": [
+    {
+      "h": "Why this comes first",
+      "body": "The Series 7 is not a math test, but it assumes you can do a handful of calculations in your head or on a four-function calculator without thinking. Providers consistently name shaky arithmetic — percent-of, reversing a percent, and reading price fractions — as a top reason people miss questions they actually understand. This lesson fixes that once so it never costs you a point again."
+    },
+    {
+      "h": "Owning vs. lending",
+      "body": "Every security is one of two things at heart. **Stock is ownership** — you own a slice of the company and share in its success (and its risk). **A bond is a loan** — you lend the issuer money, they owe you interest and your principal back. Almost every product on the exam is a variation on owning, lending, or a package of the two. Keep asking: *does the holder own this, or are they owed money?*"
+    },
+    {
+      "h": "Percent-of and reverse-percent",
+      "body": "Percent-of is easy: 6% of $2,000 is 0.06 × 2000 = $120. The one people get wrong is **reversing** a percent — going from a net figure back to the gross. If a number is already reduced by x%, you recover the original by **dividing by (1 − x)**, not by adding x% back.\n\nThe classic exam use is a mutual fund's public offering price: **POP = NAV ÷ (1 − sales charge %)**. A fund with a NAV of $9.20 and an 8% load has a POP of 9.20 ÷ 0.92 = **$10.00** — not 9.20 × 1.08. That difference is a whole answer choice."
+    },
+    {
+      "h": "Reading price fractions",
+      "body": "Bonds are quoted as a percent of $1,000 par, so **1 point = $10**. Bond points are split into eighths, and **1/8 of a point = $1.25**. A corporate bond at 98 1/2 costs $985.\n\nTreasuries are quoted in **32nds**: 1/32 of a point = $0.3125. A quote like 99-16 means 99 and 16/32 = 99.5% of par = $995. A plus (99-16+) adds a 64th."
+    },
+    {
+      "h": "Basis points",
+      "body": "Yields move in **basis points**. **1 basis point = 0.01%**, so 100 basis points = 1%. If a bond's yield rises from 4.25% to 4.60%, that's a move of 35 basis points. Whenever a question talks about a yield change 'in basis points,' shift the decimal two places."
+    },
+    {
+      "h": "Two shortcuts worth memorizing",
+      "body": "**Rule of 72:** the years for money to double ≈ 72 ÷ the annual rate. At 8%, money doubles in about 9 years. At 6%, about 12.\n\n**Total return** folds income and price change together: (ending value − beginning value + income) ÷ beginning value. A stock bought at $50, now $53, that paid a $1 dividend, returned (53 − 50 + 1) ÷ 50 = **8%**."
+    }
+  ],
+  "flashcards": [
+    { "front": "Stock vs. bond, in one word each", "back": "Stock = ownership. Bond = a loan (you are owed interest + principal)." },
+    { "front": "Reverse a percent: net → gross", "back": "Divide by (1 − x). Adding the percent back is the wrong (and tested) trap." },
+    { "front": "Public Offering Price (POP) formula", "back": "POP = NAV ÷ (1 − sales charge %)." },
+    { "front": "NAV $9.20, 8% load → POP?", "back": "9.20 ÷ 0.92 = $10.00." },
+    { "front": "1 bond point = ?", "back": "$10 (a bond is quoted as a percent of $1,000 par)." },
+    { "front": "1/8 of a bond point = ?", "back": "$1.25." },
+    { "front": "Treasuries are quoted in …", "back": "32nds. 1/32 = $0.3125. '99-16' = 99 16/32 = $995." },
+    { "front": "1 basis point = ?", "back": "0.01%. 100 bp = 1%." },
+    { "front": "Rule of 72", "back": "Years to double ≈ 72 ÷ rate. 8% → ~9 yrs." },
+    { "front": "Total return formula", "back": "(end − begin + income) ÷ begin." }
+  ],
+  "quiz": [
+    {
+      "stem": "A mutual fund has a net asset value (NAV) of $18.40 and a sales charge of 8%. What is its public offering price (POP)?",
+      "options": ["$19.87", "$20.00", "$18.40", "$19.87 minus the load"],
+      "answer": 1,
+      "explanation": "POP = NAV ÷ (1 − sales charge) = 18.40 ÷ 0.92 = $20.00. Multiplying by 1.08 (giving ~$19.87) is the classic trap — you reverse a percent by dividing by (1 − x)."
+    },
+    {
+      "stem": "A corporate bond is quoted at 97 1/4. What is its dollar price?",
+      "options": ["$97.25", "$972.50", "$975.00", "$1,972.50"],
+      "answer": 1,
+      "explanation": "A bond point = $10 (percent of $1,000 par). 97 1/4 points = 97.25 × $10 = $972.50. The 1/4 point is $2.50."
+    },
+    {
+      "stem": "A Treasury note is quoted at 101-08. What is its dollar price per $1,000?",
+      "options": ["$1,010.80", "$1,012.50", "$1,025.00", "$1,008.00"],
+      "answer": 1,
+      "explanation": "Treasuries quote in 32nds: 101-08 = 101 and 8/32 = 101.25% of par = $1,012.50. 8/32 = 0.25 point = $2.50."
+    },
+    {
+      "stem": "A bond's yield rises from 3.90% to 4.35%. By how many basis points did the yield move?",
+      "options": ["4.5 basis points", "45 basis points", "0.45 basis points", "450 basis points"],
+      "answer": 1,
+      "explanation": "1 basis point = 0.01%. 4.35% − 3.90% = 0.45% = 45 basis points."
+    },
+    {
+      "stem": "An investor buys a stock at $40, receives $2 in dividends over the year, and the stock is worth $42 at year-end. What is the total return?",
+      "options": ["5%", "10%", "8%", "12%"],
+      "answer": 1,
+      "explanation": "Total return = (end − begin + income) ÷ begin = (42 − 40 + 2) ÷ 40 = 4 ÷ 40 = 10%."
+    },
+    {
+      "stem": "At roughly what annual rate would an investment double in about 8 years, using the Rule of 72?",
+      "options": ["4%", "9%", "12%", "6%"],
+      "answer": 1,
+      "explanation": "Rule of 72: rate ≈ 72 ÷ years = 72 ÷ 8 = 9%."
+    }
+  ]
+}
