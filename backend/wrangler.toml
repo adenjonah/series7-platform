@@ -8,4 +8,4 @@ workers_dev = true
 [[d1_databases]]
 binding = "DB"
 database_name = "series7-progress"
-database_id = "PLACEHOLDER_RUN_d1_create"
+database_id = "07730e13-3218-49dc-8145-10d73b86c668"

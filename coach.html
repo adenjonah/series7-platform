@@ -27,7 +27,7 @@
 <main id="app">loading…</main>
 <script>
 const q = new URLSearchParams(location.search);
-const API = (q.get("api") || localStorage.getItem("s7api") || "").replace(/\/$/, "");
+const API = (q.get("api") || localStorage.getItem("s7api") || "https://series7-progress.adenjonah.workers.dev").replace(/\/$/, "");
 if (q.get("api")) localStorage.setItem("s7api", API);
 const TOKEN = q.get("t") || "";
 const app = document.getElementById("app");
