@@ -41,8 +41,8 @@ const LAST = localStorage.getItem("s7student");
 
 function go(slug) { localStorage.setItem("s7student", slug); location.href = "./progress.html?s=" + slug; }
 
-// one-tap resume for whoever used this device last
-if (LAST) {
+// one-tap resume for whoever used this device last (charset-guard the stored value)
+if (LAST && /^[a-z0-9_-]{1,32}$/.test(LAST)) {
   const name = (ROSTER.find(([s]) => s === LAST) || [LAST, LAST])[1];
   const a = document.createElement("a");
   a.className = "resume"; a.href = "./progress.html?s=" + LAST;

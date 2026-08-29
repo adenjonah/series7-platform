@@ -134,6 +134,9 @@ function renderMocks() {
 
 async function boot() {
   if (!API || !STUDENT) return fail('No student selected. <a href="./login.html">Go to the sign-in page</a> and pick your name.');
+  // STUDENT comes from the ?s= URL param — constrain it to a safe slug charset so a crafted
+  // link can never inject markup through any message that interpolates it.
+  if (!/^[a-z0-9_-]{1,32}$/.test(STUDENT)) return fail('That name isn\'t valid. <a href="./login.html">Pick your name.</a>');
   try {
     const cur = await fetch("./diagnostic/curriculum.json").then((r) => r.json());
     window._phaseNames = cur.phases;
