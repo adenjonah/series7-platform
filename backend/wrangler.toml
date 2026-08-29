@@ -3,6 +3,10 @@ main = "worker.js"
 compatibility_date = "2026-08-01"
 workers_dev = true
 
+# Roster of valid student names (name-only auth). Edit + redeploy to add/remove a student.
+[vars]
+STUDENTS = "jonah,jojo,adam,sydni"
+
 # Fill database_id after `npx wrangler d1 create series7-progress` (see README.md).
 # TOKENS and ADMIN_TOKEN are secrets — set with `wrangler secret put`, never here.
 [[d1_databases]]

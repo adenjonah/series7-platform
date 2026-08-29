@@ -4,20 +4,27 @@
  * Free-tier fit: D1 free = 100k row-writes/day, 5M reads/day, 5 GB. For 4 students this
  * is ~250x headroom. No inactivity pause (unlike Supabase free).
  *
- * Auth: per-student token (env.TOKENS = JSON like {"jojo":"..."}), plus an ADMIN_TOKEN
- * for the coach view. Tokens are Worker secrets — never committed. A student may only
- * write their own rows; the coach token can read everything.
+ * Auth (name-only, by product choice): a student self-identifies by name; reads/writes
+ * are open to anyone who names a student on the allowlist (env.STUDENTS). This is a
+ * private, low-stakes study tracker — worst case is a friend editing a friend's checkmarks.
+ * The COHORT read (all students at once) stays gated behind ADMIN_TOKEN so it isn't
+ * trivially public. Input is still validated (item charset, note length) and CORS is an
+ * exact-origin allowlist.
  *
  * Endpoints:
- *   POST /progress   {student, token, item, status, score?, note?}  -> upsert (status "reset" deletes)
- *   GET  /progress?student=X&token=Y                                -> that student's rows
- *   GET  /cohort?token=ADMIN                                        -> all rows (coach)
+ *   POST /progress   {student, item, status, score?, note?}  -> upsert (status "reset" deletes)
+ *   GET  /progress?student=X                                 -> that student's rows
+ *   GET  /cohort   (header X-Token: ADMIN)                   -> all rows (coach)
  */
 
 const VALID_STATUS = ["done", "review", "in_progress", "reset"];
 // item is a module id or a dated event — strict charset, so it can never carry markup.
 const ITEM_RE = /^(M\d{1,2}|(?:mock|quiz|daily):\d{4}-\d{2}-\d{2})$/;
 const NOTE_MAX = 500;
+
+function students(env) {
+  return (env.STUDENTS || "jonah,jojo,adam,sydni").split(",").map((s) => s.trim()).filter(Boolean);
+}
 
 // Exact-origin allowlist. Substring/startsWith matching would let
 // https://adenjonah.github.io.evil.com or http://localhost.evil.com through.
@@ -47,20 +54,19 @@ export default {
     if (req.method === "OPTIONS") return new Response(null, { headers: cors });
 
     const url = new URL(req.url);
-    let tokens = {};
-    try { tokens = JSON.parse(env.TOKENS || "{}"); } catch { /* misconfigured secret */ }
+    const roster = students(env);
 
     try {
-      // --- write a student's progress ---
+      // --- write a student's progress (name-only) ---
       if (req.method === "POST" && url.pathname === "/progress") {
         const body = await req.json().catch(() => ({}));
-        const { student, token, item, status, score = null, note = null } = body;
+        const { student, item, status, score = null, note = null } = body;
         if (!student || !item || !status) return json({ error: "missing student/item/status" }, 400);
+        if (!roster.includes(student)) return json({ error: "unknown student" }, 403);
         if (!VALID_STATUS.includes(status)) return json({ error: "bad status" }, 400);
         if (typeof item !== "string" || !ITEM_RE.test(item)) return json({ error: "bad item" }, 400);
         const cleanScore = score == null ? null : (Number.isFinite(+score) ? +score : null);
         const cleanNote = note == null ? null : String(note).slice(0, NOTE_MAX);
-        if (!tokens[student] || tokens[student] !== token) return json({ error: "bad token" }, 403);
 
         const ts = new Date().toISOString();
         if (status === "reset") {
@@ -76,19 +82,17 @@ export default {
         return json({ ok: true, ts });
       }
 
-      // --- read one student's progress (student token, or admin) ---
+      // --- read one student's progress (name-only) ---
       if (req.method === "GET" && url.pathname === "/progress") {
         const student = url.searchParams.get("student");
-        const token = req.headers.get("X-Token") || ""; // token in a header, never the URL (keeps it out of request logs)
         if (!student) return json({ error: "missing student" }, 400);
-        const authed = (tokens[student] && tokens[student] === token) || (env.ADMIN_TOKEN && token === env.ADMIN_TOKEN);
-        if (!authed) return json({ error: "bad token" }, 403);
+        if (!roster.includes(student)) return json({ error: "unknown student" }, 403);
         const { results } = await env.DB
           .prepare("SELECT item, status, score, note, ts FROM progress WHERE student = ? ORDER BY item").bind(student).all();
         return json({ student, progress: results });
       }
 
-      // --- read everyone (coach) ---
+      // --- read everyone (coach) — still gated ---
       if (req.method === "GET" && url.pathname === "/cohort") {
         if (!env.ADMIN_TOKEN || req.headers.get("X-Token") !== env.ADMIN_TOKEN)
           return json({ error: "bad token" }, 403);

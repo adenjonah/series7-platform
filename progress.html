@@ -38,7 +38,7 @@
 </head>
 <body>
 <header>
-  <h1>My Series 7 progress</h1>
+  <h1>My Series 7 progress <a href="./login.html" style="font-size:12px;font-weight:400;color:var(--accent);margin-left:6px">switch</a></h1>
   <div class="sub" id="sub">loading…</div>
   <div class="bar"><i id="prog"></i></div>
 </header>
@@ -51,7 +51,6 @@ const q = new URLSearchParams(location.search);
 const API = (q.get("api") || localStorage.getItem("s7api") || "https://series7-progress.adenjonah.workers.dev").replace(/\/$/, "");
 if (q.get("api")) localStorage.setItem("s7api", API);
 const STUDENT = q.get("s") || "";
-const TOKEN = q.get("t") || "";
 const app = document.getElementById("app");
 const state = {}; // item -> {status, score, ts}
 
@@ -65,7 +64,7 @@ function fail(msg) { app.innerHTML = '<div class="err">' + msg + "</div>"; }
 async function post(item, status, score = null) {
   const r = await fetch(API + "/progress", {
     method: "POST", headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ student: STUDENT, token: TOKEN, item, status, score }),
+    body: JSON.stringify({ student: STUDENT, item, status, score }),
   });
   if (!r.ok) { toast("save failed"); return false; }
   const j = await r.json();
@@ -94,7 +93,7 @@ function render(mods) {
     html += '<div class="phase">Phase ' + ph + " — " + (window._phaseNames[ph] || "") + "</div>";
     list.forEach((m) => {
       const st = (state[m.id] || {}).status || "";
-      html += '<div class="mod" data-status="' + st + '">' +
+      html += '<div class="mod" id="mod-' + m.id + '" data-status="' + st + '">' +
         '<div class="meta"><span class="id">' + m.id + "</span> " +
         '<span class="ttl">' + m.title + " · " + m.hours + "h</span></div>" +
         '<div class="btns">' +
@@ -134,15 +133,21 @@ function renderMocks() {
 }
 
 async function boot() {
-  if (!API || !STUDENT || !TOKEN) return fail("This link is missing its <b>api</b>, <b>s</b> (student) or <b>t</b> (token) parameter. Ask your coach for your personal link.");
+  if (!API || !STUDENT) return fail('No student selected. <a href="./login.html">Go to the sign-in page</a> and pick your name.');
   try {
     const cur = await fetch("./diagnostic/curriculum.json").then((r) => r.json());
     window._phaseNames = cur.phases;
     const mods = cur.modules.filter((m) => m.id !== "M16"); // SIE sitting — all four passed the SIE
-    const pr = await fetch(API + "/progress?student=" + encodeURIComponent(STUDENT), { headers: { "X-Token": TOKEN } });
-    if (pr.status === 403) return fail("Bad token for <b>" + STUDENT + "</b>. Check your personal link.");
+    const pr = await fetch(API + "/progress?student=" + encodeURIComponent(STUDENT));
+    if (pr.status === 403) return fail("<b>" + STUDENT + "</b> isn't on the roster. <a href=\"./login.html\">Pick your name.</a>");
     (await pr.json()).progress.forEach((r) => (state[r.item] = { status: r.status, score: r.score, ts: r.ts }));
     render(mods);
+    // jump to where they are: first module not yet done
+    const next = mods.find((m) => (state[m.id] || {}).status !== "done");
+    if (next) {
+      const el = document.getElementById("mod-" + next.id);
+      if (el) { el.scrollIntoView({ block: "center", behavior: "smooth" }); el.style.boxShadow = "0 0 0 2px var(--accent)"; }
+    }
   } catch (e) { fail("Couldn't load: " + e.message + ". Is the backend deployed and the <b>api</b> URL right?"); }
 }
 boot();
