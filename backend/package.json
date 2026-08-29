@@ -1,0 +1,13 @@
+{
+  "name": "series7-progress",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "init-db-local": "wrangler d1 execute series7-progress --local --file=schema.sql",
+    "init-db-remote": "wrangler d1 execute series7-progress --remote --file=schema.sql",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.127.0"
+  }
+}

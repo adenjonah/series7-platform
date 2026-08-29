@@ -1,0 +1,11 @@
+name = "series7-progress"
+main = "worker.js"
+compatibility_date = "2026-08-01"
+workers_dev = true
+
+# Fill database_id after `npx wrangler d1 create series7-progress` (see README.md).
+# TOKENS and ADMIN_TOKEN are secrets — set with `wrangler secret put`, never here.
+[[d1_databases]]
+binding = "DB"
+database_name = "series7-progress"
+database_id = "PLACEHOLDER_RUN_d1_create"

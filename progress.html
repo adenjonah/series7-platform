@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Series 7 — my progress</title>
+<style>
+  :root { --ink:#1a2233; --muted:#6b7688; --line:#e6e9ef; --bg:#f7f8fa; --card:#fff; --accent:#2f6df6; --done:#1a9e6b; --prog:#d98a00; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; color:var(--ink); background:var(--bg); }
+  header { padding:20px 18px 14px; background:var(--card); border-bottom:1px solid var(--line); position:sticky; top:0; }
+  h1 { margin:0 0 4px; font-size:19px; }
+  .sub { color:var(--muted); font-size:13px; }
+  .bar { height:8px; border-radius:5px; background:var(--line); margin-top:10px; overflow:hidden; }
+  .bar > i { display:block; height:100%; background:var(--done); width:0; transition:width .3s; }
+  main { max-width:760px; margin:0 auto; padding:16px 14px 60px; }
+  .phase { margin:22px 0 8px; font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); }
+  .mod { display:flex; align-items:center; gap:10px; background:var(--card); border:1px solid var(--line); border-radius:10px; padding:10px 12px; margin-bottom:8px; }
+  .mod .meta { flex:1; min-width:0; }
+  .mod .id { font-weight:600; }
+  .mod .ttl { color:var(--muted); font-size:13px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .btns { display:flex; gap:6px; flex-shrink:0; }
+  button.s { border:1px solid var(--line); background:#fff; color:var(--muted); border-radius:8px; padding:5px 9px; font-size:12px; cursor:pointer; }
+  button.s:hover { border-color:var(--muted); }
+  .mod[data-status="in_progress"] button.p, .mod[data-status="in_progress"] { }
+  button.p.on { border-color:var(--prog); color:var(--prog); background:#fff8ec; }
+  button.d.on { border-color:var(--done); color:var(--done); background:#eafaf3; }
+  .extras { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px; margin-top:20px; }
+  .extras h3 { margin:0 0 8px; font-size:14px; }
+  .row { display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin-top:8px; }
+  input, select { padding:6px 8px; border:1px solid var(--line); border-radius:8px; font:inherit; }
+  button.go { background:var(--accent); color:#fff; border:0; border-radius:8px; padding:7px 12px; cursor:pointer; }
+  .note { color:var(--muted); font-size:12px; }
+  .err { background:#fdecec; color:#a11; border:1px solid #f5c2c2; border-radius:10px; padding:12px 14px; margin:14px 0; }
+  #saved { position:fixed; bottom:16px; left:50%; transform:translateX(-50%); background:var(--ink); color:#fff; padding:8px 14px; border-radius:20px; font-size:13px; opacity:0; transition:opacity .2s; pointer-events:none; }
+  #saved.show { opacity:.95; }
+</style>
+</head>
+<body>
+<header>
+  <h1>My Series 7 progress</h1>
+  <div class="sub" id="sub">loading…</div>
+  <div class="bar"><i id="prog"></i></div>
+</header>
+<main id="app"></main>
+<div id="saved"></div>
+
+<script>
+const q = new URLSearchParams(location.search);
+// api can arrive in the link once, then sticks in localStorage
+const API = (q.get("api") || localStorage.getItem("s7api") || "").replace(/\/$/, "");
+if (q.get("api")) localStorage.setItem("s7api", API);
+const STUDENT = q.get("s") || "";
+const TOKEN = q.get("t") || "";
+const app = document.getElementById("app");
+const state = {}; // item -> {status, score, ts}
+
+function toast(msg) {
+  const el = document.getElementById("saved");
+  el.textContent = msg; el.classList.add("show");
+  clearTimeout(toast._t); toast._t = setTimeout(() => el.classList.remove("show"), 1400);
+}
+function fail(msg) { app.innerHTML = '<div class="err">' + msg + "</div>"; }
+
+async function post(item, status, score = null) {
+  const r = await fetch(API + "/progress", {
+    method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ student: STUDENT, token: TOKEN, item, status, score }),
+  });
+  if (!r.ok) { toast("save failed"); return false; }
+  const j = await r.json();
+  if (status === "reset") delete state[item]; else state[item] = { status, score, ts: j.ts };
+  return true;
+}
+
+function pct(modules) {
+  const done = modules.filter((m) => state[m.id] && state[m.id].status === "done").length;
+  return Math.round((100 * done) / modules.length);
+}
+
+async function setStatus(m, status) {
+  const cur = state[m.id] && state[m.id].status;
+  const next = cur === status ? "reset" : status;   // click the active one again to clear
+  const ok = await post(m.id, next);
+  if (ok) { render(window._mods); toast(next === "reset" ? "cleared " + m.id : m.id + " → " + status); }
+}
+
+function render(mods) {
+  window._mods = mods;
+  const phases = {};
+  mods.forEach((m) => (phases[m.phase] = phases[m.phase] || []).push(m));
+  let html = "";
+  for (const [ph, list] of Object.entries(phases)) {
+    html += '<div class="phase">Phase ' + ph + " — " + (window._phaseNames[ph] || "") + "</div>";
+    list.forEach((m) => {
+      const st = (state[m.id] || {}).status || "";
+      html += '<div class="mod" data-status="' + st + '">' +
+        '<div class="meta"><span class="id">' + m.id + "</span> " +
+        '<span class="ttl">' + m.title + " · " + m.hours + "h</span></div>" +
+        '<div class="btns">' +
+          '<button class="s p ' + (st === "in_progress" ? "on" : "") + '" data-id="' + m.id + '" data-st="in_progress">In progress</button>' +
+          '<button class="s d ' + (st === "done" ? "on" : "") + '" data-id="' + m.id + '" data-st="done">Done</button>' +
+        "</div></div>";
+    });
+  }
+  html += '<div class="extras"><h3>Log a mock or quiz</h3>' +
+    '<div class="row"><select id="kind"><option value="mock">Full mock</option><option value="quiz">Weekly quiz</option><option value="daily">Daily 10</option></select>' +
+    '<input id="mscore" type="number" min="0" max="100" placeholder="score %" style="width:100px" />' +
+    '<button class="go" id="logmock">Log for today</button></div>' +
+    '<div class="note" id="mocklist"></div></div>';
+  app.innerHTML = html;
+
+  document.querySelectorAll("button.s").forEach((b) =>
+    b.onclick = () => setStatus(mods.find((m) => m.id === b.dataset.id), b.dataset.st));
+  document.getElementById("logmock").onclick = async () => {
+    const kind = document.getElementById("kind").value;
+    const score = parseFloat(document.getElementById("mscore").value);
+    const item = kind + ":" + new Date().toISOString().slice(0, 10);
+    if (await post(item, "done", isNaN(score) ? null : score)) { toast("logged " + item); renderMocks(); }
+  };
+  renderMocks();
+  document.getElementById("prog").style.width = pct(mods) + "%";
+  document.getElementById("sub").textContent =
+    STUDENT + " · " + pct(mods) + "% of modules done · " +
+    Object.keys(state).filter((k) => k.startsWith("mock:")).length + " mocks logged";
+}
+
+function renderMocks() {
+  const items = Object.entries(state).filter(([k]) => /^(mock|quiz|daily):/.test(k))
+    .sort((a, b) => a[0] < b[0] ? 1 : -1);
+  document.getElementById("mocklist").innerHTML = items.length
+    ? items.map(([k, v]) => k + (v.score != null ? " — " + v.score + "%" : "")).join(" · ")
+    : "none yet";
+}
+
+async function boot() {
+  if (!API || !STUDENT || !TOKEN) return fail("This link is missing its <b>api</b>, <b>s</b> (student) or <b>t</b> (token) parameter. Ask your coach for your personal link.");
+  try {
+    const cur = await fetch("./diagnostic/curriculum.json").then((r) => r.json());
+    window._phaseNames = cur.phases;
+    const mods = cur.modules.filter((m) => m.id !== "M16"); // SIE sitting — all four passed the SIE
+    const pr = await fetch(API + "/progress?student=" + encodeURIComponent(STUDENT) + "&token=" + encodeURIComponent(TOKEN));
+    if (pr.status === 403) return fail("Bad token for <b>" + STUDENT + "</b>. Check your personal link.");
+    (await pr.json()).progress.forEach((r) => (state[r.item] = { status: r.status, score: r.score, ts: r.ts }));
+    render(mods);
+  } catch (e) { fail("Couldn't load: " + e.message + ". Is the backend deployed and the <b>api</b> URL right?"); }
+}
+boot();
+</script>
+</body>
+</html>

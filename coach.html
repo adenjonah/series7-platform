@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Series 7 — cohort progress</title>
+<style>
+  :root { --ink:#1a2233; --muted:#6b7688; --line:#e6e9ef; --bg:#f7f8fa; --card:#fff; --done:#1a9e6b; }
+  body { margin:0; font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; color:var(--ink); background:var(--bg); }
+  header { padding:20px 18px; background:var(--card); border-bottom:1px solid var(--line); }
+  h1 { margin:0; font-size:19px; }
+  main { max-width:900px; margin:0 auto; padding:18px 14px 60px; }
+  table { width:100%; border-collapse:collapse; background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden; }
+  th, td { text-align:left; padding:11px 12px; border-bottom:1px solid var(--line); font-size:14px; }
+  th { background:#fafbfc; color:var(--muted); font-weight:600; font-size:12px; letter-spacing:.04em; text-transform:uppercase; }
+  tr:last-child td { border-bottom:0; }
+  .bar { height:7px; border-radius:5px; background:var(--line); width:120px; overflow:hidden; }
+  .bar > i { display:block; height:100%; background:var(--done); }
+  .muted { color:var(--muted); font-size:12px; }
+  .err { background:#fdecec; color:#a11; border:1px solid #f5c2c2; border-radius:10px; padding:12px 14px; }
+  details { margin-top:16px; } summary { cursor:pointer; color:var(--muted); font-size:13px; }
+  pre { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:10px; overflow:auto; font-size:12px; }
+</style>
+</head>
+<body>
+<header><h1>Series 7 — cohort progress</h1></header>
+<main id="app">loading…</main>
+<script>
+const q = new URLSearchParams(location.search);
+const API = (q.get("api") || localStorage.getItem("s7api") || "").replace(/\/$/, "");
+if (q.get("api")) localStorage.setItem("s7api", API);
+const TOKEN = q.get("t") || "";
+const app = document.getElementById("app");
+const STUDENTS = ["sydni", "jojo", "jonah", "adam"];
+const fail = (m) => (app.innerHTML = '<div class="err">' + m + "</div>");
+
+function agg(rows, totalModules) {
+  const by = {};
+  rows.forEach((r) => (by[r.student] = by[r.student] || []).push(r));
+  return STUDENTS.map((s) => {
+    const rs = by[s] || [];
+    const mods = rs.filter((r) => /^M\d+$/.test(r.item));
+    const done = mods.filter((r) => r.status === "done").length;
+    const prog = mods.filter((r) => r.status === "in_progress").length;
+    const mocks = rs.filter((r) => r.item.startsWith("mock:"));
+    const scores = mocks.map((m) => m.score).filter((x) => x != null);
+    const last = rs.map((r) => r.ts).sort().slice(-1)[0];
+    return { s, done, prog, total: totalModules, mocks: mocks.length,
+      avg: scores.length ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length) : null, last };
+  });
+}
+
+async function boot() {
+  if (!API || !TOKEN) return fail("Add <b>?api=&lt;worker-url&gt;&amp;t=&lt;admin-token&gt;</b> to this URL.");
+  let totalModules = 41;
+  try {
+    const cur = await fetch("./diagnostic/curriculum.json").then((r) => r.json());
+    totalModules = cur.modules.filter((m) => m.id !== "M16").length;
+  } catch { /* fall back to 41 */ }
+  const r = await fetch(API + "/cohort?token=" + encodeURIComponent(TOKEN));
+  if (r.status === 403) return fail("Bad admin token.");
+  if (!r.ok) return fail("Backend error " + r.status + ". Is the worker deployed?");
+  const rows = (await r.json()).progress;
+  const data = agg(rows, totalModules);
+  let html = "<table><thead><tr><th>Student</th><th>Modules done</th><th>In progress</th><th>Mocks</th><th>Avg mock</th><th>Last active</th></tr></thead><tbody>";
+  data.forEach((d) => {
+    const p = Math.round((100 * d.done) / d.total);
+    html += "<tr><td><b>" + d.s + "</b></td>" +
+      '<td><div class="bar"><i style="width:' + p + '%"></i></div><span class="muted">' + d.done + "/" + d.total + " (" + p + "%)</span></td>" +
+      "<td>" + d.prog + "</td><td>" + d.mocks + "</td>" +
+      "<td>" + (d.avg != null ? d.avg + "%" : "<span class='muted'>—</span>") + "</td>" +
+      "<td class='muted'>" + (d.last ? d.last.slice(0, 16).replace("T", " ") : "never") + "</td></tr>";
+  });
+  html += "</tbody></table>";
+  html += "<details><summary>raw rows (" + rows.length + ")</summary><pre>" + JSON.stringify(rows, null, 2) + "</pre></details>";
+  app.innerHTML = html;
+}
+boot().catch((e) => fail("Couldn't load: " + e.message));
+</script>
+</body>
+</html>
