@@ -1,0 +1,92 @@
+{
+  "module": "M35",
+  "title": "Suitability, Reg BI, conduct, AML, and SIPC",
+  "domain": "accounts",
+  "estMinutes": 25,
+  "reading": [
+    {
+      "h": "The profile-to-product map",
+      "body": "Suitability questions give you a profile paragraph and ask for the MOST (or LEAST) suitable product. The tie-breaker is almost always the stated **objective + time horizon + tax status**. Learn the map and its classic wrong answers.\n\n**Preservation of capital / safety** → T-bills, money-market funds, insured CDs, short high-grade bonds. Wrong answer: long-term bonds (interest-rate risk).\n\n**Current income** → investment-grade corporate or municipal bonds, preferred stock, utility stocks. Wrong answers: growth stocks and **zero-coupon bonds** (they pay no current income).\n\n**Tax-free income (high bracket)** → municipal bonds. Wrong answers: a **muni inside an IRA** (never — you'd waste the tax shelter) and Treasuries (federally taxable).\n\n**Growth** → common stock, growth funds, index funds. Wrong answers: bonds, preferred.\n\nTwo permanent 'never' answers: **municipal bonds in an IRA** and a **variable annuity in an IRA** — both put a tax-advantaged product inside another tax shelter, which is redundant."
+    },
+    {
+      "h": "Suitability, Reg BI, and KYC",
+      "body": "**Rule 2111 (suitability)** has three components: **reasonable-basis** (understand the product), **customer-specific** (fits this customer), and **quantitative** (a series of trades isn't excessive). Its **institutional exemption (2111(b))** deems customer-specific suitability met when the customer is an institutional account (assets of at least $50 million) that is capable of independently evaluating risk AND affirmatively states it is exercising independent judgment.\n\nSince June 30, 2020, Rule 2111 does not apply to recommendations covered by **Regulation Best Interest** — so Reg BI governs **retail** natural persons and 2111 governs institutional/other.\n\n**Reg BI's four obligations** are Disclosure, Care, Conflict of Interest, and Compliance. The three suitability components live inside **Care**, which adds two duties: cost must always be considered, and reasonably available alternatives must be considered. **Form CRS** (the relationship summary, max 2 pages, 4 for a dual registrant) is delivered before or at the earliest of a recommendation, an order, or account opening, and within 30 days on request."
+    },
+    {
+      "h": "The rep's personal-conduct rules (the 32-series)",
+      "body": "A cluster of rules governs the rep's own life. Mnemonic: the **32-series is 'the rep's personal life.'**\n\n**3210 — my accounts:** to open a securities account at another firm, the rep needs the **employer's prior written consent** and must notify the executing firm of the association; duplicate statements go to the employer on request. (Mutual-fund-only, 529, and variable-contract accounts are exempt.)\n\n**3220 — my gifts:** a limit per person per year on business gifts to people at other firms (currently $300, raised from $100 in 2026).\n\n**3240 — my loans:** borrowing from or lending to a customer is prohibited unless the firm's procedures allow it and an exception applies (immediate family, a lending institution, etc.).\n\n**3241 — my inheritance/trustee roles:** the rep must decline to be a customer's beneficiary, executor, trustee, or POA holder unless the customer is immediate family or the firm approves in writing.\n\n**3270 — my side job (OBA):** an outside business activity requires prior written **notice** to the firm.\n\n**3280 — my side deals (PST):** a private securities transaction requires prior written notice, plus firm **approval** if the rep is compensated. Doing it without notice is 'selling away.' Remember: 3270 = notice; 3280 = notice + approval if paid."
+    },
+    {
+      "h": "Anti-money-laundering",
+      "body": "The AML program rests on 'pillars': written policies, independent testing (annually; every two years for firms that don't hold accounts), a designated AML compliance officer, ongoing training, and risk-based customer due diligence (including 25% beneficial owners of legal entities).\n\n**Three stages:** **Placement** (cash enters the system), **Layering** (moved around to hide the trail — where brokerage is most exposed), **Integration** (re-emerges as clean assets).\n\n**Two reports, both to FinCEN:** a **CTR** for cash over $10,000 in one business day is automatic (no suspicion), filed within 15 days. A **SAR** for suspicious activity of $5,000 or more is a judgment call, filed within 30 days, and you **never tell the customer**. Breaking cash into sub-$10,000 pieces to dodge a CTR is **structuring** — itself a crime and a SAR trigger.\n\n**OFAC** is separate: firms screen customers against the SDN list and block or reject transactions with sanctioned persons. It is a blacklist check, not a report."
+    },
+    {
+      "h": "SIPC and FDIC",
+      "body": "**SIPC (Securities Investor Protection Corporation)** is a **non-profit membership corporation — not a government agency.** It protects customers of a **failed broker-dealer** for missing cash and securities up to **$500,000 per separate customer, of which no more than $250,000 may be cash.**\n\n'Separate customer' means separate **capacity**: an individual account, a joint account, and an IRA for the same person are each covered separately, but two individual accounts of the same person at the same firm are combined. Margin accounts are covered on their **net equity** (market value minus the debit).\n\nSIPC does **not** cover market losses, commodities/futures, fixed annuities, or crypto that isn't a security — it only fills the gap when a firm is insolvent and assets are missing.\n\n**FDIC** is the bank analogue: **$250,000 per depositor, per bank, per ownership category** on bank deposits (including brokered CDs, whose coverage follows the issuing bank). Money-market funds, stocks, and annuities are NOT FDIC insured even when bought at a bank."
+    }
+  ],
+  "flashcards": [
+    { "front": "Two permanent 'never' suitability answers", "back": "A municipal bond in an IRA and a variable annuity in an IRA — both redundantly shelter an already tax-advantaged product." },
+    { "front": "Wrong product for 'current income'", "back": "Zero-coupon bonds (no current income) and growth stocks. Right: investment-grade bonds, preferred, utilities." },
+    { "front": "Reg BI vs. Rule 2111 today", "back": "Reg BI governs retail natural persons; Rule 2111 governs institutional/other. KYC (2090) applies to everyone, always." },
+    { "front": "Institutional suitability exemption conditions", "back": "$50M+ institutional account, capable of independently evaluating risk, AND affirmatively states it exercises independent judgment." },
+    { "front": "3270 vs. 3280", "back": "3270 (OBA) = prior written NOTICE. 3280 (private securities transaction) = notice + firm APPROVAL if compensated; no notice = 'selling away.'" },
+    { "front": "Rule 3210 to open an outside account", "back": "Employer's PRIOR WRITTEN CONSENT + written notice to the executing firm; duplicates to the employer on request." },
+    { "front": "SAR vs. CTR thresholds", "back": "SAR: suspicious $5,000+, 30 days, never tip off. CTR: cash over $10,000/day, automatic, 15 days. Both to FinCEN." },
+    { "front": "Structuring", "back": "Splitting cash into sub-$10,000 deposits to evade a CTR. It is a federal crime and a SAR trigger." },
+    { "front": "SIPC coverage limits", "back": "$500,000 per separate customer, max $250,000 cash. Not a government agency; covers a failed BD's missing assets, not market losses." },
+    { "front": "'Separate customer' for SIPC", "back": "Separate capacity — individual, joint, and IRA are each covered; two individual accounts of one person are combined." },
+    { "front": "FDIC coverage", "back": "$250,000 per depositor, per bank, per ownership category. Money-market funds and securities are not FDIC insured." },
+    { "front": "Reg BI's Care Obligation additions", "back": "Beyond the three suitability components, cost must always be considered and reasonably available alternatives must be considered." }
+  ],
+  "quiz": [
+    {
+      "stem": "A 72-year-old retiree with a $3 million net worth, in the highest federal tax bracket, wants current income with preservation of capital and has no near-term liquidity needs. The MOST suitable recommendation is:",
+      "options": ["Zero-coupon Treasury bonds", "A portfolio of small-cap growth stocks", "Investment-grade municipal bonds", "High-yield corporate bonds"],
+      "answer": 2,
+      "explanation": "Current income plus preservation points to investment-grade debt, and the highest tax bracket makes tax-exempt municipal bonds the best fit. Zero-coupon bonds pay no current income, growth stocks miss the objective, and high-yield bonds sacrifice preservation of capital."
+    },
+    {
+      "stem": "A customer in the top tax bracket asks the representative to place municipal bonds inside his traditional IRA for the tax-free interest. The representative should explain that this is:",
+      "options": ["An excellent strategy that doubles the tax benefit", "Generally unsuitable, because the IRA already shelters income, wasting the muni's tax exemption", "Required, because IRAs may hold only tax-exempt securities", "Suitable only if the bonds are insured"],
+      "answer": 1,
+      "explanation": "Putting an already tax-exempt security inside a tax-deferred account is redundant — the customer gives up yield (munis pay less than taxable bonds) for a tax benefit the IRA already provides. Muni-in-an-IRA and VA-in-an-IRA are classic 'never' answers."
+    },
+    {
+      "stem": "A representative of Member Firm A wants to open a personal brokerage account at Member Firm B to trade individual stocks. Under FINRA Rule 3210, she must:",
+      "options": ["Notify FINRA in writing within 30 days of opening", "Obtain prior written consent from Firm B and send duplicate statements to FINRA", "Obtain prior written consent from Firm A and notify Firm B of her association", "Do nothing, because Rule 3210 applies only to discretionary accounts"],
+      "answer": 2,
+      "explanation": "Rule 3210 requires the employing member's prior written consent and written notice of the association to the executing firm, which then supplies duplicate statements to the employer on request. FINRA is not notified, and only mutual-fund-only, 529, and variable-contract accounts are exempt."
+    },
+    {
+      "stem": "A retail-store owner deposits $9,500 in currency and asks the representative whether it 'will be reported to the government.' Two business days later he deposits another $9,000 in currency. The firm's obligation is to:",
+      "options": ["File a CTR within 15 days, because the deposits exceed $10,000 in aggregate", "File a SAR within 30 calendar days of detection, without informing the customer", "Do nothing, because no single deposit exceeded $10,000", "Notify OFAC and block the account"],
+      "answer": 1,
+      "explanation": "A CTR aggregates cash only within one business day, so two sub-$10,000 deposits on different days do not trigger one. But the pattern plus the customer's concern about reporting is a structuring red flag exceeding the $5,000 SAR threshold, so a SAR is filed within 30 days and the customer is not tipped off. OFAC screening concerns sanctioned persons, not cash reporting."
+    },
+    {
+      "stem": "An investor holds an individual account with $520,000 of securities and a Roth IRA with $200,000 of securities at the same broker-dealer, which then becomes insolvent with the assets missing. Total SIPC coverage is:",
+      "options": ["$500,000", "$520,000", "$700,000", "$720,000"],
+      "answer": 2,
+      "explanation": "The individual account and the IRA are separate capacities, each separately covered. The individual account is covered to the $500,000 limit (the other $20,000 becomes a general creditor claim); the IRA's $200,000 is fully covered. $500,000 + $200,000 = $700,000."
+    },
+    {
+      "stem": "A registered representative wants to sell interests in a friend's private real-estate venture to several of his customers and will receive a commission. Under FINRA Rule 3280, he must:",
+      "options": ["Only provide prior written notice to his firm", "Provide prior written notice AND obtain the firm's written approval, after which the firm supervises and records the transactions", "Do nothing, because private placements are exempt", "Obtain approval only from the customers, not the firm"],
+      "answer": 1,
+      "explanation": "A private securities transaction for compensation requires prior written notice AND the firm's written approval; if approved, it is recorded on the firm's books and supervised as its own. Proceeding without notice is 'selling away.' Rule 3270 (outside business activity) requires only notice — the distinction is compensation in a securities transaction."
+    },
+    {
+      "stem": "Which statement about SIPC is TRUE?",
+      "options": ["SIPC is a government agency that insures accounts like the FDIC", "SIPC reimburses customers for market losses up to $500,000", "SIPC is a non-profit membership corporation that covers a failed broker-dealer's missing customer assets, up to $500,000 including $250,000 cash", "SIPC covers commodities and futures positions held at a failed firm"],
+      "answer": 2,
+      "explanation": "SIPC is a non-profit membership corporation, not a government agency. It steps in only when a broker-dealer is insolvent and customer cash or securities are missing — never for market losses — and does not cover commodities, futures, or fixed annuities."
+    },
+    {
+      "stem": "The Care Obligation of Regulation Best Interest requires a representative recommending a securities transaction to a retail customer to consider, in addition to the customer's investment profile:",
+      "options": ["The cost of the recommendation and reasonably available alternatives", "Only whether the product is on the firm's approved list", "The representative's own compensation goals", "Nothing beyond whether the product could be suitable for some investor"],
+      "answer": 0,
+      "explanation": "The Care Obligation contains the three suitability components and adds that cost must always be considered (though not the only factor) and that reasonably available alternatives must be considered. The other choices describe things Reg BI prohibits or does not require."
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "module": "M37",
+  "title": "Primary market: registration periods, exemptions, and underwriting",
+  "domain": "regulation",
+  "estMinutes": 26,
+  "reading": [
+    {
+      "h": "The three registration periods",
+      "body": "A registered public offering moves through three periods, and the exam tests what a rep may do in each. **Pre-filing = silence:** before the registration statement is filed, no offers of any kind (\"gun-jumping\" is prohibited). **Cooling-off = talk but don't sell:** a minimum of **20 calendar days** from filing to effectiveness, during which a rep may distribute the **preliminary prospectus (red herring)**, publish a **tombstone**, and take non-binding **indications of interest** — but may NOT accept money or orders, sell, mark up the red herring, or send research on the issuer. **Post-effective = sell with the prospectus:** once the SEC declares the registration effective, sales are allowed, and the final prospectus must precede or accompany the confirmation.\n\nThe **red herring** omits the final public offering price and the effective date (a price range is fine); it carries the SEC disclaimer that the SEC has neither approved nor disapproved the security. Remember: the 20 days is a **minimum**, not fixed — the SEC sets effectiveness and can delay it, and the SEC never \"approves.\""
+    },
+    {
+      "h": "After effectiveness: prospectus delivery, shelf, WKSI, EGC",
+      "body": "Dealers must keep delivering a prospectus to **aftermarket** buyers for a set window: **90 days** for an IPO of a security that will NOT be listed; **40 days** for a follow-on of a non-listed security; **25 days** for an IPO that WILL be listed on an exchange or Nasdaq; and **0 days** for a follow-on of an already-listed security. Mnemonic: an IPO gets more days; listing shrinks the window; a listed follow-on gets none.\n\n**Shelf registration (Rule 415):** register once, then sell in \"takedowns\" over up to three years. A **well-known seasoned issuer (WKSI)** — very large, ≥$700M float — may use free-writing prospectuses and gets automatic shelf effectiveness. An **emerging growth company (EGC)** under the JOBS Act (under ~$1.235B revenue) may file confidentially and \"test the waters,\" and its research analysts face no IPO quiet period."
+    },
+    {
+      "h": "Exempt securities vs. exempt transactions",
+      "body": "Two different escape hatches from registration. An **exempt SECURITY** never has to register because of what it is: U.S. government and agency securities, **municipal** securities, securities of **banks** (not bank holding companies), **commercial paper of 270 days or less**, nonprofit securities, and **fixed** insurance/annuities (variable annuities are NOT exempt). An **exempt TRANSACTION** is exempt because of how it is sold — the buyers can fend for themselves, are few, are local, or are abroad.\n\nThe key trap: exempt from registration is never exempt from **anti-fraud**. And a security sold in an exempt transaction (like a Reg D private placement) is still a regular security — it is the transaction that is exempt, not the paper."
+    },
+    {
+      "h": "The exemption alphabet: Reg D, 144, 144A, Reg A, Reg S, 147",
+      "body": "**Regulation D (private placement):** Rule 504 allows up to $10M in 12 months; **Rule 506(b)** allows unlimited accredited investors plus up to 35 non-accredited (sophisticated) buyers but **no general solicitation**; **Rule 506(c)** permits advertising but requires that **all** purchasers be accredited and verified. An **accredited investor** is a person with net worth over **$1,000,000 excluding the primary residence**, OR income over **$200,000 ($300,000 joint)** in each of the last two years, or a holder of a Series 7/65/82. Reg D securities are **restricted** — resold under Rule 144.\n\n**Rule 144:** resale of restricted/control stock — 6-month holding period (reporting issuer), volume capped per 90 days at the **greater of 1% of shares outstanding or the average weekly volume of the prior 4 weeks**; Form 144 filed if selling over 5,000 shares or $50,000. **Rule 144A:** resale to QIBs (≥$100M). **Regulation A:** Tier 1 up to $20M, Tier 2 up to $75M. **Regulation S:** offers/sales outside the U.S. to non-U.S. persons. **Rule 147/147A:** intrastate offerings (80% tests). **Rule 145** treats mergers requiring a shareholder vote as sales; splits and stock dividends are not."
+    },
+    {
+      "h": "The underwriting team and commitment types",
+      "body": "The **issuer** hires a **managing (lead) underwriter**, who signs the underwriting agreement. **Syndicate** members sign the agreement among underwriters — they commit capital and share liability. **Selling-group** members sign a selected-dealers agreement — they sell but take **no liability** and hold no unsold inventory.\n\nCommitment types: **firm commitment** — the underwriter buys the whole issue as principal and bears the risk of unsold shares (the IPO norm); **best efforts** — the underwriter acts as agent and returns unsold shares to the issuer (variants: all-or-none and mini-max, with funds escrowed); **standby** — a firm commitment to buy shares left over in a rights offering. Syndicate liability comes in two flavors: **Eastern (undivided)** — each member is liable for its share of ANY unsold securities, regardless of how much it sold; **Western (divided)** — each is liable only for its own unsold allotment."
+    },
+    {
+      "h": "The spread and its components",
+      "body": "The **spread** is the public offering price (POP) minus the proceeds to the issuer, split into three pieces (largest to smallest): the **concession** (paid to whoever actually sells the shares — the biggest slice), the **underwriting fee** (compensates the syndicate for risk), and the **manager's fee** (smallest, to the lead only). A **reallowance** is a small slice given to a non-member dealer who helps sell.\n\nWorked example: POP $20.00, issuer gets $18.80 → spread $1.20 = manager's fee $0.20 + underwriting fee $0.30 + concession $0.70. A **syndicate member** selling its own allotment keeps the underwriting fee + concession = **$1.00** (this is the \"takedown\"); a **selling-group** dealer keeps only the concession, $0.70; the manager earns its $0.20 on every share sold. FINRA reviews total compensation for fairness (Rule 5110); Rule 5121 requires a qualified independent underwriter when the member has a conflict; Rule 5141 bans selling below the fixed offering price."
+    },
+    {
+      "h": "New-issue conduct: Rules 5130/5131, Reg M, green shoe",
+      "body": "**Rule 5130** bars selling a **new equity IPO** to \"restricted persons\" — broker-dealers and their employees, plus the **immediate family** of those employees when the family member gets/gives material support, shares the household, or the firm can influence the allocation. Grandparents, aunts, uncles, and cousins are NOT immediate family; **in-laws are**. A de minimis exemption applies when restricted persons hold ≤10% of an account. Note: 5130 covers **only equity IPOs** — not follow-ons, debt, preferred, or investment companies.\n\n**Rule 5131** targets allocation abuses: no **spinning** (allocating hot IPOs to executives of firms that are or may become investment-banking clients) and no **quid pro quo** allocations. **Regulation M** governs stabilization: the manager may enter **one stabilizing bid at or below the POP** (never above). The **green shoe (over-allotment)** option lets underwriters sell up to **15% more** shares and buy them from the issuer within **30 days** to cover the syndicate short."
+    }
+  ],
+  "flashcards": [
+    {
+      "front": "The three registration periods, one phrase each",
+      "back": "Pre-filing = silence; cooling-off = talk but don't sell; post-effective = sell with the prospectus."
+    },
+    {
+      "front": "Cooling-off period minimum",
+      "back": "20 calendar days from filing (a minimum, not fixed — the SEC sets effectiveness and never 'approves')."
+    },
+    {
+      "front": "What does the red herring OMIT?",
+      "back": "The final public offering price and the effective date (a price range is allowed)."
+    },
+    {
+      "front": "Aftermarket prospectus delivery periods",
+      "back": "90 days (IPO, non-listed) / 40 (follow-on, non-listed) / 25 (IPO, listed or Nasdaq) / 0 (follow-on, listed)."
+    },
+    {
+      "front": "Exempt security vs. exempt transaction",
+      "back": "Exempt security = exempt by what it IS (govt, muni, bank, CP ≤270 days). Exempt transaction = exempt by HOW it's sold (Reg D, 144, Reg S). Neither escapes anti-fraud."
+    },
+    {
+      "front": "Accredited investor tests",
+      "back": "Net worth > $1M excluding primary residence, OR income > $200k ($300k joint) in each of the last 2 years, or a Series 7/65/82 holder."
+    },
+    {
+      "front": "Reg D 506(b) vs. 506(c)",
+      "back": "506(b): up to 35 non-accredited, NO advertising. 506(c): general solicitation allowed but ALL buyers must be accredited and verified."
+    },
+    {
+      "front": "Rule 144 volume limit",
+      "back": "Per 90 days, the GREATER of 1% of shares outstanding or the average weekly volume of the prior 4 weeks. Form 144 if selling > 5,000 shares or > $50,000."
+    },
+    {
+      "front": "Firm commitment vs. best efforts",
+      "back": "Firm commitment: underwriter buys as principal, bears unsold-share risk. Best efforts: agent, returns unsold shares to issuer (all-or-none / mini-max)."
+    },
+    {
+      "front": "Eastern vs. Western account liability",
+      "back": "Eastern (undivided): liable for your share of ANY unsold securities. Western (divided): liable only for your own unsold allotment."
+    },
+    {
+      "front": "Spread components, largest to smallest",
+      "back": "Concession (to the seller) > underwriting fee (risk) > manager's fee. Takedown = underwriting fee + concession."
+    },
+    {
+      "front": "Rule 5130 restricted persons — who is NOT immediate family",
+      "back": "Grandparents, aunts, uncles, cousins are NOT restricted. In-laws ARE. 5130 covers equity IPOs only."
+    }
+  ],
+  "quiz": [
+    {
+      "stem": "A registration statement for an IPO has been filed with the SEC but is not yet effective. During this cooling-off period, a registered representative MAY:",
+      "options": [
+        "Accept a $5,000 deposit from a customer, refundable if the customer later declines",
+        "Send the customer the red herring along with a one-page summary the rep wrote of its risk factors",
+        "Note in the firm's book that the customer wants 500 shares if the final price is within the range shown in the red herring",
+        "Send the customer the firm's research report on the issuer"
+      ],
+      "answer": 2,
+      "explanation": "During cooling-off a rep may take a non-binding indication of interest and distribute the red herring, but may not accept money or orders, mark up or add sales material to the red herring, or send research on the issuer. Only the recorded indication of interest is permitted."
+    },
+    {
+      "stem": "In which type of underwriting does the underwriter buy the entire issue from the issuer as principal and bear the risk of any unsold shares?",
+      "options": [
+        "Best efforts",
+        "All-or-none",
+        "Mini-max",
+        "Firm commitment"
+      ],
+      "answer": 3,
+      "explanation": "A firm commitment underwriter buys the securities and resells them, taking the inventory risk. Best-efforts arrangements — including all-or-none and mini-max — are agency deals in which unsold securities are returned to the issuer, so the underwriter bears no capital risk."
+    },
+    {
+      "stem": "A preliminary prospectus (red herring) distributed during the cooling-off period typically OMITS which of the following?",
+      "options": [
+        "The final public offering price and the effective date",
+        "A description of the issuer's business",
+        "The risk factors of the offering",
+        "The intended use of the proceeds"
+      ],
+      "answer": 0,
+      "explanation": "The red herring carries the business description, risk factors, and use of proceeds, but the final POP and effective date are not yet set, so they are omitted (a price range may appear). The other three choices are all present in the preliminary prospectus."
+    },
+    {
+      "stem": "All of the following are exempt SECURITIES under the Securities Act of 1933 EXCEPT:",
+      "options": [
+        "General obligation bonds issued by a state",
+        "Commercial paper maturing in 180 days",
+        "Common stock issued by a national bank",
+        "Common stock sold to accredited investors under Rule 506(b) of Regulation D"
+      ],
+      "answer": 3,
+      "explanation": "Municipal GOs, short-term commercial paper (≤270 days), and bank securities are exempt securities. Stock sold under Reg D is an ordinary security sold in an exempt TRANSACTION — the method is exempt, not the paper, so it is the exception."
+    },
+    {
+      "stem": "A corporate stock offering has a POP of $30.00; the issuer receives $28.50. The manager's fee is $0.25 and the underwriting fee is $0.40; the rest of the spread is the concession. A syndicate member selling shares from its own allotment directly to customers earns per share:",
+      "options": [
+        "$0.85",
+        "$1.10",
+        "$1.25",
+        "$1.50"
+      ],
+      "answer": 2,
+      "explanation": "Spread = $30.00 − $28.50 = $1.50 = manager's fee $0.25 + underwriting fee $0.40 + concession $0.85. A syndicate member's takedown is the underwriting fee + concession = $0.40 + $0.85 = $1.25. The $1.50 trap is the whole spread (which includes the manager's fee, kept by the lead); $0.85 is the concession alone (what a selling-group member would earn)."
+    },
+    {
+      "stem": "A registered representative's firm is a syndicate member in an equity IPO. Under FINRA Rule 5130, which relative of the representative MAY purchase shares of the new issue?",
+      "options": [
+        "The rep's sister, who shares the rep's apartment",
+        "The rep's father-in-law, for whom the rep provides more than half of his support",
+        "The rep's spouse, who manages a bank trust department's equity portfolio",
+        "The rep's grandmother, who is financially independent and lives in her own home"
+      ],
+      "answer": 3,
+      "explanation": "Restricted immediate family turns on material support, shared household, or influence over allocation. The live-in sister, the materially-supported father-in-law, and the portfolio-manager spouse are all restricted; the financially independent grandmother in her own home is neither immediate family under 5130 nor supported, so she may buy."
+    },
+    {
+      "stem": "A married couple wants to invest in a Rule 506(b) private placement. Each spouse earned $130,000 in each of the last two years ($260,000 jointly) and expects the same. Their net worth is $1,400,000, of which $600,000 is equity in their primary residence. Neither holds a securities license. The couple is:",
+      "options": [
+        "Accredited, because joint income exceeds $200,000",
+        "Accredited, because net worth exceeds $1,000,000",
+        "Accredited, because they satisfy both tests",
+        "Not accredited under either the income or the net-worth test"
+      ],
+      "answer": 3,
+      "explanation": "The joint-income threshold is $300,000, and $260,000 falls short. Net worth must exclude the primary residence: $1,400,000 − $600,000 = $800,000, below $1,000,000. They meet neither test, so they are not accredited. The income choice uses the wrong ($200k) threshold and the net-worth choice forgets to remove the residence."
+    },
+    {
+      "stem": "A member with a 10% participation in a $100 million Eastern (undivided) account sells its entire $10 million allotment. At the close of the offering, $5 million of the issue remains unsold. This member's liability is:",
+      "options": [
+        "$0, because it sold its entire allotment",
+        "$500,000",
+        "$5,000,000",
+        "$1,000,000"
+      ],
+      "answer": 1,
+      "explanation": "In an Eastern account a member remains liable for its percentage of ANY unsold securities regardless of what it sold: 10% × $5,000,000 = $500,000. The '$0' answer describes a Western (divided) account, where selling out its own allotment would end the member's liability."
+    }
+  ]
+}

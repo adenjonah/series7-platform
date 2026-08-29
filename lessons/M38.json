@@ -1,0 +1,176 @@
+{
+  "module": "M38",
+  "title": "Trading, market structure, settlement, and the regulatory back end",
+  "domain": "regulation",
+  "estMinutes": 30,
+  "reading": [
+    {
+      "h": "The 1934 Act back end and issuer reporting",
+      "body": "The Securities Exchange Act of 1934 governs everything after a security is issued. It requires public companies to keep the market informed with periodic reports: the **10-K** (annual, audited), the **10-Q** (quarterly, unaudited), and the **8-K** (a material event, filed within **4 business days**). These are disclosure documents — the SEC reviews for completeness, never approves the company.\n\nThe Act also created the SEC, requires registration of exchanges and broker-dealers, sets anti-fraud Rule 10b-5, the net-capital and customer-protection rules (15c3-1 and 15c3-3), and delegated margin authority to the Fed. Think of it as the rulebook for the ongoing life of a security and the people who trade it."
+    },
+    {
+      "h": "Section 16 vs. 13D/13G vs. insider trading — three separate things",
+      "body": "These three sound alike and are constantly confused; keep them as three separate dashboards. **Section 16 = insiders' paperwork and profit clawback.** Insiders are officers, directors, and **>10%** owners. They file Form 3 (within 10 days of becoming an insider), Form 4 (within **2 business days** of a change), and Form 5. The **short-swing profit rule 16(b)** lets the issuer recover any profit from a purchase and sale within **6 months**, regardless of intent.\n\n**Sections 13(d)/(g) = big buyers announcing themselves.** Acquiring more than **5%** of a class with intent to influence control triggers a **Schedule 13D**; a passive investor files the shorter **Schedule 13G**. **Insider trading = using secrets.** Trading on material nonpublic information in breach of a duty is illegal; intent matters, and civil penalties reach **treble (3×)** the profit gained or loss avoided, on top of criminal exposure. In one line: 16 is paperwork and a no-fault clawback; 13D is a disclosure of a big stake; insider trading is fraud."
+    },
+    {
+      "h": "Regulation SHO: short-sale mechanics",
+      "body": "Every sell order must be marked **long, short, or short-exempt** (Rule 200), and a seller is \"long\" only if it owns and can deliver the shares. Before any short sale, the broker-dealer must **locate** the shares — borrow, arrange to borrow, or reasonably believe they can be borrowed for settlement (Rule 203).\n\n**Rule 201 (the short-sale circuit breaker):** when an NMS stock drops **10%** from the prior close, for the rest of that day and the next day short sales may execute only at a price **above the national best bid**. A stock lands on the **threshold list** when fails reach both **10,000 shares and 0.5% of shares outstanding** for 5 straight settlement days. Short sales must be done in a margin account. The old \"uptick tick test\" was abolished in 2007 — don't pick it."
+    },
+    {
+      "h": "Market structure: NYSE, Nasdaq, OTC, and Reg NMS",
+      "body": "The **NYSE** is an **auction** market: buyers compete with buyers, and one **Designated Market Maker (DMM)** per stock runs the auctions and maintains a fair and orderly market (replacing the old \"specialist\"). **Nasdaq** is a **dealer** market of competing **market makers** posting firm two-sided quotes; the display levels are **Level 1** (best bid/ask), **Level 2** (every market maker's quotes), and **Level 3** (a market maker's own entry terminal).\n\n\"OTC\" now means non-exchange-listed; OTC Markets tiers are OTCQX, OTCQB, and Pink (the OTCBB ceased operation in 2021 — treat it as history). **Alternative trading systems (ATSs)** — ECNs and dark pools — register as broker-dealers under Reg ATS. **Regulation NMS** ties the markets together: **Rule 611 (order protection / trade-through)** bars executing at a worse price than a protected quote elsewhere, and the **NBBO** is the best bid and offer across all venues."
+    },
+    {
+      "h": "Order types and reading the tape",
+      "body": "A **market order** guarantees execution, not price. A **limit order** guarantees price (or better), not execution. A **stop order** is dormant until a print **at or through** the stop price **elects** it, after which it becomes a **market order** and fills at the next price. A **stop-limit** elects the same way but becomes a **limit order** — so in a fast market it may never fill.\n\nPlacement mnemonic: orders **below** the market are **B**uy **Li**mit and **S**ell **S**top (\"BLiSS\"); orders **above** are **S**ell **L**imit and **B**uy **S**top (\"SLoBS\"). Because the ex-dividend price drops, **Rule 5330** reduces only the below-market (BLiSS) open orders by the dividend on the ex-date, rounding down to the next lower valid tick — unless marked **DNR**. Above-market orders are not adjusted; stock splits adjust everything; reverse splits cancel open orders."
+    },
+    {
+      "h": "Capacity, the 5% policy, and confirmations",
+      "body": "A firm acts as **agent/broker** (matches the customer with another party, charges a disclosed **commission**) or as **principal/dealer** (trades from inventory, earns a **markup/markdown** in the price) — never both on one trade. A **riskless principal** buys only after receiving the customer's order and resells immediately, so its markup is measured off its **contemporaneous cost**, not old inventory, and (for equities) must be disclosed.\n\n**FINRA Rule 2121 — the 5% policy** — is a **guideline**, not a hard cap: markups must be fair and reasonable given security type, liquidity, price, and trade size. The base is the **prevailing market (inside) price**, never the dealer's cost; **disclosure does not cure** an excessive markup; **municipals and new issues are excluded**. **Confirmations (Rule 10b-10)** are due at or before completion of the transaction (settlement) and must show the firm's capacity, the commission if agent, whether the firm is a market maker, and payment-for-order-flow disclosure."
+    },
+    {
+      "h": "Settlement, clearing, and trade reporting",
+      "body": "Regular-way settlement is **T+1** for essentially everything — stocks, corporate and municipal bonds, Treasuries, options, and funds (moved from T+2 on May 28, 2024). **Cash settlement** is same-day. **Reg T payment** is due **T+3** (settlement + 2); if a customer doesn't pay, the firm liquidates and freezes the account for **90 days**. Behind the scenes, **DTCC** subsidiaries do the plumbing: **NSCC** clears and nets trades, **DTC** is the central depository, and the **OCC** issues and guarantees listed options.\n\nTrade-reporting timing is heavily tested: **TRACE** (corporate/agency bonds) and **RTRS** (munis) both require reporting within **15 minutes** (the proposed 1-minute standard was rescinded in 2025). The **TRF** (listed stocks traded off-exchange) and **ORF** (non-listed OTC equities) require reporting within **10 seconds**. Volatility brakes are three separate systems: market-wide **circuit breakers** on the S&P 500 (−7%/−13% → 15-minute halt if before 3:25 pm ET; −20% → closed for the day), single-stock **LULD** price bands, and Reg SHO Rule 201."
+    }
+  ],
+  "flashcards": [
+    {
+      "front": "Section 16 vs. 13D vs. insider trading",
+      "back": "16 = insiders' (officers/directors/>10%) paperwork + 6-month short-swing clawback (no intent needed). 13D = >5% buyer with control intent announcing itself. Insider trading = trading on MNPI (intent matters; 3× penalty)."
+    },
+    {
+      "front": "Insider forms and timing",
+      "back": "Form 3 within 10 days of becoming an insider; Form 4 within 2 business days of a change; Form 5 after fiscal year-end. Short-swing profit clawback = within 6 months."
+    },
+    {
+      "front": "Issuer report deadlines",
+      "back": "10-K annual (audited); 10-Q quarterly (unaudited); 8-K within 4 business days of a material event."
+    },
+    {
+      "front": "Reg SHO Rule 201 trigger",
+      "back": "NMS stock down 10% from prior close → for the rest of that day and the next day, short sales only above the national best bid."
+    },
+    {
+      "front": "Stop vs. stop-limit",
+      "back": "Both are elected by a print at or through the stop. A stop becomes a MARKET order (fills at next price); a stop-limit becomes a LIMIT order (may never fill in a fast market)."
+    },
+    {
+      "front": "BLiSS / SLoBS placement",
+      "back": "Below the market: Buy Limit, Sell Stop. Above the market: Sell Limit, Buy Stop."
+    },
+    {
+      "front": "Rule 5330 ex-dividend adjustment",
+      "back": "Only below-market (BLiSS) open orders are reduced by the dividend on the ex-date, rounded down to the next valid tick — unless DNR. Above-market orders unchanged."
+    },
+    {
+      "front": "5% policy (Rule 2121) — key traps",
+      "back": "It's a GUIDELINE; base is the prevailing (inside) market, not cost; disclosure doesn't cure an excessive markup; munis and new issues are excluded."
+    },
+    {
+      "front": "Regular-way settlement and Reg T payment",
+      "back": "Regular way = T+1 (all products since 5/28/2024); cash = same day; Reg T payment = T+3; unpaid → 90-day freeze."
+    },
+    {
+      "front": "Trade-reporting timing",
+      "back": "TRACE (corp/agency bonds) and RTRS (munis) = 15 minutes; TRF (listed off-exchange) and ORF (OTC equities) = 10 seconds; CAT next trading day."
+    },
+    {
+      "front": "Market-wide circuit breakers (S&P 500)",
+      "back": "−7% (L1) / −13% (L2) → 15-minute halt only if before 3:25 pm ET; −20% (L3) → market closed for the day."
+    },
+    {
+      "front": "Agent vs. principal vs. riskless principal",
+      "back": "Agent: matches, charges commission. Principal: trades from inventory, earns markup. Riskless principal: buys only after the customer's order, markup measured off contemporaneous cost."
+    }
+  ],
+  "quiz": [
+    {
+      "stem": "Regular-way settlement of a corporate stock transaction occurs:",
+      "options": [
+        "On the same business day as the trade",
+        "Two business days after the trade date",
+        "One business day after the trade date",
+        "Three business days after the trade date"
+      ],
+      "answer": 2,
+      "explanation": "Regular-way settlement has been T+1 (one business day after the trade) since May 28, 2024. T+2 is the pre-2024 value and a classic stale-material trap; same-day is cash settlement; T+3 is the Reg T payment date, not settlement."
+    },
+    {
+      "stem": "A customer enters an order to sell 100 XYZ at 40 STOP. After entry the tape shows: 40.25, 40.10, 40.00, 39.85, 39.95. At what price is the order executed?",
+      "options": [
+        "40.00",
+        "39.85",
+        "39.95",
+        "40.10"
+      ],
+      "answer": 1,
+      "explanation": "The print at 40.00 is at the stop, so the order is elected and becomes a market order; it then executes at the NEXT print, 39.85. Choosing 40.00 confuses election with execution; 39.95 would be relevant only for a stop-limit at 39.90 or lower."
+    },
+    {
+      "stem": "At 1:15 pm ET the S&P 500 is down 7% from the previous close. Under the market-wide circuit-breaker rules:",
+      "options": [
+        "Trading continues; a halt occurs only at a 13% decline",
+        "Trading halts for the remainder of the day",
+        "Trading in all equity markets halts for 15 minutes",
+        "Only the S&P 500 stocks are paused for 5 minutes"
+      ],
+      "answer": 2,
+      "explanation": "A Level 1 (−7%) or Level 2 (−13%) breach before 3:25 pm ET triggers a 15-minute market-wide halt. Closing for the day is the Level 3 (−20%) consequence; the 5-minute single-stock pause describes LULD, a different system."
+    },
+    {
+      "stem": "An officer of a public company buys 1,000 shares in January and sells them at a $4,000 profit in April of the same year. Under Section 16(b):",
+      "options": [
+        "The trade is legal because the officer held the shares for several months",
+        "The issuer may recover the $4,000 profit, regardless of the officer's intent",
+        "The SEC will impose a treble-damage penalty of $12,000 for insider trading",
+        "No consequence follows unless the officer used material nonpublic information"
+      ],
+      "answer": 1,
+      "explanation": "The short-swing profit rule lets the issuer recover any profit from a purchase and sale within 6 months, with no need to prove intent or misuse of information. Treble damages and the MNPI requirement belong to insider-trading law, which is a separate matter from the no-fault 16(b) clawback."
+    },
+    {
+      "stem": "The inside market for an OTC equity is 30.00 - 30.20. A firm with no position receives a customer order to buy 300 shares, buys 300 from a market maker at 30.20, and immediately resells them to the customer at 30.50. Under Rule 2121, the markup is:",
+      "options": [
+        "Approximately 0.99%",
+        "Approximately 1.64%",
+        "Approximately 1.67%",
+        "Not measured as a percentage, because the firm acted as principal"
+      ],
+      "answer": 0,
+      "explanation": "This is a riskless principal trade, so the markup is measured off the firm's contemporaneous cost of $30.20: (30.50 − 30.20) / 30.20 = 0.99%. Measuring against the bid (30.00) gives the 1.64% trap; the point is that the base is what the firm just paid, not the inside bid or old inventory."
+    },
+    {
+      "stem": "A customer has two open GTC orders in XYZ: buy 100 at a limit of 50.00 and sell 100 at a limit of 55.00. XYZ goes ex-dividend for a $0.125 cash dividend with no DNR instruction. On the ex-date the orders are adjusted to:",
+      "options": [
+        "Buy limit reduced to 49.87; sell limit unchanged",
+        "Buy limit reduced to 49.88; sell limit unchanged",
+        "Both orders reduced by $0.125",
+        "Buy limit reduced to 49.875; sell limit reduced to 54.875"
+      ],
+      "answer": 0,
+      "explanation": "Only below-market (BLiSS) orders are reduced on the ex-date; the buy limit is below the market and the sell limit above it, so only the buy limit changes. 50.00 − 0.125 = 49.875, rounded DOWN to the next valid tick = 49.87. Rounding up (49.88) or adjusting the above-market sell limit are the traps."
+    },
+    {
+      "stem": "A FINRA member internalizes a customer trade in an NYSE-listed stock away from the exchange. Within what time must it report the trade to a Trade Reporting Facility (TRF)?",
+      "options": [
+        "Within 15 minutes",
+        "Within 10 seconds",
+        "By 8:00 pm the same day",
+        "By the next business day"
+      ],
+      "answer": 1,
+      "explanation": "Off-exchange trades in listed (NMS) stocks are reported to a TRF within 10 seconds of execution. The 15-minute answer is the TRACE/RTRS standard for bonds, and the next-business-day answer describes CAT order-event reporting — different facilities with different clocks."
+    },
+    {
+      "stem": "Which order qualifier requires immediate execution in whole or in part, with any unfilled portion canceled?",
+      "options": [
+        "Fill-or-kill (FOK)",
+        "Immediate-or-cancel (IOC)",
+        "All-or-none (AON)",
+        "Good-till-canceled (GTC)"
+      ],
+      "answer": 1,
+      "explanation": "IOC allows partial fills and cancels the remainder immediately. FOK demands the ENTIRE order at once or nothing (no partials); AON demands the entire order but may wait; GTC concerns duration, not immediacy."
+    }
+  ]
+}

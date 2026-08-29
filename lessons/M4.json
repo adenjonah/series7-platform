@@ -1,0 +1,94 @@
+{
+  "module": "M4",
+  "title": "The broker-dealer and the people inside it",
+  "domain": "foundations",
+  "estMinutes": 22,
+  "reading": [
+    {
+      "h": "Broker vs dealer — agent vs principal",
+      "body": "A single firm wears two hats, one trade at a time.\n\nAs a **broker (agent)** the firm *matches* a customer with someone else and charges a **commission**, disclosed separately on the confirmation. It never owns the security.\n\nAs a **dealer (principal)** the firm trades from *its own inventory* and is paid through a **markup** (on a sale to the customer) or **markdown** (on a purchase from the customer), built into the price.\n\nThe rule that gets tested: **a firm may not act as both broker and dealer on the same trade** — it cannot charge a commission and a markup on one transaction. The FINRA **5% policy** (Rule 2121) is a fairness *guideline* for markups and commissions, not a hard limit."
+    },
+    {
+      "h": "The registered representative",
+      "body": "A **registered representative (RR)** is anyone who solicits or takes securities orders. To be one you must pass the **SIE plus a rep-level exam** (the Series 7 is the General Securities Representative license), be **fingerprinted**, be **sponsored by a member firm**, and have **Form U4** filed for you. Disclosures on the U4 must be updated within **30 days**; on termination the firm files **Form U5** within 30 days.\n\n**Statutory disqualification** can bar someone — for example, a felony or a securities-related misdemeanor within the past 10 years. Continuing education has two parts: the **Regulatory Element** (annually) and the **Firm Element** (annually)."
+    },
+    {
+      "h": "Principals, market makers, and DMMs",
+      "body": "A **principal** is a licensed **supervisor** (Series 24 general principal; Series 9/10 for sales/options supervision; Series 53 for municipals). A principal approves new accounts, discretionary trades, and communications, and handles complaints, under FINRA Rule 3110 (supervision).\n\nA **market maker** is a *dealer* that continuously quotes a firm two-sided market — a bid and an ask — in a security and stands ready to trade at those prices, profiting on the spread.\n\nA **Designated Market Maker (DMM)** is the NYSE's version, with affirmative and negative obligations to keep a fair and orderly market. Distinguish the roles: the RR sells, the principal supervises, the market maker/DMM provides liquidity."
+    },
+    {
+      "h": "Introducing vs clearing firms",
+      "body": "Most retail firms split the work. An **introducing broker** holds the *customer relationship* — it takes the order and knows the client — but sends the trade to a **clearing (carrying) firm** that holds the assets, settles the trade, and sends statements. This is a *fully disclosed* arrangement when the clearing firm knows each customer.\n\nA **prime broker** is a clearing/custody hub for hedge funds and other big clients that execute through many different *executing brokers* but keep everything in one place. Related institutional plumbing: **DVP/RVP** (delivery-versus-payment / receive-versus-payment) settlement, used when a customer's assets sit at a custodian bank."
+    },
+    {
+      "h": "The clearing and custody institutions",
+      "body": "Four acronyms recur, so keep them straight:\n\n**DTCC** — the umbrella clearing-and-depository organization for stocks and bonds.\n**NSCC** — a DTCC subsidiary that *clears* and nets equity trades between firms.\n**DTC** — the *depository* that holds securities in street name (book-entry).\n**OCC** — the Options Clearing Corporation, the *issuer and guarantor* of every listed option.\n\nSupporting record-keepers: the **transfer agent** keeps shareholder records and issues/cancels certificates, the **registrar** audits the transfer agent to prevent over-issuance, and the **custodian** holds the assets. Do not confuse the transfer agent (keeps records) with the registrar (audits those records)."
+    },
+    {
+      "h": "Registered vs unregistered persons",
+      "body": "**Unregistered staff may not solicit orders, take orders, or receive transaction-based (commission) compensation** (FINRA 2040). They may do clerical work and hand out material with no discussion. Crossing that line — an assistant 'just placing' a customer's order — is a violation."
+    },
+    {
+      "h": "The conduct rules at headline level",
+      "body": "The organization chart comes with a conduct rulebook. Know each at headline level:\n\n**Gifts (FINRA 3220):** capped per person per year — the limit was raised to **$300** effective 2026-03-30 (from the long-standing $100). Business entertainment where the rep attends is separate.\n**Outside business activity (3270):** prior *written notice* to the firm.\n**Private securities transactions / 'selling away' (3280):** written notice, plus firm *approval* if the rep is compensated.\n**Political contributions (MSRB G-37):** a $250 de minimis per election to a candidate you can vote for; exceeding it triggers a 2-year ban on negotiated muni business.\n**Borrowing from / lending to customers (3240):** generally prohibited.\n**Sharing in a customer account (2150):** only with written approval and pro rata to the rep's own contribution.\n**Guaranteeing a customer against loss:** prohibited."
+    }
+  ],
+  "flashcards": [
+    { "front": "Agent vs principal — how is each paid?", "back": "Agent (broker) matches buyer and seller, earns a commission. Principal (dealer) trades from inventory, earns a markup/markdown built into the price." },
+    { "front": "Can a firm charge a commission AND a markup on one trade?", "back": "No — a firm may act in only one capacity (agent OR principal) per trade." },
+    { "front": "What is the FINRA 5% policy?", "back": "A fairness GUIDELINE (Rule 2121) for markups/commissions/markdowns — not a hard 5% limit." },
+    { "front": "Forms U4 and U5", "back": "U4 = registration application (filed by the firm; updates within 30 days). U5 = termination filing (within 30 days)." },
+    { "front": "Principal license exams", "back": "Series 24 = general principal; Series 9/10 = sales/options supervision; Series 53 = municipal principal. Principals supervise under Rule 3110." },
+    { "front": "DTCC / NSCC / DTC / OCC", "back": "DTCC = clearing/depository umbrella; NSCC = clears/nets equity trades; DTC = depository (street name); OCC = issuer & guarantor of listed options." },
+    { "front": "Transfer agent vs registrar", "back": "Transfer agent keeps shareholder records and issues/cancels certificates; registrar audits the transfer agent to prevent over-issuance." },
+    { "front": "Introducing vs clearing firm", "back": "Introducing broker holds the customer relationship/takes the order; clearing (carrying) firm holds assets, settles, and sends statements." },
+    { "front": "What may an UNREGISTERED person NOT do?", "back": "Solicit orders, take orders, or receive commission (transaction-based) pay. Clerical work only (FINRA 2040)." },
+    { "front": "OBA (3270) vs PST/selling away (3280)", "back": "Outside business activity = prior written notice. Private securities transaction = written notice + firm approval if compensated." },
+    { "front": "Gift limit and political-contribution de minimis", "back": "Gifts capped at $300/person/year (FINRA 3220, raised 2026-03-30). MSRB G-37: $250 per election to a candidate you can vote for; over that = 2-year ban." },
+    { "front": "Prime broker", "back": "A clearing/custody hub for a hedge fund that executes through many executing brokers but keeps assets in one place." }
+  ],
+  "quiz": [
+    {
+      "stem": "A broker-dealer fills a customer's buy order by selling shares out of its own inventory. In this trade the firm is compensated by:",
+      "options": ["A markup built into the price the customer pays", "A commission disclosed separately on the confirmation", "A commission plus a markup on the same trade", "A management fee based on the customer's assets"],
+      "answer": 0,
+      "explanation": "Selling from inventory is acting as a dealer (principal), which is compensated by a markup. A commission is the broker (agent) capacity, and a firm may not charge both on a single trade."
+    },
+    {
+      "stem": "A firm takes a customer's order and routes it to another party to find the other side of the trade, without ever owning the security. In this transaction the firm is acting as a(n):",
+      "options": ["Dealer, earning a markup", "Principal, earning a markdown", "Agent, earning a commission", "Market maker, earning the spread"],
+      "answer": 2,
+      "explanation": "Matching a customer with a third party without holding the security is the agent (broker) capacity, compensated by a commission. Acting as a dealer/principal or market maker would mean trading from the firm's own inventory."
+    },
+    {
+      "stem": "Which organization is the issuer and guarantor of every listed option?",
+      "options": ["The DTC", "The NSCC", "The OCC", "The transfer agent"],
+      "answer": 2,
+      "explanation": "The Options Clearing Corporation (OCC) issues and guarantees every listed option. The DTC is the depository for stocks/bonds, the NSCC clears equity trades, and the transfer agent keeps shareholder records — none of which guarantee options."
+    },
+    {
+      "stem": "In a fully disclosed clearing arrangement, which firm holds the customer's assets, settles trades, and mails account statements?",
+      "options": ["The introducing broker", "The clearing (carrying) firm", "The prime broker's executing broker", "The transfer agent"],
+      "answer": 1,
+      "explanation": "The clearing (carrying) firm holds assets, settles, and sends statements; the introducing broker holds the customer relationship and takes the order but does not carry the account. The transfer agent handles issuer share records, not customer accounts."
+    },
+    {
+      "stem": "An unregistered sales assistant at a broker-dealer may do all of the following EXCEPT:",
+      "options": ["Perform clerical and administrative tasks", "Distribute approved marketing material without discussing it", "Accept and enter a customer's securities order", "Schedule appointments for a registered representative"],
+      "answer": 2,
+      "explanation": "An unregistered person may not solicit or accept securities orders or receive transaction-based pay (FINRA 2040). Clerical work, handing out approved material without discussion, and scheduling are permitted."
+    },
+    {
+      "stem": "Which pair correctly distinguishes the transfer agent from the registrar?",
+      "options": ["The transfer agent audits share counts; the registrar issues certificates", "The transfer agent keeps shareholder records and issues/cancels certificates; the registrar audits the transfer agent to prevent over-issuance", "Both perform the same function for different exchanges", "The registrar holds the securities in street name; the transfer agent clears trades"],
+      "answer": 1,
+      "explanation": "The transfer agent keeps shareholder records and issues/cancels certificates; the registrar audits the transfer agent to ensure the number of shares outstanding is not exceeded. Holding securities in street name is the DTC's role, not the registrar's."
+    },
+    {
+      "stem": "A registered representative wants to sell an investment away from the firm and will be compensated for it. Under the private securities transaction rule (FINRA 3280), the representative must:",
+      "options": ["Do nothing, because compensated outside transactions are exempt", "Provide only oral notice to a supervisor", "Provide prior written notice AND obtain the firm's approval", "Provide written notice only, with no approval required"],
+      "answer": 2,
+      "explanation": "For a compensated private securities transaction (selling away), Rule 3280 requires prior written notice AND the firm's approval; the firm then supervises it as its own. Written notice alone (no approval) is the standard for an uncompensated OBA under Rule 3270, not a compensated PST."
+    }
+  ]
+}

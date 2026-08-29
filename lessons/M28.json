@@ -1,0 +1,100 @@
+{
+  "module": "M28",
+  "title": "Municipal securities III — the primary market, the secondary market, the MSRB rulebook, and 529/ABLE",
+  "domain": "municipal",
+  "estMinutes": 28,
+  "reading": [
+    {
+      "h": "Bringing a new issue to market: competitive vs. negotiated",
+      "body": "There are two ways an issuer sells a new issue. In a **competitive (sealed-bid) sale**, the issuer publishes a **Notice of Sale** (in *The Bond Buyer* and on EMMA) and awards the bonds to the syndicate submitting the lowest **net interest cost (NIC)** or **true interest cost (TIC)**. This is typical for **GO** bonds and often required by state law. In a **negotiated sale**, the issuer appoints an underwriter in advance to help structure, price, and market the deal — typical for **revenue** bonds and complex issues.\n\nThe issuer's team includes **bond counsel**, who writes the **legal opinion**: that the bonds are validly issued, legally binding on the issuer, and that the interest is **federally tax-exempt**. An **unqualified (clean)** opinion has no reservations; a **qualified** opinion flags a concern. The opinion appears in the official statement and on the bonds — the Notice of Sale merely *names* bond counsel. Bonds trading without the opinion are **ex-legal** and must be marked so on the confirm. Under **Rule G-23**, a dealer acting as **financial advisor** on an issue may not then underwrite that same issue."
+    },
+    {
+      "h": "The syndicate: Eastern vs. Western liability, and the spread",
+      "body": "A **syndicate** is formed by an agreement among underwriters signed before bidding; it sets each member's **participation** and its liability type.\n\n**Eastern (undivided) account:** each member is liable for its percentage of *any* unsold bonds, no matter who failed to sell them. **Western (divided) account:** liability is limited to the member's *own* allotment. Worked example — a $10M issue, member has 20%, member sells all its $2M, but $500,000 of the total stays unsold: in an **Eastern** account the member must take 20% × $500,000 = **$100,000** more; in a **Western** account it owes **$0**.\n\nThe **spread** (underwriter's compensation) is split into pieces. A typical $10 total spread on a $1,000 bond: **manager's fee $1** (earned on *every* bond) + **total takedown $9**, where takedown = **additional takedown $3** (to the member whose allotment sells) + **selling concession $6** (to whoever actually sells the bond). A **reallowance** is a slice of the concession offered to non-member dealers. So if a member sells its own bond it keeps $9; a selling-group dealer that sells earns the $6 concession; the manager always gets its $1."
+    },
+    {
+      "h": "Priority of orders and G-11 mechanics",
+      "body": "When more orders come in than there are bonds, the manager fills them in a disclosed priority. Under **MSRB Rule G-11** the manager must disclose the priority provisions **in writing before the first offer**. The standard order the exam tests: **Presale → Group net → Designated → Member** (mnemonic: \"**P**lease **G**ive **D**ealers **M**oney\").\n\n- **Presale** orders are placed before the syndicate even wins the bid, yet they are filled first.\n- **Group net** orders are credited to the whole account (split by participation).\n- **Designated** orders let the buyer name which members get the takedown credit.\n- **Member** orders fill a member's own inventory last.\n\nWorked allocation on a $20M issue: presale $12M, group net $6M, designated $4M, member $3M. Presale takes $12M and group net takes $6M ($18M total), leaving **$2M** for the $4M of designated orders and **nothing** for member orders. G-11 day counts: the manager discloses allocations within **2 business days** of the sale, pays designations within **10 calendar days** of the issuer's delivery, and settles the syndicate within **30 calendar days**."
+    },
+    {
+      "h": "Disclosure documents and The Bond Buyer",
+      "body": "The **preliminary official statement (POS)** is used to solicit orders during the order period — it contains almost everything except final pricing. The **official statement (OS)** is the muni's \"prospectus,\" prepared by the *issuer*. Because of the Tower Amendment the SEC does not require the issuer to file it, but **SEC Rule 15c2-12** requires the *underwriter* to obtain a \"deemed final\" OS, review it, and deliver it. Under **Rule G-32**, dealers must deliver the OS to customers **by settlement** and submit it to EMMA within one business day of receipt (by the closing date).\n\nUnder **15c2-12 continuing disclosure**, the issuer agrees to post annual financial information and notices of listed material events (rating changes, calls, defaults, etc.) to EMMA.\n\n***The Bond Buyer*** is the daily muni trade paper. Key indicators: the **30-Day Visible Supply** (par value of new issues scheduled over the next 30 days — rising supply pressures prices down); the **placement ratio** (weekly: bonds sold ÷ bonds offered for issues of $1M+); and the indexes — **20-Bond and 11-Bond GO Indexes** (yield-based), the **Revdex** (25 revenue bonds), and the **Municipal Bond Index (40-Bond)**, which is **price-based** and computed daily."
+    },
+    {
+      "h": "The secondary market: quotes, EMMA/RTRS, and fair dealing",
+      "body": "Munis trade **over the counter** in a dealer market — no exchange listing. Quotes can be **firm** (good for a stated time/size), **subject/nominal** (an indication, which must be labeled), or **workable**. Dealers solicit interest with **bid-wanted (BW)** and **offer-wanted (OW)** requests, often through a **broker's broker** — a dealer that trades only with other dealers, never the public (Rule G-43). Under **Rule G-13**, quotes must be bona fide.\n\n**EMMA** (Electronic Municipal Market Access) is the MSRB's free public site with official statements, continuing disclosures, real-time trade prices, and 529/ABLE documents. Dealers report every muni trade to the MSRB's **RTRS** within **15 minutes** of execution (Rule G-14), and the prices are published on EMMA.\n\nConduct rules on the desk: **G-30** requires prices and commissions to be fair and reasonable; **G-15** governs confirmation contents (including retail mark-up disclosure) and the T+1 settlement; **G-18** requires best execution; **G-47** requires **time-of-trade disclosure** of all material facts — even on *unsolicited* trades. The one big exception is the **Sophisticated Municipal Market Professional (SMMP)** — an institution with $50M+ that can fend for itself — for whom G-47, G-18, and customer-specific suitability are relaxed."
+    },
+    {
+      "h": "The MSRB rulebook in clusters, and pay-to-play",
+      "body": "Rather than memorize 40 numbers cold, cluster them. **Paperwork:** G-8/G-9 (books and records — 6 years for complaints, blotters, and syndicate records), G-10 (annual investor notice), G-15 (confirms), G-32 (offering disclosures). **Primary market:** G-11, G-12, G-32, G-34 (CUSIPs). **Conduct:** G-17 (fair dealing), G-18, G-19 (suitability), G-30 (pricing), G-47. **People:** G-2/G-3 (qualification — Series 52 rep, 53 principal), G-27 (supervision), G-28 (dealing with another firm's employees).\n\n**Pay-to-play (G-37)** is heavily tested: a contribution by a municipal finance professional (MFP) to an official who can influence dealer selection triggers a **2-year ban** on *negotiated* municipal business with that issuer. The exception is a **de minimis $250 per election** — but *only if the MFP is entitled to vote* for that official (primary and general count separately). **G-38** bans paying non-affiliated third parties to solicit municipal business. **G-39** limits telemarketing to **8 a.m.–9 p.m.** in the called party's time zone. Gift limits under **G-20** are in transition in 2026 (rising toward the FINRA $300 figure), so the exam usually tests the *concept* rather than the dollar amount."
+    },
+    {
+      "h": "Municipal fund securities: 529, ABLE, and LGIPs",
+      "body": "Under **MSRB Rule D-12**, interests in state-sponsored plans are **municipal fund securities** — *not* registered under the Investment Company Act of 1940 — and are sold with an **official statement (program disclosure document)**, subject to G-17, G-19, G-21, G-32, and G-45.\n\n**529 college savings plans (IRC §529):** either **prepaid tuition** or **savings** plans. Contributions are after-tax federally (many states offer a deduction on their *own* plan — so an out-of-state plan may forfeit the home-state deduction, a required suitability point); earnings grow tax-deferred; **qualified withdrawals are tax-free** for tuition, fees, room and board, and other education costs. **Non-qualified withdrawals** are taxed on the earnings **plus a 10% penalty**. The **account owner** (the donor) keeps control, not the beneficiary, and may change the beneficiary to another family member with no tax.\n\n**ABLE accounts (IRC §529A):** for individuals whose disability began early in life; earnings are tax-free if used for qualified disability expenses. One account per beneficiary, who owns it.\n\n**Local government investment pools (LGIPs):** state-run pools where municipalities invest cash — also municipal fund securities, not sold to the public."
+    }
+  ],
+  "flashcards": [
+    { "front": "Competitive vs. negotiated sale — typical use", "back": "Competitive (Notice of Sale, lowest NIC/TIC): GO bonds. Negotiated (underwriter appointed in advance): revenue bonds and complex deals." },
+    { "front": "What does bond counsel's legal opinion cover?", "back": "Bonds are validly issued, legally binding on the issuer, and interest is federally tax-exempt. Unqualified = clean; qualified = a stated concern. It's in the OS, not the Notice of Sale." },
+    { "front": "Eastern vs. Western account liability", "back": "Eastern (undivided): liable for your % of ALL unsold bonds. Western (divided): liable only for your OWN allotment." },
+    { "front": "Spread split (typical $10 spread)", "back": "Manager's fee $1 (every bond) + total takedown $9 = additional takedown $3 + selling concession $6. Reallowance goes to non-member dealers." },
+    { "front": "Priority of orders", "back": "Presale → Group net → Designated → Member (\"Please Give Dealers Money\"). Presale is placed before the bid but filled first." },
+    { "front": "G-11 day counts", "back": "Disclose allocations within 2 business days of sale; pay designations within 10 calendar days of delivery; settle syndicate within 30 calendar days." },
+    { "front": "Who prepares the OS, and who must deliver it?", "back": "The issuer prepares it (Tower Amendment keeps the SEC from requiring the issuer to file). Rule 15c2-12/G-32: the underwriter must obtain, review, and deliver it by settlement; file to EMMA." },
+    { "front": "Bond Buyer 40-Bond Municipal Bond Index", "back": "40 actively traded GO and revenue bonds rated A or better; PRICE-based; computed daily. (20-/11-Bond are GO yield indexes; Revdex is revenue.)" },
+    { "front": "EMMA vs. RTRS", "back": "EMMA: free public site (OSs, disclosures, trade prices, 529/ABLE docs). RTRS: dealers report each trade within 15 minutes (G-14); prices publish to EMMA." },
+    { "front": "G-47 time-of-trade disclosure — does it apply to unsolicited trades?", "back": "Yes. Material facts must be disclosed even on unsolicited trades; only the SMMP ($50M+ institution) exception relaxes it." },
+    { "front": "G-37 de minimis contribution", "back": "$250 per election is allowed ONLY if the MFP is entitled to vote for the official. Above that → 2-year ban on negotiated business with the issuer." },
+    { "front": "529/ABLE/LGIP legal status", "back": "Municipal fund securities under MSRB Rule D-12 — NOT 1940 Act funds; sold with an official statement. 529 non-qualified withdrawal: earnings taxed + 10% penalty; the account owner (donor) keeps control." }
+  ],
+  "quiz": [
+    {
+      "stem": "Which statement regarding the Municipal Securities Rulemaking Board (MSRB) is TRUE?",
+      "options": ["The MSRB examines broker-dealers and fines them for rule violations", "MSRB rules are enforced by FINRA for broker-dealers and by the bank regulators for bank dealers", "The MSRB may require a municipal issuer to file an official statement before a new issue is sold", "MSRB rules apply to municipal advisors but not to bank dealers"],
+      "answer": 1,
+      "explanation": "The MSRB writes rules but has no enforcement or examination power: FINRA enforces against broker-dealers, the bank regulators against bank dealers, and the SEC over all. The Tower Amendment bars requiring issuers to file documents before sale, and MSRB rules cover bank dealers and municipal advisors alike."
+    },
+    {
+      "stem": "A city plans to issue $50 million of general obligation bonds. Which is MOST characteristic of how this issue would typically be brought to market?",
+      "options": ["The city publishes a Notice of Sale and awards the bonds to the syndicate with the lowest net or true interest cost", "The city appoints a single underwriter in advance to structure and price the issue", "The city sells the bonds directly to fewer than 35 institutions with no official statement", "The city's financial advisor buys the bonds and resells them to the public"],
+      "answer": 0,
+      "explanation": "GO bonds are typically sold by competitive sealed bid: a Notice of Sale is published and the issue is awarded to the lowest NIC or TIC. Negotiated sales (a pre-appointed underwriter) are typical for revenue bonds, and under G-23 a financial advisor may not underwrite the issue it advised on."
+    },
+    {
+      "stem": "Which statement about the legal opinion on a new municipal bond issue is TRUE?",
+      "options": ["It is written by the syndicate manager and guarantees the bonds against default", "It is contained in the Notice of Sale published by the issuer", "A \"qualified\" opinion expresses no reservations about the issue's legality", "It is written by bond counsel and states that the bonds are validly issued and the interest is federally tax-exempt"],
+      "answer": 3,
+      "explanation": "Bond counsel's opinion states the bonds are legally binding on the issuer and that interest is federally tax-exempt; an unqualified (clean) opinion has no reservations, while a qualified opinion flags a concern. The Notice of Sale only names bond counsel — the opinion itself appears in the official statement and on the bonds."
+    },
+    {
+      "stem": "A syndicate wins a $20 million new issue. The manager receives presale orders of $12 million, group net orders of $6 million, designated orders of $4 million, and member orders of $3 million. Under the standard priority of orders, how many bonds are allocated to the designated orders?",
+      "options": ["$0", "$2 million", "$4 million", "$3 million"],
+      "answer": 1,
+      "explanation": "Priority runs presale, then group net, then designated, then member. Presale takes $12M and group net takes $6M, for $18M, leaving only $2M of the $20M for the $4M of designated orders and nothing for member orders."
+    },
+    {
+      "stem": "A member of a Western (divided) syndicate account has a 20% participation in a $10 million issue. It sells its entire $2 million allotment, but $500,000 of bonds allotted to other members remains unsold. This member's liability for the unsold bonds is:",
+      "options": ["$0", "$100,000", "$500,000", "$2,000,000"],
+      "answer": 0,
+      "explanation": "In a Western (divided) account, each member's liability is limited to its own allotment, so a member that sold out owes nothing. The $100,000 (20% of $500,000) would apply only in an Eastern (undivided) account, where members share in any unsold bonds."
+    },
+    {
+      "stem": "On a new municipal issue, the total underwriting spread is $10 per bond, made up of a $1 manager's fee, a $3 additional takedown, and a $6 selling concession. A selling-group dealer that is not a syndicate member sells one bond. It earns:",
+      "options": ["$1", "$3", "$6", "$10"],
+      "answer": 2,
+      "explanation": "A selling-group member earns the selling concession — $6 — for the bond it actually sells. The additional takedown ($3) is retained by the allotting syndicate member and the manager's fee ($1) is earned by the manager on every bond, so a non-member seller does not receive those."
+    },
+    {
+      "stem": "A retail customer wants to look up a municipal bond's official statement, the issuer's recent continuing disclosures, and real-time trade prices at no charge. The representative should direct the customer to:",
+      "options": ["The Bond Buyer's daily new-issue calendar", "FINRA's TRACE system", "The issuer's bond counsel", "The MSRB's EMMA website"],
+      "answer": 3,
+      "explanation": "EMMA is the MSRB's free public site carrying official statements, 15c2-12 continuing disclosures, and trade prices reported through RTRS. TRACE is FINRA's corporate-bond reporting system, not a municipal source."
+    },
+    {
+      "stem": "Interests in a state-sponsored Section 529 college savings plan are classified under MSRB rules as:",
+      "options": ["Open-end investment company shares registered under the Investment Company Act of 1940", "General obligation bonds of the sponsoring state", "Municipal fund securities, sold with an official statement (program disclosure document)", "Exempt securities entirely outside the MSRB's jurisdiction"],
+      "answer": 2,
+      "explanation": "Under MSRB Rule D-12, 529 plans, ABLE accounts, and LGIPs are municipal fund securities — not 1940 Act funds — and are sold with an official statement, subject to rules such as G-17, G-19, G-21, G-32, and G-45."
+    }
+  ]
+}

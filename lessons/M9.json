@@ -1,0 +1,90 @@
+{
+  "module": "M9",
+  "title": "Economics for the exam",
+  "domain": "foundations",
+  "estMinutes": 22,
+  "reading": [
+    {
+      "h": "The interest-rate ladder",
+      "body": "The exam rarely asks the *number* of a rate — it asks *who sets it* and *which is lowest or most volatile*. Learn the named rates:\n\n**Fed funds rate** — the overnight rate banks charge each other on reserves; the FOMC sets a *target range* and it is the **most volatile** because it is set daily by the market.\n**Discount rate** — what the **Fed** charges banks that borrow directly at the discount window; set by the Fed Board.\n**Prime rate** — what banks charge their best corporate customers; set by **banks**.\n**Broker call rate** — what banks charge broker-dealers on margin funding.\n\nExam ranking, lowest to highest: **fed funds < discount < broker call < prime.**"
+    },
+    {
+      "h": "Inflation, deflation, and the real rate",
+      "body": "**Inflation** is a general rise in prices and fall in purchasing power, measured by the **CPI** (also PPI and PCE). **Deflation** is falling prices; **stagflation** is inflation plus stagnation.\n\nRising inflation pushes the Fed to tighten → rates rise → bond prices fall. Inflation hurts fixed-payment assets (bonds, preferred, fixed annuities) most and helps real assets (real estate, commodities, TIPS).\n\nThe **real rate = nominal rate − inflation**. A 5% bond during 3% inflation delivers roughly a **2%** real return."
+    },
+    {
+      "h": "GDP, the business cycle, and sectors",
+      "body": "**GDP** is the value of everything produced *inside* the country; **GNP** is everything produced by the country's *nationals* wherever they are. The textbook definition of a **recession** is **two consecutive quarters of falling real GDP**.\n\nThe business cycle runs **expansion → peak → contraction → trough → recovery**. Sector behavior: **cyclical** stocks (autos, housing, steel, luxury) move *with* the cycle; **defensive** stocks (utilities, food, pharma, tobacco) resist downturns because people buy their products in any economy; **growth** stocks outperform in expansions; **counter-cyclical** assets (gold) can move opposite."
+    },
+    {
+      "h": "Economic indicators",
+      "body": "**Leading** indicators turn *before* the economy: stock prices (S&P 500), building permits, **initial jobless claims**, money supply (M2), new orders, average weekly manufacturing hours, and the yield spread.\n\n**Coincident** indicators turn *with* the economy: GDP, industrial production, personal income, nonfarm payrolls.\n\n**Lagging** indicators turn *after*: the **unemployment rate**, CPI, prime rate, average duration of unemployment, business inventories.\n\nThe trap the exam loves: **jobless *claims* lead, but the unemployment *rate* (and duration of unemployment) lag.** Stock prices lead."
+    },
+    {
+      "h": "Monetary vs fiscal policy — and the one causal chain",
+      "body": "**Monetary policy** is the **Fed's** job. Its main tool is **open-market operations** by the FOMC: when the Fed **buys** Treasuries it *adds* reserves (easy money) → rates fall → **bond prices rise** → stocks generally rise → the dollar weakens. When it **sells**, it drains reserves (tight money) and the chain reverses. Other tools: the **discount rate**, the **reserve requirement** (set to **0% since 2020** but still taught as the 'most powerful, least used' tool), and IORB.\n\n**Fiscal policy** is **Congress and the President's** job — taxes and government spending. Schools of thought: **Keynesian** (manage demand with fiscal policy), **monetarist / Friedman** (steady money-supply growth), and **supply-side** (cut taxes and regulation)."
+    },
+    {
+      "h": "Yield curve, the dollar, indexes, and circuit breakers",
+      "body": "The **yield curve** plots Treasury yields by maturity. **Normal (positive)** slopes up (long rates higher — expansion). **Inverted** means short rates are above long rates and historically precedes recessions.\n\nA **strong dollar** makes imports cheap and U.S. exports expensive (hurts exporters, helps importers and tourists abroad); a weak dollar does the reverse.\n\n**Indexes:** the DJIA is 30 stocks, **price-weighted**; the **S&P 500** is cap-weighted and is the benchmark for market-wide **circuit breakers**: an S&P 500 decline of **7% (Level 1)** or **13% (Level 2)** before 3:25 pm triggers a 15-minute halt; **20% (Level 3)** any time closes the market for the day."
+    }
+  ],
+  "flashcards": [
+    { "front": "Interest-rate ladder, lowest to highest", "back": "Fed funds < discount < broker call < prime. Fed funds is the most volatile." },
+    { "front": "Which named rate does the Fed set directly?", "back": "The discount rate (Fed Board). Fed funds is targeted but set by the market; prime and broker call are set by banks." },
+    { "front": "Real rate", "back": "Nominal rate − inflation. A 5% bond in 3% inflation = ~2% real." },
+    { "front": "GDP vs GNP", "back": "GDP = produced inside the country; GNP = produced by the country's nationals anywhere. Recession = two consecutive quarters of falling real GDP." },
+    { "front": "Cyclical vs defensive sectors", "back": "Cyclical (autos, housing, steel, luxury) move with the cycle; defensive (utilities, food, pharma, tobacco) resist downturns." },
+    { "front": "Leading vs coincident vs lagging: the classic trap", "back": "Jobless CLAIMS and stock prices LEAD; the unemployment RATE and duration of unemployment LAG; GDP is coincident." },
+    { "front": "Fed BUYS securities → chain", "back": "Reserves up → money supply up → rates down → bond prices up → stocks up → dollar weaker. (Selling reverses it.)" },
+    { "front": "Reserve requirement today", "back": "0% since 2020 — but the exam still calls it the 'most powerful, least used' Fed tool." },
+    { "front": "Monetary vs fiscal policy — who runs each?", "back": "Monetary = the Fed (open-market ops, discount rate, reserves). Fiscal = Congress + President (taxes and spending)." },
+    { "front": "Inverted yield curve signals", "back": "Short-term rates above long-term rates; historically precedes a recession." },
+    { "front": "DJIA vs S&P 500 weighting", "back": "DJIA = 30 stocks, price-weighted. S&P 500 = cap-weighted; the circuit-breaker benchmark." },
+    { "front": "Market-wide circuit breakers", "back": "S&P 500 down 7% (L1) or 13% (L2) before 3:25 pm → 15-min halt; 20% (L3) any time → close for the day." }
+  ],
+  "quiz": [
+    {
+      "stem": "Your savings account pays 2% a year. Over the same year, the prices of the things you buy rise by 3%. What happens to what your savings can buy?",
+      "options": ["It grows, because the balance is larger than a year ago", "It shrinks, because prices rose faster than the balance grew", "It stays the same, because the interest offsets the price increases", "It shrinks by exactly 3%, because interest does not count against inflation"],
+      "answer": 1,
+      "explanation": "Real return = nominal rate − inflation = 2% − 3% ≈ −1%, so purchasing power falls even though the dollar balance rose. The interest does count; it just does not fully offset the 3% price rise."
+    },
+    {
+      "stem": "The Federal Open Market Committee directs the SALE of Treasury securities in the open market. Which of the following is the MOST likely result?",
+      "options": ["Bank reserves increase and short-term interest rates fall", "The money supply expands and bond prices rise", "Bank reserves increase and bond prices fall", "The money supply contracts and bond prices fall"],
+      "answer": 3,
+      "explanation": "When the Fed sells securities it drains reserves from the banking system (tight money): money supply down, interest rates up, and therefore bond prices down. Buying securities produces the opposite chain."
+    },
+    {
+      "stem": "All of the following are considered leading economic indicators EXCEPT:",
+      "options": ["Average weekly initial claims for unemployment insurance", "New building permits for private housing", "Stock prices as measured by the S&P 500", "Average duration of unemployment"],
+      "answer": 3,
+      "explanation": "Initial jobless claims, building permits, and stock prices all turn before the economy and are leading indicators; the average duration of unemployment is a lagging indicator. The trap is that jobless claims lead while measures of the unemployment situation lag."
+    },
+    {
+      "stem": "Which of the following interest rates is set directly by the Federal Reserve rather than by banks or the market?",
+      "options": ["The federal funds rate", "The discount rate", "The prime rate", "The broker call loan rate"],
+      "answer": 1,
+      "explanation": "The Fed Board sets the discount rate it charges banks at the discount window. The fed funds rate is charged bank-to-bank and moves within a target range the FOMC sets (targeted, not set), while prime and broker call rates are set by commercial banks."
+    },
+    {
+      "stem": "The Federal Reserve BUYS Treasury securities on the open market. All of the following are likely effects EXCEPT:",
+      "options": ["Bank reserves increase", "Short-term interest rates fall", "Bond prices rise", "The money supply contracts"],
+      "answer": 3,
+      "explanation": "Buying securities adds reserves and EXPANDS the money supply (easy money), pushing rates down and bond prices up. A contracting money supply is the result of the Fed selling securities, not buying — so that is the exception."
+    },
+    {
+      "stem": "During an economic contraction, which sector's stocks would an analyst expect to hold up BEST?",
+      "options": ["Automobile manufacturers", "Home builders", "Electric utilities and food producers", "Luxury-goods retailers"],
+      "answer": 2,
+      "explanation": "Defensive sectors — utilities, food, pharma, tobacco — sell products people buy in any economy, so they resist downturns. Autos, housing, and luxury goods are cyclical and fall with the economy."
+    },
+    {
+      "stem": "By the textbook definition, an economy is in a recession when:",
+      "options": ["The stock market falls by 20% or more", "Real GDP declines for two consecutive quarters", "The unemployment rate rises for one month", "The yield curve inverts"],
+      "answer": 1,
+      "explanation": "The textbook recession is two consecutive quarters of declining real GDP. A 20% market drop, a one-month rise in unemployment, or an inverted yield curve may accompany or precede a recession but are not its definition."
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "module": "M19",
+  "title": "Options I: mechanics, the four positions, and the T-chart",
+  "domain": "options",
+  "estMinutes": 26,
+  "reading": [
+    {
+      "h": "Opening and closing, and the two count words",
+      "body": "Every option order ticket is marked as one of four things. An **opening purchase** starts a new long (buy to open). An **opening sale** starts a new short (write to open). A **closing sale** ends a long you already own (sell to close). A **closing purchase** buys back a short you wrote (buy to close).\n\nTwo statistics ride on top of these. **Volume** is the number of contracts traded in a day. **Open interest** is the number of contracts *outstanding* — opened but not yet closed, exercised, or expired. Opening transactions raise open interest; closing transactions lower it. A position ends in one of three ways: it **expires**, it is **closed out** (most common), or it is **exercised/assigned**."
+    },
+    {
+      "h": "The clocks: expiration, last trade, exercise cutoff",
+      "body": "Standard monthly equity options **expire on the third Friday** of the expiration month, at **11:59 p.m. ET**. But **trading stops at 4:00 p.m. ET** on that Friday.\n\nThe customer's decision to exercise must reach the broker by **5:30 p.m. ET** on expiration day (firms may set earlier internal deadlines).\n\nAnything left over is handled by **exercise by exception (automatic exercise)**: the OCC automatically exercises any equity option that is **$0.01 or more in the money** at expiration, unless the holder files contrary instructions.\n\n**LEAPS** (Long-term Equity AnticiPation Securities) are just long-dated options — up to **39 months** (the exam says \"up to 3 years\"). Everything else about them works the same."
+    },
+    {
+      "h": "The four single positions as number lines",
+      "body": "Reburn the four into memory, now as P&L you can picture on a price line.\n\n**Long call** — bullish; loss capped at the premium; gain unlimited above the breakeven; **BE = strike + premium**.\n\n**Short (naked) call** — bearish/neutral; gain capped at the premium; loss **unlimited** above the breakeven; **BE = strike + premium**.\n\n**Long put** — bearish; loss capped at the premium; gain grows as the stock falls toward zero, maxing at **strike − premium**; **BE = strike − premium**.\n\n**Short (naked) put** — bullish/neutral; gain capped at the premium; loss grows as the stock falls, maxing at **strike − premium**; **BE = strike − premium**.\n\nRemember: buyer and writer of the *same* contract share the *same* breakeven — one is the mirror image of the other."
+    },
+    {
+      "h": "The T-chart: the tool that solves everything",
+      "body": "You do not memorize P&L formulas for multi-leg positions — you build a **T-chart**. Draw a capital T. The **left** column is **Debit — money out**; the **right** column is **Credit — money in**. Enter every leg *per share*.\n\nPremiums you *pay* go on the left; premiums you *receive* go on the right. When you assume exercise, the stock **bought** (at the strike) goes left, and the stock **sold** goes right. Then net the two columns, and multiply by 100 (and by the number of contracts) to get dollars.\n\n**Breakeven** is the stock price that makes the two columns equal. A single-leg example: for a long 50 call @ 4, you paid 4 (left). To get it back you need 4 of intrinsic value, which happens at a stock price of 54 — the breakeven. The T-chart just makes that bookkeeping explicit so you never lose a leg."
+    },
+    {
+      "h": "Worked single legs with the T-chart",
+      "body": "**Short 1 ABC Jun 50 call @ 4, stock rises to 70, assigned.** You must deliver stock: buy it in the market at 70 (Out: 70) and sell it at the strike 50 (In: 50), having collected the 4 premium (In: 4). Out 70, In 54 → net −16 × 100 = **−$1,600**, and there is no ceiling — the naked call is the unlimited-risk position.\n\n**Long 1 XYZ Sep 40 put @ 3, stock falls to 30, exercise.** You buy stock at 30 (Out: 30) and sell it at the strike 40 via the put (In: 40), having paid the 3 premium (Out: 3). Out 33, In 40 → net +7 × 100 = **+$700**.\n\n**Short 1 XYZ Sep 40 put @ 3, stock falls to 30, assigned.** You are forced to buy at 40 (Out: 40) stock now worth 30 (In: 30), keeping the 3 (In: 3). Out 40, In 33 → **−$700** — the mirror of the long put's gain."
+    },
+    {
+      "h": "Intrinsic value and time value",
+      "body": "The premium of any option splits into two parts: **intrinsic value** (how much it is in the money, never below zero) and **time value** (everything else — what buyers pay for the *chance* of a bigger move before expiration).\n\n**Time value = premium − intrinsic value.**\n\nExample: ABC trades at 58; an ABC Mar 50 call is quoted at 10. Intrinsic value = 58 − 50 = 8. Time value = 10 − 8 = **2**.\n\nAs expiration approaches, time value decays toward zero, so at expiration an option is worth only its intrinsic value. Deep-in-the-money and expiring options trade near **parity** (intrinsic value only)."
+    },
+    {
+      "h": "Where 'unlimited' really lives",
+      "body": "The exam constantly asks \"which position has unlimited risk?\" The honest answer: only something that leaves you exposed to a rising stock price with no cap.\n\nAmong single positions, that is **only the naked short call** — you may have to deliver stock you do not own at any price. A long put's loss is capped at the premium; a short put's loss is capped at strike − premium (a stock stops at zero); a long call's loss is the premium.\n\nHold onto the principle: **the only thing with no ceiling is a stock price**, so unlimited risk requires being *short a call* or *short the stock itself*. Everything else is bounded."
+    }
+  ],
+  "flashcards": [
+    { "front": "Open interest vs. volume", "back": "Open interest = contracts still outstanding (not closed/exercised/expired). Volume = contracts traded that day. Opening raises OI; closing lowers it." },
+    { "front": "The four order-ticket markings", "back": "Opening purchase (buy to open long), opening sale (write to open short), closing sale (sell a long), closing purchase (buy back a short)." },
+    { "front": "Expiration and last-trade times", "back": "Monthly equity options expire the 3rd Friday at 11:59 p.m. ET; trading stops 4:00 p.m. ET that day." },
+    { "front": "Exercise decision cutoff / auto-exercise", "back": "Decision to broker by 5:30 p.m. ET on expiration day; OCC auto-exercises anything $0.01 or more ITM." },
+    { "front": "LEAPS max term", "back": "Up to 39 months (exam: \"up to 3 years\"). Otherwise ordinary options." },
+    { "front": "T-chart setup", "back": "Left = Debit / money out (premiums paid, stock bought at strike). Right = Credit / money in (premiums received, stock sold). Net × 100." },
+    { "front": "Time value formula", "back": "Time value = premium − intrinsic value. At expiration, time value = 0, so premium = intrinsic value (parity)." },
+    { "front": "ABC 58, 50 call @ 10 — intrinsic and time value?", "back": "Intrinsic = 58 − 50 = 8; time value = 10 − 8 = 2." },
+    { "front": "Short call, stock to 70, was written 50 @ 4 — loss?", "back": "Buy 70, sell 50, keep 4 → −16 × 100 = −$1,600, uncapped. Naked call = unlimited risk." },
+    { "front": "Which single positions have unlimited loss?", "back": "Only the naked short call (and short stock). A stock price is the only thing with no ceiling." }
+  ],
+  "quiz": [
+    {
+      "stem": "A customer buys 1 ABC Jun 50 call at 4. What is the breakeven point at expiration?",
+      "options": ["46", "50", "54", "58"],
+      "answer": 2,
+      "explanation": "Calls ADD: breakeven = strike + premium = 50 + 4 = 54, the same for buyer and writer. \"46\" applies the put rule (subtract), \"50\" forgets the premium, and \"58\" double-counts it."
+    },
+    {
+      "stem": "A customer writes 1 XYZ Sep 40 put at 3. What is the maximum potential loss?",
+      "options": ["$300", "$37", "$3,700", "$4,300"],
+      "answer": 2,
+      "explanation": "If XYZ goes to zero the writer must buy worthless stock at 40, offset by the 3 collected: (40 − 3) × 100 = $3,700. \"$300\" is the max GAIN, \"$37\" forgets the ×100, and \"$4,300\" flips the sign by adding the premium."
+    },
+    {
+      "stem": "A customer writes 1 ABC Jun 50 call at 4. At expiration ABC is trading at 70 and the call is exercised against the customer. Ignoring commissions, what is the result?",
+      "options": ["$1,600 loss", "$2,000 loss", "$1,600 gain", "$400 gain"],
+      "answer": 0,
+      "explanation": "T-chart: buy the stock to deliver at 70 (out), sell it at the strike 50 (in), keep the 4 premium (in). 50 + 4 − 70 = −16 × 100 = $1,600 loss. \"$2,000\" ignores the premium; the gain answers get the direction backward — a naked call assigned above the strike loses."
+    },
+    {
+      "stem": "ABC stock trades at 58. An ABC Mar 50 call is quoted at 10. What is the time value of the call?",
+      "options": ["2", "8", "10", "0"],
+      "answer": 0,
+      "explanation": "Intrinsic value = stock − strike = 58 − 50 = 8; time value = premium − intrinsic = 10 − 8 = 2. \"8\" is the intrinsic value and \"10\" is the whole premium."
+    },
+    {
+      "stem": "A customer buys 1 XYZ Sep 40 put at 3. At expiration XYZ is 30 and the customer exercises. Ignoring commissions, the profit or loss is:",
+      "options": ["$1,000 profit", "$700 profit", "$300 loss", "$1,300 profit"],
+      "answer": 1,
+      "explanation": "Buy stock at 30, sell at the 40 strike via the put, less the 3 premium: (40 − 30 − 3) × 100 = $700 profit. \"$1,000\" forgets the premium, \"$1,300\" adds it instead of subtracting, and \"$300 loss\" is the result only if the put had expired."
+    },
+    {
+      "stem": "On the third Friday of the expiration month, an equity option holder wanting to exercise must get the decision to the broker no later than:",
+      "options": ["4:00 p.m. ET, when trading stops", "5:30 p.m. ET", "11:59 p.m. ET, when the option expires", "the following Monday morning"],
+      "answer": 1,
+      "explanation": "The exercise-decision cutoff is 5:30 p.m. ET on expiration day. Trading stops at 4:00 p.m. ET and the contract does not expire until 11:59 p.m. ET, but a holder who wants to exercise (rather than rely on the $0.01 auto-exercise) must instruct the broker by 5:30."
+    },
+    {
+      "stem": "The number of option contracts that have been opened but not yet closed, exercised, or expired is called:",
+      "options": ["volume", "open interest", "the exercise limit", "the position limit"],
+      "answer": 1,
+      "explanation": "Open interest counts outstanding contracts; it rises with opening transactions and falls with closing ones. Volume is the day's trades, and position/exercise limits cap how many contracts a customer may hold or exercise — different concepts."
+    },
+    {
+      "stem": "Which of the following positions carries UNLIMITED potential loss?",
+      "options": ["Long 1 ABC 50 call", "Short 1 ABC 50 put", "Short 1 ABC 50 call", "Long 1 ABC 50 put"],
+      "answer": 2,
+      "explanation": "Only the naked short call is unlimited: the writer may have to deliver stock at any price as it rises without ceiling. A long call risks only the premium, a long put only the premium, and a short put at most strike − premium (a stock stops at zero)."
+    }
+  ]
+}

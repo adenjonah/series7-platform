@@ -1,0 +1,88 @@
+{
+  "module": "M3",
+  "title": "Markets: primary vs secondary, exchange vs OTC",
+  "domain": "foundations",
+  "estMinutes": 20,
+  "reading": [
+    {
+      "h": "Follow the cash: primary vs secondary",
+      "body": "There is one question that classifies every trade: **who gets the money?**\n\nIn the **primary market**, the **issuer** sells *new* securities and receives the proceeds. This is where capital formation happens — an IPO (first public sale) or a follow-on offering. It is governed by the **Securities Act of 1933** (registration, prospectus, the cooling-off period).\n\nIn the **secondary market**, investors trade *existing* securities *with each other* and the issuer gets nothing. It is governed by the **Securities Exchange Act of 1934**, which also created the SEC."
+    },
+    {
+      "h": "The 'secondary offering' trap",
+      "body": "The word *secondary* is used two different ways, and the exam exploits it.\n\nA **secondary offering** (a.k.a. follow-on) is when an already-public **issuer sells new shares** and *receives the money*. Despite the name, this is still a **primary-market** transaction — follow the cash.\n\nA **secondary distribution** is when **insiders or large existing holders sell their own shares**; the issuer gets nothing, so it is a secondary-market event.\n\nRule of thumb: if the issuer receives proceeds, it is primary market — full stop, no matter what the deal is called."
+    },
+    {
+      "h": "The four markets",
+      "body": "The SIE names four sub-markets of the secondary market:\n\n**First market** — exchange-listed stock traded *on* an exchange (e.g., a listed stock on the NYSE).\n**Second market** — **OTC**: unlisted securities traded through a dealer network.\n**Third market** — exchange-listed stock traded *OTC*, away from the exchange.\n**Fourth market** — institution-to-institution, direct, via ECNs or dark pools, with **no broker** in the middle.\n\nMnemonic anchor: *listed-on-exchange = first; unlisted = second; listed-but-OTC = third; institutions-direct = fourth.*"
+    },
+    {
+      "h": "Exchange vs OTC — auction vs negotiated",
+      "body": "An **exchange** (NYSE, Nasdaq, Cboe) is a centralized **auction** market with a single order book. The NYSE uses **Designated Market Makers (DMMs)** to keep a fair and orderly market; Nasdaq is a network of competing **market makers**.\n\nThe **OTC market** is a decentralized **negotiated** dealer market — prices are negotiated between dealers rather than matched in one auction book. It carries unlisted securities through OTC Markets Group tiers (OTCQX / OTCQB / Pink). **Penny stocks** (unlisted equities under $5) trade OTC and carry special suitability and disclosure rules.\n\nKey contrast to hold: **exchange = auction, listed; OTC = negotiated, unlisted.**"
+    },
+    {
+      "h": "Bid, ask, spread, and size",
+      "body": "A quote has two prices. The **bid** is what buyers will pay (the price you *receive* when you sell). The **ask (offer)** is what sellers want (the price you *pay* when you buy). The gap between them is the **spread**.\n\nExample quote: **bid 49.95 × ask 50.00, size 10 × 5**. A customer buying pays the ask (50.00); a customer selling receives the bid (49.95). The spread is $0.05. The size is stated in round lots (hundreds of shares), so 10 × 5 means 1,000 shares bid, 500 offered.\n\nA **firm quote** is good for at least the displayed size; a **subject (nominal) quote** is only an indication and must be confirmed."
+    },
+    {
+      "h": "Roles in an offering, and the spread",
+      "body": "Bringing a new issue to market involves several roles: the **underwriter / investment banker** manages the deal, the **syndicate** shares the risk, and the **selling group** helps sell but takes no risk. A **firm commitment** means the underwriter buys the whole issue and bears the risk; **best efforts** means it acts only as an agent.\n\nThe **underwriting spread** is the difference between what the public pays (the POP) and what the issuer receives, and it splits into the manager's fee, the underwriting fee, and the selling concession.\n\nExample: POP **$20.00**, spread **$1.40** → the issuer nets **$18.60** per share; the $1.40 is the underwriters' compensation."
+    }
+  ],
+  "flashcards": [
+    { "front": "The one-question test for primary vs secondary", "back": "Who gets the money? Issuer receives proceeds = primary market; investors trade with each other = secondary market." },
+    { "front": "Which Acts govern primary vs secondary markets?", "back": "Securities Act of 1933 = primary (registration/prospectus). Securities Exchange Act of 1934 = secondary (created the SEC)." },
+    { "front": "Secondary offering vs secondary distribution", "back": "Secondary offering = issuer sells new shares → still PRIMARY market. Secondary distribution = insiders sell their shares → secondary market." },
+    { "front": "The four markets", "back": "1st = listed stock on an exchange; 2nd = OTC (unlisted); 3rd = listed stock traded OTC; 4th = institution-to-institution (ECNs, no broker)." },
+    { "front": "Exchange vs OTC in two words each", "back": "Exchange = auction, listed. OTC = negotiated, unlisted (dealer network)." },
+    { "front": "Bid vs ask — which price does a buyer pay?", "back": "Buyer pays the ask (offer); seller receives the bid. The gap is the spread." },
+    { "front": "Firm quote vs subject quote", "back": "Firm = binding for at least the displayed size. Subject (nominal) = indication only, must be confirmed." },
+    { "front": "Firm commitment vs best efforts", "back": "Firm commitment: underwriter buys the whole issue and bears the risk. Best efforts: underwriter is an agent, bears no risk." },
+    { "front": "Underwriting spread: POP $20, spread $1.40 → issuer gets?", "back": "$18.60 per share. The $1.40 spread is the underwriters' compensation." },
+    { "front": "What is a penny stock and where does it trade?", "back": "An unlisted equity under $5, traded OTC, with special suitability and disclosure rules." }
+  ],
+  "quiz": [
+    {
+      "stem": "An investor buys 100 shares of XYZ common stock on the New York Stock Exchange. Who receives the money the investor pays?",
+      "options": ["XYZ Corporation, the issuer of the shares", "The New York Stock Exchange", "Another investor who sold the shares", "The underwriter that originally brought XYZ public"],
+      "answer": 2,
+      "explanation": "An exchange trade is a secondary-market transaction: investors trade with each other and the issuer receives nothing. The issuer is paid only in the primary market — an IPO or follow-on offering."
+    },
+    {
+      "stem": "A company that completed its IPO three years ago files a registration statement and sells 2,000,000 newly issued common shares to the public through an underwriting syndicate. Which statement is TRUE?",
+      "options": ["It is a secondary market transaction because the company is already publicly traded", "It is a secondary distribution because the shares are sold after the IPO", "It is a fourth market transaction if the shares go to institutions", "It is a primary market transaction because the issuer receives the proceeds"],
+      "answer": 3,
+      "explanation": "Follow the cash: whenever the issuer sells new shares and receives the money it is a primary-market transaction, even though the industry calls it a 'secondary offering.' A secondary distribution is a sale of existing shares by insiders, where the issuer gets nothing."
+    },
+    {
+      "stem": "Exchange-listed stock that trades over-the-counter, away from the exchange, is said to trade in which market?",
+      "options": ["The first market", "The second market", "The third market", "The fourth market"],
+      "answer": 2,
+      "explanation": "The third market is listed stock traded OTC. The first market is listed stock on the exchange; the second market is OTC trading of unlisted securities; the fourth market is direct institution-to-institution trading via ECNs."
+    },
+    {
+      "stem": "A stock is quoted bid 24.50 × ask 24.75. A customer who places a market order to SELL 100 shares will receive approximately:",
+      "options": ["$24.75 per share", "$24.50 per share", "$24.625 per share (the midpoint)", "$25.00 per share"],
+      "answer": 1,
+      "explanation": "A seller receives the bid (24.50); a buyer pays the ask (24.75). The spread is $0.25. Customers do not automatically get the midpoint on a market order."
+    },
+    {
+      "stem": "Which statement best distinguishes an exchange market from the OTC market?",
+      "options": ["The exchange is a negotiated dealer market; the OTC is an auction market", "The exchange is a centralized auction market; the OTC is a decentralized negotiated dealer market", "Only the OTC market lists securities; the exchange trades only unlisted securities", "The OTC market has a single central order book; the exchange does not"],
+      "answer": 1,
+      "explanation": "An exchange is a centralized auction market with one order book and listed securities; the OTC market is a decentralized, negotiated dealer network trading unlisted securities. The other choices reverse these features."
+    },
+    {
+      "stem": "In a firm-commitment offering, the public offering price is $30.00 and the underwriting spread is $1.80 per share. How much does the issuer receive per share, and who bears the risk of unsold shares?",
+      "options": ["$30.00; the issuer bears the risk", "$28.20; the underwriter bears the risk", "$31.80; the underwriter bears the risk", "$28.20; the issuer bears the risk"],
+      "answer": 1,
+      "explanation": "The issuer nets POP minus spread = $30.00 − $1.80 = $28.20. In a firm commitment the underwriter buys the whole issue, so the underwriter — not the issuer — bears the risk of unsold shares. In a best-efforts deal the issuer would bear that risk."
+    },
+    {
+      "stem": "A market maker gives a customer a quote and states that it is a 'subject' quote. This means the quote is:",
+      "options": ["Firm and good for at least the displayed size", "An indication only and must be confirmed before it is binding", "Available only to institutional investors", "Guaranteed for the rest of the trading day"],
+      "answer": 1,
+      "explanation": "A subject (nominal) quote is an indication of interest, not binding, and must be confirmed. A firm quote, by contrast, is good for at least the size displayed. Neither is limited to institutions or guaranteed for the day."
+    }
+  ]
+}

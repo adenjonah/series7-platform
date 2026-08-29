@@ -1,0 +1,100 @@
+{
+  "module": "M17",
+  "title": "Equity securities and corporate actions: the Series 7 calculations",
+  "domain": "equity",
+  "estMinutes": 24,
+  "reading": [
+    {
+      "h": "Cumulative voting: same total, different concentration",
+      "body": "Under **both** statutory and cumulative voting, your **total votes = shares owned × number of seats up for election**. That total never changes with the method — the exam's favorite trick is to ask \"how many votes total?\" and both answers are identical.\n\nWhat differs is how you may *spread* them. **Statutory** voting caps you at your share count per candidate. **Cumulative** voting lets you pile every vote onto one candidate, which is why it favors small (minority) holders trying to win a single board seat.\n\nWorked example: you own 300 shares and 4 directors are being elected. Total votes = 300 × 4 = **1,200** either way. Under statutory voting the most you can give one candidate is 300; under cumulative voting you can put all **1,200** on one candidate. When a stem asks \"maximum votes for a single director,\" the method decides the answer."
+    },
+    {
+      "h": "Dividends in arrears — don't forget the current year",
+      "body": "Cumulative preferred accrues every skipped dividend as **dividends in arrears**, and the company must clear *all* of them **plus the current year** before paying any common dividend.\n\nFormula: **Arrears owed = (years missed × annual dividend) + current-year dividend.**\n\nWorked example: a **6% $100-par** cumulative preferred skips two years. The board now wants to pay a common dividend. Each preferred share must first receive $6 + $6 (the two missed years) + $6 (this year) = **$18**.\n\nContrast: a **straight** (non-cumulative) preferred in the same fact pattern gets only the **current** $6 — the missed years are gone forever. The classic trap answer leaves off the current year (here, $12 instead of $18)."
+    },
+    {
+      "h": "Convertible preferred: parity in both directions",
+      "body": "Think of a convertible as a coupon for a fixed number of common shares.\n\n**Conversion ratio (CR) = par ÷ conversion price.** A $100-par preferred convertible at $20 gives CR = 5 shares.\n\n**Parity price of common = preferred price ÷ CR.** Preferred at $110 → $110 ÷ 5 = **$22**. If the common trades above $22, converting is profitable.\n\n**Parity price of preferred = common price × CR.** Common at $12, CR 2 → preferred parity $24.\n\n**Forced conversion** (issuer calls a convertible): compare all exits. A $100-par 6% preferred convertible at $20 (CR 5), callable at $103, is called; preferred trades $104, common $21.50. Converting yields 5 × $21.50 = **$107.50** — more than the $104 market or the $103 call, so \"convert and sell\" wins.\n\n**Anti-dilution:** on a split or stock dividend the CR is multiplied and the conversion price divided by the same factor, so the conversion value is preserved — the coupon still buys the same slice of the company."
+    },
+    {
+      "h": "Rights: the cum vs. ex \"+1\"",
+      "body": "A right's theoretical value depends on whether the stock still trades *with* the right attached.\n\n**Cum-rights (before the ex-date): value = (Market − Subscription) ÷ (rights needed per new share + 1).**\n\n**Ex-rights (on/after the ex-date): value = (Market − Subscription) ÷ (rights needed per new share).**\n\nMemory: *cum* = \"with\" → add the 1 (the right embedded in the share itself); *ex* = \"without\" → no 1.\n\nWorked example: stock $44, subscription $36, 3 rights needed per new share. **Cum-rights = ($44 − $36) ÷ (3 + 1) = $2.00.** Omitting the +1 gives $2.67 — that is the *ex*-rights value, and it is the trap when the stem says \"before the ex-rights date.\" The two stay consistent because on the ex-date the stock price drops by exactly one right's value. **Warrants**, by contrast, are long-term sweeteners priced above market at issue with no intrinsic value — never mix the two formulas."
+    },
+    {
+      "h": "Splits, stock dividends, cost basis, and option adjustments",
+      "body": "A split or stock dividend never changes total basis — only the **per-share** basis. **Factor = split numerator ÷ denominator, or (1 + stock-dividend %).** New shares = old × factor; **new basis per share = old basis ÷ factor.** None of this is taxable, and the holding period carries over.\n\nWorked: 200 shares at $60 basis, 20% stock dividend → 240 shares, basis $12,000 ÷ 240 = **$50/share**. The trap ($60 × 0.8 = $48) applies the wrong operation.\n\nListed options adjust by the same logic (the options domain owns the detail). **Even split (ends in :1)** → number of contracts × factor, strike ÷ factor, still 100 shares (1 Jan 200 call, 2:1 → 2 Jan 100 calls). **Uneven split, stock dividend, or reverse split** → contracts unchanged, strike ÷ factor, deliverable = 100 × factor shares (1 Sep 90 put, 3:2 → 1 Sep 60 put on 150 shares). Ordinary cash dividends: no option adjustment."
+    },
+    {
+      "h": "Dividend dates under T+1, due bills, and the 25% rule",
+      "body": "Since **2024-05-28** (T+1 settlement, FINRA Rule 11140 as amended), for a **regular** cash dividend the **ex-date equals the record date** if the record date is a business day. The logic: a buyer must be *settled* by the record date, settlement takes one business day, so a purchase on the record date settles a day too late. **The last day to buy and still get the dividend is the business day before the record date.** Legacy \"one or two days before the record date\" rules are stale — do not use them.\n\nWorked: record date Thursday March 12 (no holidays) → ex-date is **Thursday March 12**; last day to buy for the dividend is Wednesday March 11.\n\n**Large distributions (≥ 25% of value** — big stock dividends/splits): the ex-date is the **first business day AFTER the payable date**; trades between record and payable carry **due bills**. Worked: 30% stock dividend, record June 10, payable June 24 → ex-date **June 25**."
+    },
+    {
+      "h": "Rule 144 and spin-off basis",
+      "body": "Rule 144 covers two populations. **Restricted stock** is acquired unregistered from the issuer (e.g., a private placement); **control stock** is any stock — even bought on the exchange — owned by an **affiliate** (officer, director, or ≥10% holder). Rule: *the holding period cures 'unregistered'; the volume limit tames 'insider.'* The **6-month** holding period (reporting issuer) applies only to restricted stock — control stock bought in the open market has **no** holding period but is still volume-limited.\n\n**Affiliate volume limit (any 3 months) = the GREATER of 1% of outstanding shares or the average weekly volume of the prior 4 weeks.** A **Form 144** is required when a sale exceeds **5,000 shares or $50,000** in 3 months.\n\nWorked: 12,000,000 shares outstanding (1% = 120,000); prior 4 weeks' volume 150,000 / 130,000 / 140,000 / 140,000 (average 140,000). Max = greater of 120,000 or 140,000 = **140,000**.\n\n**Spin-off** basis: allocate the original cost between parent and spun-off shares by relative fair market value. 100 shares, $5,000 basis; after the spin-off the parent is worth $80 and the spinco $20 per original share → 80% ($4,000) to the parent, 20% ($1,000) to the spinco; holding periods carry over."
+    }
+  ],
+  "flashcards": [
+    { "front": "Cumulative voting — total votes and max on one candidate", "back": "Total = shares × seats (same under both methods). Cumulative lets you put ALL of them on one candidate; statutory caps you at your share count per candidate." },
+    { "front": "Dividends in arrears owed before common", "back": "(years missed × annual dividend) + current-year dividend. Straight preferred gets only the current year." },
+    { "front": "Conversion ratio (CR)", "back": "CR = par ÷ conversion price. ($100 par, $20 conv. price → 5 shares.)" },
+    { "front": "Parity price of the common", "back": "Preferred market price ÷ CR." },
+    { "front": "Parity price of the preferred", "back": "Common market price × CR." },
+    { "front": "Forced conversion — how to decide", "back": "Compute CR × common price (value of the shares now) and compare to the market price and call price. Pick the largest; usually 'convert and sell.'" },
+    { "front": "Cum-rights vs. ex-rights value", "back": "Cum: (Market − Subscription) ÷ (rights needed + 1). Ex: (Market − Subscription) ÷ (rights needed). Cum = 'with' → +1." },
+    { "front": "Per-share basis after a split/stock dividend", "back": "New basis = old basis ÷ factor; factor = split ratio or (1 + stock-dividend %). Total basis and holding period unchanged; not taxable." },
+    { "front": "Option adjustment: even vs. uneven split", "back": "Even (ends in :1): contracts × factor, strike ÷ factor, still 100 shares. Uneven/stock dividend/reverse: contracts unchanged, strike ÷ factor, deliverable = 100 × factor." },
+    { "front": "Ex-date rule under T+1", "back": "Regular dividend: ex-date = record date (last day to buy = business day before record). Distributions ≥ 25%: ex-date = first business day AFTER payable; due bills between record and payable." },
+    { "front": "Rule 144 affiliate volume limit", "back": "Greater of 1% of outstanding shares OR average weekly volume of the prior 4 weeks. Form 144 required if sale > 5,000 shares or > $50,000 in 3 months." },
+    { "front": "Spin-off cost basis", "back": "Allocate original basis between parent and spinco by relative fair market value; holding period carries over." }
+  ],
+  "quiz": [
+    {
+      "stem": "A 5% $100-par cumulative preferred stock has paid no dividends for the past two years. Before the company can pay any dividend on its common stock this year, each preferred share must receive:",
+      "options": ["$5", "$10", "$15", "$20"],
+      "answer": 2,
+      "explanation": "Cumulative preferred must clear all arrears plus the current year: $5 + $5 (two skipped years) + $5 (current) = $15. Forgetting the current year gives the $10 trap; $20 assumes three missed years."
+    },
+    {
+      "stem": "A shareholder owns 300 shares of a company that uses cumulative voting. Four directors are being elected. The maximum number of votes the shareholder may cast for a single candidate is:",
+      "options": ["75", "300", "400", "1,200"],
+      "answer": 3,
+      "explanation": "Total votes = shares × seats = 300 × 4 = 1,200, and cumulative voting lets the holder pile all 1,200 on one candidate. 300 is the statutory-voting maximum per candidate (the trap), and 75 wrongly divides rather than multiplies."
+    },
+    {
+      "stem": "A $100-par convertible preferred stock is convertible into common at $20 per share and currently trades at $110. The parity price of the common stock is:",
+      "options": ["$20", "$22", "$27.50", "$550"],
+      "answer": 1,
+      "explanation": "CR = par ÷ conversion price = $100 ÷ $20 = 5 shares; parity of common = preferred price ÷ CR = $110 ÷ 5 = $22. Using the conversion price itself ($20) ignores the preferred's premium over par; $550 multiplies instead of divides."
+    },
+    {
+      "stem": "XYZ common trades at $44. The company offers existing shareholders new shares at $36, with 3 rights required to buy one new share. Before the ex-rights date, the theoretical value of one right is:",
+      "options": ["$2.67", "$8.00", "$2.00", "$1.33"],
+      "answer": 2,
+      "explanation": "Cum-rights (before the ex-date) = (Market − Subscription) ÷ (rights needed + 1) = ($44 − $36) ÷ (3 + 1) = $2.00. Omitting the +1 gives $2.67, which is the ex-rights value and the classic trap when the stem says 'before the ex-rights date.'"
+    },
+    {
+      "stem": "An officer of a company with 12,000,000 common shares outstanding files Form 144 to sell control stock. Trading volume over the four preceding weeks was 150,000, 130,000, 140,000 and 140,000 shares. The maximum shares she may sell under Rule 144 in the next three months is:",
+      "options": ["140,000", "120,000", "150,000", "560,000"],
+      "answer": 0,
+      "explanation": "Rule 144(e) permits the GREATER of 1% of outstanding shares (120,000) or the average weekly volume of the prior four weeks (560,000 ÷ 4 = 140,000), so 140,000. 120,000 uses only the 1% test, 150,000 grabs the single highest week, and 560,000 forgets to average."
+    },
+    {
+      "stem": "An investor owns 200 shares of XYZ purchased at $60 per share. XYZ distributes a 20% stock dividend. After the distribution, the investor's cost basis per share is:",
+      "options": ["$60.00", "$50.00", "$48.00", "$72.00"],
+      "answer": 1,
+      "explanation": "Total basis stays $12,000; shares rise to 200 × 1.20 = 240, so per-share basis = $12,000 ÷ 240 = $50. Multiplying $60 by 0.8 ($48) applies the wrong operation, and the basis is never left unchanged at $60 after more shares are added."
+    },
+    {
+      "stem": "A $100-par 6% preferred stock is convertible at $20 and callable at $103. The company announces it will call the entire issue. The preferred trades at $104 and the common at $21.50. Which action produces the greatest value for a holder?",
+      "options": ["Accept the call and receive $103 per share", "Sell the preferred in the market at $104", "Convert to common and sell the common shares", "Hold the preferred and keep collecting the 6% dividend"],
+      "answer": 2,
+      "explanation": "CR = $100 ÷ $20 = 5 shares, so converting yields 5 × $21.50 = $107.50 — more than the $104 market price or the $103 call. Holding is not viable once the issue is called (the dividend stops), so 'convert and sell' wins."
+    },
+    {
+      "stem": "A corporation declares a 30% stock dividend with a record date of Wednesday, June 10, and a payable date of Wednesday, June 24 (all business days). The ex-dividend date is:",
+      "options": ["Wednesday, June 10", "Tuesday, June 9", "Wednesday, June 24", "Thursday, June 25"],
+      "answer": 3,
+      "explanation": "For distributions of 25% or more, FINRA Rule 11140(b)(2) sets the ex-date as the first business day AFTER the payable date — June 25 — with due bills covering trades between record and payable. The record-date answer (June 10) is correct only for regular distributions under T+1, not large ones."
+    }
+  ]
+}

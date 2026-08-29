@@ -1,0 +1,100 @@
+{
+  "module": "M29",
+  "title": "Investment companies and mutual-fund math",
+  "domain": "packaged",
+  "estMinutes": 30,
+  "reading": [
+    {
+      "h": "The three 1940-Act classifications",
+      "body": "The **Investment Company Act of 1940** sorts every investment company into three types. **Face-amount certificate company** — promises a fixed sum at a future date for a lump-sum or installment payment (basically a debt contract; rare, tested as a name). **Unit investment trust (UIT)** — a fixed, unmanaged portfolio with **no board of directors and no investment adviser**, issuing redeemable units. **Management company** — actively managed, and this is the one that splits again: **open-end** (mutual fund) vs **closed-end**, and **diversified** vs **non-diversified**.\n\nTo register, a fund needs **$100,000 minimum net worth (seed capital)** and a clearly stated investment objective, and its shares are also registered under the 1933 Act, so a **prospectus** is required."
+    },
+    {
+      "h": "The diversified test: 75-5-10",
+      "body": "A **diversified** management company must, with **75%** of its assets, hold no more than **5%** of *the fund's* assets in any one issuer and own no more than **10%** of any one issuer's voting stock. The other 25% is unrestricted.\n\nExample: a $200 million diversified fund can put at most **5% × $200M = $10M** into a single company inside its 75% sleeve, and cannot own more than 10% of that company's voting shares. A fund that wants to change from diversified to non-diversified needs a **majority shareholder vote** under §13(a)."
+    },
+    {
+      "h": "Who does what inside a fund",
+      "body": "**Board of directors** — elected by shareholders; at least **40%** must be independent (non-interested); approves the adviser contract and the 12b-1 plan. **Investment adviser** — actively manages the portfolio per the objective; the advisory fee (a % of net assets) is the fund's **largest expense**; the contract runs an initial **2 years**, then is renewed **annually**. **Custodian** — a bank that physically safekeeps the cash and securities (does not manage). **Transfer agent** — issues and redeems shares, keeps shareholder records, pays distributions. **Underwriter/distributor (sponsor)** — sells shares and earns the sales charge.\n\n**Rule 12b-1** lets an open-end fund pay distribution costs from fund assets under a written plan re-approved annually; FINRA caps the asset-based sales charge at **0.75%** plus a **0.25%** service fee."
+    },
+    {
+      "h": "NAV, POP, and the sales-charge percentage",
+      "body": "Three formulas run the math, and the pivot fact is that **the sales charge is a percentage of POP, never of NAV**.\n\n**POP = NAV ÷ (1 − sales charge %).** NAV $20.00 with a 5% load → 20.00 ÷ 0.95 = **$21.05**. The planted wrong answer is 20.00 × 1.05 = $21.00.\n\n**Sales charge % = (POP − NAV) ÷ POP.** POP $12.50, NAV $11.75 → 0.75 ÷ 12.50 = **6.0%**. Dividing by NAV instead (0.75 ÷ 11.75 = 6.4%) is the classic error.\n\n**Dollar sales charge = POP − NAV** per share; **shares bought = dollars invested ÷ POP** (fractional shares are normal)."
+    },
+    {
+      "h": "The 8.5% ceiling and its three conditions",
+      "body": "FINRA Rule 2341 caps a mutual fund's sales charge at **8.5% of POP** — but a fund may charge the full 8.5% **only if it offers all three** of: (1) **breakpoints** (quantity discounts), (2) **rights of accumulation**, and (3) **reinvestment of dividends at NAV**. Miss any one and the maximum steps down.\n\nAt the other end, a **no-load** fund charges no front-end or deferred sales charge **and** keeps total 12b-1 plus service fees at **0.25% or less**. A fund with a 0.50% 12b-1 fee cannot call itself no-load."
+    },
+    {
+      "h": "Breakpoints, LOI, and ROA — the discount trio",
+      "body": "**Breakpoints** lower the Class A sales-charge percentage as the purchase grows. Available to an individual, a household (spouse and minor children), trusts, and retirement accounts — **not** to investment clubs formed to pool for the discount. Steering a customer to just below a breakpoint is a prohibited **breakpoint sale**.\n\n**Letter of intent (LOI):** non-binding, **13 months**, backdatable **90 days**, shares held in **escrow**, and **only new money counts** (appreciation and reinvested dividends do not).\n\n**Rights of accumulation (ROA):** existing holdings valued at the **higher of current value or original cost** plus the new purchase qualify the **new money** for a lower tier — **no time limit and no retroactive refund** on old shares. Worked example: holdings worth $40,000 (cost $32,000) plus a new $15,000 = $55,000, which crosses the $50,000 tier, so the **$15,000** pays the lower rate; only the new money is discounted."
+    },
+    {
+      "h": "Dollar-cost averaging and Subchapter M",
+      "body": "**Dollar-cost averaging (DCA):** fixed dollars at fixed intervals buys more shares when the price is low and fewer when it is high, so in a fluctuating market the **average cost per share is less than the average price per share**. Buy $600/month at $12, $10, $8, $10 → 50 + 60 + 75 + 60 = **245 shares for $2,400**; average cost = 2,400 ÷ 245 = **$9.80**, below the $10.00 average price.\n\n**Subchapter M (conduit/pipeline theory):** a fund that distributes at least **90% of its net investment income** is a regulated investment company and pays no tax on what it passes through; it still owes tax on anything retained. **Capital-gain distributions are always long-term** to the shareholder regardless of how long the shares were held, and distributions are taxable whether taken in cash or reinvested (reinvested amounts add to basis)."
+    }
+  ],
+  "flashcards": [
+    { "front": "The three 1940-Act classifications", "back": "Face-amount certificate company; unit investment trust (UIT); management company (open-end/closed-end, diversified/non-diversified)." },
+    { "front": "Diversified test (75-5-10)", "back": "75% of assets: no more than 5% in any one issuer AND no more than 10% of an issuer's voting stock. Other 25% unrestricted." },
+    { "front": "POP = ?", "back": "POP = NAV ÷ (1 − sales charge %). NAV $20, 5% load → 21.05." },
+    { "front": "Sales charge % = ?", "back": "(POP − NAV) ÷ POP. POP $12.50, NAV $11.75 → 0.75/12.50 = 6.0% (dividing by NAV = 6.4% is the trap)." },
+    { "front": "8.5% max sales charge requires which three?", "back": "Breakpoints, rights of accumulation, and reinvestment of dividends at NAV. Miss one and the cap drops." },
+    { "front": "No-load definition", "back": "No front-end/deferred sales charge AND 12b-1 + service fees ≤ 0.25% of net assets." },
+    { "front": "LOI vs. ROA", "back": "LOI: 13 months, 90-day backdate, escrow, new money only. ROA: no time limit, uses higher of value/cost, no retroactive refund." },
+    { "front": "Investment adviser — contract term", "back": "Initial 2 years, then renewed annually by the board (incl. majority of independents) or shareholders. Advisory fee is the fund's largest expense." },
+    { "front": "Independent directors minimum", "back": "At least 40% of the board must be non-interested (independent) under the 1940 Act." },
+    { "front": "Redemption timing (ICA §22(e))", "back": "Fund must pay a redeeming shareholder within 7 CALENDAR days at the next-computed NAV." },
+    { "front": "Subchapter M threshold", "back": "Distribute at least 90% of net investment income to be a RIC and avoid entity tax on distributed income." },
+    { "front": "DCA: average cost vs. average price", "back": "In a fluctuating market, average COST per share < average PRICE per share." }
+  ],
+  "quiz": [
+    {
+      "stem": "An open-end fund has a net asset value of $20.00 per share and a sales charge of 5%. The public offering price is:",
+      "options": ["$19.00", "$21.00", "$21.05", "$21.50"],
+      "answer": 2,
+      "explanation": "The sales charge is a percentage of POP, so POP = NAV ÷ (1 − 0.05) = 20.00 ÷ 0.95 = $21.05. The trap $21.00 comes from 20.00 × 1.05, which wrongly treats the load as a percentage of NAV."
+    },
+    {
+      "stem": "A mutual fund's public offering price is $12.50 and its net asset value is $11.75. The sales charge percentage is:",
+      "options": ["6.0%", "6.4%", "7.5%", "5.6%"],
+      "answer": 0,
+      "explanation": "Sales charge % = (POP − NAV) ÷ POP = (12.50 − 11.75) ÷ 12.50 = 0.75 ÷ 12.50 = 6.0%. Dividing the $0.75 charge by NAV instead (0.75 ÷ 11.75 = 6.4%) is the classic error, because the charge is always a percentage of POP."
+    },
+    {
+      "stem": "A mutual fund may impose the maximum 8.5% sales charge ONLY if it offers all of the following EXCEPT:",
+      "options": ["Breakpoints (quantity discounts)", "Rights of accumulation", "Reinvestment of dividends at net asset value", "A guaranteed minimum rate of return"],
+      "answer": 3,
+      "explanation": "Under FINRA Rule 2341 the full 8.5% is permitted only when the fund provides breakpoints, rights of accumulation, and reinvestment of dividends at NAV; miss any one and the cap steps down. No fund guarantees a return, so that choice is the exception."
+    },
+    {
+      "stem": "A customer owns Class A shares now worth $40,000 (original cost $32,000). Breakpoints: under $50,000 = 5.75%; $50,000-$99,999 = 4.50%; $100,000+ = 3.50%. Under rights of accumulation the customer invests an additional $15,000. The sales charge on the new purchase is:",
+      "options": ["$862.50", "$675.00", "$2,475.00", "$525.00"],
+      "answer": 1,
+      "explanation": "ROA values existing holdings at the higher of cost or current value ($40,000); $40,000 + $15,000 = $55,000 crosses the $50,000 tier, so only the new $15,000 pays 4.50% = $675. There is no retroactive refund on the old shares ($2,475 wrongly charges 4.50% on all $55,000; $862.50 ignores ROA and applies 5.75%)."
+    },
+    {
+      "stem": "A customer signs a letter of intent to qualify for a fund's breakpoint. Which statement is TRUE?",
+      "options": ["The customer has 13 months to complete the purchases, and the letter may be backdated up to 90 days to include a prior purchase", "The customer has 12 months to complete, and appreciation on shares already owned counts toward the total", "The letter is a binding contract, and failing to complete it results in a fine", "All purchases must be completed within 90 days of signing"],
+      "answer": 0,
+      "explanation": "An LOI is a non-binding pledge to reach the breakpoint within 13 months and may be backdated up to 90 days (the 13 months run from the backdated date). Only new money counts — appreciation does not — and non-completion triggers the higher charge through escrowed shares, not a fine."
+    },
+    {
+      "stem": "To qualify as a regulated investment company under Subchapter M and avoid paying tax on the income it distributes, a fund must distribute at least what percentage of its net investment income to shareholders?",
+      "options": ["50%", "75%", "90%", "100%"],
+      "answer": 2,
+      "explanation": "Under conduit (pipeline) theory a fund that distributes at least 90% of net investment income is taxed only on what it retains. 75% is a REIT asset/income test — a different rule for a different vehicle."
+    },
+    {
+      "stem": "A $200 million diversified management company wants to remain diversified under the 75-5-10 test. The MOST it may invest in the securities of a single issuer within its 75% diversified sleeve is:",
+      "options": ["$2 million", "$10 million", "$15 million", "$20 million"],
+      "answer": 1,
+      "explanation": "The 5% limit applies to the fund's total assets: 5% × $200 million = $10 million in any one issuer, and it also may not own more than 10% of that issuer's voting stock. The other 25% of the portfolio is unrestricted."
+    },
+    {
+      "stem": "Which party actively manages a mutual fund's portfolio in line with its objective and earns the fee that is typically the fund's largest single expense?",
+      "options": ["The custodian", "The transfer agent", "The investment adviser", "The underwriter"],
+      "answer": 2,
+      "explanation": "The investment adviser (portfolio manager) selects the securities and is paid a percentage of net assets — the fund's largest expense. The custodian only safekeeps assets, the transfer agent handles share records and distributions, and the underwriter sells shares for the sales charge."
+    }
+  ]
+}

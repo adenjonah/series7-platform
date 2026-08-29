@@ -1,0 +1,100 @@
+{
+  "module": "M14",
+  "title": "Packaged products: the pooled-vehicle family, pricing, and share classes",
+  "domain": "packaged",
+  "estMinutes": 25,
+  "reading": [
+    {
+      "h": "One idea, five wrappers",
+      "body": "A **packaged product** takes many investors' money, pools it, and hands back a proportional slice of a professional portfolio. The exam's job is to make you tell the wrappers apart, because they price and trade very differently.\n\nThe five you must separate on sight: **open-end fund** (a mutual fund — issues new shares continuously, redeemed by the fund), **closed-end fund** (a fixed number of shares that trade on an exchange like a stock), **unit investment trust (UIT)** (a fixed, unmanaged portfolio of redeemable units), **exchange-traded fund (ETF)** (an index-or-managed basket that trades intraday and stays near NAV), and the odd one out, the **exchange-traded note (ETN)**, which is not a fund at all."
+    },
+    {
+      "h": "Open-end vs. closed-end — where the price comes from",
+      "body": "An **open-end (mutual) fund** is *always* a primary-market transaction: you buy new shares from the fund at the **public offering price (POP)** and redeem them back to the fund at **net asset value (NAV)**. You can never buy an open-end share below NAV.\n\nA **closed-end fund** raises a fixed pool once in an IPO, then its shares trade **secondary** on an exchange at whatever supply and demand set — which can be a **premium or a discount to NAV** (most trade at a discount). So if you ever see a fund quoted *below* its reported NAV, it is a closed-end fund, not a mutual fund. Closed-end shares are bought with a **commission**, can be margined and sold short, and the fund may issue preferred stock and bonds (leverage)."
+    },
+    {
+      "h": "NAV and forward pricing",
+      "body": "**NAV per share = (total assets − liabilities) ÷ shares outstanding**, computed at least once a day at the 4:00 p.m. ET close. Buying or selling fund shares does not move NAV per share (assets and shares rise together); paying a distribution *lowers* NAV by the amount paid.\n\n**Forward pricing (Rule 22c-1):** every purchase and redemption is filled at the **next** NAV calculated after the order is received. An order at 2:00 p.m. gets that day's 4:00 p.m. price; an order at 4:30 p.m. gets tomorrow's. Entering after the close at *today's* already-known price is illegal **late trading**."
+    },
+    {
+      "h": "Loads and the A / B / C share classes",
+      "body": "A **load** is a sales charge, and it is **always a percentage of the POP, never of NAV**. So **POP = NAV ÷ (1 − sales charge %)**. A fund with a $9.50 NAV and a 5% load has a POP of 9.50 ÷ 0.95 = **$10.00** — not 9.50 × 1.05.\n\nThe same portfolio is sold in three flavors. **Class A** — front-end load taken up front, but it offers **breakpoints** and a low ongoing 12b-1 fee; best for **large amounts and long horizons**. **Class B** — no front load but a **back-end contingent deferred sales charge (CDSC)** that declines to zero over several years, plus a high 12b-1; **converts to Class A** eventually. **Class C** — a **level load** (about 1% every year forever), tiny or no front/back charge, **no breakpoints, no conversion**; cheapest for a **short horizon**, worst for the long haul."
+    },
+    {
+      "h": "Getting a discount: breakpoints, LOI, ROA",
+      "body": "**Breakpoints** are quantity discounts on Class A: the more you invest, the lower the sales-charge percentage, per a schedule in the prospectus. Recommending a purchase *just below* a breakpoint to earn a bigger charge is a prohibited **breakpoint sale**.\n\n**Letter of intent (LOI):** a **non-binding** pledge to invest enough within **13 months** to reach a breakpoint; every purchase gets the discount, and the fund holds some shares in **escrow** in case you don't finish. It may be **backdated up to 90 days**. Only new money counts — **appreciation and reinvested dividends do not**.\n\n**Rights of accumulation (ROA):** once your holdings (valued at the higher of current value or cost) plus the new purchase cross a breakpoint, the **new money** gets the lower rate — **no time limit, no retroactive refund** on the old shares."
+    },
+    {
+      "h": "ETFs and the impostor, the ETN",
+      "body": "An **ETF** is usually an open-end fund or UIT that **trades intraday on an exchange**. Its price is kept glued to NAV by **creation/redemption**: authorized participants swap a basket of the underlying securities for large blocks of shares **in kind**, which also makes ETFs **tax-efficient** (in-kind redemptions don't force the fund to sell and realize gains). Investors pay a commission and a bid-ask spread, not a sales load.\n\nAn **ETN** looks similar but is **unsecured debt of a bank** — it carries the **issuer's credit risk** and is not a fund at all. **Leveraged and inverse ETFs reset daily**, so over multi-day holds compounding pulls their return away from the stated multiple; FINRA treats them as generally **unsuitable for buy-and-hold retail investors**."
+    },
+    {
+      "h": "First look at annuities",
+      "body": "An **annuity** is an insurance contract, and the exam's first fork is *who bears the investment risk*. In a **fixed annuity** the premium goes into the insurer's **general account**, the insurer guarantees the rate and payment, and the **insurer bears investment risk** (you bear purchasing-power/inflation risk); it is **not a security**. In a **variable annuity** the premium goes into a **separate account** invested in subaccounts, the **owner bears the investment risk**, and because it is a security it requires a **prospectus** and a rep with both a securities and an insurance license. Module 30 goes deep; for now, just lock in *fixed = insurer's risk, variable = owner's risk*."
+    }
+  ],
+  "flashcards": [
+    { "front": "Which pooled vehicle can trade BELOW its NAV?", "back": "A closed-end fund (secondary market, price set by supply/demand). Open-end shares are always sold at POP and redeemed at NAV." },
+    { "front": "NAV per share formula", "back": "(Total assets − liabilities) ÷ shares outstanding, computed at the 4:00 p.m. ET close." },
+    { "front": "Forward pricing (Rule 22c-1)", "back": "Every purchase/redemption is filled at the NEXT NAV computed after the order is received. A 2 p.m. order gets the 4 p.m. price." },
+    { "front": "POP from NAV and load", "back": "POP = NAV ÷ (1 − sales charge %). Sales charge is a % of POP, never of NAV." },
+    { "front": "Class A vs. B vs. C — best use", "back": "A = large/long-term (breakpoints, front load); B = back-end CDSC that declines, converts to A; C = short horizon (level load, no breakpoints, no conversion)." },
+    { "front": "LOI vs. ROA — the two differences", "back": "LOI = 13-month forward pledge, backdate up to 90 days, escrow, only new money (no appreciation). ROA = no time limit, counts current value, no retroactive refund." },
+    { "front": "What keeps an ETF near NAV?", "back": "Creation/redemption of shares in kind by authorized participants (also makes ETFs tax-efficient)." },
+    { "front": "ETN — what is it really?", "back": "Unsecured DEBT of a bank; carries issuer credit risk. NOT a fund." },
+    { "front": "Leveraged/inverse ETFs", "back": "Reset DAILY; over multi-day holds compounding diverges from the stated multiple. Generally unsuitable for buy-and-hold retail." },
+    { "front": "Fixed vs. variable annuity — who bears investment risk?", "back": "Fixed = insurer (general account); variable = owner (separate account, a security)." },
+    { "front": "Late trading", "back": "Illegally entering an order after the 4 p.m. close at today's already-known price. Forward pricing forbids it." },
+    { "front": "Breakpoint sale (violation)", "back": "Recommending a purchase just BELOW a breakpoint so the rep earns a higher sales charge." }
+  ],
+  "quiz": [
+    {
+      "stem": "A customer sees shares of an investment company quoted at $18.40 while the fund reports a net asset value of $20.00 per share. This fund is MOST likely:",
+      "options": ["A closed-end fund whose shares trade on an exchange at a discount to NAV", "An open-end fund selling below NAV to attract new investors", "A no-load open-end fund", "A money market fund that has broken the buck"],
+      "answer": 0,
+      "explanation": "Open-end shares are always sold at POP and redeemed at NAV, never below NAV, so a price under reported NAV must be a closed-end fund, whose exchange price is set by supply and demand and can sit at a discount. A no-load open-end fund still transacts at NAV, not below it."
+    },
+    {
+      "stem": "A customer places an order to buy shares of a mutual fund at 2:00 p.m. ET. Under forward pricing, the price the customer pays is based on:",
+      "options": ["The NAV computed at that day's 4:00 p.m. close", "The NAV from the prior day's close", "The NAV at the moment the order was entered, 2:00 p.m.", "The average NAV for the week"],
+      "answer": 0,
+      "explanation": "Rule 22c-1 forward pricing fills the order at the NEXT NAV computed after receipt — here that day's 4:00 p.m. calculation. Using a price already known at 2:00 p.m. or the prior close would be the mispricing the rule exists to prevent (that is late trading)."
+    },
+    {
+      "stem": "An open-end fund has a net asset value of $9.50 per share and a 5% sales charge. Its public offering price is:",
+      "options": ["$9.98", "$10.00", "$9.975", "$9.50"],
+      "answer": 1,
+      "explanation": "The sales charge is a percentage of POP, so POP = NAV ÷ (1 − 0.05) = 9.50 ÷ 0.95 = $10.00. The trap is 9.50 × 1.05 = $9.975, which treats the load as a percentage of NAV."
+    },
+    {
+      "stem": "An investor plans to invest a large lump sum and hold it for 20 years. Which mutual fund share class is generally MOST appropriate?",
+      "options": ["Class A, because breakpoints reduce the sales charge and the ongoing 12b-1 fee is low", "Class B, because the back-end charge is waived after one year", "Class C, because the level load is cheapest for a long holding period", "It makes no difference; all classes cost the same over time"],
+      "answer": 0,
+      "explanation": "A large amount qualifies for Class A breakpoints, and A's low 12b-1 fee compounds cheaply over a long horizon. Class C's ~1% annual level load is worst over 20 years, and Class B's CDSC plus high 12b-1 also costs more than A's discounted front load for a large, long-term investment."
+    },
+    {
+      "stem": "An exchange-traded note (ETN) differs from an ETF in that an ETN is:",
+      "options": ["A basket of stocks redeemable in kind by authorized participants", "An unsecured debt obligation of the issuing bank, carrying issuer credit risk", "A closed-end fund that trades at a discount to NAV", "Guaranteed by the FDIC up to $250,000"],
+      "answer": 1,
+      "explanation": "An ETN is unsecured debt of a bank, so its value depends on the issuer's creditworthiness — it is not a fund and holds no basket of securities. The in-kind creation/redemption description applies to ETFs, and ETNs carry no FDIC insurance."
+    },
+    {
+      "stem": "During the accumulation period of a variable annuity, the investment risk is borne by:",
+      "options": ["The insurance company, which guarantees a minimum rate of return", "The contract owner, whose premiums are invested in a separate account", "The broker-dealer that sold the contract", "The state insurance guaranty association"],
+      "answer": 1,
+      "explanation": "Variable annuity premiums go into a separate account whose value fluctuates, so the owner bears investment risk. In a FIXED annuity the insurer's general account bears investment risk and the owner instead bears purchasing-power (inflation) risk."
+    },
+    {
+      "stem": "A customer signs a letter of intent (LOI) to reach a $50,000 breakpoint. Which statement is TRUE?",
+      "options": ["The LOI is binding, and failing to complete it results in a FINRA fine", "The customer has 13 months to complete the purchases, and the LOI may be backdated up to 90 days to capture a prior purchase", "Appreciation on shares already owned counts toward completing the LOI", "All purchases must be completed within 90 days of signing"],
+      "answer": 1,
+      "explanation": "An LOI is a non-binding pledge to invest enough within 13 months, and it may be backdated up to 90 days to include an earlier purchase. Only new money counts — appreciation and reinvested dividends do not — and non-completion simply triggers the higher charge via escrowed shares, not a fine."
+    },
+    {
+      "stem": "All of the following are characteristics of a unit investment trust (UIT) EXCEPT:",
+      "options": ["It has no board of directors", "Its portfolio is fixed rather than actively traded", "Units are redeemable through the sponsor", "It employs an investment adviser who actively manages the portfolio for an ongoing fee"],
+      "answer": 3,
+      "explanation": "A UIT is organized under a trust indenture with a fixed, unmanaged portfolio, redeemable units, and NO board of directors and NO investment adviser — so there is no ongoing management fee. The other three are all defining UIT traits."
+    }
+  ]
+}

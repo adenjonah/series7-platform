@@ -1,0 +1,88 @@
+{
+  "module": "M2",
+  "title": "What a security is",
+  "domain": "foundations",
+  "estMinutes": 20,
+  "reading": [
+    {
+      "h": "The definition and the Howey test",
+      "body": "A **security** is a tradable financial instrument representing either **ownership** (equity), a **creditor relationship** (debt), or a **right to buy or sell** one of those (a derivative). The legal test the exam uses is **Howey**: an *investment of money* in a *common enterprise* with an *expectation of profit* derived *from the efforts of others*. If all four are present, the instrument is a security and the securities laws apply.\n\nKeep the core question from M1 in front of you for every product: **does the holder own this, or are they owed money?** Ownership = equity; owed = debt."
+    },
+    {
+      "h": "Why companies issue securities",
+      "body": "A business that needs capital to grow has three choices: borrow from a bank, borrow from the public (issue **bonds**), or sell pieces of itself (issue **stock**). Selling securities to the public is *raising capital in the capital markets* — called **capital formation**.\n\nThe party that creates and sells the security is the **issuer** (a corporation or a government). The party who buys it is the **investor**. This issuer-vs-investor distinction is what separates the primary market (issuer raises money) from the secondary market (investors trade with each other), covered in M3."
+    },
+    {
+      "h": "The three families of securities",
+      "body": "**Equity** — ownership. Common stock (voting, residual claim, dividends never guaranteed), preferred stock (fixed dividend, priority over common, usually no vote), plus rights, warrants, and ADRs.\n\n**Debt** — loans. Treasuries, agencies, corporate bonds, municipal bonds, and money-market instruments (T-bills, commercial paper, CDs, banker's acceptances, repos).\n\n**Derivatives / packaged** — value derived from or pooled around the first two: options, futures, mutual funds, ETFs, UITs, annuities, REITs, DPPs.\n\n**Top trap:** 'fixed income' includes **preferred stock** as well as bonds. Preferred is legally *equity* but behaves like a bond (a fixed payment that does not grow), so the exam classifies it as fixed income."
+    },
+    {
+      "h": "Order of liquidation — who gets paid if the company dies",
+      "body": "If a corporation is liquidated, claims are paid in strict priority. Memorize the ladder from first to last:\n\n**Secured creditors** (mortgage bonds, equipment trust) → **unsecured creditors / debenture holders** → **subordinated debt** → **preferred stockholders** → **common stockholders**.\n\nA useful anchor: **all debt is paid before any equity**, and within equity **preferred comes before common**. Common stock is the **residual** claim — last in line, and frequently zero. The upside protection is **limited liability**: a shareholder can lose only what they invested, never more."
+    },
+    {
+      "h": "Par, market price, premium, and discount",
+      "body": "**Par (face) value** is a stated number: **$1,000 for a bond**, typically **$100 for preferred stock**, and arbitrary or none for common stock. Par matters for bonds because interest is quoted as a percent of par and principal is repaid at par.\n\n**Market price** floats with supply and demand. When a bond trades **above par** it is at a **premium**; **below par** it is at a **discount**. A bond quoted at 102 (a premium) costs $1,020; at 97 (a discount) it costs $970. Rates and price move as a seesaw — when market rates rise, existing bond prices fall to a discount."
+    },
+    {
+      "h": "Return components",
+      "body": "Total return has two parts: **income** (dividends on stock, interest on bonds) plus **capital appreciation** (the change in price). A gain is **realized** once you sell and **unrealized** while you still hold.\n\n**Total return = (ending value − beginning value + income) ÷ beginning value.**\n\nExample: buy a stock at $50, collect $2 in dividends, and sell at $55. Total return = (55 − 50 + 2) ÷ 50 = 7 ÷ 50 = **14%**. Note that the same product can deliver return two ways — a growth stock leans on appreciation, a preferred stock or bond leans on income."
+    }
+  ],
+  "flashcards": [
+    { "front": "The four prongs of the Howey test", "back": "Investment of money, in a common enterprise, with an expectation of profit, from the efforts of others." },
+    { "front": "The three families of securities", "back": "Equity (ownership), debt (loans/creditor), and derivatives/packaged (options, funds, ETFs, annuities, REITs, DPPs)." },
+    { "front": "Is preferred stock equity or fixed income?", "back": "Both — it is legally equity but classified as fixed income because its dividend is fixed and does not grow. Classic trap." },
+    { "front": "Liquidation priority, first to last", "back": "Secured creditors → unsecured/debenture holders → subordinated debt → preferred stock → common stock (residual)." },
+    { "front": "What is limited liability?", "back": "A shareholder can lose only the amount invested — never more. The upside cap on owning equity." },
+    { "front": "Par value: bond vs preferred vs common", "back": "Bond $1,000; preferred typically $100; common arbitrary/none." },
+    { "front": "Premium vs discount", "back": "Premium = market price above par; discount = below par. A bond at 102 = $1,020; at 97 = $970." },
+    { "front": "Total return formula", "back": "(ending value − beginning value + income) ÷ beginning value." },
+    { "front": "Realized vs unrealized gain", "back": "Realized = you sold and locked it in; unrealized = a paper gain you still hold." },
+    { "front": "Issuer vs investor", "back": "Issuer creates and sells the security (raises capital); investor buys it. Distinguishes primary from secondary market." }
+  ],
+  "quiz": [
+    {
+      "stem": "When you buy one share of a company's common stock, what have you actually bought?",
+      "options": ["A loan to the company that it must repay to you with interest", "A small piece of ownership in the company", "A promise that the company will buy the share back at a set price", "A fixed yearly payment that the company guarantees"],
+      "answer": 1,
+      "explanation": "Stock is equity — a slice of ownership with a residual claim, and dividends are never guaranteed. A loan repaid with interest describes a bond; a guaranteed fixed payment describes debt, not common stock."
+    },
+    {
+      "stem": "A corporation is liquidated. In what order are the following paid?",
+      "options": ["Common stockholders, preferred stockholders, secured creditors", "Secured creditors, debenture holders, preferred stockholders, common stockholders", "Preferred stockholders, secured creditors, common stockholders", "Debenture holders, secured creditors, common stockholders, preferred stockholders"],
+      "answer": 1,
+      "explanation": "All debt is paid before any equity, and secured debt precedes unsecured debentures; within equity, preferred precedes common. Common is the residual claim, paid last. Any ordering that puts stock ahead of creditors is wrong."
+    },
+    {
+      "stem": "Which of the following is generally classified as a fixed-income security even though it represents ownership?",
+      "options": ["Common stock", "A warrant", "Preferred stock", "A stock right"],
+      "answer": 2,
+      "explanation": "Preferred stock is legally equity but is treated as fixed income because its dividend is a fixed amount that does not grow — it behaves like a bond. Common stock, warrants, and rights all offer variable/appreciation-based value, not a fixed payment."
+    },
+    {
+      "stem": "An investor buys a stock at $60, receives $3 in dividends during the year, and sells it at $63. What is the total return?",
+      "options": ["5%", "10%", "3%", "6%"],
+      "answer": 1,
+      "explanation": "Total return = (ending − beginning + income) ÷ beginning = (63 − 60 + 3) ÷ 60 = 6 ÷ 60 = 10%. Counting only the $3 price change (5%) or only the dividend ignores that total return folds income and appreciation together."
+    },
+    {
+      "stem": "A corporate bond with a $1,000 par value is quoted at 103. What is its dollar price, and is it trading at a premium or discount?",
+      "options": ["$1,030, premium", "$1,030, discount", "$103, premium", "$970, discount"],
+      "answer": 0,
+      "explanation": "A bond is quoted as a percent of $1,000 par, so 103 = 103% × $1,000 = $1,030. Because the price is above par it is trading at a premium. A price below 100 would be a discount."
+    },
+    {
+      "stem": "Under the Howey test, an arrangement is a security only if the expectation of profit comes primarily from:",
+      "options": ["The investor's own active management of the enterprise", "The efforts of others", "A government guarantee of the return", "The collateral pledged to secure it"],
+      "answer": 1,
+      "explanation": "Howey requires that profit be expected from the efforts of others (a common enterprise). If the investor personally runs the business, that prong fails. A guarantee or collateral is not part of the Howey test."
+    },
+    {
+      "stem": "Which statement about limited liability is correct?",
+      "options": ["A common shareholder can be assessed for the company's debts beyond their investment", "A common shareholder's maximum loss is the amount invested", "Limited liability applies to bondholders but not stockholders", "Limited liability guarantees the shareholder's principal"],
+      "answer": 1,
+      "explanation": "Limited liability caps a shareholder's loss at the amount invested — creditors cannot pursue personal assets. It does not guarantee principal (the shares can still go to zero); it simply prevents losses greater than the investment."
+    }
+  ]
+}

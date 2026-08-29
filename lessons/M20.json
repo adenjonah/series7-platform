@@ -1,0 +1,93 @@
+{
+  "module": "M20",
+  "title": "Options II: hedging and income with stock (protective put, covered call, protective call, covered put)",
+  "domain": "options",
+  "estMinutes": 26,
+  "reading": [
+    {
+      "h": "The one idea behind all four",
+      "body": "When you combine a stock position with an option, you get one of four named strategies. Two are **hedges** (you buy an option for protection) and two are **income** plays (you write an option to collect premium).\n\nThe single rule that unlocks every one of them: **the breakeven is built around what the stock cost you, not around the strike.** Buying protection *raises* your all-in cost (breakeven up); writing an option for income *lowers* it (breakeven down).\n\nThe insurance analogy holds throughout: to protect a position, **buy the option in the direction you fear**. You own stock and fear a drop? Buy a put. You are short stock and fear a rally? Buy a call."
+    },
+    {
+      "h": "Protective put — insured long stock",
+      "body": "**Long stock + long put.** You own the stock (bullish) but buy a put as an insurance floor. Your upside stays **unlimited**; your downside is capped because the put lets you sell at the strike no matter how far the stock falls.\n\n**Breakeven = stock cost + premium** (the insurance premium raised your cost). **Max loss = (stock cost − strike) + premium.** **Max gain = unlimited.**\n\nWorked: **Buy 100 ABC at 45, buy 1 ABC 40 put @ 2.** Breakeven = 45 + 2 = **47**. Max loss = (45 − 40) + 2 = 7 × 100 = **$700** — and it stays $700 no matter how far ABC drops, because the put floors you at 40.\n\nCheck it with a T-chart at a stock price of 30: Out = 45 (stock) + 2 (put) = 47; In = 40 (sold via the put). Net −7 → −$700. The put stopped the bleeding at 40."
+    },
+    {
+      "h": "Covered call — income on stock you own",
+      "body": "**Long stock + short call.** You own the stock and write a call against it to collect premium. This is the exam's one \"conservative\" option strategy — appropriate for many investors *if the stock itself is suitable* — because the call is **covered** (you already own the deliverable, so there is no unlimited risk).\n\nThe premium **lowers your breakeven**, giving a small downside cushion, but it also **caps your upside** at the strike.\n\n**Breakeven = stock cost − premium.** **Max gain = (strike − stock cost) + premium.** **Max loss = stock cost − premium** (stock to zero).\n\nWorked: **Buy 100 ABC at 45, write 1 ABC 50 call @ 3.** Breakeven = 45 − 3 = **42**. Max gain (if assigned at 50) = (50 − 45) + 3 = 8 × 100 = **$800**. Max loss (ABC to 0) = 45 − 3 = 42 × 100 = **$4,200**."
+    },
+    {
+      "h": "Protective call — insured short stock",
+      "body": "**Short stock + long call.** You sold stock short (bearish) and fear a rally, so you buy a call as insurance that caps the price you would have to pay to cover.\n\n**Breakeven = short-sale price − premium** (the insurance cost lowers the price you can afford to break even). **Max loss = (strike − short-sale price) + premium.** **Max gain = short-sale price − premium** (stock to zero).\n\nWorked: **Sell short 100 ABC at 80, buy 1 ABC 85 call @ 3.** Breakeven = 80 − 3 = **77**. Max loss = (85 − 80) + 3 = 8 × 100 = **$800** (the call caps your buy-back at 85). Max gain = 80 − 3 = 77 × 100 = **$7,700** if ABC falls to zero."
+    },
+    {
+      "h": "Covered put — the trap with unlimited risk",
+      "body": "**Short stock + short put.** You are short the stock (bearish) and write a put to collect income. The name says \"covered,\" but do not be fooled: **this position has UNLIMITED risk.** If the stock *rises*, the short stock loses without any ceiling, and the short put does nothing to help you — it only pays off if the stock falls.\n\n**Breakeven = short-sale price + premium.** **Max gain = (short-sale price − strike) + premium.** **Max loss = UNLIMITED.**\n\nWorked: **Sell short 100 ABC at 80, write 1 ABC 75 put @ 4.** Breakeven = 80 + 4 = **84**. Max gain = (80 − 75) + 4 = 9 × 100 = **$900** (best case, ABC at or below 75). Max loss = unlimited if ABC keeps climbing. The word \"covered\" here refers only to the put, never to the short stock's risk — a favorite exam trap."
+    },
+    {
+      "h": "Reading the whole set at a glance",
+      "body": "Line the four up and the pattern is clean. The two positions that start with **long stock** (protective put, covered call) are fundamentally **bullish**; the two that start with **short stock** (protective call, covered put) are **bearish**.\n\nBreakevens: protective put **cost + premium**; covered call **cost − premium**; protective call **sale − premium**; covered put **sale + premium**. The direction of the ± is set by whether you *paid* (add for a long-stock hedge, since insurance raised your cost) or *received* (subtract for a long-stock income play).\n\nUnlimited risk lives in exactly one of the four: the **covered put** (short stock + short put), because it contains an unprotected short stock position. The protective put and protective call are the safe, capped hedges; the covered call caps both ends."
+    },
+    {
+      "h": "Two positions that ride on top: collar and ratio write",
+      "body": "A **collar** is long stock + long put + short call: you finance the protective put by writing a call. The result is nearly premium-neutral protection — your **loss is floored at the put strike** and your **gain is capped at the call strike**. It is the cheapest way to insure a position you want to keep.\n\nA **ratio write** is long 100 shares but short **two** calls — one covered by the stock, one **naked**. That naked call makes the whole position **unlimited-risk**. It has **two breakevens**: on the downside, stock cost − total premium; on the upside, **2 × strike − stock cost + total premium**. Example: own 100 ABC at 40, write 2 ABC 40 calls @ 4 ($8 total) → breakevens at 32 and 48, most profitable (up to $800) at exactly 40."
+    }
+  ],
+  "flashcards": [
+    { "front": "The universal rule for stock + option breakevens", "back": "Breakeven is built around the STOCK COST, not the strike. Buying protection raises it; writing for income lowers it." },
+    { "front": "Protective put: components, BE, max loss, max gain", "back": "Long stock + long put. BE = cost + premium; max loss = (cost − strike) + premium; max gain = unlimited." },
+    { "front": "Covered call: components, BE, max gain, max loss", "back": "Long stock + short call. BE = cost − premium; max gain = (strike − cost) + premium; max loss = cost − premium." },
+    { "front": "Protective call: components, BE, max loss, max gain", "back": "Short stock + long call. BE = sale price − premium; max loss = (strike − sale) + premium; max gain = sale − premium." },
+    { "front": "Covered put: components, BE, max gain, max loss", "back": "Short stock + short put. BE = sale + premium; max gain = (sale − strike) + premium; max loss = UNLIMITED." },
+    { "front": "Which stock + option position has unlimited risk?", "back": "The covered put (short stock + short put). \"Covered\" refers to the put, not the short stock's uncapped upside risk." },
+    { "front": "Buy 100 ABC at 45, buy 1 ABC 40 put @ 2 — BE and max loss?", "back": "BE = 47; max loss = (45 − 40) + 2 = $700, fixed no matter how far ABC falls." },
+    { "front": "Buy 100 ABC at 45, write 1 ABC 50 call @ 3 — BE and max gain?", "back": "BE = 42; max gain = (50 − 45) + 3 = $800." },
+    { "front": "Why is a covered call considered conservative?", "back": "The call is covered by owned stock, so no unlimited risk; the premium cushions the downside. Suitable if the stock itself is suitable." },
+    { "front": "Collar", "back": "Long stock + long put + short call. Near-free insurance: loss floored at the put strike, gain capped at the call strike." },
+    { "front": "Ratio write risk and breakevens", "back": "Long 100 + short 2 calls = one naked call = UNLIMITED risk. Two BEs; upside BE = 2 × strike − cost + total premium." }
+  ],
+  "quiz": [
+    {
+      "stem": "A customer buys 100 shares of ABC at 45 and writes 1 ABC Oct 50 call at 3. What is the maximum potential gain?",
+      "options": ["$300", "$500", "$4,200", "$800"],
+      "answer": 3,
+      "explanation": "If assigned, the stock is called away at 50: (50 − 45) + 3 premium = 8 × 100 = $800. \"$300\" is the premium alone, \"$500\" ignores the premium, and \"$4,200\" is the maximum loss (45 − 3)."
+    },
+    {
+      "stem": "A customer buys 100 shares of ABC at 45 and buys 1 ABC Dec 40 put at 2. ABC falls to 30 and the customer exercises the put. What is the gain or loss on the combined position?",
+      "options": ["$1,500 loss", "$500 loss", "$700 loss", "$1,700 loss"],
+      "answer": 2,
+      "explanation": "T-chart: out = 45 (stock) + 2 (put) = 47; in = 40 (sold via the put). Net −7 × 100 = $700 loss — the position's maximum loss no matter how far ABC drops, because the put floors it at 40. \"$1,500\" and \"$1,700\" ignore the put's protection."
+    },
+    {
+      "stem": "A customer sells short 100 shares of XYZ at 80 and buys 1 XYZ 85 call at 3. What is the breakeven point?",
+      "options": ["77", "82", "83", "88"],
+      "answer": 0,
+      "explanation": "A protective call's breakeven is the short-sale price minus the premium: 80 − 3 = 77 (the stock must fall by the premium to cover the cost of the insurance). \"83\" adds the premium, and 82/88 use the call strike instead of the sale price."
+    },
+    {
+      "stem": "Which of the following positions exposes the customer to UNLIMITED loss?",
+      "options": ["Long 100 shares + long 1 put", "Long 100 shares + short 1 call", "Short 100 shares + long 1 call", "Short 100 shares + short 1 put"],
+      "answer": 3,
+      "explanation": "Short stock + short put is the \"covered put,\" which is unlimited: if the stock rises, the short stock loses without ceiling and the put offers no help. The protective put, covered call, and protective call are all capped. \"Covered\" here describes the put, not the risk."
+    },
+    {
+      "stem": "A customer buys 100 shares of ABC at 45 and writes 1 ABC Oct 50 call at 3. What is the breakeven point?",
+      "options": ["42", "48", "47", "53"],
+      "answer": 0,
+      "explanation": "A covered call's breakeven is the stock cost minus the premium received: 45 − 3 = 42; the premium provides a small downside cushion. \"47\" adds the premium (that is a protective put), and the others misuse the strike."
+    },
+    {
+      "stem": "A customer sells short 100 shares of ABC at 80 and writes 1 ABC 75 put at 4. What is the maximum potential gain, and what is the maximum loss?",
+      "options": ["Max gain $900; max loss unlimited", "Max gain $400; max loss $7,500", "Max gain unlimited; max loss $900", "Max gain $500; max loss $8,400"],
+      "answer": 0,
+      "explanation": "Covered put. Max gain = (80 − 75) + 4 = 9 × 100 = $900 when ABC is at or below 75. Max loss is UNLIMITED because the short stock loses without ceiling if ABC rises and the short put provides no protection. The name \"covered\" is the trap."
+    },
+    {
+      "stem": "An investor owns 100 shares of XYZ bought at $60, is worried about a sharp near-term drop, but does not want to sell. The BEST reason to pay a premium for an XYZ put is that the put:",
+      "options": ["lets her sell her shares at the strike even if the market collapses, acting like insurance", "increases the dividends she receives while she waits", "guarantees a profit no matter what XYZ does", "removes all risk from the position, including the premium paid"],
+      "answer": 0,
+      "explanation": "A protective put sets a floor: the right to sell at the strike caps the downside like an insurance policy, while upside stays open. It does not guarantee a profit, does not raise dividends, and the premium itself is still at risk (it raises her breakeven to cost + premium)."
+    }
+  ]
+}

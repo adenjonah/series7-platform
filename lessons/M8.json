@@ -1,0 +1,94 @@
+{
+  "module": "M8",
+  "title": "Risk, return, and portfolio theory",
+  "domain": "foundations",
+  "estMinutes": 22,
+  "reading": [
+    {
+      "h": "The trade-off and the risk premium",
+      "body": "Higher expected return requires accepting higher risk — where **risk** means the variability of outcomes, not certain loss. The **risk-free rate** is the T-bill yield. The **risk premium** is the extra return demanded for taking risk: **expected return − risk-free rate**.\n\nThe exam's usual ordering from safest to riskiest: **T-bills → Treasuries → agencies → investment-grade corporates → munis → preferred → blue-chip common → growth/small-cap → high-yield → options / DPPs / naked option writing.** When two products both 'fit' a customer, this ladder often breaks the tie."
+    },
+    {
+      "h": "Systematic (market) risk — the risk you cannot diversify",
+      "body": "**Systematic risk** affects the whole market at once and therefore **cannot be diversified away**. It is measured by **beta**: a beta of **1.0** moves with the market, **greater than 1** is more volatile, **less than 1** is less volatile, and a negative beta moves opposite the market.\n\nThe named systematic risks: **market** risk, **interest-rate** risk, **inflation / purchasing-power** risk, **reinvestment** risk, and **currency** risk. The mental model: systematic risk is the *weather* — it rains on everyone, and no amount of diversification stops it."
+    },
+    {
+      "h": "Non-systematic risk — the risk diversification removes",
+      "body": "**Non-systematic (unsystematic) risk** is specific to one issuer, industry, or sector, and it **is reduced by diversification** — roughly 20+ stocks across sectors removes most of it.\n\nSub-types: **business risk** (bad management or products), **financial risk** (too much debt), **credit / default risk** (the issuer can't pay — measured by ratings), **liquidity / marketability risk** (can't sell quickly at a fair price), **political / legislative risk**, **regulatory risk**, and **call risk** (issuer redeems early when rates fall). The model: this is the *leaky roof* — a problem in *your* house that fixing *other* houses (diversifying) protects you from."
+    },
+    {
+      "h": "Interest-rate risk, the seesaw, and reinvestment risk",
+      "body": "When market rates **rise**, existing bonds with lower coupons are worth **less**, so their prices **fall** — and vice versa. This is the price-yield **seesaw**. **Longer maturity and lower coupon → more price sensitivity** (higher duration). A long-maturity **zero-coupon bond is the most sensitive** of all, because its entire value is one distant payment.\n\n**Reinvestment risk** is the opposite worry: coupon payments you receive must be reinvested, and if rates have fallen they earn less. A **zero-coupon bond has no reinvestment risk** (no coupons to reinvest) but **maximum interest-rate risk** — a classic 'EXCEPT' setup."
+    },
+    {
+      "h": "Inflation and liquidity risk",
+      "body": "**Inflation (purchasing-power) risk** is that fixed payments buy less over time. It hurts long bonds, preferred stock, and fixed annuities most; **equities and TIPS** (whose principal adjusts with CPI) mitigate it. The **real rate = nominal rate − inflation**.\n\n**Liquidity (marketability) risk** is the danger of not being able to sell quickly at a fair price. The most liquid instruments are cash, T-bills, and listed stocks; the least liquid are DPPs, hedge funds, real estate, and annuities with surrender charges."
+    },
+    {
+      "h": "Mitigation strategies",
+      "body": "**Diversification** — spread across issuers, sectors, geographies, asset classes, and maturities (a *bond ladder*). Reduces non-systematic risk only.\n**Rebalancing** — periodically sell winners and buy laggards to return to target weights.\n**Hedging** — take an offsetting position (protective puts, covered calls).\n**Asset allocation** — strategic (long-term targets) vs tactical (short-term tilts).\n**Dollar-cost averaging (DCA)** — invest a fixed dollar amount on a schedule; you buy more shares when prices are low, so the average **cost** per share ends up **less than the average price** per share."
+    },
+    {
+      "h": "Portfolio theory terms",
+      "body": "**Beta** — sensitivity to the market (systematic risk). **Alpha** — return above what beta predicts; a measure of manager skill. **Standard deviation** — total volatility. **Correlation** (−1 to +1) — diversification benefit comes from combining low- or negatively-correlated assets.\n\n**CAPM** gives a security's required return: **expected return = risk-free rate + β × (market return − risk-free rate)**. Example: risk-free 3%, market 9%, β 1.2 → 3 + 1.2 × (9 − 3) = 3 + 7.2 = **10.2%**.\n\n**Sharpe ratio** = (return − risk-free) ÷ standard deviation — return earned per unit of total risk."
+    }
+  ],
+  "flashcards": [
+    { "front": "Risk premium", "back": "Expected return − risk-free rate (the T-bill yield). The extra return demanded for taking risk." },
+    { "front": "Systematic vs non-systematic risk", "back": "Systematic = market-wide, cannot be diversified away (measured by beta). Non-systematic = issuer/sector-specific, reduced by diversification." },
+    { "front": "What does beta measure, and what is beta = 1?", "back": "Sensitivity to overall market moves. Beta 1.0 = moves with the market; >1 more volatile; <1 less; negative = opposite." },
+    { "front": "Which named risks are systematic?", "back": "Market, interest-rate, inflation/purchasing-power, reinvestment, currency. (Weather — rains on everyone.)" },
+    { "front": "Which named risks are non-systematic?", "back": "Business, financial, credit/default, liquidity, political/legislative, regulatory, call. (Leaky roof — diversifiable.)" },
+    { "front": "Which bond has the most interest-rate risk?", "back": "A long-maturity, low-coupon bond — most of all, a long-term zero-coupon bond." },
+    { "front": "Reinvestment risk on a zero-coupon bond?", "back": "None — no coupons to reinvest. But it has maximum interest-rate risk. Classic EXCEPT trap." },
+    { "front": "Real rate", "back": "Nominal rate − inflation rate." },
+    { "front": "Dollar-cost averaging outcome", "back": "Fixed dollars on a schedule → more shares bought when cheap → average COST per share < average PRICE per share." },
+    { "front": "CAPM formula", "back": "Expected return = risk-free rate + β × (market return − risk-free rate)." },
+    { "front": "Alpha", "back": "Return above what beta predicts — a measure of manager skill (positive alpha = outperformance)." },
+    { "front": "Sharpe ratio", "back": "(Return − risk-free rate) ÷ standard deviation — return per unit of total risk." }
+  ],
+  "quiz": [
+    {
+      "stem": "Which of the following risks CANNOT be reduced by diversifying a stock portfolio across many issuers and industries?",
+      "options": ["Business risk", "Credit risk", "Market risk", "Liquidity risk"],
+      "answer": 2,
+      "explanation": "Market risk is systematic — it affects the whole market at once and cannot be diversified away (it is measured by beta). Business, credit, and liquidity risks are issuer-specific, non-systematic risks that diversification reduces."
+    },
+    {
+      "stem": "All of the following statements about a zero-coupon bond are TRUE EXCEPT:",
+      "options": ["Its holder faces substantial reinvestment risk on the periodic interest payments", "It is sold at a deep discount and redeemed at par at maturity", "It carries greater interest-rate risk than a coupon bond of the same maturity", "Its rate of return is locked in at purchase if held to maturity"],
+      "answer": 0,
+      "explanation": "A zero pays no periodic interest, so there is nothing to reinvest and it has no reinvestment risk — which is exactly why its return is locked in if held to maturity. The trade-off is maximum interest-rate risk, since all its value is one distant payment."
+    },
+    {
+      "stem": "A stock has a beta of 1.5. The risk-free rate is 4% and the expected market return is 10%. Using CAPM, what is the stock's expected return?",
+      "options": ["10%", "13%", "15%", "9%"],
+      "answer": 1,
+      "explanation": "CAPM: expected return = risk-free + β × (market − risk-free) = 4% + 1.5 × (10% − 4%) = 4% + 1.5 × 6% = 4% + 9% = 13%. Multiplying beta by the full market return (1.5 × 10% = 15%) skips subtracting the risk-free rate — the classic error."
+    },
+    {
+      "stem": "A portfolio manager delivers a return above what the fund's beta would predict for the level of market risk taken. This excess return is called:",
+      "options": ["Beta", "Standard deviation", "Alpha", "Correlation"],
+      "answer": 2,
+      "explanation": "Alpha is the return in excess of what beta predicts — a measure of manager skill. Beta measures market sensitivity, standard deviation measures total volatility, and correlation measures how two assets move together."
+    },
+    {
+      "stem": "An investor uses dollar-cost averaging, buying $300 of a fund each month. Over four months the price is $10, $15, $20, and $30. Which statement is TRUE?",
+      "options": ["The average cost per share is higher than the average price per share", "The average cost per share is lower than the average price per share", "The average cost and average price per share are always equal", "Dollar-cost averaging guarantees a profit"],
+      "answer": 1,
+      "explanation": "Because a fixed dollar amount buys more shares when the price is low and fewer when it is high, the average cost per share ends up below the simple average of the prices. DCA lowers average cost but does not guarantee a profit."
+    },
+    {
+      "stem": "Which of the following is a purchasing-power (inflation) risk that most affects a long-term fixed-rate bond?",
+      "options": ["The issuer may default before maturity", "Rising prices erode the real value of the bond's fixed payments over time", "The bond may be called away when rates fall", "The bond may be hard to sell quickly at a fair price"],
+      "answer": 1,
+      "explanation": "Inflation (purchasing-power) risk is that a bond's fixed interest and principal buy less as prices rise — it hits long-term fixed-payment securities hardest. Default is credit risk, early redemption is call risk, and difficulty selling is liquidity risk."
+    },
+    {
+      "stem": "Which security ordinarily carries the GREATEST interest-rate (price) risk?",
+      "options": ["A 3-month Treasury bill", "A 2-year, 6% corporate note", "A 20-year, 8% corporate bond", "A 20-year zero-coupon bond"],
+      "answer": 3,
+      "explanation": "Interest-rate risk rises with longer maturity and lower coupon; a 20-year zero-coupon bond maximizes both, so its price is the most sensitive to rate changes. Short maturities (the T-bill) and higher coupons dampen price sensitivity."
+    }
+  ]
+}

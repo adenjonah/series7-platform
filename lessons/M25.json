@@ -1,0 +1,100 @@
+{
+  "module": "M25",
+  "title": "Debt III: Treasuries, agencies, CMOs, and the money market",
+  "domain": "debt",
+  "estMinutes": 27,
+  "reading": [
+    {
+      "h": "U.S. Treasuries: the risk-free core",
+      "body": "Marketable Treasuries carry the **full faith and credit** of the U.S. government and are the credit-risk-free benchmark. All are **book-entry**, sold at auction (noncompetitive bids up to **$10 million** get the auction-set yield), and **non-callable** (none issued callable since 1985). Minimum is **$100** and increments of $100. Interest is **taxable federally, exempt from state and local tax**; capital gains are taxable everywhere.\n\nBy maturity: **T-bills** (one year or less — 4/8/13/26/52-week benchmarks, sold at a discount, no coupon), **T-notes** (2, 3, 5, 7, 10 years; semiannual coupons; quoted in 32nds), **T-bonds** (20 and 30 years). Bills are the 'risk-free rate' in most exam questions."
+    },
+    {
+      "h": "TIPS, STRIPS, and phantom income",
+      "body": "**TIPS** carry a fixed coupon rate applied to a principal that is **adjusted for inflation (CPI)**, so the dollar interest rises with prices. On a $1,000 TIPS with a 3% coupon, if inflation runs 4% the principal grows to about $1,040 and the coupon is paid on that: 3% × $1,040 = **$31.20** for the year. The **inflation adjustment to principal is taxed as ordinary income in the year it accrues** even though no cash is received — 'phantom income,' so TIPS belong in tax-deferred accounts. At maturity you get the greater of the adjusted or original principal (a deflation floor).\n\n**STRIPS** are Treasuries stripped into zero-coupon pieces with **direct** government backing — bought at a discount, maturing at par, maximum interest-rate risk, no reinvestment risk, and annual accretion taxed as interest (phantom income again)."
+    },
+    {
+      "h": "Agencies: GNMA vs GSEs vs the state-exempt lenders",
+      "body": "**Ginnie Mae (GNMA)** — a government corporation in HUD — guarantees **pass-through certificates** backed by FHA/VA-insured mortgages, paying **monthly** interest *and* principal. It is the **only** mortgage-backed security with **full faith and credit**. **Fannie Mae** and **Freddie Mac** are **GSEs** — publicly traded, chartered by Congress, with **implicit** backing only (both in federal conservatorship since 2008).\n\nTaxation is the trap: GNMA, FNMA, and FHLMC interest is **fully taxable — federal, state, and local**. The **exceptions** are three lender agencies — **FHLB, FFCB (Farm Credit), and TVA** — whose interest is **state- and local-tax-exempt** (taxable federally), the reverse of the mortgage agencies. Sallie Mae (SLM) was privatized in 2004 and carries no government backing."
+    },
+    {
+      "h": "Prepayment and extension risk",
+      "body": "Homeowners can prepay their mortgages any time — and that reshapes a mortgage security's cash flow. When rates **fall**, homeowners refinance, principal comes back **early**, and it must be reinvested at the new lower rates — **prepayment risk** (and MBS price gains are capped near par, 'negative convexity'). When rates **rise**, refinancing stops, so the principal comes back **later** and the average life **stretches** — **extension risk**.\n\nBecause of this uncertainty, mortgage securities are measured by **average life**, not a fixed maturity, and they yield **more** than Treasuries. The **PSA** model expresses prepayment speed: 100% PSA is the benchmark assumption, 200% PSA is twice as fast."
+    },
+    {
+      "h": "The CMO tranche zoo",
+      "body": "A **collateralized mortgage obligation (CMO)** pours a pool of pass-throughs into **tranches** with different maturities and priorities, so investors can choose a more predictable average life. CMOs pay **monthly**, come in **$1,000** denominations, and are **fully taxable** at all levels.\n\n- **Sequential-pay** — tranches retire in order (A first, then B…).\n- **PAC (Planned Amortization Class)** — protected against **both** prepayment and extension risk by companion tranches; **most stable, lowest yield** — the safest for conservative retail.\n- **TAC** — protected against prepayment risk **only**; yields more than a PAC.\n- **Companion/support** — absorbs the variability; **highest risk and yield, least suitable**.\n- **Z-tranche** — receives no cash until earlier tranches retire (interest accrues like a zero); longest, most volatile, phantom income.\n- **PO (principal-only)** — benefits from *faster* prepayments (rates down → price up).\n- **IO (interest-only)** — value **rises when rates rise** (slower prepayments keep interest flowing) — the one bond-like security whose price moves *with* rates."
+    },
+    {
+      "h": "Rule 2216 — how CMOs may be communicated",
+      "body": "Because retail investors mistake CMOs for CDs, **FINRA Rule 2216** governs their retail communications. Key requirements: the product name must include '**Collateralized Mortgage Obligation**'; the communication may **not compare a CMO to any other investment, especially a bank CD**; it must disclose that any government-agency backing applies **only to the face value, not to any premium paid**, and that **yield and average life will fluctuate** with prepayments and rates. Before selling to a **non-institutional** customer, the firm must **offer educational material**. Any yield shown must be accompanied by the coupon, price, **PSA prepayment assumption**, and estimated **average life**.\n\nThe throughline: a CMO is *not* a guaranteed, fixed-maturity, CD-like product, and the communication rules exist to stop that impression."
+    },
+    {
+      "h": "Money market, the rate ladder, and international debt",
+      "body": "Money market instruments mature in **one year or less** and are mostly sold at a discount: **T-bills** (safest), **commercial paper** (unsecured corporate, ≤ 270 days), **banker's acceptances** (import/export, ≤ 270 days), **negotiable CDs** (≥ $100,000, pay interest at par), **repos**, **fed funds**, and **Eurodollar deposits**. The **rate ladder**, low to high: **fed funds < discount rate < broker call rate < prime rate** (the Fed funds rate, set by supply/demand between banks, is the most volatile).\n\nInternational debt: a **Eurodollar bond** is a U.S.-dollar bond issued **outside** the U.S. — **not SEC-registered**. A **Yankee bond** is a dollar bond issued **in** the U.S. by a **foreign** issuer — SEC-registered, prospectus required. **ETNs** are unsecured bank debt — the holder bears the **issuer's credit risk** (a trap: they are not funds)."
+    }
+  ],
+  "flashcards": [
+    { "front": "Treasury minimum, callability, tax", "back": "$100 minimum; non-callable (since 1985); interest federal-taxable, state/local-exempt. Noncompetitive bid ≤ $10M." },
+    { "front": "TIPS mechanics", "back": "Fixed coupon rate on a CPI-adjusted principal. $1,000 TIPS, 3%, 4% inflation → principal $1,040, interest $31.20; principal growth taxed annually (phantom income)." },
+    { "front": "STRIPS", "back": "Treasuries stripped into zeros with direct government backing; bought at discount, mature at par; max rate risk; phantom income." },
+    { "front": "GNMA — backing, payments, tax", "back": "Only MBS with full faith and credit; monthly interest AND principal; interest FULLY taxable (federal, state, local)." },
+    { "front": "FNMA / FHLMC", "back": "GSEs — publicly traded, implicit backing only; in conservatorship since 2008; fully taxable." },
+    { "front": "State-tax-exempt agencies", "back": "FHLB, FFCB (Farm Credit), TVA — interest exempt from state/local tax (reverse of the mortgage agencies)." },
+    { "front": "Prepayment vs extension risk", "back": "Rates fall → refinance → principal early (prepayment). Rates rise → refinancing stops → average life stretches (extension)." },
+    { "front": "Safest / riskiest CMO tranche", "back": "PAC = most prepayment+extension protection, lowest yield, safest. Companion/support = highest risk & yield." },
+    { "front": "IO vs PO tranche", "back": "IO rises in value when rates RISE (slower prepayments). PO benefits from faster prepayments (rates down → price up)." },
+    { "front": "Rule 2216 core prohibition", "back": "CMO retail communications may NOT compare a CMO to another investment, especially a bank CD; must offer educational material and disclose PSA/average life." },
+    { "front": "Money market rate ladder (low→high)", "back": "Fed funds < discount rate < broker call rate < prime rate." },
+    { "front": "Eurodollar vs Yankee bond", "back": "Eurodollar = USD bond issued OUTSIDE the U.S., NOT SEC-registered. Yankee = USD bond issued IN the U.S. by a foreign issuer, SEC-registered." }
+  ],
+  "quiz": [
+    {
+      "stem": "An investor buys a $1,000 TIPS with a 3% coupon. Over the first year the CPI rises 4%. Approximately how much interest will the investor receive for the year?",
+      "options": ["$30.00", "$40.00", "$70.00", "$31.20"],
+      "answer": 3,
+      "explanation": "TIPS keep the coupon rate fixed and adjust the principal for inflation: $1,000 × 1.04 = $1,040, and 3% of $1,040 = $31.20. The inflation adjustment raises principal (taxed annually as phantom income), not the coupon rate — so $30.00 (no adjustment) and $70.00 (adding 4% to 3%) are traps."
+    },
+    {
+      "stem": "Which of the following CMO tranches would be expected to INCREASE in value when market interest rates rise?",
+      "options": ["Principal-only (PO) tranche", "Planned amortization class (PAC) tranche", "Interest-only (IO) tranche", "Z (accrual) tranche"],
+      "answer": 2,
+      "explanation": "Rising rates slow prepayments, so the mortgage interest stream lasts longer and the IO tranche gains value — the one bond-like security whose price moves with rates. POs benefit from faster prepayments, and PAC and Z tranches lose value like ordinary bonds."
+    },
+    {
+      "stem": "All of the following statements about Ginnie Mae (GNMA) pass-through certificates are true EXCEPT:",
+      "options": ["They are backed by the full faith and credit of the U.S. government", "Investors receive monthly payments of both interest and principal", "The underlying pools consist of FHA- or VA-insured mortgages", "Interest received is exempt from state and local income taxes"],
+      "answer": 3,
+      "explanation": "GNMA interest is fully taxable at the federal, state, and local levels — only Treasuries and the FHLB/FFCB/TVA lenders get the state exemption. The other three statements are the classic true attributes of GNMA pass-throughs."
+    },
+    {
+      "stem": "When short-term Treasury yields are higher than long-term Treasury yields, the yield curve is described as:",
+      "options": ["Normal", "Flat", "Inverted", "Humped"],
+      "answer": 2,
+      "explanation": "An inverted (negative) curve has short rates above long rates, typically during Fed tightening when markets expect cuts. A normal curve slopes upward, a flat curve shows little difference, and a humped curve peaks at intermediate maturities."
+    },
+    {
+      "stem": "A conservative retiree wants monthly income from a CMO but is worried about both early and late return of principal. Which tranche is MOST suitable?",
+      "options": ["A companion (support) tranche", "A planned amortization class (PAC) tranche", "A Z (accrual) tranche", "An interest-only (IO) tranche"],
+      "answer": 1,
+      "explanation": "A PAC is protected against both prepayment and extension risk by its companion tranches, giving the most predictable average life — the safest CMO for a conservative investor. The companion, Z, and IO tranches all carry high or unusual risk and are least suitable."
+    },
+    {
+      "stem": "Interest on which of the following is exempt from state and local income tax?",
+      "options": ["Ginnie Mae (GNMA) pass-through certificates", "Fannie Mae (FNMA) mortgage-backed securities", "Federal Farm Credit Bank (FFCB) bonds", "A collateralized mortgage obligation (CMO)"],
+      "answer": 2,
+      "explanation": "FFCB, like FHLB and TVA, is a lender agency whose interest is exempt from state and local tax (taxable federally). GNMA, FNMA, and CMOs are all fully taxable at every level — the reverse-attribute trap."
+    },
+    {
+      "stem": "Which of the following short-term rates is normally the LOWEST?",
+      "options": ["The prime rate", "The broker call rate", "The federal funds rate", "The Federal Reserve discount rate"],
+      "answer": 2,
+      "explanation": "The rate ladder from low to high is fed funds < discount rate < broker call rate < prime rate, so the fed funds rate (overnight bank-to-bank lending) is normally the lowest. Prime, the banks' best-customer rate, is the highest."
+    },
+    {
+      "stem": "A U.S.-dollar-denominated bond issued OUTSIDE the United States and not registered with the SEC is BEST described as a:",
+      "options": ["Yankee bond", "Eurodollar bond", "Brady bond", "Sovereign bond"],
+      "answer": 1,
+      "explanation": "A Eurodollar bond is a U.S.-dollar bond issued outside the U.S. and is not SEC-registered. A Yankee bond is the opposite — a dollar bond issued in the U.S. by a foreign issuer, which is SEC-registered."
+    }
+  ]
+}

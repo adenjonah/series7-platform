@@ -1,0 +1,96 @@
+{
+  "module": "M27",
+  "title": "Municipal securities II — structure, pricing, callable yields, and the full taxation story",
+  "domain": "municipal",
+  "estMinutes": 25,
+  "reading": [
+    {
+      "h": "Serial vs. term, and how each is quoted",
+      "body": "Munis usually settle in **$5,000 minimum denominations** (quoted, like all bonds, as a percentage of par). Two structures dominate, and each is quoted differently.\n\n**Serial bonds** mature in installments over many years — most GO issues are serial. They are quoted on a **yield (basis)** basis: \"5.20 basis\" means a **yield to maturity of 5.20%**, not a dollar price. **Term bonds** (\"dollar bonds\") have a single maturity, usually with a sinking fund, and are quoted at a **dollar price**: \"98½\" = $985 per $1,000.\n\nDirection is what the exam tests, not the basis-book arithmetic. If the **coupon is higher than the basis (yield), the bond trades at a premium** (above par); if the coupon is below the basis, it trades at a discount. A bond quoted exactly at its coupon rate as a basis is trading at par."
+    },
+    {
+      "h": "Callable bonds and the yield the confirm must show",
+      "body": "Most munis are callable, which lets the issuer refinance when rates fall. The tested rule: a confirmation must show the **lower of yield to maturity and yield to call** — the **yield to worst**.\n\nFor a **premium** bond, the worst case is that the issuer calls it early (cheap debt to refinance), cutting off the high coupon sooner, so a premium bond quoted on a basis is **priced to the call date**. For a **discount** bond, the worst case is holding to maturity, so it is **priced to maturity**. Pre-refunded bonds are priced to the refunding call date.\n\nWhy the *lower* yield? The dealer must show the customer the worst realistic outcome, so no one buys a premium bond expecting a maturity yield the issuer will never let them earn. \"Premium → call; discount → maturity\" is worth memorizing cold."
+    },
+    {
+      "h": "Accrued interest — 30/360 under T+1",
+      "body": "Munis (and corporates) accrue interest on a **30/360** basis: every month counts as 30 days, every year as 360. Interest accrues from the last coupon date **up to but not including the settlement date**, and the buyer pays it to the seller. Regular-way muni trades settle **T+1** (since May 28, 2024).\n\nWorked example: a 6% bond with J&J 1 coupons (interest paid January 1 and July 1) trades on **Tuesday, March 10**. Regular way, it settles T+1 on **Wednesday, March 11**. Count from the last coupon (January 1) up to but not including settlement: January (30) + February (30) + March (10) = **70 days**. Accrued interest = $1,000 × 6% × 70/360 = **$11.67**.\n\nTwo traps: counting *through* the settlement day (use up-to-but-not-including), and using T+2 instead of T+1. Bonds trade **flat** — with no accrued interest — if they are in default or are zero-coupon."
+    },
+    {
+      "h": "Federal, state, and local taxation",
+      "body": "**Federal:** interest is exempt from federal income tax, but a **capital gain** on a muni is fully taxable. Muni interest is included in the **provisional income** test that can make Social Security benefits taxable, and interest on money **borrowed to carry** munis is **not deductible**.\n\n**State/local:** most states exempt interest on their *own* bonds for residents and **tax out-of-state** munis. A resident holding an in-state bond gets \"double tax-free\" (federal + state); a bond of a U.S. territory (Puerto Rico, Guam, USVI) is exempt everywhere. Contrast Treasuries, which are **federally taxable but state-exempt** — governments tax only securities other than their own. Getting that direction backwards is a classic trap.\n\n**Suitability:** because the whole point is the federal exemption, munis suit **high-bracket** investors and are **never** appropriate inside an IRA or other tax-deferred account, and rarely for a low-bracket investor or a corporation."
+    },
+    {
+      "h": "OID, market discount, and the de minimis rule",
+      "body": "How a discount is taxed depends on *who sold it to you*.\n\n**Original issue discount (OID):** you bought below par *at issue* from the issuer. The discount **accretes** (constant-yield) as **tax-exempt interest**; your basis rises each year; there is **no tax at maturity**. Selling above the accreted value produces a capital gain.\n\n**Market discount:** you bought below par (or below accreted value) in the *secondary* market. The discount is **ordinary income** — *unless* it is de minimis.\n\n**De minimis rule:** the discount is de minimis if it is **less than 0.25% of par × the full years to maturity**; then any gain is a **capital gain** instead of ordinary income. Worked example: a bond with 8 years left has a threshold of 0.25 × 8 = **2 points**, so the breakpoint price is **98**. Bought at 97 (a 3-point discount), it exceeds de minimis, so the gain at maturity is **ordinary income**. Bought at 98.5, it is de minimis and any gain is a capital gain."
+    },
+    {
+      "h": "Premium amortization and bank-qualified bonds",
+      "body": "**Market premium** on a muni **must be amortized** (constant yield) down to par over the bond's remaining life. The amortization is **not deductible** — it offsets the tax-exempt interest — and it lowers your basis each year. Because basis reaches par by maturity, there is **no capital loss at maturity**.\n\nWorked example: buy a 10-year 5% bond at 110 and amortize 1 point per year. After 4 years basis = 106. Sell at 107 → a **1-point capital gain** (not 3 — forgetting to amortize is the trap).\n\n**Bank-qualified bonds:** if an issuer reasonably expects to issue **$10 million or less** of tax-exempt bonds in the calendar year, a bank holding those bonds may deduct **80%** of its cost of carrying them — a small-issuer sweetener that widens the bank market for the bonds. A **tax swap** to realize a loss must change at least **two of the three** — issuer, coupon, or maturity — to avoid the wash-sale \"substantially identical\" problem."
+    }
+  ],
+  "flashcards": [
+    { "front": "Serial vs. term quoting", "back": "Serial bonds are quoted on a yield (basis) basis; term/\"dollar\" bonds are quoted at a dollar price (% of par)." },
+    { "front": "Coupon vs. basis → premium or discount?", "back": "Coupon > basis (yield) → premium (above par). Coupon < basis → discount." },
+    { "front": "Callable bond: which yield does the confirm show?", "back": "The lower of YTM and YTC (yield to worst). Premium → price to CALL; discount → price to MATURITY." },
+    { "front": "Muni day count and settlement", "back": "30/360, accrue up to but NOT including settlement; regular way settles T+1 (since May 28, 2024)." },
+    { "front": "Accrued interest: 6% bond, J&J 1, settles Mar 11", "back": "Jan 30 + Feb 30 + Mar 10 = 70 days; $1,000 × 6% × 70/360 = $11.67." },
+    { "front": "Muni state-tax direction vs. Treasuries", "back": "Munis: federal-exempt, home-state exempt, out-of-state taxed. Treasuries: federally taxable, state-exempt. Governments tax only securities other than their own." },
+    { "front": "Are munis suitable in an IRA?", "back": "Never — you'd waste the federal exemption inside an already-tax-deferred account. Munis suit high-bracket taxable investors." },
+    { "front": "OID muni discount — how taxed?", "back": "Accretes as tax-EXEMPT interest; basis rises; no tax at maturity. (Bought at issue below par.)" },
+    { "front": "Market discount muni — how taxed?", "back": "Ordinary income, unless de minimis. (Bought below par in the secondary market.)" },
+    { "front": "De minimis rule", "back": "Discount < 0.25% of par × full years to maturity → any gain is capital gain. 8-yr bond: 0.25 × 8 = 2 points → breakpoint price 98." },
+    { "front": "Muni market premium tax treatment", "back": "MUST be amortized to par; amortization not deductible; basis falls; NO capital loss at maturity." },
+    { "front": "Bank-qualified bond", "back": "Issuer expects ≤ $10M of tax-exempt bonds that year; a bank may deduct 80% of its carrying cost." }
+  ],
+  "quiz": [
+    {
+      "stem": "A dealer quotes a municipal bond as \"5.20 basis.\" Which statement about this quote is TRUE?",
+      "options": ["It is a term bond quoted at $520 per $1,000 of par", "It is most likely a serial bond, and the quote is a yield to maturity of 5.20%", "The bond's coupon is 5.20% and it is trading at par", "It is a nominal quote because no dollar price was given"],
+      "answer": 1,
+      "explanation": "Serial bonds are quoted on a yield (basis) basis, so \"5.20 basis\" means a 5.20% yield to maturity; only term (\"dollar\") bonds are quoted as a percentage of par. The coupon and the basis are not the same number unless the bond happens to trade at par."
+    },
+    {
+      "stem": "A municipal bond is a premium bond quoted on a yield basis and is callable. On the customer's confirmation, the bond must be priced to:",
+      "options": ["Maturity", "The call date", "Whichever date produces the higher yield", "Par value"],
+      "answer": 1,
+      "explanation": "The confirm shows the lower of YTM and YTC (yield to worst). For a premium bond the worst case is an early call, so it is priced to the call date. A discount bond, by contrast, is priced to maturity."
+    },
+    {
+      "stem": "A 6% municipal bond pays interest each January 1 and July 1. A customer buys the bond in a regular-way trade executed Tuesday, March 10. The accrued interest the buyer owes per $1,000 bond is:",
+      "options": ["$10.17", "$11.67", "$11.83", "$15.00"],
+      "answer": 1,
+      "explanation": "Regular way settles T+1, on Wednesday, March 11. On a 30/360 count from the last coupon (Jan 1) up to but not including settlement: Jan 30 + Feb 30 + Mar 10 = 70 days. $1,000 × 6% × 70/360 = $11.67. Counting through the settlement day (71 days) or using T+2 gives the trap figures."
+    },
+    {
+      "stem": "A customer buys a municipal bond with 8 years remaining to maturity in the secondary market at 97 and holds it to maturity. For federal tax purposes, the 3-point gain realized at maturity is:",
+      "options": ["Tax-exempt, because it is treated as original issue discount", "A long-term capital gain, because the discount is de minimis", "Not reportable, because the bond was held to maturity", "Taxed as ordinary income, because the discount exceeds the de minimis threshold"],
+      "answer": 3,
+      "explanation": "The de minimis threshold is 0.25% × 8 years = 2 points, so the breakpoint price is 98; a purchase at 97 is a 3-point market discount that exceeds it and is taxed as ordinary income. Only original issue discount accretes as tax-exempt interest."
+    },
+    {
+      "stem": "A California resident holds a New York City general obligation bond and a Commonwealth of Puerto Rico bond. Interest on which bond(s) is exempt from California state income tax?",
+      "options": ["Both bonds", "The New York City bond only", "The Puerto Rico bond only", "Neither bond"],
+      "answer": 2,
+      "explanation": "States generally exempt only their own bonds and tax out-of-state munis, so California taxes the NYC bond's interest. Bonds of U.S. territories (Puerto Rico, Guam, USVI) are exempt from federal, state, and local tax for every U.S. investor."
+    },
+    {
+      "stem": "A customer buys a 10-year municipal bond in the secondary market at 110 and holds it to maturity. All of the following are TRUE EXCEPT:",
+      "options": ["The premium must be amortized over the remaining life of the bond", "The annual amortization is not deductible against the customer's other income", "The customer's cost basis decreases each year", "At maturity the customer reports a capital loss of $100 per bond"],
+      "answer": 3,
+      "explanation": "Market premium on a muni must be amortized to par, the amortization is not deductible because it offsets tax-exempt interest, and basis falls to par by maturity — so there is NO capital loss at maturity. The exception statement is the false one the EXCEPT question asks you to find."
+    },
+    {
+      "stem": "For which of the following customers is a municipal bond LEAST appropriate?",
+      "options": ["An investor in the top federal tax bracket buying bonds of her home state", "A customer holding the bonds in a traditional IRA", "A high-net-worth investor in a taxable account seeking tax-free income", "A resident of a high-tax state buying in-state bonds in a taxable account"],
+      "answer": 1,
+      "explanation": "A traditional IRA is already tax-deferred, so holding a federally tax-exempt bond inside it wastes the exemption and typically produces a lower yield than a taxable bond would — munis are never suitable inside a tax-advantaged account. The other customers are exactly the high-bracket, taxable investors munis are designed for."
+    },
+    {
+      "stem": "A customer buys a newly issued municipal bond directly from the issuer at an original issue discount. Which statement about the federal tax treatment is TRUE?",
+      "options": ["The discount accretes as tax-exempt interest and there is no tax at maturity", "The discount is ordinary income as it accrues", "The discount is a capital gain reported at maturity", "The accretion is deductible against the customer's other income"],
+      "answer": 0,
+      "explanation": "On an original issue discount muni, the discount accretes as tax-exempt interest and the basis rises to par, so nothing is taxed at maturity. Ordinary-income treatment applies to market discount bought in the secondary market, not to OID."
+    }
+  ]
+}

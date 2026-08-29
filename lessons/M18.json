@@ -1,0 +1,100 @@
+{
+  "module": "M18",
+  "title": "Securities analysis: fundamental ratios and technical charts",
+  "domain": "equity",
+  "estMinutes": 22,
+  "reading": [
+    {
+      "h": "Two ways to look at a stock",
+      "body": "**Fundamental analysis** values a company from its financial statements, industry, and management to estimate an intrinsic worth — it answers *what* to buy. Its sources are the **10-K** (annual, audited), **10-Q** (quarterly, unaudited), **8-K** (material events), and the footnotes that disclose accounting methods and contingencies.\n\n**Technical analysis** ignores the fundamentals and studies price and volume charts to decide *when* to buy or sell. Technicians assume prices move in trends and history repeats.\n\nThis lesson runs the fundamental ratio family on a single toy balance sheet, then labels the technical patterns bull or bear. Reuse one set of numbers for every ratio and the fifteen \"unrelated\" formulas collapse into four groups: liquidity, leverage, profitability, and per-share."
+    },
+    {
+      "h": "The statements and the income waterfall",
+      "body": "The **balance sheet** is a snapshot: **Assets = Liabilities + Stockholders' Equity**. Current assets (cash, receivables, inventory) convert to cash within a year; current liabilities come due within a year.\n\nThe **income statement** is a flow that cascades down to earnings: Revenue − COGS = **Gross profit** → − operating expenses = **Operating income (EBIT)** → − interest = **EBT** → − taxes = **Net income** → − preferred dividends = **earnings available to common** → ÷ shares = **EPS**. **EBITDA** adds depreciation and amortization back to EBIT as a cash-generation proxy. Interest is paid *before* taxes (it is deductible); dividends are paid *after* (they are not).\n\nWorked: net income $600,000, preferred dividends $50,000, 500,000 common shares → EPS = ($600,000 − $50,000) ÷ 500,000 = **$1.10**. Forgetting to subtract preferred dividends gives $1.20 — a favorite trap."
+    },
+    {
+      "h": "Liquidity and leverage ratios",
+      "body": "Use this mini balance sheet: current assets $600K (inventory $200K), current liabilities $300K, long-term debt $400K, total stockholders' equity $800K (preferred $100K at par), intangibles $50K.\n\n**Working capital = CA − CL** = $600K − $300K = **$300K**. Watch the trap: paying a current liability with cash drops both sides equally, so working capital does **not** change. Paying a cash dividend or buying equipment for cash *lowers* it; issuing long-term bonds *raises* it.\n\n**Current ratio = CA ÷ CL** = 600 ÷ 300 = **2.0**. **Quick (acid-test) ratio = (CA − inventory) ÷ CL** = 400 ÷ 300 = **1.33** — inventory is the least liquid current asset, so it comes out.\n\n**Debt-to-equity** (using LTD ÷ total stockholders' equity) = 400 ÷ 800 = **0.5**. Providers define this ratio differently, so a real exam stem states the definition — always read it.\n\n**Book value per share = (equity − preferred at par − intangibles) ÷ common shares.** With 100,000 shares: (800 − 100 − 50) ÷ 100 = **$6.50**."
+    },
+    {
+      "h": "Per-share ratios",
+      "body": "These are the most-tested calculations in the domain.\n\n**Current (dividend) yield = annual dividend ÷ market price.** A $0.45 *quarterly* dividend on a $30 stock: annualize first → $0.45 × 4 = $1.80, then $1.80 ÷ $30 = **6.0%**. Dividing the quarterly figure by price (1.5%) is the trap.\n\n**P/E ratio = market price ÷ EPS.** Price $22, EPS $1.10 → **20×**. A high P/E signals growth expectations (or overvaluation); a low P/E with a high yield signals a value or income stock.\n\n**Dividend payout ratio = dividends per share ÷ EPS.** Growth companies keep this low; utilities keep it high. **Retention ratio = 1 − payout.**\n\n**Return on common equity = (net income − preferred dividends) ÷ common equity.**\n\nRemember what moves them: a **buyback raises EPS** (fewer shares); a **stock split leaves P/E unchanged** (price and EPS fall by the same factor)."
+    },
+    {
+      "h": "Inventory, depreciation, and interpretation cues",
+      "body": "**LIFO vs. FIFO** in *rising* prices: LIFO expenses the newest, costliest goods first → higher COGS → **lower reported earnings and lower taxes**, with understated inventory on the balance sheet. FIFO does the reverse (higher earnings, higher taxes, current-value inventory). In falling prices the effects flip.\n\n**Depreciation:** straight-line spreads the charge evenly; accelerated front-loads it → lower early earnings and lower early taxes, higher later earnings. Depreciation is a non-cash expense, so cash flow adds it back: **cash flow ≈ net income + depreciation.**\n\nInterpretation cues the exam rewards: high P/E = growth expectations; interest coverage below 2 = danger; a falling current ratio = liquidity strain; high debt-to-equity = financial risk; a buyback raises EPS; a split leaves P/E unchanged; book value has nothing to do with market value, and par value has nothing to do with either."
+    },
+    {
+      "h": "Chart patterns and their bull/bear labels",
+      "body": "Technicians memorize a handful of patterns as buy or sell signals.\n\n**Support** is a price floor where buyers repeatedly appear; **resistance** is a ceiling where sellers appear. A **breakout above resistance** is **bullish** (buy); a break below support is **bearish**. Volume should confirm the move.\n\n**Head-and-shoulders top** — three peaks, the middle highest, then a break below the neckline — is a **bearish reversal** of an uptrend. The **inverted (bottom) head-and-shoulders** is a **bullish reversal**. Likewise a **saucer (rounding bottom)** is bullish, an inverted saucer bearish; a **double top** is bearish, a double bottom bullish.\n\n**Moving averages** smooth prices; a short average crossing above a long one (\"golden cross\") is bullish, below (\"death cross\") bearish. **Overbought** means risen too far too fast → expect a pullback (bearish); **oversold** means the opposite (bullish). **Consolidation** is a trendless sideways range."
+    },
+    {
+      "h": "Contrarian theories, Dow theory, and the indexes",
+      "body": "Several market-wide indicators are **contrarian** — they say to do the opposite of the crowd. **High or rising short interest is bullish** (shorts are future buyers who must cover). **Heavy odd-lot buying is bearish** (small investors are assumed wrong at extremes). A **high put/call ratio is bullish** (the crowd is too fearful). These four regularly appear as an \"all of the following are bullish EXCEPT\" question.\n\n**Dow theory** says a primary trend is confirmed only when the Industrials and Transports move together to new highs or lows — it confirms, it does not predict. The **advance/decline line** measures breadth; a rising index with a falling A/D line is a weakening rally (bearish divergence).\n\nKnow the indexes: **DJIA** = 30 large industrials, **price-weighted**. The **S&P 500** is 500 large caps, **cap-weighted**. The **Russell 2000** is the small-cap benchmark, and the **Wilshire 5000** is the broadest U.S. index — both cap-weighted."
+    }
+  ],
+  "flashcards": [
+    { "front": "Working capital, current ratio, quick ratio", "back": "Working capital = CA − CL. Current ratio = CA ÷ CL. Quick ratio = (CA − inventory) ÷ CL (inventory is least liquid)." },
+    { "front": "What does NOT change working capital?", "back": "Paying a current liability with cash (both sides drop equally). Paying a cash dividend or buying fixed assets for cash lowers it; issuing long-term bonds raises it." },
+    { "front": "EPS formula", "back": "EPS = (net income − preferred dividends) ÷ common shares outstanding. Forgetting preferred dividends is the classic error." },
+    { "front": "P/E ratio and what a split does to it", "back": "P/E = market price ÷ EPS. A stock split leaves P/E unchanged (price and EPS fall by the same factor); a buyback raises EPS." },
+    { "front": "Current (dividend) yield", "back": "Annual dividend ÷ market price. Annualize a quarterly dividend first (× 4)." },
+    { "front": "Book value per share (state the definition)", "back": "(Total stockholders' equity − preferred at par − intangibles) ÷ common shares. Providers vary on intangibles, so exam stems state the definition." },
+    { "front": "LIFO in a period of rising prices", "back": "Higher COGS → lower reported earnings and lower taxes; inventory understated. FIFO gives higher earnings and higher taxes." },
+    { "front": "Cash flow shortcut", "back": "Cash flow ≈ net income + depreciation (depreciation is a non-cash expense added back)." },
+    { "front": "Head-and-shoulders: top vs. inverted", "back": "Top (three peaks, break below neckline) = bearish reversal. Inverted (bottom) = bullish reversal." },
+    { "front": "Breakout direction", "back": "Breakout ABOVE resistance = bullish (buy); break below support = bearish. Volume should confirm." },
+    { "front": "Contrarian indicators (do the opposite)", "back": "High short interest = bullish. Heavy odd-lot buying = bearish. High put/call ratio = bullish." },
+    { "front": "Index weighting: DJIA vs. S&P 500", "back": "DJIA = 30 industrials, price-weighted. S&P 500 = 500 large caps, cap-weighted. Russell 2000 = small-cap; Wilshire 5000 = broadest, cap-weighted." }
+  ],
+  "quiz": [
+    {
+      "stem": "ABC common stock pays a quarterly dividend of $0.45 per share and currently trades at $30. Its current dividend yield is:",
+      "options": ["1.5%", "4.5%", "0.6%", "6.0%"],
+      "answer": 3,
+      "explanation": "Current yield uses the ANNUAL dividend: $0.45 × 4 = $1.80, then $1.80 ÷ $30 = 6.0%. Dividing the quarterly $0.45 by price gives the 1.5% trap; the yield is never below 2% here."
+    },
+    {
+      "stem": "A company reports net income of $600,000, preferred dividends of $50,000, and 500,000 common shares outstanding. Its stock trades at $22. Its P/E ratio is approximately:",
+      "options": ["20", "18.3", "40", "12.5"],
+      "answer": 0,
+      "explanation": "EPS = (net income − preferred dividends) ÷ shares = ($600,000 − $50,000) ÷ 500,000 = $1.10; P/E = $22 ÷ $1.10 = 20. Forgetting to subtract preferred dividends gives EPS $1.20 and a P/E of ~18.3 — the trap."
+    },
+    {
+      "stem": "A company reports total stockholders' equity of $5,000,000, preferred stock of $500,000 at par, intangible assets of $300,000, and 400,000 common shares. Using book value per share = (equity − preferred at par − intangibles) ÷ common shares, its book value per share is:",
+      "options": ["$12.50", "$11.25", "$10.50", "$11.75"],
+      "answer": 2,
+      "explanation": "($5,000,000 − $500,000 − $300,000) ÷ 400,000 = $4,200,000 ÷ 400,000 = $10.50. Forgetting intangibles gives $11.25 and forgetting preferred gives $11.75; the definition is stated in the stem because providers differ on the intangibles adjustment."
+    },
+    {
+      "stem": "All of the following transactions change a corporation's working capital EXCEPT:",
+      "options": ["Paying off accounts payable with cash", "Declaring and paying a cash dividend to common stockholders", "Issuing long-term bonds for cash", "Purchasing manufacturing equipment with cash"],
+      "answer": 0,
+      "explanation": "Working capital = current assets − current liabilities; paying a current liability with cash reduces both sides equally, leaving the difference unchanged. A cash dividend and an equipment purchase send cash out with no offsetting current-liability drop (working capital falls); a long-term bond issue brings in cash against a long-term liability (it rises)."
+    },
+    {
+      "stem": "In a period of rising prices, a company that uses LIFO instead of FIFO for inventory will generally report:",
+      "options": ["Higher earnings and higher taxes", "Lower earnings and lower taxes", "Higher earnings and lower taxes", "The same earnings, since inventory method does not affect the income statement"],
+      "answer": 1,
+      "explanation": "LIFO expenses the newest, costliest units first, raising COGS, so reported earnings AND taxes are lower than under FIFO. FIFO produces the higher earnings and higher taxes, and the inventory method clearly does affect earnings, so the last option is wrong."
+    },
+    {
+      "stem": "A stock in a long uptrend forms a head-and-shoulders top and breaks below the neckline. A technical analyst would MOST likely regard this as:",
+      "options": ["A bearish signal indicating a reversal of the uptrend", "A bullish signal indicating the uptrend will continue", "A consolidation pattern with no directional implication", "A sign the stock is oversold and due for a bounce"],
+      "answer": 0,
+      "explanation": "A head-and-shoulders top is a bearish reversal pattern; the break below the neckline confirms the sell signal. Only the inverted (bottom) head-and-shoulders is bullish, and a head-and-shoulders is a trend reversal, not a trendless consolidation."
+    },
+    {
+      "stem": "A technical analyst would regard all of the following as bullish indicators EXCEPT:",
+      "options": ["High and rising short interest", "Heavy buying by odd-lot investors", "A high put/call ratio", "A breakout above a resistance level on heavy volume"],
+      "answer": 1,
+      "explanation": "Odd-lot theory is contrarian: small investors are assumed wrong at extremes, so heavy odd-lot buying is BEARISH. High short interest (future covering) and a high put/call ratio (crowd fear) are contrarian bullish signals, and an upside breakout on volume is directly bullish."
+    },
+    {
+      "stem": "The Dow Jones Industrial Average is BEST described as:",
+      "options": ["A capitalization-weighted index of 500 large U.S. companies", "A price-weighted average of 30 large U.S. companies", "A capitalization-weighted index of about 2,000 small-cap U.S. companies", "An equal-weighted index of essentially all U.S. listed stocks"],
+      "answer": 1,
+      "explanation": "The DJIA is 30 large industrials, price-weighted — the oldest and narrowest major average. The cap-weighted 500-stock index is the S&P 500, the ~2,000 small-cap index is the Russell 2000, and the broad all-market index is the Wilshire 5000."
+    }
+  ]
+}

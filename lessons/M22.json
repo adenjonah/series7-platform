@@ -1,0 +1,100 @@
+{
+  "module": "M22",
+  "title": "Options IV: index and non-equity options, account rules, margin, and tax",
+  "domain": "options",
+  "estMinutes": 28,
+  "reading": [
+    {
+      "h": "Index options: cash settlement on the closing value",
+      "body": "An index option's underlying is an index *level*, not shares. The multiplier is still **100**, but there is no stock to deliver — index options are **cash-settled**. On exercise, the writer pays the holder the in-the-money amount: **(settlement value − strike) × 100** for a call (reversed for a put).\n\nThe settlement value is the **closing index value on the day of exercise** — not the level at the moment the order is entered. A holder who exercises at 10 a.m. because the index is up may find it closed *lower*, and that closing print is what settles. **Cash changes hands the next business day.**\n\nExercise style is the standard exception you must know: **SPX, DJX, RUT, NDX and nearly all index options are European** (exercise only at expiration); **OEX (the S&P 100) is American** (exercise any business day). Watch the SPX-vs-SPY trap: options on the **SPY ETF are equity-style** — American, physically settled in shares, ordinary equity margin and tax."
+    },
+    {
+      "h": "Hedging a portfolio with index puts",
+      "body": "To protect a diversified stock portfolio against **systematic (market-wide) risk**, buy **index puts**. The number of contracts is set by a formula the exam tests directly:\n\n**Contracts = (portfolio value × beta) ÷ (strike × 100).**\n\nBeta scales the portfolio to the index: a beta above 1 means the portfolio is more volatile than the market, so you need *more* contracts.\n\nWorked: a **$2,000,000** portfolio with **beta 1.2**, hedged with **SPX 5000** puts. Contracts = (2,000,000 × 1.2) ÷ (5,000 × 100) = 2,400,000 ÷ 500,000 = 4.8, rounded up to **5 contracts**. A manager who instead *writes* index calls against the portfolio is generating income, the index analog of a covered call."
+    },
+    {
+      "h": "Currency and yield-based options: the direction reversals",
+      "body": "**Foreign currency options** are European-style and cash-settled in U.S. dollars. The key fact: **there are no listed options on the U.S. dollar** in U.S. markets. A view on the dollar must be expressed *inversely* through the foreign currency — bullish on the dollar means bearish on the foreign currency, so you buy foreign-currency puts.\n\nWho hedges: **EPIC — Exporters buy Puts, Importers buy Calls**, from the U.S. company's perspective. A U.S. exporter to be paid in euros fears a *falling* euro and buys euro puts; a U.S. importer who must pay euros fears a *rising* euro and buys euro calls. If the question is written from the *foreign* firm's view, invert it: a German exporter paid in dollars fears a falling dollar, and since there is no dollar contract, it buys **euro calls** (a falling dollar is a rising euro).\n\n**Yield-based (interest-rate) options** move **directly with interest rates** — the opposite of bond prices. A bond-portfolio holder who fears **rising rates** buys **yield-based calls**: bond prices fall, but the calls pay off as yields climb."
+    },
+    {
+      "h": "The options account: sequence and clocks",
+      "body": "Opening an options account follows a fixed order under FINRA Rule 2360.\n\nThe **ODD (Options Disclosure Document) must be delivered at or prior to account approval** — before any trade. Then a **Registered Options Principal (ROP)** must **approve the account in writing before the first trade**. The customer must **return the signed options agreement within 15 days** of approval; if they do not, the account is limited to **closing transactions only**.\n\nOn expiration day, the exercise decision must reach the broker by **5:30 p.m. ET**, and the OCC auto-exercises anything **$0.01 or more in the money**. When a writer is assigned, the firm assigns customers by **random selection or FIFO** — never \"largest position first.\"\n\n**Position limits** cap contracts on the **same side of the market**: the bullish side is **long calls + short puts**; the bearish side is **long puts + short calls**. A customer long 30,000 ABC calls *and* short 30,000 ABC puts is on one side with 60,000 contracts."
+    },
+    {
+      "h": "Margin on options",
+      "body": "**Long options are paid in full — 100% of the premium** — because they are not marginable (no loan value). The one exception: a **LEAPS with more than 9 months** to expiration requires only **75%**.\n\nAn **uncovered (naked) equity call or put** requires the **greater** of two figures: (1) **20% of the underlying value + premium − any out-of-the-money amount**, or (2) a floor of **10% of the underlying (calls) / 10% of the strike (puts) + premium**.\n\nWorked (naked call): write 1 ABC 50 call @ 3 with ABC at 48. First figure: 20% × 4,800 = 960; + 300 premium − 200 OTM = **$1,060**. Floor: 10% × 4,800 + 300 = 780. The greater governs → **$1,060**.\n\nFor **spreads**: a **debit spread** requires the **net debit paid in full**; a **credit spread** requires the **difference in strikes** (the net credit may be applied). A **covered call** has **no margin on the call** — the owned stock covers it."
+    },
+    {
+      "h": "Tax: the premium follows the stock",
+      "body": "Writing or buying an option is not itself taxable, and **exercise is not a taxable event** — it only adjusts a basis or a proceeds figure. The master rule: **the premium follows the stock.** If you end up *buying* stock, the premium adjusts your **cost basis**; if you end up *selling* stock, it adjusts your **proceeds**. For calls you **add** the premium; for puts you **subtract** it.\n\nSo: **long call exercised** → stock basis = strike + premium. **Short call assigned** → sale proceeds = strike + premium. **Long put exercised** → sale proceeds = strike − premium. **Short put assigned** → stock basis = strike − premium.\n\nExample: write 1 XYZ 150 put @ 12, assigned when XYZ is 130 → you buy stock at the strike and the premium reduces your basis: 150 − 12 = **$138 per share**.\n\nWhen an option simply **expires**, the buyer has a capital loss equal to the premium and the writer a capital gain equal to the premium (short-term)."
+    },
+    {
+      "h": "Section 1256 and the 60/40 rule",
+      "body": "**Broad-based index options** (SPX and the like), along with yield-based and other non-equity options, are **Section 1256 contracts**. They are **marked to market at year-end** and taxed **60% long-term / 40% short-term regardless of how long they were held**.\n\nThat 60/40 treatment is favorable and it is a favorite \"which is TRUE\" contrast: **SPX options get §1256 60/40; SPY options do not** (SPY is an equity option taxed under ordinary stock rules). Equity options and narrow-based products are not §1256.\n\nOne holding-period nuance worth knowing: a **married put** (stock and put bought the same day and identified as a hedge) adds the premium to the stock basis and leaves the stock's holding period *unaffected*; writing a deep-in-the-money call against short-term stock can cost long-term status under the tax-straddle rules."
+    }
+  ],
+  "flashcards": [
+    { "front": "How do index options settle?", "back": "Cash, on the CLOSING index value of the exercise day (not the level when entered); cash moves the next business day. Multiplier 100." },
+    { "front": "Index exercise style: the exception", "back": "Almost all index options are European (SPX, DJX, RUT, NDX). OEX (S&P 100) is American. SPY options are equity-style, not index." },
+    { "front": "Portfolio hedge contract formula", "back": "Contracts = (portfolio value × beta) ÷ (strike × 100). Round up. $2M × 1.2 ÷ (5000 × 100) = 4.8 → 5." },
+    { "front": "Currency options: the dollar rule", "back": "No listed options on the U.S. dollar. A dollar view is expressed inversely via the foreign currency. EPIC: Exporters buy Puts, Importers buy Calls (U.S. company's view)." },
+    { "front": "Yield-based options and rates", "back": "Move DIRECTLY with interest rates (opposite of bond prices). Fear rising rates on a bond portfolio → buy yield-based calls." },
+    { "front": "ODD vs. options agreement timing", "back": "ODD delivered at or before account approval (before any trade). Signed options agreement returned within 15 days of approval, else closing transactions only." },
+    { "front": "Assignment method at the firm", "back": "Random selection or FIFO — never \"largest position first.\" OCC assigns clearing members randomly." },
+    { "front": "Position-limit sides", "back": "Bullish side = long calls + short puts. Bearish side = long puts + short calls. Limits apply per side, aggregated." },
+    { "front": "Long option margin (and the LEAPS exception)", "back": "100% of premium (not marginable). LEAPS with > 9 months to expiration: 75%." },
+    { "front": "Naked equity option margin", "back": "Greater of 20% of underlying + premium − OTM, or 10% floor + premium. Write 50 call @ 3, stock 48 → $1,060." },
+    { "front": "Tax: the premium follows the stock", "back": "Buying stock (long call exercised / short put assigned) → premium adjusts BASIS. Selling stock (long put exercised / short call assigned) → premium adjusts PROCEEDS. Calls add, puts subtract." },
+    { "front": "Section 1256 (60/40)", "back": "Broad-based index & yield-based options: marked to market at year-end, 60% LT / 40% ST regardless of holding period. SPX yes, SPY no." }
+  ],
+  "quiz": [
+    {
+      "stem": "A customer is long 1 OEX 2900 call. At 10:00 a.m., with the OEX at 2912, the customer exercises. The OEX closes that day at 2908. The customer receives:",
+      "options": ["$1,200 in cash on the next business day", "$800 in cash on the next business day", "$800 in cash on the second business day after exercise", "$1,200 worth of the index's component stocks"],
+      "answer": 1,
+      "explanation": "Index options settle in cash on the CLOSING value of the exercise day, not the level when the order was entered: (2908 − 2900) × 100 = $800, paid the next business day. OEX is American-style, so the early exercise is allowed; \"$1,200\" wrongly uses the 2912 intraday level."
+    },
+    {
+      "stem": "A portfolio manager wants to hedge a $2,000,000 diversified stock portfolio with a beta of 1.2 using SPX 5000 puts. Approximately how many contracts are needed?",
+      "options": ["4 contracts", "5 contracts", "40 contracts", "48 contracts"],
+      "answer": 1,
+      "explanation": "Contracts = (portfolio value × beta) ÷ (strike × 100) = (2,000,000 × 1.2) ÷ (5,000 × 100) = 2,400,000 ÷ 500,000 = 4.8, rounded up to 5. Omitting beta gives 4; the larger answers drop the ×100 multiplier."
+    },
+    {
+      "stem": "A Japanese manufacturer will receive payment in U.S. dollars in 90 days and wants listed currency options to hedge against a decline in the dollar. The BEST hedge is to:",
+      "options": ["buy yen calls", "buy U.S. dollar puts", "buy yen puts", "write yen calls"],
+      "answer": 0,
+      "explanation": "There are no listed options on the U.S. dollar, so the view is expressed inversely: a falling dollar means a rising yen, so the firm buys yen calls. EPIC (\"exporters buy puts\") applies only from a U.S. company's perspective and would mislead here."
+    },
+    {
+      "stem": "A customer writes 1 ABC Nov 50 call at 3 in a margin account when ABC is trading at 48. The margin requirement on this uncovered call is:",
+      "options": ["$780", "$960", "$1,260", "$1,060"],
+      "answer": 3,
+      "explanation": "Greater of: 20% × $4,800 = $960, + $300 premium − $200 out-of-the-money = $1,060; or the floor 10% × $4,800 + $300 = $780. The larger, $1,060, governs. \"$1,260\" forgets to subtract the OTM amount and \"$960\" omits the premium."
+    },
+    {
+      "stem": "A customer writes 1 XYZ Apr 150 put at 12. XYZ falls to 130 and the put is exercised against the customer. For tax purposes, the cost basis per share of the XYZ acquired is:",
+      "options": ["$138", "$162", "$150", "$130"],
+      "answer": 0,
+      "explanation": "The premium follows the stock: a put writer who is assigned buys stock at the strike, and the premium received reduces the basis: 150 − 12 = $138. Exercise itself is not taxable. \"$162\" adds instead of subtracting, \"$150\" ignores the premium, and \"$130\" is the market price."
+    },
+    {
+      "stem": "During the same tax year, a customer trades broad-based SPX index options and options on the SPY ETF, holding each only a few weeks. Which statement is TRUE?",
+      "options": ["Both are taxed 60% long-term / 40% short-term under Section 1256", "The SPX options are taxed 60/40 under Section 1256; the SPY options are taxed under ordinary equity-option rules", "The SPY options are taxed 60/40; the SPX options are taxed as ordinary short-term", "Neither is subject to Section 1256 because both were held under one year"],
+      "answer": 1,
+      "explanation": "Broad-based index options like SPX are Section 1256 contracts: marked to market at year-end and taxed 60% long-term / 40% short-term regardless of holding period. SPY is an equity option, so it follows ordinary stock-option tax rules based on actual holding period."
+    },
+    {
+      "stem": "When opening an options account, the Options Disclosure Document (ODD) must be furnished to the customer:",
+      "options": ["within 15 days after the account is approved for options trading", "at or before the time the account is approved for options trading", "no later than the settlement date of the first options trade", "only if the customer intends to write uncovered options"],
+      "answer": 1,
+      "explanation": "Under FINRA Rule 2360 the ODD is delivered at or prior to account approval, before any trade. The 15-day clock is for returning the signed options agreement (not the ODD); missing it limits the account to closing transactions only."
+    },
+    {
+      "stem": "A customer is long 20,000 ABC calls and short 20,000 ABC puts. For position-limit purposes, this customer is:",
+      "options": ["on the bullish side with 40,000 contracts aggregated", "on the bearish side with 40,000 contracts aggregated", "on two opposite sides, so the positions offset to zero", "under no limit because puts and calls are counted separately"],
+      "answer": 0,
+      "explanation": "Position limits apply to contracts on the same side of the market. The bullish side is long calls + short puts, so these aggregate to 40,000 contracts on one side. They do not offset — being long calls and short puts is a doubling-down bullish stance, not a hedge, for limit purposes."
+    }
+  ]
+}

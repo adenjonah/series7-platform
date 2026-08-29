@@ -1,0 +1,100 @@
+{
+  "module": "M33",
+  "title": "Investment taxation (advanced)",
+  "domain": "packaged",
+  "estMinutes": 30,
+  "reading": [
+    {
+      "h": "The three income buckets",
+      "body": "Every dollar of income falls in one of three buckets, and losses generally cannot jump buckets. **Earned/active** income is wages and self-employment. **Portfolio** income is interest, dividends, and capital gains. **Passive** income is from DPPs and rental real estate.\n\nThe rule that follows: a **passive loss offsets only passive income** — never wages, never interest or dividends. Keeping the buckets straight is what makes DPP-suitability and net-loss questions solvable, because the exam deliberately mixes salary, dividends, and partnership income in one stem to see whether you'll wrongly net them together."
+    },
+    {
+      "h": "Capital gains, holding period, and rate buckets",
+      "body": "**Long-term = held MORE than one year.** Buy January 15, 2025; a sale on January 15, 2026 is still short-term, but January 16, 2026 is long-term. The clock uses the **trade date**, not settlement, for both the buy and the sell.\n\n**Short-term gains** are taxed as ordinary income. **Long-term capital gains and qualified dividends** get the preferential **0% / 15% / 20%** rates. High earners also owe the **3.8% net investment income tax (NIIT)** on the lesser of net investment income or income above a threshold. **Qualified dividends** must be paid by a U.S. or qualified foreign corporation on stock held **more than 60 days** in the 121-day window around the ex-date; REIT dividends, money-market dividends, and short-term gain distributions are **non-qualified** (ordinary)."
+    },
+    {
+      "h": "Cost basis and identification methods",
+      "body": "**Cost basis** = purchase price + commissions, adjusted up for reinvested distributions and disallowed wash-sale losses, and down for return of capital. After a stock split or stock dividend the total cost is unchanged — only the **per-share** basis changes (100 shares at $125 with a 25% stock dividend → 125 shares at $100).\n\nWhen you sell part of a position, the method decides the gain. **FIFO** is the **IRS default** — oldest shares first, usually the largest gain in a rising market. **Specific identification** lets you name the lots (lowest tax) but you must instruct the broker at the time of sale. **Average cost** is allowed **only for mutual funds and DRIPs**. Worked lots of 100 @ $10, $20, $30, selling 100 at $25: FIFO shows a $1,500 gain; specific-ID of the $30 lot shows a $500 loss; average ($20) shows a $500 gain."
+    },
+    {
+      "h": "Netting and the $3,000 rule",
+      "body": "Netting runs in two steps. **Step 1:** net short-term gains against short-term losses, and separately net long-term gains against long-term losses. **Step 2:** if one side is a gain and the other a loss, net the two together.\n\nWorked example: ST gain $5,000, ST loss $8,000, LT gain $10,000, LT loss $4,000. Step 1 → net ST **loss $3,000** and net LT **gain $6,000**. Step 2 → net them → a **net long-term gain of $3,000**, taxed at LTCG rates.\n\nIf the final result is a **net capital loss**, you may deduct up to **$3,000 per year** ($1,500 if married filing separately) against ordinary income; the **excess carries forward indefinitely**, keeping its short- or long-term character. A $10,000 net loss means $3,000 this year and $7,000 carried forward."
+    },
+    {
+      "h": "The wash-sale rule",
+      "body": "The **wash-sale rule (IRC §1091)** disallows a **loss** if you buy **substantially identical** securities within **30 days before or after** the sale — a **61-day window**. \"Substantially identical\" includes the same stock and **calls, rights, warrants, or convertibles on that stock**, plus the same fund; it does **not** include a different company in the same industry.\n\nThe disallowed loss is **added to the basis** of the replacement shares, and the old **holding period tacks on** — so nothing is lost forever, just deferred. Two exceptions to remember: buying the replacement inside an **IRA** disallows the loss **permanently** (no basis add-back), and the rule applies to **losses only** — gains are always recognized. For **bonds**, two of three terms (issuer, coupon, maturity) must differ to avoid being substantially identical."
+    },
+    {
+      "h": "Gifted securities and the dual-basis rule",
+      "body": "A **gift** normally carries over the **donor's basis and holding period** to the donee. The wrinkle is the **dual-basis rule** when the **FMV at the gift date is below the donor's basis**: for a later **gain**, use the donor's (higher) basis; for a later **loss**, use the (lower) gift-date FMV; a sale **between** the two produces **no gain or loss**.\n\nWorked example: donor's basis $50, FMV at the gift $30. Daughter sells at $25 → loss measured from $30 = **$500 loss** (using the FMV, so the donor's holding period does not tack on and the loss is short-term). Sell at $60 → gain from $50. Sell at $40 → **no gain or loss**. The donor, not the recipient, owes any gift tax, and receiving the gift is not income to the recipient."
+    },
+    {
+      "h": "Inherited securities and return of capital",
+      "body": "**Inherited** securities get a **stepped-up (or down) basis equal to FMV on the date of death** (or the alternate valuation date six months later if the executor elects it), and the holding period is **always long-term** regardless of how long anyone held them.\n\nExample: the decedent bought at $20 and died when the stock was $100; the heir sells one month later at $110 → a **$1,000 long-term gain** (110 − 100 stepped-up basis). One trap: assets inside an **IRA, annuity, or 401(k) get no step-up** (income in respect of a decedent).\n\nFinally, a **return of capital** (a distribution exceeding earnings, common in REITs and MLPs) is **not taxed when received**; it **reduces basis**, and once basis reaches zero, further return of capital is taxed as **capital gain**."
+    }
+  ],
+  "flashcards": [
+    { "front": "The three income buckets", "back": "Earned/active (wages), portfolio (interest, dividends, gains), passive (DPPs, rental). Passive losses offset only passive income." },
+    { "front": "Long-term holding period", "back": "MORE than one year, measured from the TRADE date (not settlement). Exactly one year = still short-term." },
+    { "front": "LTCG / qualified-dividend rates", "back": "0% / 15% / 20%, plus a 3.8% NIIT for high earners. Short-term gains are ordinary income." },
+    { "front": "FIFO vs. specific ID vs. average cost", "back": "FIFO = IRS default (oldest first). Specific ID = name the lots at sale (lowest tax). Average cost = mutual funds/DRIPs only." },
+    { "front": "Net capital loss deduction", "back": "Up to $3,000/yr ($1,500 MFS) against ordinary income; excess carries forward indefinitely, keeping its ST/LT character." },
+    { "front": "Wash-sale window and trigger", "back": "Loss disallowed if substantially identical securities bought within 30 days before OR after the sale (61-day window)." },
+    { "front": "Wash sale — what happens to the disallowed loss?", "back": "Added to the basis of the replacement shares; old holding period tacks on. In an IRA it is disallowed PERMANENTLY (no add-back)." },
+    { "front": "Substantially identical (wash sale)", "back": "Same stock, plus calls/rights/warrants/convertibles on it, and the same fund. NOT a competitor's stock in the same industry." },
+    { "front": "Gifted stock — dual-basis rule", "back": "FMV at gift below donor basis: use donor basis for a GAIN, gift-date FMV for a LOSS; a sale between = no gain or loss." },
+    { "front": "Inherited securities basis", "back": "Stepped up to FMV at date of death (or alternate date 6 months later); ALWAYS long-term. No step-up inside an IRA/annuity/401(k)." },
+    { "front": "Qualified dividend holding period", "back": "Stock held more than 60 days in the 121-day window around the ex-date (91/181 for certain preferred)." },
+    { "front": "Return of capital", "back": "Not taxed when received; reduces basis. Once basis hits zero, further ROC is taxed as capital gain." }
+  ],
+  "quiz": [
+    {
+      "stem": "A father gives his daughter 100 shares he purchased for $50 per share. On the gift date the stock trades at $30. Eight months later she sells all 100 shares at $25. For tax purposes she reports:",
+      "options": ["A $2,500 loss", "A $2,000 loss", "A $500 loss", "No gain or loss"],
+      "answer": 2,
+      "explanation": "When FMV at the gift date ($30) is below the donor's basis ($50), a later loss is measured from the gift-date FMV: ($30 − $25) × 100 = $500 loss. The donor's $50 basis would apply only to a gain, and a sale between $30 and $50 would produce neither gain nor loss."
+    },
+    {
+      "stem": "A man bought 100 shares of ABC at $20 and died two months later when ABC was $100. His daughter inherited the shares and sold them one month after his death at $110. She reports:",
+      "options": ["A short-term capital gain of $9,000", "A short-term capital gain of $1,000", "A long-term capital gain of $9,000", "A long-term capital gain of $1,000"],
+      "answer": 3,
+      "explanation": "Inherited securities take a stepped-up basis equal to FMV at the date of death ($100) and are always treated as long-term regardless of how long anyone held them: ($110 − $100) × 100 = $1,000 long-term gain."
+    },
+    {
+      "stem": "A customer sells 500 shares of XYZ common at a loss on June 1. All of the following purchases on June 15 would disallow the loss under the wash-sale rule EXCEPT:",
+      "options": ["XYZ call options", "XYZ convertible bonds", "Common stock of XYZ's largest competitor in the same industry", "XYZ common stock purchased in the customer's IRA"],
+      "answer": 2,
+      "explanation": "Within the 30-day window, calls, convertibles, and rights on the same stock are substantially identical, and a repurchase inside an IRA disallows the loss permanently. A different company's stock, even in the same industry, is NOT substantially identical, so it does not trigger the rule."
+    },
+    {
+      "stem": "For the year a customer has a short-term gain of $5,000, a short-term loss of $8,000, a long-term gain of $10,000, and a long-term loss of $4,000. The net result is:",
+      "options": ["A net long-term gain of $3,000", "A net short-term gain of $3,000", "A net long-term gain of $6,000", "A net capital loss of $3,000"],
+      "answer": 0,
+      "explanation": "Step 1: net ST → $5,000 − $8,000 = $3,000 ST loss; net LT → $10,000 − $4,000 = $6,000 LT gain. Step 2: net the two → $6,000 − $3,000 = a net long-term gain of $3,000, taxed at LTCG rates."
+    },
+    {
+      "stem": "A customer buys stock on January 15, 2025. To receive long-term capital gain treatment on a later sale, the EARLIEST the customer may sell is:",
+      "options": ["January 15, 2025 plus the T+1 settlement", "January 15, 2026", "January 16, 2026", "December 31, 2025"],
+      "answer": 2,
+      "explanation": "Long-term treatment requires holding MORE than one year, measured from the trade date. A sale exactly one year later (January 15, 2026) is still short-term; January 16, 2026 is the first long-term day. Settlement date is not used for the holding period."
+    },
+    {
+      "stem": "A customer realizes a $1,000 loss selling XYZ on March 1 and buys the same XYZ shares on March 20. The disallowed wash-sale loss is:",
+      "options": ["Permanently lost", "Deductible in full because the repurchase was more than 15 days later", "Added to the basis of the newly purchased shares, with the old holding period tacking on", "Converted into an ordinary loss"],
+      "answer": 2,
+      "explanation": "The disallowed loss is added to the basis of the replacement shares and the prior holding period tacks on, so the benefit is deferred, not lost — unless the repurchase was made in an IRA, which forfeits it permanently. The 61-day window covers 30 days before and after, so March 20 is inside it."
+    },
+    {
+      "stem": "A REIT distribution classified as a return of capital is:",
+      "options": ["Taxed as ordinary income in the year received", "Not taxed when received; it reduces the shareholder's cost basis", "Taxed as a long-term capital gain regardless of holding period", "Exempt from tax permanently"],
+      "answer": 1,
+      "explanation": "A return of capital is not taxed when received; it reduces cost basis. Once basis reaches zero, any further return of capital is taxed as a capital gain — so it defers tax rather than eliminating it."
+    },
+    {
+      "stem": "When a customer sells part of a position and does not identify specific shares at the time of sale, the IRS default method for determining cost basis is:",
+      "options": ["Last in, first out (LIFO)", "Average cost", "First in, first out (FIFO)", "Highest cost first"],
+      "answer": 2,
+      "explanation": "FIFO is the IRS default absent specific identification — the oldest shares are treated as sold first, usually producing the largest gain in a rising market. Average cost is available only for mutual funds and DRIPs, and LIFO is not an IRS method for securities."
+    }
+  ]
+}

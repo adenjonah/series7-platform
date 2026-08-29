@@ -1,0 +1,95 @@
+{
+  "module": "M34",
+  "title": "Customer accounts, records, and transfers",
+  "domain": "accounts",
+  "estMinutes": 25,
+  "reading": [
+    {
+      "h": "The new account form: who signs, what's collected",
+      "body": "Before the first trade, **FINRA Rule 4512** requires a defined minimum of information and a principal's sign-off.\n\nThe firm must have: the customer's name and address; whether the customer is of legal age; the name of the responsible registered rep; and, denoting acceptance, the **signature of a principal** (a partner, officer, or manager). For non-institutional accounts it must also make reasonable efforts to obtain the tax ID, occupation and employer, whether the customer is associated with another member, and a **Trusted Contact Person** (age 18+).\n\nTwo traps the exam sets every time: on a **cash** new-account form the **customer's signature is NOT required** — the principal's is (the customer signs the margin, options, discretionary, and TOD documents). And the rep's **name**, not signature, is required. Records are kept at least 6 years after the account closes."
+    },
+    {
+      "h": "Account records, KYC, and the profile copy",
+      "body": "Under **SEC Rule 17a-3(a)(17)**, the firm must furnish each customer a copy of the account record (the investment profile) within **30 days** of opening and at least every **36 months** thereafter, and must send notice within 30 days of any change to the objectives, name, or address.\n\n**Know Your Customer (Rule 2090)** — reasonable diligence to know the essential facts about every customer and anyone authorized on the account — applies whether or not a recommendation is made. **Suitability (Rule 2111)** is triggered only by a recommendation. That distinction is a classic single-best-answer question.\n\nWhat happens when a customer refuses information? No TIN (and no pending application) → the account should NOT be opened. Provides a TIN but won't certify it on Form W-9 → **24% backup withholding**. Declines FINANCIAL information (income, net worth) → the account CAN be opened, but only unsolicited orders may be accepted, because the rep lacks a profile to recommend from."
+    },
+    {
+      "h": "The registration grid: who trades, at death, margin?",
+      "body": "For each registration, ask three questions: who may enter orders, what happens at death, and can it be margined?\n\n**Individual / TOD:** only the owner (or a written trading authorization holder). TOD names a beneficiary who takes the assets at death outside probate; the owner controls the account during life.\n\n**JTWROS:** any owner trades; checks payable to all; at death, to the survivor. **TIC:** any owner trades; at death, the decedent's fraction goes to the estate.\n\n**UTMA:** the custodian trades; the minor cannot; cash only; at the custodian's death a successor is named.\n\n**Trust / corporate / estate:** need the authority document — a certification of trust, a corporate resolution, or letters testamentary/administration. Margin, options, and short sales are allowed only if the governing document expressly permits.\n\n**Institutional account (Rule 4512(c))** = a bank, insurer, RIC, RIA, or any entity with total assets of at least **$50 million**. Do not confuse this with a QIB ($100 million in securities) or an accredited investor ($1 million net worth / $200k income)."
+    },
+    {
+      "h": "Discretion and the time-and-price exception",
+      "body": "**Discretion (Rule 3260)** is the rep choosing any of the **3 A's** — Action (buy or sell), Asset (which security), or Amount (how many). It requires **prior written authorization** from the customer and written firm acceptance. Every discretionary order is marked 'discretionary' and approved by a principal **promptly after execution** — approval need not come first, which is a favorite trap.\n\nThe **time-and-price exception**: if the customer specifies action, asset, and amount and leaves only WHEN and at WHAT PRICE to the rep ('buy 500 XYZ today whenever it looks best'), that is NOT discretion — but the authority is good only until the **end of that business day** unless the customer signs and dates a written extension. Executing the next day without new instructions is an unauthorized trade."
+    },
+    {
+      "h": "Death of a customer",
+      "body": "On notice of a customer's death, the rep takes four steps: **cancel all open orders, mark the account deceased/freeze it, and await instructions from the estate's legal representative.** No orders from anyone — a power of attorney or trading authorization **terminated at death**, so the rep may not take the son's, spouse's, or POA holder's instructions.\n\nTo release or transfer assets the estate typically supplies a certified death certificate, letters testamentary or letters of administration (the court's appointment of the executor or administrator), an affidavit of domicile, and any required estate-tax waiver.\n\nTaxes: inherited securities get a **step-up (or down) in cost basis to fair market value at the date of death** (or the alternate date six months later if elected), and the holding period is automatically long-term. Gifted securities instead carry the donor's basis and holding period."
+    },
+    {
+      "h": "Transfers (ACATS) and records retention",
+      "body": "To move an account, the customer signs a **Transfer Initiation Form (TIF)** at the **receiving** firm, which submits it through **ACATS** (run by NSCC/DTCC). The **carrying (delivering) firm must, within 1 business day, validate the instruction or take exception.** Owing the firm money on a fully paid account is NOT a valid exception. On validation the carrying firm freezes the account (canceling open orders except options expiring within 7 business days) and **completes delivery within 3 business days** — roughly four to six business days end to end.\n\nRecords retention you must know: customer account records and ledgers **6 years** (first two easily accessible); confirmations, order tickets, and communications **3 years**; **written customer complaints (Rule 4513) 4 years** at the OSJ; CIP identity records **5 years** after the account closes; SARs **5 years**; corporate charters and partnership agreements for the **lifetime of the firm**. A written complaint is any grievance; the rep must forward it to a principal, never handle it alone."
+    }
+  ],
+  "flashcards": [
+    { "front": "Whose signature is required on a CASH new-account form?", "back": "A principal's (partner, officer, or manager) — NOT the customer's and NOT the rep's (only the rep's name)." },
+    { "front": "17a-3 account-record copy timing", "back": "Furnish within 30 days of opening and at least every 36 months; notice of a profile change within 30 days." },
+    { "front": "Customer refuses financial info vs. refuses a TIN", "back": "No financials → open it, unsolicited orders only. No TIN (and no application) → do not open the account." },
+    { "front": "No W-9 certification penalty", "back": "24% backup withholding on dividends, interest, and sale proceeds." },
+    { "front": "Institutional account threshold (4512(c))", "back": "$50 million total assets (or a bank/insurer/RIC/RIA). Contrast QIB $100M in securities, accredited $1M/$200k." },
+    { "front": "Time-and-price authority lasts how long?", "back": "Only until the end of that business day, unless the customer gives a signed, dated written extension." },
+    { "front": "First steps on a customer's death", "back": "Cancel open orders, freeze/mark the account deceased, and await the executor/administrator. Any POA died with the customer." },
+    { "front": "Inherited vs. gifted cost basis", "back": "Inherited: step-up to FMV at death, automatically long-term. Gifted: carries the donor's basis and holding period." },
+    { "front": "ACATS timeline", "back": "Receiving firm submits the TIF; carrying firm validates within 1 business day and completes delivery within 3 business days after validation." },
+    { "front": "Written complaint retention (Rule 4513)", "back": "4 years, at the OSJ. The rep forwards it to a principal — never handles it alone." },
+    { "front": "Records retention quick table", "back": "Ledgers/account records 6 yr; confirms/tickets/comms 3 yr; complaints 4 yr; CIP & SARs 5 yr; charter/partnership agreement lifetime." }
+  ],
+  "quiz": [
+    {
+      "stem": "Which signature is REQUIRED on the new account form for an individual cash account?",
+      "options": ["The customer's signature", "The registered representative's signature", "The signature of a principal accepting the account", "Both the customer's and the representative's signatures"],
+      "answer": 2,
+      "explanation": "Rule 4512 requires a principal (partner, officer, or manager) to sign, denoting acceptance. The customer's signature is not required on a cash form (the customer signs the margin, options, or discretionary agreements), and only the representative's name — not signature — is required."
+    },
+    {
+      "stem": "Two unrelated business associates open a joint account, one contributing 60% and the other 40%, and each wants his share to pass to his own heirs at death. Which registration BEST fits?",
+      "options": ["Joint tenants with right of survivorship", "Tenants in common", "Community property", "Transfer on death in one owner's name"],
+      "answer": 1,
+      "explanation": "Tenants in common allows specified, unequal fractions, and a decedent's fraction passes to his estate rather than to the surviving owner. JTWROS requires equal interests and passes everything to the survivor; community property is limited to married couples in community-property states."
+    },
+    {
+      "stem": "A registered representative learns a customer died yesterday. The customer's son, who holds a durable power of attorney, calls and instructs the representative to sell all positions. The representative should:",
+      "options": ["Execute the order, because a durable POA survives the grantor's death", "Cancel all open orders, freeze the account, and await instructions from the court-appointed executor or administrator", "Execute the order after obtaining a certified death certificate", "Transfer the positions into the son's name as next of kin"],
+      "answer": 1,
+      "explanation": "Any power of attorney, durable or not, terminates at the grantor's death. On notice of death the firm cancels open orders, marks the account deceased, and takes instructions only from the executor or administrator once letters testamentary or letters of administration are presented."
+    },
+    {
+      "stem": "On Monday a customer telephones and says, 'Buy 300 shares of MNO today, whenever the price looks best.' No written discretionary authorization is on file. The representative buys the shares on Tuesday afternoon. Which statement is CORRECT?",
+      "options": ["The trade was proper because the customer specified action, asset, and amount", "The trade required prior written discretionary authorization even on Monday", "The instruction was valid only through the close on Monday; the Tuesday purchase was unauthorized", "The trade was proper because a principal may approve it promptly after execution"],
+      "answer": 2,
+      "explanation": "When the customer fixes action, asset, and amount and leaves only time and price to the rep, no written discretion is needed — but that authority is good only until the end of that business day absent a signed, dated extension. Executing on Tuesday required fresh instructions."
+    },
+    {
+      "stem": "A customer submits a Transfer Initiation Form to move her account to a new firm. Under FINRA Rule 11870 (ACATS), the carrying (delivering) firm must validate the transfer instruction or take exception within:",
+      "options": ["1 business day", "3 business days", "5 business days", "10 business days"],
+      "answer": 0,
+      "explanation": "The carrying firm must validate or take exception within 1 business day, then freeze the account and complete delivery within 3 business days after validation. An unpaid debit on a fully paid account is not a valid exception."
+    },
+    {
+      "stem": "A firm receives a written complaint from a customer. Under FINRA Rule 4513, the record of the complaint and the action taken must be retained for at least:",
+      "options": ["3 years", "4 years", "5 years", "6 years"],
+      "answer": 1,
+      "explanation": "Written customer complaints are retained 4 years at the OSJ. The 3-year figure covers confirmations, order tickets, and communications; 5 years covers CIP and SAR records; 6 years covers ledgers and customer account records."
+    },
+    {
+      "stem": "A customer inherits 1,000 shares of stock that the decedent had bought years ago at $10 per share. On the date of death the shares were worth $60. The customer sells them three months later at $65. For tax purposes, the customer's cost basis and holding period are:",
+      "options": ["$10 per share, short-term", "$10 per share, long-term", "$60 per share, long-term", "$60 per share, short-term"],
+      "answer": 2,
+      "explanation": "Inherited securities receive a stepped-up basis to fair market value at the date of death ($60) and are automatically long-term regardless of how long the heir holds them. Carrying over the donor's $10 basis is the gift rule, not the inheritance rule."
+    },
+    {
+      "stem": "A firm must furnish each customer a copy of the account record (investment profile) within 30 days of opening and at least once every:",
+      "options": ["12 months", "24 months", "36 months", "6 years"],
+      "answer": 2,
+      "explanation": "SEC Rule 17a-3(a)(17) requires the account-record copy within 30 days of opening and at least every 36 months thereafter, plus notice within 30 days of any change to the objectives, name, or address. Six years is the retention period for the record, not the delivery interval."
+    }
+  ]
+}

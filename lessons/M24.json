@@ -1,0 +1,96 @@
+{
+  "module": "M24",
+  "title": "Debt II: convertible bonds and accrued interest",
+  "domain": "debt",
+  "estMinutes": 24,
+  "reading": [
+    {
+      "h": "The convertible bond and its conversion ratio",
+      "body": "A **convertible bond** lets the holder exchange it for a fixed number of the issuer's common shares. The terms are set at issue as either a **conversion price (CP)** or a **conversion ratio (CR)** — and each defines the other:\n\n**CR = Par ÷ CP** and **CP = Par ÷ CR.**\n\nWith $1,000 par and a conversion price of $25, the ratio is 1,000 ÷ 25 = **40 shares**. Think of the bond as a coupon redeemable for 40 shares of stock. Everything else — parity, arbitrage — is just asking whether those 40 shares are worth more or less than the bond's price. Compute the ratio *first*, every time; the coupon and current yield in the stem are distractors."
+    },
+    {
+      "h": "Parity — the exchange rate, both directions",
+      "body": "**Parity** is the price at which the bond and the shares it converts into are worth exactly the same. Two forms, and the exam asks both:\n\n**Parity price of the STOCK = bond price ÷ CR** — what you effectively pay per share by buying the bond and converting. A bond at $1,080 with CR 40 → 1,080 ÷ 40 = **$27** per share.\n\n**Parity price of the BOND = stock price × CR** — what the bond is worth if converted right now. Stock at $28 with CR 40 → 28 × 40 = **$1,120**.\n\nSame ratio, multiplied one way to get a share price, divided the other way to get a bond price. Read the question to see which side it wants."
+    },
+    {
+      "h": "Arbitrage: is the bond cheaper than its shares?",
+      "body": "Arbitrage exists only when the bond trades **below** parity — i.e., when the shares it converts into are worth more than the bond costs. Then: **buy the bond, convert to shares, sell the shares** for the difference.\n\nBond at $1,080, CR 40, stock at $28. Parity price of the bond = 28 × 40 = $1,120. The bond ($1,080) is **below** parity ($1,120), so buy the bond for $1,080, convert to 40 shares, sell them at $28 = $1,120 → **$40 profit** per bond, before commissions. If the bond traded **at or above** $1,120, there would be no arbitrage. The whole test is: *are the shares worth more than the bond price?*"
+    },
+    {
+      "h": "Anti-dilution, and why conversion isn't taxable",
+      "body": "A stock split or stock dividend would dilute the convert-holder, so the terms **adjust automatically**: the CR rises and the CP falls to keep the holder's economics unchanged. A 2-for-1 split turns CP $25 → **$12.50** and CR 40 → **80**. A 25% stock dividend multiplies CR by 1.25 and divides CP by 1.25.\n\nActually **converting** a bond into stock is **not a taxable event** — you've swapped one security for another, not sold. The stock simply inherits the bond's cost basis (bond basis ÷ shares received). Issuers like convertibles because the option lets them pay a **lower** coupon; a rising stock also lets them force conversion by calling the bond when it trades well above the call price."
+    },
+    {
+      "h": "Accrued interest: the buyer pays the seller",
+      "body": "Bonds pay interest **in arrears** (a lump sum on each coupon date), so when a bond trades between coupon dates the **buyer pays the seller** the interest earned since the last coupon — added to the price on the confirmation. The buyer is made whole later by collecting the *full* next coupon.\n\nInterest accrues from the **last coupon date up to, but NOT including, the settlement date** — the seller owns every night they held it; the buyer starts owning on settlement night. Some bonds trade **flat** (no accrued interest at all): **zero-coupon, income/adjustment, and defaulted** bonds, plus any trade that settles exactly on a coupon date."
+    },
+    {
+      "h": "Counting the days: 30/360 vs actual, under T+1",
+      "body": "First find **settlement**: regular way is **T+1** (one business day after the trade, skipping weekends/holidays). Then count from the last coupon to settlement with the right calendar:\n\n- **Corporate and municipal bonds → 30/360** (every month = 30 days, year = 360; February has 30 days).\n- **U.S. Treasuries → actual days** (the exam uses actual/365).\n\nWorked corporate: an 8% bond paying Jan 15 & Jul 15, bought Tuesday **Mar 10, 2026**, settles Wednesday **Mar 11**. 30/360 from Jan 15 up to (not including) Mar 11: 16 (Jan) + 30 (Feb) + 10 (Mar) = **56 days**. AI = $80 × 56/360 = **$12.44**. Same trade as a **Treasury** using actual days: Feb 15→28 = 14, Mar 1→10 = 10 = **24 days**. Traps: counting the settlement date, using the trade date, or applying 30/360 to a Treasury."
+    }
+  ],
+  "flashcards": [
+    { "front": "Conversion ratio formula", "back": "CR = Par ÷ CP. $1,000 par, CP $25 → 40 shares. (And CP = Par ÷ CR.)" },
+    { "front": "Parity price of the STOCK", "back": "Bond price ÷ CR. Bond $1,080, CR 40 → $27/share." },
+    { "front": "Parity price of the BOND", "back": "Stock price × CR. Stock $28, CR 40 → $1,120." },
+    { "front": "When does convertible arbitrage exist?", "back": "Only when the bond trades BELOW parity — buy the bond, convert, sell the shares for the difference." },
+    { "front": "Arbitrage example profit", "back": "Bond $1,080, CR 40, stock $28: parity bond = $1,120; profit = $1,120 − $1,080 = $40/bond." },
+    { "front": "Anti-dilution on a 2-for-1 split", "back": "CR doubles (40→80), CP halves ($25→$12.50). Holder's economics unchanged." },
+    { "front": "Is converting a bond to stock taxable?", "back": "No — not a taxable event. Stock inherits the bond's cost basis (bond basis ÷ shares)." },
+    { "front": "Who pays accrued interest, and to whom?", "back": "The buyer pays the seller the interest earned since the last coupon; buyer recoups it via the full next coupon." },
+    { "front": "Accrual period rule", "back": "From the last coupon date up to, but NOT including, the settlement date." },
+    { "front": "Bonds that trade flat (no AI)", "back": "Zero-coupon, income/adjustment, and defaulted bonds; also trades settling on a coupon date." },
+    { "front": "Day counts: corporate vs Treasury", "back": "Corporate & muni = 30/360 (Feb = 30 days). Treasury = actual days (exam: actual/365)." },
+    { "front": "Regular-way settlement (current)", "back": "T+1 — one business day after the trade, skipping weekends/holidays." }
+  ],
+  "quiz": [
+    {
+      "stem": "A convertible bond has a par value of $1,000 and a conversion price of $50. What is its conversion ratio?",
+      "options": ["50 shares", "20 shares", "5 shares", "40 shares"],
+      "answer": 1,
+      "explanation": "CR = par ÷ conversion price = $1,000 ÷ $50 = 20 shares. Dividing the other way ($50/$1,000) or reusing the $25/40-share example are the traps."
+    },
+    {
+      "stem": "A $1,000 par convertible bond is convertible into 40 shares of common stock, which is currently trading at $30. The parity price of the bond is:",
+      "options": ["$750", "$1,200", "$1,000", "$1,333"],
+      "answer": 1,
+      "explanation": "Parity price of the bond = stock price × CR = $30 × 40 = $1,200. $750 divides instead of multiplies (that would be a share-side calculation), and $1,000 is just par."
+    },
+    {
+      "stem": "A 5% convertible bond with a conversion price of $25 is trading at $1,080. The common stock trades at $28. What arbitrage profit per bond, before commissions, is available?",
+      "options": ["$40", "$80", "$120", "None, because the bond trades above parity"],
+      "answer": 0,
+      "explanation": "CR = $1,000 ÷ $25 = 40; parity price of the bond = $28 × 40 = $1,120. The bond at $1,080 is below parity, so buy it, convert, and sell 40 shares at $28 for $1,120 — a $40 profit. The 5% coupon is a distractor."
+    },
+    {
+      "stem": "An 8% corporate bond pays interest on January 15 and July 15. A customer buys one $1,000 bond on Tuesday, March 10, 2026, regular way. How much accrued interest does the buyer pay the seller?",
+      "options": ["$11.11", "$12.22", "$12.44", "$12.67"],
+      "answer": 2,
+      "explanation": "Regular way is T+1, so settlement is Wednesday March 11. Using 30/360, count Jan 15 up to but not including Mar 11: 16 + 30 + 10 = 56 days; $80 × 56/360 = $12.44. $12.67 wrongly includes the settlement date (57 days); $12.22 uses 55."
+    },
+    {
+      "stem": "A 4% Treasury note pays interest on February 15 and August 15. A customer buys the note on Tuesday, March 10, 2026, regular way. How many days of accrued interest will the buyer pay?",
+      "options": ["27", "26", "25", "24"],
+      "answer": 3,
+      "explanation": "Treasuries settle T+1 (Wednesday March 11) and accrue on actual calendar days up to but not including settlement: Feb 15–28 = 14, plus Mar 1–10 = 10, for 24 days. 26 wrongly applies corporate 30/360 to a Treasury; 25 and 27 include the settlement date."
+    },
+    {
+      "stem": "Which of the following bonds trades FLAT (without accrued interest)?",
+      "options": ["A 6% corporate debenture between coupon dates", "A zero-coupon bond", "A 4% Treasury note between coupon dates", "A current-pay municipal revenue bond"],
+      "answer": 1,
+      "explanation": "Zero-coupon bonds pay no periodic interest, so there is nothing to accrue — they trade flat, as do income/adjustment and defaulted bonds. Ordinary interest-paying corporates, Treasuries, and munis all trade with accrued interest between coupon dates."
+    },
+    {
+      "stem": "A customer converts a convertible bond into common stock. For tax purposes, this conversion is:",
+      "options": ["A taxable sale, with gain measured against the bond's cost", "Not a taxable event; the stock takes the bond's cost basis", "Taxable only if the stock is later sold at a loss", "Taxable as ordinary income equal to the parity value"],
+      "answer": 1,
+      "explanation": "Exchanging a convertible for the underlying stock is not a taxable event — the stock simply inherits the bond's cost basis, and tax is deferred until the shares are sold. Treating conversion itself as a sale is the trap."
+    },
+    {
+      "stem": "A convertible bond has a conversion ratio of 40. The issuer declares a 2-for-1 stock split. After the anti-dilution adjustment, the conversion ratio and conversion price become:",
+      "options": ["CR 20, CP $50", "CR 80, CP $12.50", "CR 40, CP $25 (unchanged)", "CR 80, CP $50"],
+      "answer": 1,
+      "explanation": "A 2-for-1 split doubles the shares, so the CR doubles to 80 and the CP halves from $25 to $12.50, leaving the holder's economic position unchanged. Leaving the terms unchanged, or lowering the CR, would dilute the holder — both traps."
+    }
+  ]
+}

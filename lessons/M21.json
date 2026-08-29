@@ -1,0 +1,100 @@
+{
+  "module": "M21",
+  "title": "Options III: spreads, straddles, and combinations",
+  "domain": "options",
+  "estMinutes": 28,
+  "reading": [
+    {
+      "h": "What a spread is, and the net premium",
+      "body": "A **spread** is one long and one short option of the **same type** (both calls, or both puts) with a different strike and/or expiration. The tested kind is the **vertical (price) spread**: same expiration, different strikes.\n\nBecause you buy one and sell the other, only the **net premium** matters — the *difference* between the two premiums, never a single leg. If you paid more than you collected, it is a **debit spread** (money out). If you collected more than you paid, it is a **credit spread** (money in).\n\nEvery spread number — breakeven, max gain, max loss — is computed from that net. And one identity always holds: **max gain + max loss = the difference in strikes.**"
+    },
+    {
+      "h": "Naming direction in ten seconds: the dominant leg",
+      "body": "You can label any spread before doing arithmetic by finding the **dominant leg** — the one with the larger premium, which is always the option closer to the money.\n\nFor **calls**, the **lower strike** is dominant. For **puts**, the **higher strike** is dominant. If you are **long** the dominant leg, you paid a net debit and want the stock to move your way; if you are **short** it, you took in a net credit.\n\nThe four labels: **debit call spread = bullish**, **debit put spread = bearish**, **credit call spread = bearish**, **credit put spread = bullish**. Sanity check: a debit means you bought a right and need the underlying you own to grow; a credit means you were paid and want everything to shrink to nothing."
+    },
+    {
+      "h": "Breakevens and the two mnemonics",
+      "body": "Breakeven for any vertical spread uses the net premium and one anchor strike:\n\n**CAL — Calls: Add the net premium to the Lower strike.**\n**PSH — Puts: Subtract the net premium from the Higher strike.**\n\nBoth legs of a vertical spread share this one breakeven.\n\nAnd the behavior rule — what you *want* to happen:\n\n**DEBIT and WIDEN are both five letters:** a debit spread profits when the spread **widens** (the gap between the two premiums grows) and when **both options are exercised**.\n\n**CREDIT and NARROW are both six letters:** a credit spread profits when the spread **narrows** and when **both options expire**."
+    },
+    {
+      "h": "Worked spreads with the T-chart",
+      "body": "**Bull call (debit) spread: buy 1 ABC Jul 50 call @ 7, sell 1 ABC Jul 60 call @ 3.** Net debit = 7 − 3 = 4 → max loss **$400**. CAL breakeven = 50 + 4 = **54**. Max gain = strike difference − net debit = (60 − 50) − 4 = 6 × 100 = **$600**. Check: $600 gain + $400 loss = $1,000 = the 10-point strike difference. Bullish; wants to widen and be exercised.\n\n**Bear (credit) put spread: sell 1 XYZ Oct 80 put @ 9, buy 1 XYZ Oct 70 put @ 4.** Net credit = 9 − 4 = 5 → max gain **$500**. PSH breakeven = 80 − 5 = **75**. Max loss = (80 − 70) − 5 = 5 × 100 = **$500**. This one is actually a *credit put spread* = bullish; it profits if the puts narrow/expire (the stock stays up)."
+    },
+    {
+      "h": "Straddles: betting on a big move (or on calm)",
+      "body": "A **straddle** is a call and a put with the **same strike and same expiration**. Both are long, or both are short.\n\nA **long straddle** (long call + long put) is a **volatility** play — it profits from a **big move in either direction**, so it is popular before earnings. Max loss = both premiums; max gain **unlimited** (on the upside). \n\nA **short straddle** (short call + short put) profits from **no movement**. Max gain = both premiums; max loss **UNLIMITED** (it contains a naked call).\n\nThe arithmetic hook: **strADDle — you ADD the premiums.** Two breakevens sit at **strike ± total premiums**. Contrast with spreads, which *subtract* to a net premium."
+    },
+    {
+      "h": "Worked straddles and combinations",
+      "body": "**Long straddle: buy 1 ABC Jan 60 call @ 4 and buy 1 ABC Jan 60 put @ 5.** Total = 9 → max loss **$900**. Breakevens = 60 + 9 = **69** and 60 − 9 = **51**; the stock must clear one of them to profit. At 80: call intrinsic 20 − 9 = +$1,100.\n\n**Short straddle** on the same strikes: max gain **$900** (only if ABC sits exactly at 60 at expiration); breakevens still 69 and 51; loss unlimited above 69.\n\nA **combination** (also called a strangle) is the same call-plus-put idea but with **different strikes and/or expirations**. Long combination: **buy 1 ABC Mar 80 call @ 3 and buy 1 ABC Mar 70 put @ 2.** Total = 5. Breakevens = call strike + total = 80 + 5 = **85**, and put strike − total = 70 − 5 = **65**. It is cheaper than a straddle (both legs are usually out of the money) but needs a bigger move."
+    },
+    {
+      "h": "Telling them apart (the classic trap)",
+      "body": "The exam mixes these up on purpose. Anchor on the definitions.\n\nA **spread** is **same type** — two calls or two puts — one long, one short. You **subtract** to a net premium.\n\nA **straddle/combination** is **one call + one put** on the same side (both long or both short). You **add** the premiums. Same strike and expiration = straddle; change a strike or expiration = combination.\n\nSo \"long 1 ABC 60 call + short 1 ABC 60 call\" is impossible as a straddle — it is not even a real position. \"Long 1 ABC 50 call + short 1 ABC 60 call\" is a **spread** (both calls), not a straddle. And \"long 1 ABC 60 call + long 1 ABC 60 put\" is a **long straddle**. Count the types first: two-of-a-kind is a spread; one-of-each is a straddle or combination."
+    }
+  ],
+  "flashcards": [
+    { "front": "What is the net premium and why does it matter?", "back": "The difference between the two legs' premiums. Every spread's BE, max gain, and max loss use the net — never a single leg." },
+    { "front": "Dominant leg rule", "back": "Calls: lower strike dominant. Puts: higher strike dominant. Long the dominant leg = debit; short it = credit." },
+    { "front": "The four spread directions", "back": "Debit call = bullish; debit put = bearish; credit call = bearish; credit put = bullish." },
+    { "front": "CAL / PSH breakeven", "back": "Calls: Add net premium to the Lower strike. Puts: Subtract net premium from the Higher strike." },
+    { "front": "DEBIT-WIDEN / CREDIT-NARROW", "back": "Debit (5 letters) wants the spread to WIDEN (5) and both exercised. Credit (6) wants it to NARROW (6) and both expire." },
+    { "front": "Max gain + max loss on any vertical spread", "back": "= the difference in strikes (× 100)." },
+    { "front": "Bull call spread: buy 50 @ 7, sell 60 @ 3 — BE, max gain, max loss?", "back": "Net debit 4. BE 54; max gain (10 − 4) = $600; max loss = $400." },
+    { "front": "Straddle definition and arithmetic", "back": "Call + put, SAME strike and expiration, both long or both short. strADDle = ADD the premiums." },
+    { "front": "Long straddle vs. short straddle", "back": "Long = bet on a big move either way (max loss = premiums, gain unlimited). Short = bet on no move (max gain = premiums, loss unlimited)." },
+    { "front": "Straddle breakevens", "back": "Strike ± total premiums. Buy 60 call @ 4 + 60 put @ 5 → 69 and 51." },
+    { "front": "Combination (strangle)", "back": "Call + put with DIFFERENT strikes/expirations. Long combo BEs: call strike + total, put strike − total." },
+    { "front": "Spread vs. straddle: how to tell fast", "back": "Two of the same type (2 calls / 2 puts) = spread (subtract). One call + one put = straddle/combination (add)." }
+  ],
+  "quiz": [
+    {
+      "stem": "A customer buys 1 ABC Jul 50 call at 7 and sells 1 ABC Jul 60 call at 3. What is the maximum potential gain?",
+      "options": ["$400", "$1,000", "$300", "$600"],
+      "answer": 3,
+      "explanation": "Net debit = 7 − 3 = 4. Max gain = difference in strikes − net debit = (60 − 50) − 4 = 6 × 100 = $600. \"$400\" is the max loss (the net debit), \"$1,000\" ignores the premium, and \"$300\" uses only one leg."
+    },
+    {
+      "stem": "A customer sells 1 XYZ Oct 80 put at 9 and buys 1 XYZ Oct 70 put at 4. What is the breakeven point?",
+      "options": ["65", "71", "75", "85"],
+      "answer": 2,
+      "explanation": "Net credit = 9 − 4 = 5. PSH: subtract the net premium from the higher strike: 80 − 5 = 75. \"71\" uses only the 9 premium, \"85\" adds instead of subtracting, and \"65\" uses the wrong (lower) strike."
+    },
+    {
+      "stem": "A customer buys 1 ABC Jan 60 call at 4 and buys 1 ABC Jan 60 put at 5. The breakeven points are:",
+      "options": ["69 and 51", "64 and 56", "65 and 55", "61 and 59"],
+      "answer": 0,
+      "explanation": "A straddle ADDS the premiums: total 4 + 5 = 9, so breakevens are 60 + 9 = 69 and 60 − 9 = 51. \"64/56\" use each leg's own premium, and \"61/59\" wrongly subtract as if it were a spread."
+    },
+    {
+      "stem": "A customer sells 1 ABC Jul 50 call at 7 and buys 1 ABC Jul 60 call at 3. All of the following are TRUE EXCEPT:",
+      "options": ["the customer is bearish on ABC", "the position was established for a net credit of $400", "the maximum loss is $600", "the customer profits if the difference between the two premiums widens"],
+      "answer": 3,
+      "explanation": "This is a credit call spread (short the dominant lower-strike leg): net credit 7 − 3 = $400, max loss (60 − 50) − 4 = $600, bearish. Credit spreads profit when the spread NARROWS or both legs expire — only debit spreads want it to widen, so that statement is the exception."
+    },
+    {
+      "stem": "A customer is long 1 ABC 50 call and short 1 ABC 60 call, both expiring the same month. This position is:",
+      "options": ["a bullish debit call spread", "a bearish credit call spread", "a long straddle", "a long combination"],
+      "answer": 0,
+      "explanation": "Two calls, one long, one short = a vertical call spread (not a straddle, which needs one call and one put). The long leg is the lower strike (the dominant, more expensive leg), so it is a net debit and bullish."
+    },
+    {
+      "stem": "A customer buys 1 XYZ Oct 80 put at 9 and sells 1 XYZ Oct 70 put at 4. What is the maximum potential gain?",
+      "options": ["$400", "$500", "$600", "$1,000"],
+      "answer": 1,
+      "explanation": "This is a debit put spread (bearish): net debit = 9 − 4 = 5, so max loss = $500. Max gain = difference in strikes − net debit = (80 − 70) − 5 = 5 × 100 = $500. Note max gain + max loss = $1,000 = the strike difference."
+    },
+    {
+      "stem": "A customer buys 1 ABC Mar 80 call at 3 and buys 1 ABC Mar 70 put at 2. This position and its breakevens are BEST described as:",
+      "options": ["a long straddle, breakevens 85 and 65", "a long combination, breakevens 85 and 65", "a debit spread, breakeven 75", "a short combination, breakevens 82 and 68"],
+      "answer": 1,
+      "explanation": "One call and one put with DIFFERENT strikes = a long combination (strangle), not a straddle. Add the premiums (2 + 3 = 5): upper BE = call strike + total = 85, lower BE = put strike − total = 65. It is long (both bought), so not short."
+    },
+    {
+      "stem": "A customer writes 1 ABC Jan 60 call at 4 and writes 1 ABC Jan 60 put at 5 (a short straddle). What is the maximum gain, and what is the maximum loss?",
+      "options": ["Max gain $900; max loss unlimited", "Max gain unlimited; max loss $900", "Max gain $900; max loss $900", "Max gain $500; max loss $400"],
+      "answer": 0,
+      "explanation": "A short straddle collects both premiums: max gain = (4 + 5) × 100 = $900, realized only if ABC finishes exactly at 60. Because it contains a naked short call, the upside loss is UNLIMITED as the stock rises. Breakevens are 69 and 51."
+    }
+  ]
+}

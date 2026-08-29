@@ -1,0 +1,100 @@
+{
+  "module": "M39",
+  "title": "Margin accounts — the ledger method, worked",
+  "domain": "accounts",
+  "estMinutes": 35,
+  "reading": [
+    {
+      "h": "Who sets the rules, and the agreement",
+      "body": "A margin account lets a customer borrow part of a purchase from the firm, using the securities as collateral. Three regulators divide the job.\n\n**Regulation T** (the Federal Reserve Board) sets the **initial** requirement: **50%** of the purchase for margin equity securities. The Fed writes it; the SEC and FINRA enforce it.\n\n**FINRA Rule 4210** sets the **minimum equity ($2,000)** and the **maintenance** requirement (25% long, 30% short), and lets firms impose stricter house rules.\n\n**Regulation U** covers bank loans on stock; **Regulation X** covers the borrower.\n\nUnlike a cash account, a margin account needs the **customer's signature** on a margin agreement with three parts: the **hypothecation agreement** (the customer pledges the securities and lets the firm re-pledge them to a bank), the **credit agreement** (loan terms and interest), and the **loan consent** — the only **optional** part, which lets the firm lend the customer's securities to short sellers. The firm may rehypothecate (re-pledge to a bank) only up to **140% of the customer's debit balance.**"
+    },
+    {
+      "h": "Opening the account and the $2,000 rule",
+      "body": "**Who cannot open a margin account:** retirement accounts (IRA, 401k), UGMA/UTMA custodial accounts, and most fiduciary/trust/estate accounts unless the governing document expressly authorizes margin.\n\n**Marginable** securities include exchange-listed and Nasdaq stocks, convertible bonds, and mutual funds held 30+ days. **Not marginable (must be paid in full):** new issues for their first 30 days, options (except LEAPS over 9 months), and mutual funds at purchase.\n\nThe **$2,000 minimum-equity rule** has a long-side exception — cash need not exceed the cost of the security. Work the decision table for a new long purchase:\n\nPurchase of **$1,500** (at or below $2,000): deposit **100% = $1,500** — never more than the cost.\n\nPurchase of **$3,000** (between $2,000 and $4,000): deposit **$2,000** — the minimum exceeds 50%.\n\nPurchase of **$10,000** (above $4,000): deposit **50% = $5,000**.\n\nOn a **short sale the $2,000 minimum ALWAYS applies** — a $1,500 short still requires $2,000, because a short's loss is unlimited."
+    },
+    {
+      "h": "The long account: LMV − DR = EQ",
+      "body": "The master formula for a long account is **Long Market Value − Debit balance = Equity.** The single most important fact: **the debit balance never changes with price.** It changes only with new purchases, sales, deposits, withdrawals, interest, and dividends. Every dollar of price change flows straight into equity.\n\n**Base case:** buy 1,000 XYZ at $40. LMV = $40,000; Reg T deposit = 50% = $20,000; **DR = $20,000, EQ = $20,000.** Two benchmarks: Reg T requirement = 50% × LMV; maintenance = 25% × LMV.\n\n**State A — excess (price rises to $50):** LMV $50,000, DR still $20,000, EQ $30,000. Reg T requirement = $25,000, so **excess equity = $5,000**, which creates **SMA of $5,000** and **buying power of $10,000** (2×). Equity is 60%.\n\n**State B — restricted (price falls to $30):** LMV $30,000, DR $20,000, EQ $10,000 (33%). Reg T requirement is $15,000, so the account is **restricted by $5,000** — but that is NOT a call. Maintenance is only $7,500, and equity ($10,000) is above it. 'Restricted' means below 50%, not below 25%.\n\n**State C — maintenance call (price falls to $25):** LMV $25,000, EQ $5,000 (20%). Maintenance = 25% × $25,000 = $6,250, so there is a **call for $1,250.**"
+    },
+    {
+      "h": "The 6-step method and meeting a call",
+      "body": "Drill this until it is automatic.\n\n**Step 1 — Write the ledger.** Long: LMV − DR = EQ. Short: CR − SMV = EQ. Fill in what's given.\n\n**Step 2 — Apply the price change to market value only.** DR and CR are fixed. Recompute EQ.\n\n**Step 3 — Compute two benchmarks:** Reg T = 50% of market value; maintenance = 25% long (or 30% short).\n\n**Step 4 — Classify.** EQ above Reg T → excess (feeds SMA; buying power = 2× SMA). Between Reg T and maintenance → restricted. Below maintenance → the call = maintenance − EQ.\n\n**Step 5 — Answer the question asked.**\n\n**Step 6 — Sanity-check direction:** long, higher price is good; short, higher price is bad.\n\n**Meeting the State C call of $1,250 — three ways, three multipliers.** Deposit **cash = the call = $1,250** (each $1 of cash raises equity $1, requirement $0). Deposit **fully paid securities = call ÷ 0.75 = $1,666.67** (each $1 raises equity $1 but requirement $0.25, netting $0.75). Or **liquidate stock = call ÷ 0.25 = $5,000** (selling leaves equity unchanged but drops the requirement 25 cents per dollar). Derive them once with the $1 experiment and you never confuse the multipliers."
+    },
+    {
+      "h": "SMA is a high-water credit line",
+      "body": "**SMA (Special Memorandum Account)** is a line of credit bookkept beside the margin account. Think of it as a credit-card limit the firm granted you: it records the **highest** excess equity ever reached and **does not fall when the market falls** — it falls only when you USE it. Buying power is SMA × 2 (each $1 of SMA buys $2 of stock at 50% Reg T).\n\nSMA rises from excess equity above 50%, 100% of cash deposits and cash dividends, and 50% of the proceeds of a long sale.\n\n**Worked example:** buy 1,000 GHI at $50 in a new account — DR $25,000, EQ $25,000. Price rises to $70: LMV $70,000, EQ $45,000, Reg T requirement $35,000, so **SMA is set at $10,000.** The stock then falls to $60: LMV $60,000, EQ $35,000, Reg T requirement $30,000 — current excess is only $5,000, but **SMA stays $10,000** because it is a high-water mark that only drops when used. This 'SMA doesn't fall with the market' point is one of the most-tested traps."
+    },
+    {
+      "h": "The short account and low-priced floors",
+      "body": "For a short account the formula flips: **Credit balance − Short Market Value = Equity**, and now a rising price HURTS. The credit balance (short-sale proceeds + the Reg T deposit) never changes with price.\n\n**Base case:** sell short 1,000 ABC at $50. SMV $50,000; Reg T deposit $25,000; **CR = $75,000, EQ = $25,000.** Maintenance is **30% of SMV.**\n\n**Price falls to $40 (good):** SMV $40,000, CR $75,000, EQ $35,000. Reg T requirement $20,000 → **excess/SMA $15,000.**\n\n**Price rises to $60 (bad):** SMV $60,000, EQ $15,000 (25%). Maintenance = 30% × $60,000 = $18,000 → **call for $3,000.**\n\n**Low-priced floors:** for a stock under $5, maintenance is the greater of **$2.50 per share or 100%** of value; for $5 and up it is the greater of **$5 per share or 30%.** Short 1,000 at $4 → greater of $2,500 or $4,000 = **$4,000.** Short 1,000 at $8 → greater of $5,000 or $2,400 = **$5,000.** The 30% test only wins above **$16.67** (which is $5 ÷ 0.30)."
+    },
+    {
+      "h": "Trigger prices and combined accounts",
+      "body": "A **trigger price** answers 'at what market value does a maintenance call occur?' The algebra is one line.\n\n**Long:** equity hits 25% when **LMV = DR ÷ 0.75.** With DR $20,000, that is $20,000 ÷ 0.75 = **$26,666.67** (about $26.67 per share for 1,000 shares).\n\n**Short:** equity hits 30% when **SMV = CR ÷ 1.30.** With CR $75,000, that is $75,000 ÷ 1.30 = **$57,692** (about $57.69 per share).\n\nA **combined account** holds long and short positions together. Total equity = (LMV − DR) + (CR − SMV); maintenance = 25% × LMV + 30% × SMV. Example: LMV $40,000, DR $25,000, CR $30,000, SMV $20,000 → equity = $15,000 + $10,000 = $25,000; maintenance = $10,000 + $6,000 = $16,000, so no call. Always keep the two ledgers side by side and add the pieces at the end."
+    }
+  ],
+  "flashcards": [
+    { "front": "Reg T initial requirement and who sets it", "back": "50% of the purchase, set by the Federal Reserve Board (Reg T). The SEC and FINRA enforce it." },
+    { "front": "The three parts of a margin agreement", "back": "Hypothecation, credit, and loan consent. The loan consent (lending shares to short sellers) is the ONLY optional part." },
+    { "front": "Rehypothecation limit", "back": "The firm may re-pledge customer margin securities to a bank up to 140% of the customer's debit balance." },
+    { "front": "$2,000 rule for a new long purchase", "back": "Purchase ≤ $2,000 → deposit 100% (never more than cost); $2,000–$4,000 → $2,000; over $4,000 → 50%. Shorts: always $2,000 minimum." },
+    { "front": "LMV − DR = EQ; what's fixed?", "back": "The debit balance never changes with price — only with trades, deposits, withdrawals, interest, and dividends. Price changes flow into equity." },
+    { "front": "Restricted vs. maintenance call", "back": "Restricted = equity below the 50% Reg T requirement (no penalty). Maintenance call = equity below 25% long / 30% short." },
+    { "front": "Three ways to meet a maintenance call", "back": "Cash = the call; deposit securities = call ÷ 0.75; liquidate stock = call ÷ 0.25 (4× the call at 25%)." },
+    { "front": "Long and short trigger-price formulas", "back": "Long call at LMV = DR ÷ 0.75; short call at SMV = CR ÷ 1.30." },
+    { "front": "Does SMA fall when the market falls?", "back": "No. SMA is a high-water credit line; it falls only when used. Buying power = SMA × 2." },
+    { "front": "Short account maintenance", "back": "30% of SMV, or the greater of $5/share (or $2.50/share and 100% under $5). CR − SMV = EQ; a rising price hurts." },
+    { "front": "Short low-priced crossover", "back": "The 30% test only exceeds the $5/share floor above $16.67 ($5 ÷ 0.30)." },
+    { "front": "Who cannot open a margin account?", "back": "IRAs and other retirement accounts, UGMA/UTMA, and most fiduciary/trust/estate accounts unless the document authorizes margin." }
+  ],
+  "quiz": [
+    {
+      "stem": "A customer with an established margin account (equity well above $2,000) buys 200 shares of XYZ at $60 on Monday. Under Regulation T, what deposit is required and by when? (No holidays.)",
+      "options": ["$6,000, by Thursday (three business days after the trade)", "$3,000, by Thursday (three business days after the trade)", "$6,000, by Tuesday, the settlement date", "$12,000, by Friday, four business days after the trade"],
+      "answer": 0,
+      "explanation": "200 × $60 = $12,000; Reg T initial is 50% = $6,000. Payment is due one payment period = settlement (T+1) plus two business days = T+3, so a Monday trade is due Thursday. The T+4 figure predates the May 2024 move to T+1 settlement."
+    },
+    {
+      "stem": "A customer opens a margin account by buying 500 shares of ABC at $80 and deposits the Reg T requirement. ABC then rises to $100. With no other activity, the customer's buying power for additional marginable securities is:",
+      "options": ["$5,000", "$10,000", "$20,000", "$30,000"],
+      "answer": 1,
+      "explanation": "LMV $40,000, deposit $20,000, DR $20,000. At $100: LMV $50,000, EQ $30,000, Reg T requirement $25,000, excess equity (SMA) $5,000. Buying power = SMA × 2 = $10,000. $5,000 is the SMA itself and $30,000 is the equity."
+    },
+    {
+      "stem": "A long margin account has a debit balance of $30,000. After a decline, the long market value is $36,000. Under the 25% maintenance requirement, the account has:",
+      "options": ["No call, because equity is still positive", "A maintenance call of $9,000", "A maintenance call of $3,000", "A maintenance call of $12,000"],
+      "answer": 2,
+      "explanation": "EQ = $36,000 − $30,000 = $6,000 (16.7%). Maintenance requirement = 25% × $36,000 = $9,000, so the call = $9,000 − $6,000 = $3,000. $9,000 is the requirement itself, and $12,000 comes from wrongly using 50%."
+    },
+    {
+      "stem": "A customer's long margin account is on a maintenance call of $3,000. How much stock must the customer LIQUIDATE to meet the call (25% maintenance)?",
+      "options": ["$3,000", "$4,000", "$9,000", "$12,000"],
+      "answer": 3,
+      "explanation": "Liquidation meets a call at call ÷ maintenance% = $3,000 ÷ 0.25 = $12,000 (four times the call). Selling stock leaves equity unchanged but lowers the requirement by 25 cents per dollar sold. Depositing cash would take only $3,000; depositing securities would take $3,000 ÷ 0.75 = $4,000."
+    },
+    {
+      "stem": "A customer sells short 1,000 shares of DEF at $40 and deposits the Reg T requirement. DEF later rises to $48. The equity in the short account is:",
+      "options": ["$12,000", "$14,400", "$20,000", "$28,000"],
+      "answer": 0,
+      "explanation": "Credit balance = $40,000 proceeds + $20,000 deposit = $60,000 and does not change with price. CR − SMV = $60,000 − $48,000 = $12,000; the $8,000 rise reduces the short seller's equity. $28,000 moves equity the wrong way, $20,000 ignores the price change, and $14,400 is the 30% maintenance requirement."
+    },
+    {
+      "stem": "A customer buys 1,000 shares of GHI at $50 in a new margin account and deposits the Reg T requirement. GHI rises to $70 and then falls to $60, with no SMA used. After the decline to $60, the SMA balance is:",
+      "options": ["$0, because the account has no excess equity above its previous high", "$5,000", "$10,000", "$20,000"],
+      "answer": 2,
+      "explanation": "DR is fixed at $25,000. At $70: EQ $45,000, Reg T $35,000, so SMA is set at $10,000. At $60: EQ $35,000, Reg T $30,000, so current excess is only $5,000 — but SMA is a high-water mark that falls only when used, so it stays $10,000. $20,000 is the resulting buying power."
+    },
+    {
+      "stem": "As her first transaction in a new margin account, a customer buys 100 shares of JKL at $15. The minimum deposit required is:",
+      "options": ["$1,500", "$750", "$2,000", "$3,000"],
+      "answer": 0,
+      "explanation": "The purchase is 100 × $15 = $1,500. Reg T would call for 50% ($750) and the $2,000 minimum would exceed that, but Rule 4210 never requires a deposit greater than the full cost of a long purchase, so the deposit is $1,500. A $1,500 SHORT sale, by contrast, would require the full $2,000."
+    },
+    {
+      "stem": "A customer signed the credit and hypothecation agreements but declined the loan consent. The account holds stock worth $60,000 against a debit of $22,000. Which statement is CORRECT?",
+      "options": ["The firm may not carry the account, because every part of the agreement must be signed", "The firm may repledge up to $30,800 of the securities to a bank but may not lend her shares to a short seller", "The firm may lend her shares to a short seller but may not repledge any to a bank", "The firm may repledge the full $60,000, because the hypothecation agreement sets no dollar limit"],
+      "answer": 1,
+      "explanation": "The loan consent is the only optional part, and it is what permits lending the customer's securities to short sellers; without it the firm may not lend them out. The signed hypothecation agreement lets the firm repledge to a bank, but Rules 8c-1/15c2-1 cap rehypothecation at 140% of the debit: 1.40 × $22,000 = $30,800."
+    }
+  ]
+}

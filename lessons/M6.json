@@ -1,0 +1,172 @@
+{
+  "module": "M6",
+  "title": "Regulators and statutes: who writes the rules, who enforces them, and who insures you",
+  "domain": "regulation",
+  "estMinutes": 22,
+  "reading": [
+    {
+      "h": "The hierarchy, top to bottom",
+      "body": "Securities regulation is a chain of delegated authority. **Congress** passes the statutes (the Acts). The statutes create or empower the **SEC** — a federal government agency — to write detailed rules and oversee the markets. The SEC in turn oversees **self-regulatory organizations (SROs)** — FINRA, the exchanges (NYSE, Nasdaq), and the MSRB — which write and (mostly) enforce industry conduct rules. The SROs regulate their **member firms** (broker-dealers), and the firms supervise their **registered representatives**.\n\nRead it as a food chain: Congress → SEC → SROs → firms → reps. Each level answers to the one above it. A rep is accountable to the firm, the firm to FINRA, FINRA to the SEC, the SEC to Congress. States run a parallel track (the Uniform Securities Act, blue-sky law) that a rep meets on the Series 63/66 — mention only."
+    },
+    {
+      "h": "The two workhorse Acts: 1933 vs. 1934",
+      "body": "Two statutes carry most of the exam. The **Securities Act of 1933** — the \"Paper Act\" or \"Truth in Securities Act\" — governs **new issues (the primary market)**: registration statements, the prospectus, and anti-fraud in offerings. Its job is full and fair **disclosure** so buyers of new securities can judge for themselves.\n\nThe **Securities Exchange Act of 1934** — the \"People Act\" — governs the **secondary market** (trading after issuance). It **created the SEC**, requires registration of exchanges and broker-dealers, mandates issuer reporting (10-K/10-Q/8-K), sets the insider-reporting and anti-fraud rules (10b-5), and gave the **Federal Reserve** its margin authority (Regulation T). Shortcut: **1933 = the paperwork of being born; 1934 = the ongoing life of trading and people.**"
+    },
+    {
+      "h": "Who WRITES vs. who ENFORCES — three traps the exam loves",
+      "body": "**The SEC never \"approves\" a security.** It reviews a registration statement for completeness and lets it become effective, but it does not pass on the merits, guarantee accuracy, or endorse the investment. Every prospectus must say so. Any claim that the SEC approved a security is a criminal offense.\n\n**The MSRB writes municipal-securities rules but has NO enforcement power.** It cannot examine or discipline anyone. Its rules are enforced by **FINRA** (for broker-dealers) and by **bank regulators** (for bank dealers). The MSRB also cannot regulate the municipal **issuers** themselves — the Tower Amendment forbids it.\n\n**FINRA is an SRO, not the government.** It can censure, fine, suspend, or bar a member or associated person, but it **cannot imprison** anyone — criminal cases go to the SEC/DOJ and the courts."
+    },
+    {
+      "h": "SIPC vs. FDIC — two different safety nets",
+      "body": "**SIPC** (created by the Securities Investor Protection Act of 1970) protects **brokerage customers** if a broker-dealer fails and is liquidated. Coverage is **$500,000 per separate customer, of which a maximum of $250,000 may be cash.** It replaces missing cash and securities; it does **NOT** cover market losses, commodities/futures, or fixed annuities. \"Separate customer\" means separate legal capacity — an individual account and a joint account at the same firm are two customers; two individual accounts are one.\n\n**FDIC** protects **bank deposits** (checking, savings, CDs) up to **$250,000 per depositor, per bank, per ownership category.** It never covers securities — a mutual fund, stock, or annuity bought at a bank branch is not FDIC-insured, which is why the \"not FDIC insured, may lose value\" disclosure is required. Keep them straight: **SIPC = brokerage failure; FDIC = bank failure.**"
+    },
+    {
+      "h": "The Federal Reserve: monetary policy and margin",
+      "body": "The **Federal Reserve** is the nation's central bank and is independent of Congress and the President. On this exam it shows up two ways. First, it conducts **monetary policy** — open-market operations (buying/selling Treasuries), the discount rate, reserve requirements, and interest on reserve balances — to influence money supply and interest rates. Buying securities eases (rates down); selling tightens (rates up).\n\nSecond, the 1934 Act gave the Fed authority over **credit and margin**: it writes **Regulation T** (margin at broker-dealers, currently a 50% initial requirement) and Regulation U (bank loans for securities). Note who does what: the **Fed sets** Reg T; **FINRA and the firms enforce** it and set the tighter maintenance levels. Fiscal policy — taxing and spending — is **Congress and the President**, not the Fed."
+    },
+    {
+      "h": "The rest of the statute timeline",
+      "body": "Beyond 1933 and 1934, know a short timeline. **1939 Trust Indenture Act** — public corporate debt over $50 million in 12 months needs a written indenture with an independent trustee acting for bondholders. **1940 Investment Company Act** (mutual funds/closed-end/UITs) and **Investment Advisers Act** (defines an adviser by the ABC test — Advice, Business, Compensation). **1970 SIPA** created SIPC. **1975 Securities Acts Amendments** created the **MSRB** and the National Market System and abolished fixed commissions. **2002 Sarbanes-Oxley** created the PCAOB (audit oversight) and CEO/CFO certification after the accounting scandals.\n\nTwo anti-money-laundering filings round it out (Bank Secrecy Act / PATRIOT Act): a **SAR** (Suspicious Activity Report) for suspicious activity, generally $5,000+, and a **CTR** (Currency Transaction Report) for cash transactions over $10,000 in a day."
+    }
+  ],
+  "flashcards": [
+    {
+      "front": "The regulatory hierarchy, top to bottom",
+      "back": "Congress → SEC (government) → SROs (FINRA, exchanges, MSRB) → member firms → registered reps."
+    },
+    {
+      "front": "1933 Act vs. 1934 Act, in one line each",
+      "back": "1933 = new issues / primary market / prospectus disclosure (Paper Act). 1934 = secondary market, created the SEC, Fed margin authority (People Act)."
+    },
+    {
+      "front": "Does the SEC approve securities?",
+      "back": "No. It clears a registration for effectiveness but never approves, guarantees, or passes on the merits. Saying it did is a criminal offense."
+    },
+    {
+      "front": "Who enforces MSRB rules?",
+      "back": "FINRA (for broker-dealers) and bank regulators (for bank dealers). The MSRB writes rules but has NO enforcement power and cannot regulate issuers (Tower Amendment)."
+    },
+    {
+      "front": "Can FINRA send someone to jail?",
+      "back": "No. FINRA (an SRO) can censure, fine, suspend, or bar. Criminal prosecution is for the SEC/DOJ and the courts."
+    },
+    {
+      "front": "SIPC coverage limits",
+      "back": "$500,000 per separate customer capacity, of which max $250,000 cash. Covers a failed broker-dealer's missing cash/securities — NOT market losses."
+    },
+    {
+      "front": "FDIC coverage limits",
+      "back": "$250,000 per depositor, per bank, per ownership category. Bank deposits only (checking/savings/CDs) — never securities."
+    },
+    {
+      "front": "SIPC 'separate customer' meaning",
+      "back": "Separate legal capacity. Individual + joint = two customers; two individual accounts at one firm = one customer."
+    },
+    {
+      "front": "Who sets Reg T, and who enforces it?",
+      "back": "The Federal Reserve SETS Reg T (50% initial margin); FINRA and the firms ENFORCE it and set maintenance minimums."
+    },
+    {
+      "front": "Federal Reserve vs. Congress on policy",
+      "back": "Fed = monetary policy (money supply, rates, margin) and is independent. Congress + President = fiscal policy (taxing and spending)."
+    },
+    {
+      "front": "Trust Indenture Act of 1939 threshold",
+      "back": "Public corporate debt over $50 million in 12 months needs a written indenture and an independent trustee for bondholders."
+    },
+    {
+      "front": "SAR vs. CTR",
+      "back": "SAR = Suspicious Activity Report (suspicious activity, generally $5,000+). CTR = Currency Transaction Report (cash over $10,000 in a day)."
+    }
+  ],
+  "quiz": [
+    {
+      "stem": "A FINRA member broker-dealer violates an MSRB rule while selling municipal bonds to a customer. Which body enforces that rule against the firm?",
+      "options": [
+        "The MSRB",
+        "FINRA",
+        "The state securities administrator",
+        "The municipal issuer"
+      ],
+      "answer": 1,
+      "explanation": "The MSRB writes municipal rules but has no enforcement arm; FINRA enforces MSRB rules against broker-dealers (bank regulators do so for bank dealers). Choosing the MSRB is the trap — it writes but never enforces, and under the Tower Amendment it cannot regulate the issuer at all."
+    },
+    {
+      "stem": "Which of the following statements about SEC review of a securities registration is TRUE?",
+      "options": [
+        "The SEC approves the security once it finds the offering suitable for the public",
+        "The SEC guarantees the accuracy of the information in the prospectus",
+        "The SEC clears the registration for effectiveness but does not approve the security or pass on its merits",
+        "The SEC sets the public offering price it believes is fair"
+      ],
+      "answer": 2,
+      "explanation": "The 1933 Act is built on disclosure, not merit review: the SEC lets a registration become effective but never approves a security, guarantees accuracy, or sets price. The 'approves/suitable' and 'guarantees accuracy' choices are exactly the misrepresentations the law makes a criminal offense."
+    },
+    {
+      "stem": "A customer holds $600,000 of securities and $200,000 of cash in an individual account, and $300,000 of securities in a joint account with her spouse, all at the same broker-dealer. The firm fails and is liquidated. What is the MAXIMUM SIPC coverage?",
+      "options": [
+        "$500,000",
+        "$800,000",
+        "$1,000,000",
+        "$1,100,000"
+      ],
+      "answer": 1,
+      "explanation": "SIPC covers $500,000 per separate capacity (max $250,000 cash). The individual account's $800,000 claim (cash of $200,000 is within the cash sublimit) is capped at $500,000; the joint account is a separate capacity, so its $300,000 is fully covered — $800,000 total. Adding the accounts to $1,100,000 ignores the per-capacity cap."
+    },
+    {
+      "stem": "Which of the following is protected by FDIC insurance?",
+      "options": [
+        "Shares of a stock mutual fund purchased at a bank branch",
+        "Common stock held in a brokerage account",
+        "A variable annuity sold by a bank's registered representative",
+        "A 12-month certificate of deposit issued by an FDIC-member bank"
+      ],
+      "answer": 3,
+      "explanation": "FDIC insures bank deposits — checking, savings, and CDs — up to $250,000 per depositor, per bank, per category. It never covers securities, even bought at a bank; the mutual fund, stock, and annuity are all investment products carrying the 'not FDIC insured, may lose value' disclosure."
+    },
+    {
+      "stem": "Which statute created the Securities and Exchange Commission and gave the Federal Reserve authority over margin?",
+      "options": [
+        "The Securities Act of 1933",
+        "The Securities Exchange Act of 1934",
+        "The Investment Company Act of 1940",
+        "The Securities Investor Protection Act of 1970"
+      ],
+      "answer": 1,
+      "explanation": "The 1934 Act created the SEC, governs the secondary market, and delegated margin/credit authority (Reg T) to the Fed. The 1933 Act is the primary-market disclosure statute and created no agency; it predates the SEC, which is why enforcement of the 1933 Act passed to the SEC once the 1934 Act created it."
+    },
+    {
+      "stem": "Which body is responsible for setting the initial margin requirement (Regulation T) that applies to broker-dealers?",
+      "options": [
+        "FINRA",
+        "The Federal Reserve Board",
+        "The SEC",
+        "The individual broker-dealer"
+      ],
+      "answer": 1,
+      "explanation": "The Federal Reserve writes Reg T (currently 50% initial) under the 1934 Act. FINRA and the firms enforce it and set the tighter maintenance minimums, but they do not set the initial requirement — that division of labor (Fed sets, FINRA/firms enforce) is the tested point."
+    },
+    {
+      "stem": "A registered representative tells a client that because the firm is a FINRA member and SIPC member, the client's account is protected against a decline in the market value of the securities. This statement is:",
+      "options": [
+        "Correct, because SIPC guarantees against investment losses",
+        "Correct, because FINRA membership insures the account",
+        "Incorrect, because SIPC covers missing cash and securities if the firm fails but not market losses",
+        "Incorrect, because only FDIC insurance can protect a securities account"
+      ],
+      "answer": 2,
+      "explanation": "SIPC protects customers if the broker-dealer fails and cannot return their property — it never insures against a drop in market value. The 'FDIC' choice is also wrong because FDIC covers bank deposits, not securities accounts."
+    },
+    {
+      "stem": "Under the Bank Secrecy Act, a firm that receives a single cash deposit of $15,000 from a customer in one day must file a:",
+      "options": [
+        "Suspicious Activity Report (SAR)",
+        "Currency Transaction Report (CTR)",
+        "Form U4 amendment",
+        "Schedule 13D"
+      ],
+      "answer": 1,
+      "explanation": "A CTR is required for cash transactions exceeding $10,000 in a day, regardless of whether anything looks suspicious. A SAR is triggered by suspicious activity (generally $5,000+), which is not what a routine $15,000 cash deposit alone indicates."
+    }
+  ]
+}

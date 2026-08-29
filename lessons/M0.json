@@ -1,0 +1,94 @@
+{
+  "module": "M0",
+  "title": "The target: exam, blueprint, sponsorship, clocks, and reading the stem",
+  "domain": "foundations",
+  "estMinutes": 20,
+  "reading": [
+    {
+      "h": "What the Series 7 actually is",
+      "body": "The Series 7 is a **job license, not a diploma**. It qualifies you as a General Securities Representative — someone allowed to solicit and take orders in securities on behalf of customers. Because it is a work permit, **a FINRA member firm must sponsor you**; you cannot sign up on your own.\n\nIt has a co-requisite: the **SIE (Securities Industry Essentials)**. SIE and Series 7 are *co-requisites*, meaning either order works but you need both to register. The SIE needs no sponsor and can be taken at 18, so almost everyone passes the SIE first and uses it to land the job that then sponsors the Series 7."
+    },
+    {
+      "h": "The blueprint and the 73/27 rule",
+      "body": "The exam is built from four Functions. Memorize the item counts:\n\n**F1 — Seeks Business:** 9 items (7%).\n**F2 — Opens Accounts:** 11 items (9%).\n**F3 — Provides Information, Makes Recommendations, Transfers Assets, Keeps Records:** **91 items (73%)**.\n**F4 — Processes Transactions (incl. margin):** 14 items (11%).\n\nThe single most important planning fact is the **73/27 rule**: Function 3 is 91 of 125 scored questions. Every product, all the math (yields, options P&L, accrued interest, TEY), all the tax treatment, and every suitability judgment live in F3. A study plan that splits time evenly across the four Functions spends 75% of its effort on 27% of the exam — the top cited reason people fail."
+    },
+    {
+      "h": "The numbers you sit down to",
+      "body": "**Series 7:** 125 scored + **5 unscored pretest** questions = **130 items**, in **3 hours 45 minutes (225 minutes)**. Passing score **72** (equated). Fee **$395** (2026, flat through 2029). Four-option multiple choice, one best answer, **no penalty for guessing** — answer everything.\n\n**SIE:** 75 scored + 5 pretest = 80 items, 1 h 45 min, passing **70**, fee **$100**, valid **4 years**.\n\nWatch the stale numbers: older prep material says '10 pretest / 135 total' — that is the pre-2018 format and is wrong. Use 130. The center supplies a **four-function calculator** and erasable boards; there is no TVM calculator."
+    },
+    {
+      "h": "How scoring really works",
+      "body": "Scores are **equated**: different candidates get slightly different item sets, and a statistical adjustment puts everyone on a common 0–100 scale so no one is punished for drawing a harder form. Consequence: **'72% = 90 of 125' is only an approximation.** Aim for roughly **85% raw** so the equating adjustment never matters.\n\n**If you pass, you see only the word Pass — never a number.** If you fail, the report shows your equated score plus a profile broken down by the four Functions, which is exactly what a retake plan is built from. You can never review the questions, and results are final."
+    },
+    {
+      "h": "Sponsorship, Form U4, and the 120-day window",
+      "body": "To sit the Series 7 a firm files **Form U4** through **CRD** (the Central Registration Depository — FINRA's database of licensed people). The U4 collects employment and residential history and disclosure answers, requires **fingerprinting**, and opens a **120-day exam window**. You must schedule within that window; if it expires, the firm re-requests and pays again.\n\nThe SIE, by contrast, requires nothing but a FINRA account and a credit card. That asymmetry is the whole strategy: pass the SIE unsponsored to make yourself a low-risk hire, then let the employer file the U4."
+    },
+    {
+      "h": "The four clocks after you pass",
+      "body": "Draw these on one timeline:\n\n**1. SIE validity — 4 years** from the pass date.\n**2. Registration lapse — 2 years:** if you leave the industry and are unregistered for 2 or more years, you must re-qualify by exam (Rule 1210.08).\n**3. MQP — up to 5 years:** the Maintaining Qualifications Program lets you park a qualification for up to 5 years by completing annual CE, if you elect it within 2 years of termination and were registered at least 1 year.\n**4. Continuing Education — every December 31:** the Regulatory Element is due annually by year-end; the Firm Element is an annual firm-designed training plan."
+    },
+    {
+      "h": "Reading the stem",
+      "body": "Most missed questions are misread, not unknown. Use a fixed protocol on every item:\n\n**1. Find the polarity word first** — circle EXCEPT, NOT, LEAST, MOST, or BEST before you read the options. An EXCEPT question asks for the one *false* choice.\n**2. Find the verb** — is the question asking what is *permitted*, *required*, *recommended*?\n**3. Triage the data** — scenario stems bury two or three facts that don't matter; only a couple decide the answer.\n**4. Strike the two impossible options**, then decide between the remaining two.\n\nMost items give you four choices where two are quickly dismissible; the exam lives in the choice between the last two."
+    }
+  ],
+  "flashcards": [
+    { "front": "Series 7 blueprint: items per Function", "back": "F1 = 9 (7%), F2 = 11 (9%), F3 = 91 (73%), F4 = 14 (11%). Total 125 scored." },
+    { "front": "The 73/27 rule", "back": "Function 3 is 73% of the exam (91/125). Products, math, tax, and suitability all live there — study it, not the four Functions evenly." },
+    { "front": "Series 7: scored / pretest / total / time", "back": "125 scored + 5 unscored pretest = 130 items, 3 h 45 min (225 minutes)." },
+    { "front": "Passing scores: Series 7 vs SIE", "back": "Series 7 = 72; SIE = 70. Both equated on a 0–100 scale." },
+    { "front": "Series 7 vs SIE fees (2026)", "back": "Series 7 = $395; SIE = $100." },
+    { "front": "What does 'equated' mean for your target?", "back": "Different forms are leveled statistically, so '72% = 90/125' is only approximate. Aim for ~85% raw." },
+    { "front": "What score do you see if you pass?", "back": "None — just 'Pass'. A fail shows the equated score plus a by-Function profile." },
+    { "front": "Who can sit the Series 7 vs the SIE?", "back": "Series 7 needs a FINRA member firm to sponsor you via Form U4 (120-day window). The SIE needs no sponsor, minimum age 18." },
+    { "front": "SIE validity", "back": "4 years from the pass date." },
+    { "front": "The four post-pass clocks", "back": "SIE 4 yr; 2-yr unregistered lapse (re-exam); MQP up to 5 yr; CE Regulatory Element by Dec 31 annually." },
+    { "front": "Penalty for guessing on the Series 7?", "back": "None — answer every question." },
+    { "front": "Stem-reading protocol", "back": "Polarity word (EXCEPT/NOT/LEAST/MOST/BEST) → verb → triage data → strike two → decide between the last two." }
+  ],
+  "quiz": [
+    {
+      "stem": "Which Function accounts for the largest share of the Series 7 exam?",
+      "options": ["Function 1 — Seeks Business (9 items)", "Function 2 — Opens Accounts (11 items)", "Function 3 — Provides Information and Makes Recommendations (91 items)", "Function 4 — Processes Transactions (14 items)"],
+      "answer": 2,
+      "explanation": "Function 3 is 91 of 125 scored questions (73%) — the 73/27 rule. It holds every product, all the math, tax, and suitability. F4 (14 items) is where margin and settlement live but is far smaller."
+    },
+    {
+      "stem": "How many questions does a Series 7 candidate answer, and how many are scored?",
+      "options": ["135 total, 125 scored", "130 total, 125 scored", "130 total, 120 scored", "125 total, all scored"],
+      "answer": 1,
+      "explanation": "The current (post-2025 outline) exam is 125 scored + 5 unidentified pretest = 130 items. '135 total / 10 pretest' is the stale pre-2018 figure still printed in some prep material."
+    },
+    {
+      "stem": "A candidate passes the Series 7. What score information does the candidate receive?",
+      "options": ["A percentage score and a rank against other candidates", "Only that they passed — no numeric score", "The exact number of questions answered correctly", "A curved letter grade"],
+      "answer": 1,
+      "explanation": "Since scores are equated, a passing candidate sees only 'Pass' with no number. Only a failing candidate gets an equated score plus a by-Function diagnostic profile to build a retake plan from."
+    },
+    {
+      "stem": "Which statement about sitting the Series 7 versus the SIE is TRUE?",
+      "options": ["Both exams require sponsorship by a FINRA member firm", "The Series 7 requires firm sponsorship via Form U4; the SIE does not require a sponsor", "The SIE requires a sponsor but the Series 7 does not", "Neither exam requires a sponsor as long as you are over 18"],
+      "answer": 1,
+      "explanation": "The Series 7 is a job license: a member firm must sponsor you by filing Form U4, which opens a 120-day window. The SIE needs no sponsor and can be taken at 18 — which is why candidates take it first."
+    },
+    {
+      "stem": "An equated passing score of 72 means that:",
+      "options": ["Every candidate must answer exactly 72% of the questions correctly", "Scores are adjusted across forms so difficulty differences do not help or hurt a candidate", "72 candidates out of 100 will pass on any given day", "The exam is graded on a curve relative to the day's other test-takers"],
+      "answer": 1,
+      "explanation": "Equating places different item sets on a common scale so a harder form does not penalize you; the passing bar is an absolute standard, not a curve against other candidates. That is why raw '72% = 90/125' is only an approximation."
+    },
+    {
+      "stem": "How long does an SIE pass remain valid, and what opens the 120-day exam window for the Series 7?",
+      "options": ["SIE valid 2 years; window opens when the SIE is passed", "SIE valid 4 years; window opens when the firm files Form U4", "SIE valid 4 years; window opens when the candidate turns 18", "SIE valid 5 years; window opens when CE is completed"],
+      "answer": 1,
+      "explanation": "The SIE stays valid 4 years from the pass date. The Series 7 enrollment window (120 days) opens when the sponsoring firm's Form U4 request is processed in CRD; it does not open by passing the SIE or by age."
+    },
+    {
+      "stem": "A Series 7 question reads: 'All of the following are true EXCEPT…'. What is the item asking you to identify?",
+      "options": ["The most correct of four true statements", "The single statement that is false", "Two statements that are both true", "The statement that is true only in a margin account"],
+      "answer": 1,
+      "explanation": "An EXCEPT (or NOT) stem inverts the task: three options are true and you select the one that is false. Spotting the polarity word before reading the options is the first step of the stem-reading protocol; missing it flips your answer."
+    }
+  ]
+}
