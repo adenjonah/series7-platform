@@ -14,18 +14,28 @@
  *   GET  /cohort?token=ADMIN                                        -> all rows (coach)
  */
 
-const ALLOWED_ORIGINS = ["https://adenjonah.github.io", "http://localhost", "http://127.0.0.1"];
 const VALID_STATUS = ["done", "review", "in_progress", "reset"];
+// item is a module id or a dated event — strict charset, so it can never carry markup.
+const ITEM_RE = /^(M\d{1,2}|(?:mock|quiz|daily):\d{4}-\d{2}-\d{2})$/;
+const NOTE_MAX = 500;
+
+// Exact-origin allowlist. Substring/startsWith matching would let
+// https://adenjonah.github.io.evil.com or http://localhost.evil.com through.
+function allowedOrigin(origin) {
+  if (origin === "https://adenjonah.github.io") return origin;
+  try {
+    const u = new URL(origin);
+    if ((u.protocol === "http:" || u.protocol === "https:") && (u.hostname === "localhost" || u.hostname === "127.0.0.1"))
+      return origin; // any port, for local dev
+  } catch { /* not a URL */ }
+  return null;
+}
 
 function corsHeaders(req) {
-  const origin = req.headers.get("Origin") || "";
-  const allow = ALLOWED_ORIGINS.some((a) => origin.startsWith(a)) ? origin : ALLOWED_ORIGINS[0];
-  return {
-    "Access-Control-Allow-Origin": allow,
-    "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
-    "Access-Control-Allow-Headers": "Content-Type",
-    "Vary": "Origin",
-  };
+  const allow = allowedOrigin(req.headers.get("Origin") || "");
+  const h = { "Access-Control-Allow-Methods": "GET,POST,OPTIONS", "Access-Control-Allow-Headers": "Content-Type, X-Token", "Vary": "Origin" };
+  if (allow) h["Access-Control-Allow-Origin"] = allow; // only reflect a real match; no header => browser blocks
+  return h;
 }
 
 export default {
@@ -47,6 +57,9 @@ export default {
         const { student, token, item, status, score = null, note = null } = body;
         if (!student || !item || !status) return json({ error: "missing student/item/status" }, 400);
         if (!VALID_STATUS.includes(status)) return json({ error: "bad status" }, 400);
+        if (typeof item !== "string" || !ITEM_RE.test(item)) return json({ error: "bad item" }, 400);
+        const cleanScore = score == null ? null : (Number.isFinite(+score) ? +score : null);
+        const cleanNote = note == null ? null : String(note).slice(0, NOTE_MAX);
         if (!tokens[student] || tokens[student] !== token) return json({ error: "bad token" }, 403);
 
         const ts = new Date().toISOString();
@@ -58,7 +71,7 @@ export default {
              VALUES (?, ?, ?, ?, ?, ?)
              ON CONFLICT(student, item) DO UPDATE SET
                status = excluded.status, score = excluded.score, note = excluded.note, ts = excluded.ts`
-          ).bind(student, item, status, score, note, ts).run();
+          ).bind(student, item, status, cleanScore, cleanNote, ts).run();
         }
         return json({ ok: true, ts });
       }
@@ -66,7 +79,7 @@ export default {
       // --- read one student's progress (student token, or admin) ---
       if (req.method === "GET" && url.pathname === "/progress") {
         const student = url.searchParams.get("student");
-        const token = url.searchParams.get("token");
+        const token = req.headers.get("X-Token") || ""; // token in a header, never the URL (keeps it out of request logs)
         if (!student) return json({ error: "missing student" }, 400);
         const authed = (tokens[student] && tokens[student] === token) || (env.ADMIN_TOKEN && token === env.ADMIN_TOKEN);
         if (!authed) return json({ error: "bad token" }, 403);
@@ -77,7 +90,7 @@ export default {
 
       // --- read everyone (coach) ---
       if (req.method === "GET" && url.pathname === "/cohort") {
-        if (!env.ADMIN_TOKEN || url.searchParams.get("token") !== env.ADMIN_TOKEN)
+        if (!env.ADMIN_TOKEN || req.headers.get("X-Token") !== env.ADMIN_TOKEN)
           return json({ error: "bad token" }, 403);
         const { results } = await env.DB
           .prepare("SELECT student, item, status, score, ts FROM progress ORDER BY student, item").all();

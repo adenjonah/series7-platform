@@ -60,12 +60,21 @@ npm run dev               # wrangler dev on http://localhost:8787 (reads .dev.va
 
 | Method | Path | Body / query | Auth |
 |---|---|---|---|
-| POST | `/progress` | `{student, token, item, status, score?, note?}` — `status` ∈ done/review/in_progress/reset | student token |
-| GET | `/progress` | `?student=&token=` | student or admin |
-| GET | `/cohort` | `?token=` | admin |
+| POST | `/progress` | body `{student, token, item, status, score?, note?}` — `status` ∈ done/review/in_progress/reset | token in body |
+| GET | `/progress` | `?student=` + header `X-Token: <token>` | `X-Token` (student or admin) |
+| GET | `/cohort` | header `X-Token: <admin>` | `X-Token` (admin) |
 
-`item` is a module id (`M7`), a mock (`mock:2026-09-01`), a quiz (`quiz:...`), or a daily
-(`daily:...`). Writes upsert on `(student, item)`; `status:"reset"` deletes the row.
+Tokens travel in the request **body** (POST) or the **`X-Token` header** (GET), never in a
+query string — so they don't land in Cloudflare's request logs. `item` is validated
+server-side to `M<n>` / `mock:` / `quiz:` / `daily:` + date (rejects anything else with 400,
+which also means stored values can't carry markup); `note` is capped at 500 chars. Writes
+upsert on `(student, item)`; `status:"reset"` deletes the row. CORS is an exact-origin
+allowlist (github.io + localhost), not a prefix match.
+
+**Residual, by design:** the shareable page links (`progress.html?...&t=<token>`) carry the
+token in the URL, so it sits in that person's browser history and the static host's logs.
+That's inherent to a login-less private-link model and fine for four private links; if you
+ever want it tighter, swap the `?t=` links for a one-time code exchanged for a cookie.
 
 Verified end-to-end locally 2026-08-28 (miniflare D1): upsert, per-student 403 on wrong
 token, admin-gated cohort read, reset/delete, and both HTML pages rendering the round-trip.

@@ -139,7 +139,7 @@ async function boot() {
     const cur = await fetch("./diagnostic/curriculum.json").then((r) => r.json());
     window._phaseNames = cur.phases;
     const mods = cur.modules.filter((m) => m.id !== "M16"); // SIE sitting — all four passed the SIE
-    const pr = await fetch(API + "/progress?student=" + encodeURIComponent(STUDENT) + "&token=" + encodeURIComponent(TOKEN));
+    const pr = await fetch(API + "/progress?student=" + encodeURIComponent(STUDENT), { headers: { "X-Token": TOKEN } });
     if (pr.status === 403) return fail("Bad token for <b>" + STUDENT + "</b>. Check your personal link.");
     (await pr.json()).progress.forEach((r) => (state[r.item] = { status: r.status, score: r.score, ts: r.ts }));
     render(mods);

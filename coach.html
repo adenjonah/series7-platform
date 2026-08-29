@@ -57,7 +57,7 @@ async function boot() {
     const cur = await fetch("./diagnostic/curriculum.json").then((r) => r.json());
     totalModules = cur.modules.filter((m) => m.id !== "M16").length;
   } catch { /* fall back to 41 */ }
-  const r = await fetch(API + "/cohort?token=" + encodeURIComponent(TOKEN));
+  const r = await fetch(API + "/cohort", { headers: { "X-Token": TOKEN } });
   if (r.status === 403) return fail("Bad admin token.");
   if (!r.ok) return fail("Backend error " + r.status + ". Is the worker deployed?");
   const rows = (await r.json()).progress;
@@ -72,8 +72,13 @@ async function boot() {
       "<td class='muted'>" + (d.last ? d.last.slice(0, 16).replace("T", " ") : "never") + "</td></tr>";
   });
   html += "</tbody></table>";
-  html += "<details><summary>raw rows (" + rows.length + ")</summary><pre>" + JSON.stringify(rows, null, 2) + "</pre></details>";
-  app.innerHTML = html;
+  app.innerHTML = html; // aggregates only: student (fixed list), counts, server timestamps — no student-supplied strings
+
+  // Raw dump can contain student-supplied item/note — never innerHTML it. textContent is inert.
+  const det = document.createElement("details");
+  const sum = document.createElement("summary"); sum.textContent = "raw rows (" + rows.length + ")";
+  const pre = document.createElement("pre"); pre.textContent = JSON.stringify(rows, null, 2);
+  det.append(sum, pre); app.append(det);
 }
 boot().catch((e) => fail("Couldn't load: " + e.message));
 </script>
